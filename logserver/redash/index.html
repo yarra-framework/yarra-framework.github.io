@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html class="no-js">
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <title>Data Visualization  &middot; Yarra Framework</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+<meta name="description" content="" />
+
+<meta name="keywords" content="">
+
+<meta property="og:title" content="Data Visualization  &middot; Yarra Framework ">
+<meta property="og:site_name" content="Yarra Framework"/>
+<meta property="og:url" content="http://yarraframework.com/logserver/redash/" />
+<meta property="og:locale" content="en-us">
+
+
+<meta property="og:type" content="article" />
+<meta property="og:description" content=""/>
+<meta property="og:article:published_time" content="2018-06-15T00:00:00Z" />
+<meta property="og:article:modified_time" content="2018-06-15T00:00:00Z" />
+
+  
+
+<script type="application/ld+json">
+  {
+    "@context": "http://schema.org",
+    "@type": "Article",
+    "headline": "Data Visualization",
+    "author": {
+      "@type": "Person",
+      "name": "http://profiles.google.com/+?rel=author"
+    },
+    "datePublished": "2018-06-15",
+    "description": "",
+    "wordCount": 276
+  }
+</script>
+
+
+<link rel="canonical" href="http://yarraframework.com/logserver/redash/" />
+
+<meta name="generator" content="Hugo 0.54.0" />
+
+
+  <link rel="stylesheet" href="/assets/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+  <link rel="stylesheet" href="/assets/css/style.css">
+  <link rel="stylesheet" href="/assets/css/yarra.css">
+
+  
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-63470225-3"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-63470225-3');
+  </script>
+
+</head>
+<body>
+<nav class="navbar navbar-expand-lg fixed-top site-navbar navbar-inverse">
+  <a class="navbar-brand text-white" href="http://yarraframework.com/">Yarra Framework</a>
+  <button class="navbar-toggler text-white" 
+  type="button" data-toggle="collapse" data-target="#exCollapsingNavbar2" aria-controls="exCollapsingNavbar2"
+    aria-expanded="false" aria-label="Toggle navigation">
+    &#9776;
+  </button>
+  <div class="collapse navbar-collapse" id="exCollapsingNavbar2">
+    <ul class="nav navbar-nav ml-1 mr-auto">
+               
+        
+        <li class="nav-item">
+          <a class="nav-link menu-item " href="/overview">
+            
+            <span class="text-capitalize no-decoration text-white">Overview</span>
+          </a>
+        </li>
+        
+              
+        
+        <li class="nav-item">
+          <a class="nav-link menu-item " href="/clients">
+            
+            <span class="text-capitalize no-decoration text-white">Clients</span>
+          </a>
+        </li>
+        
+              
+        
+        <li class="nav-item">
+          <a class="nav-link menu-item " href="/server">
+            
+            <span class="text-capitalize no-decoration text-white">Server</span>
+          </a>
+        </li>
+        
+              
+        
+        <li class="nav-item">
+          <a class="nav-link menu-item " href="/modules">
+            
+            <span class="text-capitalize no-decoration text-white">Modules</span>
+          </a>
+        </li>
+        
+              
+        
+        <li class="nav-item">
+          <a class="nav-link menu-item active" href="/logserver">
+            
+            <span class="text-capitalize no-decoration text-white">LogServer</span>
+          </a>
+        </li>
+        
+              
+        
+        <li class="nav-item">
+          <a class="nav-link menu-item " href="/addons">
+            
+            <span class="text-capitalize no-decoration text-white">Addons</span>
+          </a>
+        </li>
+        
+              
+        
+        <li class="nav-item">
+          <a class="nav-link menu-item " href="/download">
+            
+            <span class="text-capitalize no-decoration text-white">Download</span>
+          </a>
+        </li>
+        
+              
+        
+        <li class="nav-item">
+          <a class="nav-link menu-item " href="/blog">
+            
+            <span class="text-capitalize no-decoration text-white">Blog</span>
+          </a>
+        </li>
+        
+              
+        
+              
+        
+              
+        
+      
+    </ul>
+  </div>
+</nav>
+
+
+<div class="container p-a-0">
+  <div class="row m-l-0 m-r-0 mb-2">
+    <div class="col">
+      <h1>Logserver&nbsp;-&nbsp;Data Visualization</h1>
+    </div>
+  </div>
+    <div class="row m-l-0 m-r-0">
+      <div class="col-xs-12 col-lg-3">
+      <div class="list-group mr-3 mb-4">
+        <a href="http://yarraframework.com/logserver/" class="list-group-item list-group-item-action">Overview</a>
+        
+        
+        
+        <a href="/logserver/installation/" class="list-group-item list-group-item-action ">&ndash;&nbsp; Installation</a>
+        
+        <a href="/logserver/configuration/" class="list-group-item list-group-item-action ">&ndash;&nbsp; Configuration</a>
+        
+        <a href="/logserver/administration/" class="list-group-item list-group-item-action ">&ndash;&nbsp; Administration</a>
+        
+        <a href="/logserver/redash/" class="list-group-item list-group-item-action active">&ndash;&nbsp; Data Visualization</a>
+        
+        <a href="/logserver/queries/" class="list-group-item list-group-item-action ">&ndash;&nbsp; Example Queries</a>
+        
+      </div>
+    </div>
+    <div class="col-xs-12 col-lg-9 post-container">
+      <div class="content pt-2">
+  
+
+<h3 id="hahahugoshortcode-0xc000b16a00-1-hbhb">
+<i class="fas fa-angle-double-right" style="color: #580F8B; font-size: 24px;">&nbsp;</i>Data Visualization with Redash
+
+</h3>
+
+<p>While the included Yarra LogViewer provides access to all collected data in tabular form, it is often desired to visualize data or to perform advanced queries. This can be done with Redash, which is a web-based open-source tool for creating SQL-driven dashboards.</p>
+
+<p><a href="https://redash.io/" target="_blank" ><i class="fas fa-external-link-alt">&nbsp;</i>More information on Redash</a></p>
+
+
+<div class="bs-callout bs-callout-danger"  >
+    
+<p>Please use only the <strong>Self Hosted Open Source</strong> version of Redash. Do not use the hosted cloud version, as this would transfer sensitive data to external cloud servers.</p>
+</div>
+
+
+
+<p>To get you up and running quickly, we have built several basic &ldquo;seed&rdquo; dashboards for Redash. These dashboards have been tested to work with Redash version 2.0.1.b3080. Therefore, it is best to first install our dashboard set with this Redash version and then upgrade to the newest Redash version.</p>
+
+<p>The following instructions assume that you are running Redash on the same machine as Yarra LogServer, and they will not work with an existing Redash installation.</p>
+
+<p>To get started, first <a href="https://redash.io/help/open-source/setup" target="_blank">install</a> Redash 2.0.1.b3080. It might be prudent to <a href="https://github.com/getredash/redash/blob/v2.0.1/setup/ubuntu/bootstrap.sh" target="_blank">run the provisioning script</a> that was released with v2.0.1 rather than the one on the master branch.</p>
+
+<p>Invoke the provisioning script like this:</p>
+
+<pre><code>REDASH-VERSION=2.0.1.b3080 ./bootstrap.sh
+</code></pre>
+
+<p>and create your administrator account. To insert our dashboards, run:</p>
+
+<pre><code>cd /opt/yarralogserver/redash &amp;&amp; sudo ./install_dashboards.sh
+</code></pre>
+
+<p>It will prompt you for a password for a database role that Redash will use to query the LogServer database.</p>
+
+<p>Verify that the installation has worked by logging into your Redash instance at localhost, navigating to the “Dashboards” page, and loading a dashboard. There may be no data but there should at least be no error messages.</p>
+
+<p>Now, you should upgrade to the latest Redash by following the <a href="https://redash.io/help/open-source/admin-guide/how-to-upgrade/" target="_blank">official upgrade instructions</a>.</p>
+
+</div>
+
+      
+    </div>
+  </div>
+</div>
+      <footer style="margin-top: 100px;">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8">
+                <ul class="list-inline pull-left">
+                    
+                         
+                         
+                          <li><a class="page-scroll" href="/">Home</a></li>
+                          <li class="footer-menu-divider">&vert;</li> 
+                        
+                          <li><a class="page-scroll" href="/disclaimer/">Disclaimer</a></li>
+                          <li class="footer-menu-divider">&vert;</li> 
+                        
+                          <li><a class="page-scroll" href="/license/">License</a></li>
+                           
+                         
+                    
+                </ul>
+            </div>
+            <div class="col-md-4">
+            <div class="pull-right">
+            <a href="http://cai2r.net" target="_blank"><img class="cai2rlogo" src="/assets/img/cai2r.png" height="65"></a>
+            </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+    
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha256-xaF9RpdtRxzwYMWg4ldJoyPWqyDPCRD0Cv7YEEe6Ie8=" crossorigin="anonymous"></script>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/styles/default.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/highlight.min.js"></script>
+
+<script>
+hljs.configure({
+  languages: []
+})
+hljs.initHighlightingOnLoad();
+</script>
+
+<script src="/assets/js/script.js"></script>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+<script>
+  ((window.gitter = {}).chat = {}).options = {
+    room: 'yarra-dev/Support'
+  };
+</script>
+<script src="https://sidecar.gitter.im/dist/sidecar.v1.js" async defer></script>
+
+
+  </body>
+</html>
+

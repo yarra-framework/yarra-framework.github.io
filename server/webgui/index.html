@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html class="no-js">
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <title>WebGUI  &middot; Yarra Framework</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+<meta name="description" content="" />
+
+<meta name="keywords" content="">
+
+<meta property="og:title" content="WebGUI  &middot; Yarra Framework ">
+<meta property="og:site_name" content="Yarra Framework"/>
+<meta property="og:url" content="http://yarraframework.com/server/webgui/" />
+<meta property="og:locale" content="en-us">
+
+
+<meta property="og:type" content="article" />
+<meta property="og:description" content=""/>
+<meta property="og:article:published_time" content="2018-06-15T00:00:00Z" />
+<meta property="og:article:modified_time" content="2018-06-15T00:00:00Z" />
+
+  
+
+<script type="application/ld+json">
+  {
+    "@context": "http://schema.org",
+    "@type": "Article",
+    "headline": "WebGUI",
+    "author": {
+      "@type": "Person",
+      "name": "http://profiles.google.com/+?rel=author"
+    },
+    "datePublished": "2018-06-15",
+    "description": "",
+    "wordCount": 814
+  }
+</script>
+
+
+<link rel="canonical" href="http://yarraframework.com/server/webgui/" />
+
+<meta name="generator" content="Hugo 0.54.0" />
+
+
+  <link rel="stylesheet" href="/assets/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+  <link rel="stylesheet" href="/assets/css/style.css">
+  <link rel="stylesheet" href="/assets/css/yarra.css">
+
+  
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-63470225-3"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-63470225-3');
+  </script>
+
+</head>
+<body>
+<nav class="navbar navbar-expand-lg fixed-top site-navbar navbar-inverse">
+  <a class="navbar-brand text-white" href="http://yarraframework.com/">Yarra Framework</a>
+  <button class="navbar-toggler text-white" 
+  type="button" data-toggle="collapse" data-target="#exCollapsingNavbar2" aria-controls="exCollapsingNavbar2"
+    aria-expanded="false" aria-label="Toggle navigation">
+    &#9776;
+  </button>
+  <div class="collapse navbar-collapse" id="exCollapsingNavbar2">
+    <ul class="nav navbar-nav ml-1 mr-auto">
+               
+        
+        <li class="nav-item">
+          <a class="nav-link menu-item " href="/overview">
+            
+            <span class="text-capitalize no-decoration text-white">Overview</span>
+          </a>
+        </li>
+        
+              
+        
+        <li class="nav-item">
+          <a class="nav-link menu-item " href="/clients">
+            
+            <span class="text-capitalize no-decoration text-white">Clients</span>
+          </a>
+        </li>
+        
+              
+        
+        <li class="nav-item">
+          <a class="nav-link menu-item active" href="/server">
+            
+            <span class="text-capitalize no-decoration text-white">Server</span>
+          </a>
+        </li>
+        
+              
+        
+        <li class="nav-item">
+          <a class="nav-link menu-item " href="/modules">
+            
+            <span class="text-capitalize no-decoration text-white">Modules</span>
+          </a>
+        </li>
+        
+              
+        
+        <li class="nav-item">
+          <a class="nav-link menu-item " href="/logserver">
+            
+            <span class="text-capitalize no-decoration text-white">LogServer</span>
+          </a>
+        </li>
+        
+              
+        
+        <li class="nav-item">
+          <a class="nav-link menu-item " href="/addons">
+            
+            <span class="text-capitalize no-decoration text-white">Addons</span>
+          </a>
+        </li>
+        
+              
+        
+        <li class="nav-item">
+          <a class="nav-link menu-item " href="/download">
+            
+            <span class="text-capitalize no-decoration text-white">Download</span>
+          </a>
+        </li>
+        
+              
+        
+        <li class="nav-item">
+          <a class="nav-link menu-item " href="/blog">
+            
+            <span class="text-capitalize no-decoration text-white">Blog</span>
+          </a>
+        </li>
+        
+              
+        
+              
+        
+              
+        
+      
+    </ul>
+  </div>
+</nav>
+
+
+<div class="container p-a-0">
+  <div class="row m-l-0 m-r-0 mb-2">
+    <div class="col">
+      <h1>Server&nbsp;-&nbsp;WebGUI</h1>
+    </div>
+  </div>
+    <div class="row m-l-0 m-r-0">
+      <div class="col-xs-12 col-lg-3">
+      <div class="list-group mr-3 mb-4">
+        <a href="http://yarraframework.com/server/" class="list-group-item list-group-item-action">Overview</a>
+        
+        
+        
+        <a href="/server/installation/" class="list-group-item list-group-item-action ">&ndash;&nbsp; Installation</a>
+        
+        <a href="/server/configuration/" class="list-group-item list-group-item-action ">&ndash;&nbsp; Configuration</a>
+        
+        <a href="/server/webgui/" class="list-group-item list-group-item-action active">&ndash;&nbsp; WebGUI</a>
+        
+        <a href="/server/usage/" class="list-group-item list-group-item-action ">&ndash;&nbsp; Manual Control</a>
+        
+        <a href="/server/modes/" class="list-group-item list-group-item-action ">&ndash;&nbsp; Reconstruction Modes</a>
+        
+        <a href="/server/notifications/" class="list-group-item list-group-item-action ">&ndash;&nbsp; Notifications</a>
+        
+        <a href="/server/loadbalancing/" class="list-group-item list-group-item-action ">&ndash;&nbsp; Load Balancing</a>
+        
+      </div>
+    </div>
+    <div class="col-xs-12 col-lg-9 post-container">
+      <div class="content pt-2">
+  
+
+<h3 id="hahahugoshortcode-0xc000a25900-1-hbhb">
+<i class="fas fa-angle-double-right" style="color: #580F8B; font-size: 24px;">&nbsp;</i>Introduction
+
+</h3>
+
+<p>Yarra provides a convenient web-based user interface for YarraServer (WebGUI), which can be used to monitor, control, and configure the server. The WebGUI is accessible from every web browser, including smartphones, by using the server address as URL with extension :8080, e.g. 192.168.56.101:8080. The port can also be changed to a different number. The WebGUI offers a user authentication system with different access levels, ranging from view-only monitoring of the reconstruction queue to full configuration rights for the YarraServer.</p>
+
+<div style="margin-bottom: 10px; font-size: 0px;">&nbsp;</div>
+
+<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+  <ol class="carousel-indicators">
+    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
+  </ol>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img class="d-block w-100" src="/webgui_p1.png" alt="First slide">
+        <div class="carousel-caption d-none d-md-block mb-4">
+            <h5>Login Page</h5>
+            <p>Allows users to sign into the Yarra WebGUI. Different access levels can be configured for users.</p>
+        </div>      
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="/webgui_p2.png" alt="Second slide">
+        <div class="carousel-caption d-none d-md-block mb-4">
+            <h5>"Server Status" Page</h5>
+            <p>Allows monitoring, starting/stopping the server, reviewing task activity, and killing the active task.</p>
+        </div>      
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="/webgui_p3.png" alt="Third slide">
+        <div class="carousel-caption d-none d-md-block mb-4">
+            <h5>"Task Queue" Page</h5>
+            <p>Allows monitoring the task queue and deleting/modifying/restarting tasks.</p>
+        </div>      
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="/webgui_p4.png" alt="Third slide">
+        <div class="carousel-caption d-none d-md-block mb-4">
+            <h5>"Log Archive" Page</h5>
+            <p>Allows reviewing the log output of previously performed tasks.</p>
+        </div>      
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="/webgui_p5.png" alt="Third slide">
+        <div class="carousel-caption d-none d-md-block mb-4">
+            <h5>"Configuration" Page</h5>
+            <p>Allows configuring reconstruction modes, server settings, and installing/updating modules.</p>
+        </div>      
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="/webgui_p6.png" alt="Third slide">
+        <div class="carousel-caption d-none d-md-block mb-4">
+            <h5>"Support" Page</h5>
+            <p>Allows getting support from the Yarra community.</p>
+        </div>      
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev" style="color: #F00;">
+    <span class="carousel-control-prev-icon" aria-hidden="true" style="color: #F00;"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+
+<div style="margin-bottom: 40px; font-size: 0px;">&nbsp;</div>
+
+<h3 id="hahahugoshortcode-0xc000a25900-4-hbhb">
+<i class="fas fa-angle-double-right" style="color: #580F8B; font-size: 24px;">&nbsp;</i>Installation
+
+</h3>
+
+<p>The WebGUI is now part of the YarraServer package and will be installed into the subfolder /yarra/webgui when extracting the YarraServer package, as described <a href="/server/installation">here</a>. The folder contains the binary, configuration files, as well as support files.</p>
+
+<p>The WebGUI can be started by calling the executable YarraWebGUI. However, it is strongly recommended to install the WebGUI as Linux daemon instead (similar to the YarraServer itself). This ensures that the WebGUI is automatically started when the server is rebooted, and it ensures that the WebGUI is immediately restarted in the case that it should crash.</p>
+
+
+<div class="bs-callout bs-callout-info"  >
+    
+<p>The configuration of the WebGUI daemon has changed from previous Yarra versions, as Ubuntu switched from Upstart to systemd for managing daemons (starting with version 16.04).</p>
+</div>
+
+
+
+<p>To install the daemon, open a terminal with administrator rights (sudo account). Review the file yarrawebgui.service, which is located in the /yarra/install subfolder. By default, this file should read:</p>
+
+<pre><code>[Unit]
+Description=Yarra WebGUI
+Documentation=http://yarraframework.com
+After=smbd.service
+Requires=smbd.service
+
+[Service]
+Type=simple
+User=yarraserver
+WorkingDirectory=/home/yarraserver/yarra/webgui
+ExecStart=/home/yarraserver/yarra/webgui/YarraWebGUI
+
+Restart=on-failure
+RestartSec=3
+
+[Install]
+WantedBy=multi-user.target
+</code></pre>
+
+<p>Depending on the location of your YarraServer installation, it is necessary to adjust the path of the &ldquo;EnvironmentFile=&rdquo; file and its content (this file specifies where the Qt binaries are located). It might also be necessary to adapt the &ldquo;User=&rdquo; setting if a different user name for running YarraServer is used.</p>
+
+<p>Copy the yarrawebgui.service file to the directory /etc/systemd/system (this can only be done using administrator rights):</p>
+
+<pre><code>sudo cp yarrawebgui.service /etc/systemd/system
+</code></pre>
+
+<p>Then, activate the Yarra daemon by typing:</p>
+
+<pre><code>sudo systemctl enable yarrawebgui
+</code></pre>
+
+<div style="margin-bottom: 40px; font-size: 0px;">&nbsp;</div>
+
+<h3 id="hahahugoshortcode-0xc000a25900-7-hbhb">
+<i class="fas fa-angle-double-right" style="color: #580F8B; font-size: 24px;">&nbsp;</i>Configuration
+
+</h3>
+
+<p>All settings of the WebGUI are contained in the file YarraWebGUI.ini, which is located in the folder webgui. Below, you can see a sample configuration:</p>
+
+<pre><code>;### Yarra WebGUI Configuration ###
+ 
+[Setup]
+;# Specifies the port for the webgui (added to the URL in the browser) 
+Port=8080
+ 
+;# Location of the Yarra installation on the server 
+YarraPath=/home/yarraserver/yarra 
+
+;# Set to true to disallow installation of new modules in the webgui 
+DisableModuleInstallation=false 
+
+;# Set to true to disallow modification of modes in the webgui 
+DisableModeEditing=false 
+
+;# Set to true to prevent display of Yarra news on the status page
+DisableYarraNews=false
+
+;# Set to true to remove the support forum from the webgui
+DisableSupportForum=false
+
+;# Definition of user accounts (up to 100 users)
+;# Level 3 = Administrators (includes rights to control the server)
+;# Level 2 = Managers (includes rights to modify tasks)
+;# Level 1 = Techs (view-only rights for the task queue)
+ 
+[User1] 
+Name=username 
+Password=password 
+Level=1 
+</code></pre>
+
+<p>By default, the WebGUI runs on port 8080, which means that the WebGUI can be accessed from any browser by entering the URL <a href="http://x.x.x.x:8080" target="_blank">http://x.x.x.x:8080</a> where x.x.x.x is the IP address of the Yarra server. If necessary, the port number can be changed.</p>
+
+<p>When accessing the URL, it is necessary to login using a username and password. Up to 100 different user accounts can be defined in the configuration file (using separate sections with increasing index [User1], [User2], [User3], &hellip; ).</p>
+
+<p>Three different access levels can be selected for each user. Level 1 is a view-only mode, which is intended, e.g., for technicians to monitor the reconstruction queue. Level 2 allows deleting or modifying scheduled tasks (e.g., changing the reconstruction mode or adding notification recipients), restarting failed tasks, or viewing log files. This mode should assigned to managers or researchers that Yarra for their studies. Finally, Level 3 allows controlling the server (shutdown / restart) and modifying the configuration. This user level should only be assigned to the administrators of the server.</p>
+
+
+<div class="bs-callout bs-callout-warning"  >
+    
+<p>It is necessary to restart the WebGUI before changes to the configuration become effective (see section below for instructions).</p>
+</div>
+
+
+
+<div style="margin-bottom: 40px; font-size: 0px;">&nbsp;</div>
+
+<h3 id="hahahugoshortcode-0xc000a25900-10-hbhb">
+<i class="fas fa-angle-double-right" style="color: #580F8B; font-size: 24px;">&nbsp;</i>Starting and Stopping the WebGUI
+
+</h3>
+
+<p>To start the WebGUI, type the following command (using the administrator account):</p>
+
+<pre><code>sudo systemctl start yarrawebgui
+</code></pre>
+
+<p>If you need to stop (or restart) the WebGUI, type:</p>
+
+<pre><code>sudo systemctl stop yarrawebgui
+</code></pre>
+
+<p><div style="margin-bottom: 40px; font-size: 0px;">&nbsp;</div>
+
+<div class="bs-callout bs-callout-info"  >
+    
+<p>The WebGUI functionality has grown quite a bit recently. Not all of the available functions are already described on this page.</p>
+</div>
+
+</p>
+
+</div>
+
+      
+    </div>
+  </div>
+</div>
+      <footer style="margin-top: 100px;">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8">
+                <ul class="list-inline pull-left">
+                    
+                         
+                         
+                          <li><a class="page-scroll" href="/">Home</a></li>
+                          <li class="footer-menu-divider">&vert;</li> 
+                        
+                          <li><a class="page-scroll" href="/disclaimer/">Disclaimer</a></li>
+                          <li class="footer-menu-divider">&vert;</li> 
+                        
+                          <li><a class="page-scroll" href="/license/">License</a></li>
+                           
+                         
+                    
+                </ul>
+            </div>
+            <div class="col-md-4">
+            <div class="pull-right">
+            <a href="http://cai2r.net" target="_blank"><img class="cai2rlogo" src="/assets/img/cai2r.png" height="65"></a>
+            </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+    
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha256-xaF9RpdtRxzwYMWg4ldJoyPWqyDPCRD0Cv7YEEe6Ie8=" crossorigin="anonymous"></script>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/styles/default.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/highlight.min.js"></script>
+
+<script>
+hljs.configure({
+  languages: []
+})
+hljs.initHighlightingOnLoad();
+</script>
+
+<script src="/assets/js/script.js"></script>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+<script>
+  ((window.gitter = {}).chat = {}).options = {
+    room: 'yarra-dev/Support'
+  };
+</script>
+<script src="https://sidecar.gitter.im/dist/sidecar.v1.js" async defer></script>
+
+
+  </body>
+</html>
+

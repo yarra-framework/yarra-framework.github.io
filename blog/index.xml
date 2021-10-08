@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Blogs on Yarra Framework</title>
+    <link>http://yarraframework.com/blog/</link>
+    <description>Recent content in Blogs on Yarra Framework</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 13 Aug 2021 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://yarraframework.com/blog/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Client Tools 0.4</title>
+      <link>http://yarraframework.com/blog/clienttools_v4/</link>
+      <pubDate>Fri, 13 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>http://yarraframework.com/blog/clienttools_v4/</guid>
+      <description>A new version of the Yarra Client Tools (YCT) has been released (version 0.4). Please replace old versions of the Yarra Client Tools with this latest release, as it contains improvements of the anonymization tool.
+The version is now available in the Download section.</description>
+    </item>
+    
+    <item>
+      <title>Client Tools 0.3</title>
+      <link>http://yarraframework.com/blog/clienttools_v3/</link>
+      <pubDate>Thu, 22 Jul 2021 00:00:00 +0000</pubDate>
+      
+      <guid>http://yarraframework.com/blog/clienttools_v3/</guid>
+      <description>A new version of the Yarra Client Tools (YCT) has been released (version 0.3). Please replace old versions of the Yarra Client Tools with this latest release, as it contains improvements of the anonymization tool.
+The version is now available in the Download section.</description>
+    </item>
+    
+    <item>
+      <title>Client Package 0.58</title>
+      <link>http://yarraframework.com/blog/client_058/</link>
+      <pubDate>Sun, 26 Jul 2020 00:00:00 +0000</pubDate>
+      
+      <guid>http://yarraframework.com/blog/client_058/</guid>
+      <description>A new version of the client package has been released (version 0.58) that adds support for the Siemens software versions XA20A and XA20B. In addition, several minor bugs have been fixed.
+The version is now available in the Download section.</description>
+    </item>
+    
+    <item>
+      <title>Migration to Git</title>
+      <link>http://yarraframework.com/blog/gitmigration/</link>
+      <pubDate>Wed, 12 Feb 2020 00:00:00 +0000</pubDate>
+      
+      <guid>http://yarraframework.com/blog/gitmigration/</guid>
+      <description>We are currently migrating our source code repositories from Mercurial to Git. This is necessary because BitBucket, which we are using as provider for hosting the Yarra source code, is ending support for Mercurial. Some of the repositories might be temporarily unavailable during the time of conversion. After the migration, the repositories will have the same name (slug) and same website URLs, but you will need to use Git if you want to checkout the code.</description>
+    </item>
+    
+    <item>
+      <title>Upgrade Your WebGUI</title>
+      <link>http://yarraframework.com/blog/upgrade_webgui/</link>
+      <pubDate>Thu, 07 Nov 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://yarraframework.com/blog/upgrade_webgui/</guid>
+      <description>If you are still running an older version of the Yarra WebGUI, please update it to the latest version (version 0.97). We are soon shutting-down our old internet domain yarra.rocks and by updating the WebGUI to the latest version, you will continue to receive the latest news and update information right into the WebGUI of your YarraServer. In addition, the latest version of the server package also provides the much-needed resume functionality for tasks that failed during post-processing or transfer steps (so that the reconstruction does not need to be performed again).</description>
+    </item>
+    
+    <item>
+      <title>Client Package 0.55</title>
+      <link>http://yarraframework.com/blog/client_055/</link>
+      <pubDate>Wed, 06 Nov 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://yarraframework.com/blog/client_055/</guid>
+      <description>A new version of the client package has been released (version 0.55) that now also supports the Siemens software version VE11S. Moreover, the SAC client now allows sending additional files along with the task, enabling to send, e.g., separate calibration data to the reconstruction module.
+The version is now available in the Download section.</description>
+    </item>
+    
+    <item>
+      <title>Hermes DICOM Router</title>
+      <link>http://yarraframework.com/blog/hermes/</link>
+      <pubDate>Mon, 02 Sep 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://yarraframework.com/blog/hermes/</guid>
+      <description>Looking for a flexible and powerful DICOM Router to integrate your image-analysis prototypes or AI solutions into your clinical workflow? Check out Yarra&amp;rsquo;s sister open-source project &amp;ldquo;Hermes Router&amp;rdquo;, which is now publicly available:
+http://hermes-router.github.io</description>
+    </item>
+    
+    <item>
+      <title>Matlab GRASP Module</title>
+      <link>http://yarraframework.com/blog/matlab_grasp/</link>
+      <pubDate>Mon, 15 Jul 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://yarraframework.com/blog/matlab_grasp/</guid>
+      <description>A new Matlab-based public version of the GRASP reconstruction algorithm has been released, which integrates into the Yarra offline-reconstruction pipeline. The module has been parallelized using Matlab&amp;rsquo;s Parallel Computation Toolbox and achieves reconstruction speed in the same magnitude as our C++ implementation of the algorithm.
+The algorithm can be downloaded on the User Modules page. Please note that Matlab R2016a or newer is required.
+The required pulse sequence for GRASP scans, known as &amp;ldquo;RAVE&amp;rdquo; or &amp;ldquo;Radial-VIBE&amp;rdquo; sequence, can be obtained from us after filing a C2P agreement with Siemens.</description>
+    </item>
+    
+    <item>
+      <title>Yarra Client Tools</title>
+      <link>http://yarraframework.com/blog/clienttools/</link>
+      <pubDate>Fri, 05 Jul 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://yarraframework.com/blog/clienttools/</guid>
+      <description>The Yarra Client Tools (YCT) are now available for download. Yarra Client Tools are small command-line tools that help with processing Siemens Twix files. They provide functions for batch anonymization, protocol extraction, and for displaying individual scan parameters. The package should be extracted into the installation folder of the Yarra Client package.
+The version is now available in the Download section.</description>
+    </item>
+    
+    <item>
+      <title>Client Package 0.54</title>
+      <link>http://yarraframework.com/blog/client_054/</link>
+      <pubDate>Thu, 27 Jun 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://yarraframework.com/blog/client_054/</guid>
+      <description>A new version of the Yarra Client Package has been released (version 0.54). This version offers improved support for the scanner software XA11A and XA11B.
+Starting with version XA11A, Siemens has changed the Windows security policies such that even the execution of white-listed applications requries entering the password of the administrator account each time. This can be cumbersome when submitting offline-reconstruction tasks. Therefore, we added an alternative mechanism for launching the Yarra ORT client via a menu that opens by right-clicking on the Yarra icon.</description>
+    </item>
+    
+    <item>
+      <title>New Release of YarraServer and Client Package</title>
+      <link>http://yarraframework.com/blog/release_june19/</link>
+      <pubDate>Tue, 18 Jun 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://yarraframework.com/blog/release_june19/</guid>
+      <description>New versions of the YarraServer and Yarra Client packages have been released.
+Yarra Client 0.53 adds support for our YarraCloud service. Moreover, new software versions of the Siemens scanners are supported, including VB19B, VE11D, VE11E,VE12U, XA11A, and XA11B. To use the Yarra Client on scanners with the XA software line (MAGNETOM Vida and Sola), it is necessary to install software certificates. Please contact us to obtain these certificates.
+YarraServer 0.97 has now been built using an Ubuntu 16.</description>
+    </item>
+    
+    <item>
+      <title>Workshop at ISMRM 2019</title>
+      <link>http://yarraframework.com/blog/ismrm2019/</link>
+      <pubDate>Fri, 10 May 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://yarraframework.com/blog/ismrm2019/</guid>
+      <description>We will present Yarra in the Weekend Educational Session on Open-Source Software Tools that will take place at the ISMRM 2019 Meeting in Montreal. Roy Wiggins will give an overview talk at 11:00am and give a practical demonstration on how reconstruction algorithms can be integrated into Yarra at 1:30pm, 2:20pm, and 3:10pm.
+You can find the training material also in the Resources section.
+&amp;nbsp;ISMRM Educational Session on Open-Source Software Tools</description>
+    </item>
+    
+    <item>
+      <title>End of support for Ubuntu Version 12.04 and 14.04</title>
+      <link>http://yarraframework.com/blog/end-of-1204/</link>
+      <pubDate>Fri, 03 May 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://yarraframework.com/blog/end-of-1204/</guid>
+      <description>We decided to end the support We decided to end the support of the Ubuntu version 12.04 LTS and 14.04 LTS. These two versions have now reached the end-of-life date and will not receive security updates anymore. Moreover, there are library incompatibilities that would require us to provide separate binaries. The configuration steps have also changed due to Ubuntu&amp;rsquo;s migration from Upstart to systemd. Therefore, we decided to drop support for these outdated Ubuntu versions and we encourage all users to upgrade their servers to either Ubuntu 16.</description>
+    </item>
+    
+    <item>
+      <title>New Website for Yarra</title>
+      <link>http://yarraframework.com/blog/new-website/</link>
+      <pubDate>Tue, 26 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://yarraframework.com/blog/new-website/</guid>
+      <description>We finally managed to create a new website for the Yarra framework and hope to provide more up-to-date information on Yarra going forward. Currently, we are still in the process of migrating some remaining content from our old website, but this should be completed soon.
+For reference, the old website is still available under this link. Note, however, that the old website will not be updated anymore, so that the information provided there can be outdated.</description>
+    </item>
+    
+  </channel>
+</rss>

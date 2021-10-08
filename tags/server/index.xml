@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Server on Yarra Framework</title>
+    <link>http://yarraframework.com/tags/server/</link>
+    <description>Recent content in Server on Yarra Framework</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 07 Nov 2019 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://yarraframework.com/tags/server/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Upgrade Your WebGUI</title>
+      <link>http://yarraframework.com/blog/upgrade_webgui/</link>
+      <pubDate>Thu, 07 Nov 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://yarraframework.com/blog/upgrade_webgui/</guid>
+      <description>If you are still running an older version of the Yarra WebGUI, please update it to the latest version (version 0.97). We are soon shutting-down our old internet domain yarra.rocks and by updating the WebGUI to the latest version, you will continue to receive the latest news and update information right into the WebGUI of your YarraServer. In addition, the latest version of the server package also provides the much-needed resume functionality for tasks that failed during post-processing or transfer steps (so that the reconstruction does not need to be performed again).</description>
+    </item>
+    
+    <item>
+      <title>New Release of YarraServer and Client Package</title>
+      <link>http://yarraframework.com/blog/release_june19/</link>
+      <pubDate>Tue, 18 Jun 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://yarraframework.com/blog/release_june19/</guid>
+      <description>New versions of the YarraServer and Yarra Client packages have been released.
+Yarra Client 0.53 adds support for our YarraCloud service. Moreover, new software versions of the Siemens scanners are supported, including VB19B, VE11D, VE11E,VE12U, XA11A, and XA11B. To use the Yarra Client on scanners with the XA software line (MAGNETOM Vida and Sola), it is necessary to install software certificates. Please contact us to obtain these certificates.
+YarraServer 0.97 has now been built using an Ubuntu 16.</description>
+    </item>
+    
+  </channel>
+</rss>

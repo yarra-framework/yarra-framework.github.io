@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html class="no-js">
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <title>LogServer  &middot; Yarra Framework</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+<meta name="description" content="" />
+
+<meta name="keywords" content="">
+
+<meta property="og:title" content="LogServer  &middot; Yarra Framework ">
+<meta property="og:site_name" content="Yarra Framework"/>
+<meta property="og:url" content="http://yarraframework.com/logserver/" />
+<meta property="og:locale" content="en-us">
+
+
+<meta property="og:type" content="website" />
+
+
+<link rel="canonical" href="http://yarraframework.com/logserver/" />
+
+<meta name="generator" content="Hugo 0.54.0" />
+
+
+  <link rel="stylesheet" href="/assets/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+  <link rel="stylesheet" href="/assets/css/style.css">
+  <link rel="stylesheet" href="/assets/css/yarra.css">
+
+  
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-63470225-3"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-63470225-3');
+  </script>
+
+</head>
+<body>
+<nav class="navbar navbar-expand-lg fixed-top site-navbar navbar-inverse">
+  <a class="navbar-brand text-white" href="http://yarraframework.com/">Yarra Framework</a>
+  <button class="navbar-toggler text-white" 
+  type="button" data-toggle="collapse" data-target="#exCollapsingNavbar2" aria-controls="exCollapsingNavbar2"
+    aria-expanded="false" aria-label="Toggle navigation">
+    &#9776;
+  </button>
+  <div class="collapse navbar-collapse" id="exCollapsingNavbar2">
+    <ul class="nav navbar-nav ml-1 mr-auto">
+               
+        
+        <li class="nav-item">
+          <a class="nav-link menu-item " href="/overview">
+            
+            <span class="text-capitalize no-decoration text-white">Overview</span>
+          </a>
+        </li>
+        
+              
+        
+        <li class="nav-item">
+          <a class="nav-link menu-item " href="/clients">
+            
+            <span class="text-capitalize no-decoration text-white">Clients</span>
+          </a>
+        </li>
+        
+              
+        
+        <li class="nav-item">
+          <a class="nav-link menu-item " href="/server">
+            
+            <span class="text-capitalize no-decoration text-white">Server</span>
+          </a>
+        </li>
+        
+              
+        
+        <li class="nav-item">
+          <a class="nav-link menu-item " href="/modules">
+            
+            <span class="text-capitalize no-decoration text-white">Modules</span>
+          </a>
+        </li>
+        
+              
+        
+        <li class="nav-item">
+          <a class="nav-link menu-item active" href="/logserver">
+            
+            <span class="text-capitalize no-decoration text-white">LogServer</span>
+          </a>
+        </li>
+        
+              
+        
+        <li class="nav-item">
+          <a class="nav-link menu-item " href="/addons">
+            
+            <span class="text-capitalize no-decoration text-white">Addons</span>
+          </a>
+        </li>
+        
+              
+        
+        <li class="nav-item">
+          <a class="nav-link menu-item " href="/download">
+            
+            <span class="text-capitalize no-decoration text-white">Download</span>
+          </a>
+        </li>
+        
+              
+        
+        <li class="nav-item">
+          <a class="nav-link menu-item " href="/blog">
+            
+            <span class="text-capitalize no-decoration text-white">Blog</span>
+          </a>
+        </li>
+        
+              
+        
+              
+        
+              
+        
+      
+    </ul>
+  </div>
+</nav>
+
+
+<div id="main-content" class="container p-a-0">
+    <div class="row m-l-0 m-r-0 mb-2">
+      <div class="col">
+        <h1>Logserver</h1>
+      </div>
+    </div>    
+    <div class="row m-l-0 m-r-0">
+      <div class="col-xs-12 col-lg-3">
+        <div class="list-group mr-3 mb-4">
+          <a href="http://yarraframework.com/logserver/" class="list-group-item list-group-item-action active">Overview</a>
+          
+          <a href="http://yarraframework.com/logserver/installation/" class="list-group-item list-group-item-action">&ndash;&nbsp; Installation</a>
+          
+          <a href="http://yarraframework.com/logserver/configuration/" class="list-group-item list-group-item-action">&ndash;&nbsp; Configuration</a>
+          
+          <a href="http://yarraframework.com/logserver/administration/" class="list-group-item list-group-item-action">&ndash;&nbsp; Administration</a>
+          
+          <a href="http://yarraframework.com/logserver/redash/" class="list-group-item list-group-item-action">&ndash;&nbsp; Data Visualization</a>
+          
+          <a href="http://yarraframework.com/logserver/queries/" class="list-group-item list-group-item-action">&ndash;&nbsp; Example Queries</a>
+          
+        </div>
+      </div>
+      <div class="col-xs-12 col-lg-9 post-container">
+        <div class="content pt-2">
+          
+
+<h3 id="hahahugoshortcode-0xc00099d400-1-hbhb">
+<i class="fas fa-angle-double-right" style="color: #580F8B; font-size: 24px;">&nbsp;</i>Overview
+
+</h3>
+
+<p>Yarra LogServer is a central monitoring hub for enterprise Yarra installations. It is typically installed on a separate intranet server (usually on a small VM server) and allows monitoring all activities of YarraServers as well as of the RDS and ORT clients running on the different MR scanners. This enables timely detection of problems (e.g., network connectivity problems) and generation of statistics on the processing performance (e.g., it allows measuring the total wait time from task submission to PACS transfer).</p>
+
+<p>Moreover, RDS clients can be configured to continuously send clinical workflow information from the scanners to Yarra LogServer, where the workflow information is concatenated into examinations and stored in an SQL database. The collected workflow data can be analyzed retrospectively to generate various statistics on the examination efficiency, to detect acquisition problems, or to answer specific research questions regarding the examination procedure. It also makes it very easy to monitor progress in research studies and allows identifying patient exams during which specific research sequences have been acquired.</p>
+
+<p>Collected data can be analyzed either using the provided Yarra LogViewer web application, using the Redash web application for rapid dashboard generation, or using other business-intelligence (BI) software tools.</p>
+
+<div style="margin-bottom: 40px; font-size: 0px;">&nbsp;</div>
+
+<h4 id="capabilities">Capabilities</h4>
+
+<ul>
+<li>Monitor Yarra clients and other Yarra components</li>
+<li>Catalogue scanners and monitor scanner health</li>
+<li>Log every sequence and adjustment scan acquired on RDS-enabled scanners</li>
+<li>Concatenate sequences into discrete exams (by patient name)</li>
+<li>Parse “Epic-formatted” patient names</li>
+<li>Tag exams with procedure information (e.g., body region or exam protocol)</li>
+<li>Combine collected data with additional data sources</li>
+</ul>
+
+<div style="margin-bottom: 40px; font-size: 0px;">&nbsp;</div>
+
+<h4 id="limitations">Limitations</h4>
+
+<ul>
+<li>Workflow information includes patient name, sequence name, begin / end time of sequences, and scan size</li>
+<li>Additinonal sequence parameters (e.g., TE, TR, BW, etc.) are currently not captured</li>
+<li>Procedure information captured by &ldquo;tagging&rdquo; exam with a dummy sequence (typically performed after scout)</li>
+<li>Only provides basic data analysis out-of-the-box (comprehensive analyses require <a href="/logserver/redash">Redash</a> or other BI software)</li>
+<li>LogServer works only for MR scanners with software  <span class="badge badge-info">VB17A</span> or newer</li>
+</ul>
+
+        </div>
+      </div>
+    </div>
+  </div> 
+      <footer style="margin-top: 100px;">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8">
+                <ul class="list-inline pull-left">
+                    
+                         
+                         
+                          <li><a class="page-scroll" href="/">Home</a></li>
+                          <li class="footer-menu-divider">&vert;</li> 
+                        
+                          <li><a class="page-scroll" href="/disclaimer/">Disclaimer</a></li>
+                          <li class="footer-menu-divider">&vert;</li> 
+                        
+                          <li><a class="page-scroll" href="/license/">License</a></li>
+                           
+                         
+                    
+                </ul>
+            </div>
+            <div class="col-md-4">
+            <div class="pull-right">
+            <a href="http://cai2r.net" target="_blank"><img class="cai2rlogo" src="/assets/img/cai2r.png" height="65"></a>
+            </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+    
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha256-xaF9RpdtRxzwYMWg4ldJoyPWqyDPCRD0Cv7YEEe6Ie8=" crossorigin="anonymous"></script>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/styles/default.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/highlight.min.js"></script>
+
+<script>
+hljs.configure({
+  languages: []
+})
+hljs.initHighlightingOnLoad();
+</script>
+
+<script src="/assets/js/script.js"></script>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+<script>
+  ((window.gitter = {}).chat = {}).options = {
+    room: 'yarra-dev/Support'
+  };
+</script>
+<script src="https://sidecar.gitter.im/dist/sidecar.v1.js" async defer></script>
+
+
+  </body>
+</html>
+

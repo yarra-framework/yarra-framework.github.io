@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Website on Yarra Framework</title>
+    <link>http://yarraframework.com/tags/website/</link>
+    <description>Recent content in Website on Yarra Framework</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 26 Mar 2019 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://yarraframework.com/tags/website/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>New Website for Yarra</title>
+      <link>http://yarraframework.com/blog/new-website/</link>
+      <pubDate>Tue, 26 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://yarraframework.com/blog/new-website/</guid>
+      <description>We finally managed to create a new website for the Yarra framework and hope to provide more up-to-date information on Yarra going forward. Currently, we are still in the process of migrating some remaining content from our old website, but this should be completed soon.
+For reference, the old website is still available under this link. Note, however, that the old website will not be updated anymore, so that the information provided there can be outdated.</description>
+    </item>
+    
+  </channel>
+</rss>

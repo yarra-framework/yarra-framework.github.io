@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html class="no-js">
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <title>Load Balancing  &middot; Yarra Framework</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+<meta name="description" content="" />
+
+<meta name="keywords" content="">
+
+<meta property="og:title" content="Load Balancing  &middot; Yarra Framework ">
+<meta property="og:site_name" content="Yarra Framework"/>
+<meta property="og:url" content="http://yarraframework.com/server/loadbalancing/" />
+<meta property="og:locale" content="en-us">
+
+
+<meta property="og:type" content="article" />
+<meta property="og:description" content=""/>
+<meta property="og:article:published_time" content="2018-06-15T00:00:00Z" />
+<meta property="og:article:modified_time" content="2018-06-15T00:00:00Z" />
+
+  
+
+<script type="application/ld+json">
+  {
+    "@context": "http://schema.org",
+    "@type": "Article",
+    "headline": "Load Balancing",
+    "author": {
+      "@type": "Person",
+      "name": "http://profiles.google.com/+?rel=author"
+    },
+    "datePublished": "2018-06-15",
+    "description": "",
+    "wordCount": 716
+  }
+</script>
+
+
+<link rel="canonical" href="http://yarraframework.com/server/loadbalancing/" />
+
+<meta name="generator" content="Hugo 0.54.0" />
+
+
+  <link rel="stylesheet" href="/assets/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+  <link rel="stylesheet" href="/assets/css/style.css">
+  <link rel="stylesheet" href="/assets/css/yarra.css">
+
+  
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-63470225-3"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-63470225-3');
+  </script>
+
+</head>
+<body>
+<nav class="navbar navbar-expand-lg fixed-top site-navbar navbar-inverse">
+  <a class="navbar-brand text-white" href="http://yarraframework.com/">Yarra Framework</a>
+  <button class="navbar-toggler text-white" 
+  type="button" data-toggle="collapse" data-target="#exCollapsingNavbar2" aria-controls="exCollapsingNavbar2"
+    aria-expanded="false" aria-label="Toggle navigation">
+    &#9776;
+  </button>
+  <div class="collapse navbar-collapse" id="exCollapsingNavbar2">
+    <ul class="nav navbar-nav ml-1 mr-auto">
+               
+        
+        <li class="nav-item">
+          <a class="nav-link menu-item " href="/overview">
+            
+            <span class="text-capitalize no-decoration text-white">Overview</span>
+          </a>
+        </li>
+        
+              
+        
+        <li class="nav-item">
+          <a class="nav-link menu-item " href="/clients">
+            
+            <span class="text-capitalize no-decoration text-white">Clients</span>
+          </a>
+        </li>
+        
+              
+        
+        <li class="nav-item">
+          <a class="nav-link menu-item active" href="/server">
+            
+            <span class="text-capitalize no-decoration text-white">Server</span>
+          </a>
+        </li>
+        
+              
+        
+        <li class="nav-item">
+          <a class="nav-link menu-item " href="/modules">
+            
+            <span class="text-capitalize no-decoration text-white">Modules</span>
+          </a>
+        </li>
+        
+              
+        
+        <li class="nav-item">
+          <a class="nav-link menu-item " href="/logserver">
+            
+            <span class="text-capitalize no-decoration text-white">LogServer</span>
+          </a>
+        </li>
+        
+              
+        
+        <li class="nav-item">
+          <a class="nav-link menu-item " href="/addons">
+            
+            <span class="text-capitalize no-decoration text-white">Addons</span>
+          </a>
+        </li>
+        
+              
+        
+        <li class="nav-item">
+          <a class="nav-link menu-item " href="/download">
+            
+            <span class="text-capitalize no-decoration text-white">Download</span>
+          </a>
+        </li>
+        
+              
+        
+        <li class="nav-item">
+          <a class="nav-link menu-item " href="/blog">
+            
+            <span class="text-capitalize no-decoration text-white">Blog</span>
+          </a>
+        </li>
+        
+              
+        
+              
+        
+              
+        
+      
+    </ul>
+  </div>
+</nav>
+
+
+<div class="container p-a-0">
+  <div class="row m-l-0 m-r-0 mb-2">
+    <div class="col">
+      <h1>Server&nbsp;-&nbsp;Load Balancing</h1>
+    </div>
+  </div>
+    <div class="row m-l-0 m-r-0">
+      <div class="col-xs-12 col-lg-3">
+      <div class="list-group mr-3 mb-4">
+        <a href="http://yarraframework.com/server/" class="list-group-item list-group-item-action">Overview</a>
+        
+        
+        
+        <a href="/server/installation/" class="list-group-item list-group-item-action ">&ndash;&nbsp; Installation</a>
+        
+        <a href="/server/configuration/" class="list-group-item list-group-item-action ">&ndash;&nbsp; Configuration</a>
+        
+        <a href="/server/webgui/" class="list-group-item list-group-item-action ">&ndash;&nbsp; WebGUI</a>
+        
+        <a href="/server/usage/" class="list-group-item list-group-item-action ">&ndash;&nbsp; Manual Control</a>
+        
+        <a href="/server/modes/" class="list-group-item list-group-item-action ">&ndash;&nbsp; Reconstruction Modes</a>
+        
+        <a href="/server/notifications/" class="list-group-item list-group-item-action ">&ndash;&nbsp; Notifications</a>
+        
+        <a href="/server/loadbalancing/" class="list-group-item list-group-item-action active">&ndash;&nbsp; Load Balancing</a>
+        
+      </div>
+    </div>
+    <div class="col-xs-12 col-lg-9 post-container">
+      <div class="content pt-2">
+  
+
+<h3 id="hahahugoshortcode-0xc0008aaf00-1-hbhb">
+<i class="fas fa-angle-double-right" style="color: #580F8B; font-size: 24px;">&nbsp;</i>Routing and Load Balancing
+
+</h3>
+
+<p>If multiple Yarra servers have been installed in a network, it is possible to route certain reconstruction tasks to dedicated servers as well as to distribute the task load across multiple servers.
+<div style="margin-bottom: 40px; font-size: 0px;">&nbsp;</div></p>
+
+<h3 id="hahahugoshortcode-0xc0008aaf00-3-hbhb">
+<i class="fas fa-angle-double-right" style="color: #580F8B; font-size: 24px;">&nbsp;</i>Server List File
+
+</h3>
+
+<p>To use multiple servers with the Yarra ORT client, it is necessary to create a server-list file named “YarraServerList.cfg” in the queue directory of the Yarra server that has been entered in the ORT configuration (preferably, the file should be placed in the queue directory of all Yarra servers and kept consistent). When opening the initial connection the the Yarra server, the ORT client will read the list of available Yarra servers and their properties from this file.</p>
+
+<p>The file can be created and edited with a text editor and should have the following structure:</p>
+
+<pre><code>['Server_ID']
+Type='Attribute1','Attribute2','...'
+ConnectCmd='net use cmd to map Server 1'
+AcceptsUndefined='true/false'
+Disabled='true/false'
+</code></pre>
+
+<p>‘Server_ID’ is a unique ID that identifies the server, which must not contain spaces. A separate configuration section must be added to the file for each server, starting with the server ID enclosed by []. The entry “Type” defines the server type and can take a single value or a comma-separated list of server attributes. The ORT client will send reconstruction tasks to servers whose Type value matches the server type requested by the reconstruction mode. The entry “ConnectCmd” specifies the connect command that should be executed in order to map the queue directory of this particular server (similar to what has been entered in the ORT configuration). The command should map the queue directory under the same path as specified in the ORT configuration. Please note that the backslash character has to be written as “\”. The entry “AcceptsUndefined” defines whether the server should receive reconstruction tasks without specified server type, or only tasks where a server type has been defined and the requested server type matches one of the attributes defined in “Type”. The entry “Disabled” can be used to temporarily disable servers from the task routing (e.g., if servers are down due to maintenance).</p>
+
+<p>In the following example, two servers have been defined in the file YarraServerList.cfg, named 64core and gpu1. 64core has the attribute “multicore”, and thus, will accept all tasks that request a server of type “multicore”. In addition, it will also accept all tasks where no specific server type has been requested, as “AcceptsUndefined” has been set to true. The other server gpu1 will only accept tasks that explicitly request either the server type “gpu” or “research”.</p>
+
+<pre><code>[64core]
+Type=multicore
+ConnectCmd=net use Y: \\\\192.168.56.101\\YarraServer yarra /USER:yarra /persistent:no
+AcceptsUndefined=true
+Disabled=false
+ 
+[gpu1]
+Type=gpu,research
+ConnectCmd=net use Y: \\\\192.168.56.102\\YarraServer yarra /USER:yarra /persistent:no
+AcceptsUndefined=no
+Disabled=false
+It is highly recommended to write-lock the file after editing has been completed.
+</code></pre>
+
+<div style="margin-bottom: 40px; font-size: 0px;">&nbsp;</div>
+
+<h3 id="hahahugoshortcode-0xc0008aaf00-5-hbhb">
+<i class="fas fa-angle-double-right" style="color: #580F8B; font-size: 24px;">&nbsp;</i>Assigning Reconstruction Modes to Servers
+
+</h3>
+
+<p>Reconstruction tasks can be assigned to Yarra servers in the configuration file queue/YarraModes.cfg, by adding the entry “RequiredServerType” to the section for the reconstruction mode. Alternatively, if the Yarra WebGUI is installed, the value can be instead added to the [ClientConfig] section of the .mode file (this is recommended).</p>
+
+<p>Example: By adding the following [ClientConfig] section to the .mode file (and updating the file queue/YarraModes.cfg through the Yarra WebGUI), reconstruction tasks with this mode will be sent to a server that lists the attribute “gpu” in the “Type” value.</p>
+
+<pre><code>[ClientConfig]
+SortIndex=10
+Name=GRASP Body Liver Kidney
+Tag=_YB
+RequiresACC=TRUE
+RequiresAdjScans=FALSE
+RequiredServerType=gpu
+ConfirmationMail=
+</code></pre>
+
+<div style="margin-bottom: 40px; font-size: 0px;">&nbsp;</div>
+
+<h3 id="hahahugoshortcode-0xc0008aaf00-7-hbhb">
+<i class="fas fa-angle-double-right" style="color: #580F8B; font-size: 24px;">&nbsp;</i>Load Balancing
+
+</h3>
+
+<p>If multiple servers of a type have been defined in the file queue/YarraServerList.cfg (or if multiple servers have been listed that accept tasks with undefined server type), the ORT client will cycle through the list of servers when selecting a server for a task. Using this simple “load-balancing” mechanism, the reconstruction tasks will be distributed across all available servers. Also, the mechanism provides inherent failover, as the client will contact servers in the list until a connection has been successfully established. Thus, if one of the servers goes down, the tasks will be seamlessly forwarded to the remaining servers.</p>
+
+<p>At this time, the mechanism does not account for the number of already scheduled reconstruction tasks when selecting a server. Thus, it cannot be excluded that a new task is sent to a server where several tasks are already waiting in the queue. A more sophisticated load-balancing mechanism will be implemented in the future.</p>
+
+</div>
+
+      
+    </div>
+  </div>
+</div>
+      <footer style="margin-top: 100px;">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8">
+                <ul class="list-inline pull-left">
+                    
+                         
+                         
+                          <li><a class="page-scroll" href="/">Home</a></li>
+                          <li class="footer-menu-divider">&vert;</li> 
+                        
+                          <li><a class="page-scroll" href="/disclaimer/">Disclaimer</a></li>
+                          <li class="footer-menu-divider">&vert;</li> 
+                        
+                          <li><a class="page-scroll" href="/license/">License</a></li>
+                           
+                         
+                    
+                </ul>
+            </div>
+            <div class="col-md-4">
+            <div class="pull-right">
+            <a href="http://cai2r.net" target="_blank"><img class="cai2rlogo" src="/assets/img/cai2r.png" height="65"></a>
+            </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+    
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha256-xaF9RpdtRxzwYMWg4ldJoyPWqyDPCRD0Cv7YEEe6Ie8=" crossorigin="anonymous"></script>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/styles/default.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/highlight.min.js"></script>
+
+<script>
+hljs.configure({
+  languages: []
+})
+hljs.initHighlightingOnLoad();
+</script>
+
+<script src="/assets/js/script.js"></script>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+<script>
+  ((window.gitter = {}).chat = {}).options = {
+    room: 'yarra-dev/Support'
+  };
+</script>
+<script src="https://sidecar.gitter.im/dist/sidecar.v1.js" async defer></script>
+
+
+  </body>
+</html>
+

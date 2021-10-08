@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Update on Yarra Framework</title>
+    <link>http://yarraframework.com/tags/update/</link>
+    <description>Recent content in Update on Yarra Framework</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 07 Nov 2019 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://yarraframework.com/tags/update/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Upgrade Your WebGUI</title>
+      <link>http://yarraframework.com/blog/upgrade_webgui/</link>
+      <pubDate>Thu, 07 Nov 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://yarraframework.com/blog/upgrade_webgui/</guid>
+      <description>If you are still running an older version of the Yarra WebGUI, please update it to the latest version (version 0.97). We are soon shutting-down our old internet domain yarra.rocks and by updating the WebGUI to the latest version, you will continue to receive the latest news and update information right into the WebGUI of your YarraServer. In addition, the latest version of the server package also provides the much-needed resume functionality for tasks that failed during post-processing or transfer steps (so that the reconstruction does not need to be performed again).</description>
+    </item>
+    
+  </channel>
+</rss>

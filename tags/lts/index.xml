@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Lts on Yarra Framework</title>
+    <link>http://yarraframework.com/tags/lts/</link>
+    <description>Recent content in Lts on Yarra Framework</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 03 May 2019 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://yarraframework.com/tags/lts/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>End of support for Ubuntu Version 12.04 and 14.04</title>
+      <link>http://yarraframework.com/blog/end-of-1204/</link>
+      <pubDate>Fri, 03 May 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://yarraframework.com/blog/end-of-1204/</guid>
+      <description>We decided to end the support We decided to end the support of the Ubuntu version 12.04 LTS and 14.04 LTS. These two versions have now reached the end-of-life date and will not receive security updates anymore. Moreover, there are library incompatibilities that would require us to provide separate binaries. The configuration steps have also changed due to Ubuntu&amp;rsquo;s migration from Upstart to systemd. Therefore, we decided to drop support for these outdated Ubuntu versions and we encourage all users to upgrade their servers to either Ubuntu 16.</description>
+    </item>
+    
+  </channel>
+</rss>

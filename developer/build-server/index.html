@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html class="no-js">
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <title>Building YarraServer  &middot; Yarra Framework</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+<meta name="description" content="" />
+
+<meta name="keywords" content="">
+
+<meta property="og:title" content="Building YarraServer  &middot; Yarra Framework ">
+<meta property="og:site_name" content="Yarra Framework"/>
+<meta property="og:url" content="http://yarraframework.com/developer/build-server/" />
+<meta property="og:locale" content="en-us">
+
+
+<meta property="og:type" content="article" />
+<meta property="og:description" content=""/>
+<meta property="og:article:published_time" content="2019-06-03T00:00:00Z" />
+<meta property="og:article:modified_time" content="2019-06-03T00:00:00Z" />
+
+  
+
+<script type="application/ld+json">
+  {
+    "@context": "http://schema.org",
+    "@type": "Article",
+    "headline": "Building YarraServer",
+    "author": {
+      "@type": "Person",
+      "name": "http://profiles.google.com/+?rel=author"
+    },
+    "datePublished": "2019-06-03",
+    "description": "",
+    "wordCount": 403
+  }
+</script>
+
+
+<link rel="canonical" href="http://yarraframework.com/developer/build-server/" />
+
+<meta name="generator" content="Hugo 0.54.0" />
+
+
+  <link rel="stylesheet" href="/assets/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+  <link rel="stylesheet" href="/assets/css/style.css">
+  <link rel="stylesheet" href="/assets/css/yarra.css">
+
+  
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-63470225-3"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-63470225-3');
+  </script>
+
+</head>
+<body>
+<nav class="navbar navbar-expand-lg fixed-top site-navbar navbar-inverse">
+  <a class="navbar-brand text-white" href="http://yarraframework.com/">Yarra Framework</a>
+  <button class="navbar-toggler text-white" 
+  type="button" data-toggle="collapse" data-target="#exCollapsingNavbar2" aria-controls="exCollapsingNavbar2"
+    aria-expanded="false" aria-label="Toggle navigation">
+    &#9776;
+  </button>
+  <div class="collapse navbar-collapse" id="exCollapsingNavbar2">
+    <ul class="nav navbar-nav ml-1 mr-auto">
+               
+        
+        <li class="nav-item">
+          <a class="nav-link menu-item " href="/overview">
+            
+            <span class="text-capitalize no-decoration text-white">Overview</span>
+          </a>
+        </li>
+        
+              
+        
+        <li class="nav-item">
+          <a class="nav-link menu-item " href="/clients">
+            
+            <span class="text-capitalize no-decoration text-white">Clients</span>
+          </a>
+        </li>
+        
+              
+        
+        <li class="nav-item">
+          <a class="nav-link menu-item " href="/server">
+            
+            <span class="text-capitalize no-decoration text-white">Server</span>
+          </a>
+        </li>
+        
+              
+        
+        <li class="nav-item">
+          <a class="nav-link menu-item " href="/modules">
+            
+            <span class="text-capitalize no-decoration text-white">Modules</span>
+          </a>
+        </li>
+        
+              
+        
+        <li class="nav-item">
+          <a class="nav-link menu-item " href="/logserver">
+            
+            <span class="text-capitalize no-decoration text-white">LogServer</span>
+          </a>
+        </li>
+        
+              
+        
+        <li class="nav-item">
+          <a class="nav-link menu-item " href="/addons">
+            
+            <span class="text-capitalize no-decoration text-white">Addons</span>
+          </a>
+        </li>
+        
+              
+        
+        <li class="nav-item">
+          <a class="nav-link menu-item " href="/download">
+            
+            <span class="text-capitalize no-decoration text-white">Download</span>
+          </a>
+        </li>
+        
+              
+        
+        <li class="nav-item">
+          <a class="nav-link menu-item " href="/blog">
+            
+            <span class="text-capitalize no-decoration text-white">Blog</span>
+          </a>
+        </li>
+        
+              
+        
+              
+        
+              
+        
+      
+    </ul>
+  </div>
+</nav>
+
+
+<div class="container p-a-0">
+  <div class="row m-l-0 m-r-0 mb-2">
+    <div class="col">
+      <h1>Developer&nbsp;-&nbsp;Building YarraServer</h1>
+    </div>
+  </div>
+    <div class="row m-l-0 m-r-0">
+      <div class="col-xs-12 col-lg-3">
+      <div class="list-group mr-3 mb-4">
+        <a href="http://yarraframework.com/developer/" class="list-group-item list-group-item-action">Overview</a>
+        
+        
+        
+        <a href="/developer/build-server/" class="list-group-item list-group-item-action active">&ndash;&nbsp; Building YarraServer</a>
+        
+        <a href="/developer/build-client/" class="list-group-item list-group-item-action ">&ndash;&nbsp; Building Clients</a>
+        
+        <a href="/developer/idea/" class="list-group-item list-group-item-action ">&ndash;&nbsp; IDEA Hints</a>
+        
+      </div>
+    </div>
+    <div class="col-xs-12 col-lg-9 post-container">
+      <div class="content pt-2">
+  
+
+<h3 id="hahahugoshortcode-0xc000964500-1-hbhb">
+<i class="fas fa-angle-double-right" style="color: #580F8B; font-size: 24px;">&nbsp;</i>Build-Instructions for YarraServer
+
+</h3>
+
+<div style="margin-bottom: 10px; font-size: 0px;">&nbsp;</div>
+
+<h4 id="setting-up-the-build-environment">Setting up the Build Environment</h4>
+
+<div style="margin-bottom: 5px; font-size: 0px;">&nbsp;</div>
+
+<ul>
+<li>Download <a href="http://ftp.uni-kl.de/pub/linux/ubuntu-dvd/xubuntu/releases/16.04.6/release/" target="_blank">Xubuntu 16.04.06 LTS Desktop Edition</a> and install (preferably in VM). The Desktop Edition is preferred because the Qt installation requires X11. When using <a href="https://www.virtualbox.org/" target="_blank">VirtualBox</a>, install the VirtualBox Guest Additions CD.</li>
+<li>Update the apt-get chache: <br></li>
+</ul>
+
+<pre><code>sudo apt-get update
+</code></pre>
+
+<ul>
+<li>Install build system, required tools, and required libraries: <br></li>
+</ul>
+
+<pre><code>sudo apt install build-essential mercurial tortoisehg git cmake
+sudo apt install libboost-all-dev libssl-dev libpq-dev libssl-dev libfcgi-dev
+</code></pre>
+
+<div style="margin-bottom: 40px; font-size: 0px;">&nbsp;</div>
+
+<h4 id="installing-qt-and-qt-creator">Installing Qt and Qt Creator</h4>
+
+<div style="margin-bottom: 5px; font-size: 0px;">&nbsp;</div>
+
+<ul>
+<li>Download the Qt offline installer and run the setup. Version 5.5.1 libraries come with Ubuntu 16.04, so we are using this version for the build. Start the installer and use all default options. <br></li>
+</ul>
+
+<pre><code>wget http://download.qt.io/archive/qt/5.5/5.5.1/qt-opensource-linux-x64-5.5.1.run
+chmod 700 qt-opensource-linux-x64-5.5.1.run
+./qt-opensource-linux-x64-5.5.1.run
+</code></pre>
+
+<div style="margin-bottom: 40px; font-size: 0px;">&nbsp;</div>
+
+<h4 id="building-the-wt-library">Building the Wt Library</h4>
+
+<div style="margin-bottom: 5px; font-size: 0px;">&nbsp;</div>
+
+<ul>
+<li>Download the Wt Library Code v 3.3.12 (release 2018-12-14) and untar:</li>
+</ul>
+
+<pre><code>mkdir wt
+cd wt
+wget https://github.com/emweb/wt/archive/3.3.12.tar.gz
+tar xvxf 3.3.12.tar.gz
+cd wt-3.3.12
+mkdir build
+cd build
+cmake .. -DSHARED_LIBS=OFF
+make
+sudo make install
+</code></pre>
+
+
+<div class="bs-callout bs-callout-primary"  >
+    
+<p>If using a multi-core machine, the compilation can be accelerated via multithreaded compilation: make -j8</p>
+</div>
+
+
+
+<ul>
+<li>Install additional libraries for linking the WebGUI binary:</li>
+</ul>
+
+<pre><code>sudo apt install libglib2.0-dev libxml2-dev libjpeg-dev libx11-dev libxext-dev
+sudo apt install libgl1-mesa-dev libfreetype6-dev libgraphicsmagick-dev libomp-dev
+</code></pre>
+
+<div style="margin-bottom: 40px; font-size: 0px;">&nbsp;</div>
+
+<h4 id="code-checkout-and-building-yarraserver">Code Checkout and Building YarraServer</h4>
+
+<div style="margin-bottom: 5px; font-size: 0px;">&nbsp;</div>
+
+<ul>
+<li>Create folder for the individual Yarra components <br></li>
+</ul>
+
+<pre><code>mkdir NMRProjects
+cd NMRProjects
+</code></pre>
+
+<ul>
+<li>Now clone the Yarra source code repositories</li>
+</ul>
+
+<pre><code>hg clone https://tblock@bitbucket.org/yarra-dev/yarraserver
+hg clone https://tblock@bitbucket.org/yarra-dev/yarrawebgui
+git clone https://tblock@bitbucket.org/yarra-dev/yarrasupport-ziplib.git ~/NMRProjects/yarrawebgui/ziplib
+</code></pre>
+
+<ul>
+<li>Open the Server.pro project in QtCreater and build release version</li>
+<li>Open ServerCtrl.pro and build release version</li>
+<li>Open yarrawebgui.pro and build release version</li>
+<li>Open yarradexec.pro and build release version</li>
+</ul>
+
+<div style="margin-bottom: 40px; font-size: 0px;">&nbsp;</div>
+
+<h4 id="building-the-setdcmtags-module">Building the SetDCMTags Module</h4>
+
+<div style="margin-bottom: 5px; font-size: 0px;">&nbsp;</div>
+
+<ul>
+<li>Download the DCMTK source code and compile</li>
+</ul>
+
+<pre><code>sudo apt-get install libarmadillo-dev libblas-dev
+cd ~
+mkdir dcmtk
+cd dcmtk
+wget https://dicom.offis.de/download/dcmtk/dcmtk364/dcmtk-3.6.4.tar.gz
+tar xvxf dcmtk-3.6.4.tar.gz
+cd dcmtk-3.6.4
+mkdir build; cd build
+cmake -D DCMTK_ENABLE_BUILTIN_DICTIONARY=ON -D DCMTK_ENABLE_PRIVATE_TAGS=ON ..
+make -j8
+sudo make install
+</code></pre>
+
+<ul>
+<li>Checkout code from Bitbucket</li>
+</ul>
+
+<pre><code>cd ~/NMRProjects
+hg clone https://tblock@bitbucket.org/yarra-dev/yarramodules-setdcmtags
+</code></pre>
+
+<ul>
+<li>The current version of the module requires that certain private Siemens DICOM tags are added to the DICOM Tag Dictionary on the server. Therefore, the file dicom.dic needs to be edited:</li>
+</ul>
+
+<pre><code>cd /usr/local/share/dcmtk/
+sudo nano dicom.dic
+</code></pre>
+
+<p>and the following 4 lines need to be inserted:</p>
+
+<pre><code>(0019,1008) LO  Private 1   DICOM
+(0029,1008) LO  Private 1   DICOM
+(0029,1018) LO  Private 1   DICOM
+(0051,1008) CS  Private 1   DICOM
+</code></pre>
+
+<ul>
+<li>Open project SetDCMTags.pro in QtCreator and build the release version</li>
+</ul>
+
+<div style="margin-bottom: 40px; font-size: 0px;">&nbsp;</div>
+
+<h4 id="packaging">Packaging</h4>
+
+<div style="margin-bottom: 5px; font-size: 0px;">&nbsp;</div>
+
+<div class="bs-callout bs-callout-info">
+<h4><span class="fas fa-tools"></span>&nbsp;Under Construction</h4>
+<p>Sorry, this section is still missing. Please check again soon.</p>
+</div>
+
+
+</div>
+
+      
+    </div>
+  </div>
+</div>
+      <footer style="margin-top: 100px;">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8">
+                <ul class="list-inline pull-left">
+                    
+                         
+                         
+                          <li><a class="page-scroll" href="/">Home</a></li>
+                          <li class="footer-menu-divider">&vert;</li> 
+                        
+                          <li><a class="page-scroll" href="/disclaimer/">Disclaimer</a></li>
+                          <li class="footer-menu-divider">&vert;</li> 
+                        
+                          <li><a class="page-scroll" href="/license/">License</a></li>
+                           
+                         
+                    
+                </ul>
+            </div>
+            <div class="col-md-4">
+            <div class="pull-right">
+            <a href="http://cai2r.net" target="_blank"><img class="cai2rlogo" src="/assets/img/cai2r.png" height="65"></a>
+            </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+    
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha256-xaF9RpdtRxzwYMWg4ldJoyPWqyDPCRD0Cv7YEEe6Ie8=" crossorigin="anonymous"></script>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/styles/default.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/highlight.min.js"></script>
+
+<script>
+hljs.configure({
+  languages: []
+})
+hljs.initHighlightingOnLoad();
+</script>
+
+<script src="/assets/js/script.js"></script>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+<script>
+  ((window.gitter = {}).chat = {}).options = {
+    room: 'yarra-dev/Support'
+  };
+</script>
+<script src="https://sidecar.gitter.im/dist/sidecar.v1.js" async defer></script>
+
+
+  </body>
+</html>
+

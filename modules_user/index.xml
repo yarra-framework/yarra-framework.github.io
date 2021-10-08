@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Modules_users on Yarra Framework</title>
+    <link>http://yarraframework.com/modules_user/</link>
+    <description>Recent content in Modules_users on Yarra Framework</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 15 Jul 2019 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://yarraframework.com/modules_user/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Basic GRASP (Matlab)</title>
+      <link>http://yarraframework.com/modules_user/grasp-basic/</link>
+      <pubDate>Mon, 15 Jul 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://yarraframework.com/modules_user/grasp-basic/</guid>
+      <description>Purpose This module provides a stable Matlab implementation of the GRASP DCE-MRI reconstruction technique. It requires Matlab R2016a or newer. If the Parallel Computing Toolbox has been installed, the reconstruction will be parallelized across slices depending on the available CPU cores. By default, all available cores will be used for the calculation.
+When using the module, please cite the following publication:
+Feng L, Grimm R, Block KT, Chandarana H, Kim S, Xu J, Axel L, Sodickson DK, Otazo R.</description>
+    </item>
+    
+    <item>
+      <title>Performance-optimized GRASP (C&#43;&#43;)</title>
+      <link>http://yarraframework.com/modules_user/grasp/</link>
+      <pubDate>Fri, 15 Jun 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://yarraframework.com/modules_user/grasp/</guid>
+      <description>Purpose Performs a Compressed-Sensing-based 4D DCE-MRI reconstruction using the GRASP reconstruction technique. This module has been implemented in C++ and uses OpenMP parallelization to achieve high reconstruction speed.
+Note: This module can only be downloaded after a C2P contract with Siemens has been signed. Please contact your local Siemens collaboration manager. Alternatively, the Matlab-based version of GRASP can be used.
+Usage GraspR [input Twix file] [ini file] [output folder] [tmp folder] [acc #]  Typical call:</description>
+    </item>
+    
+    <item>
+      <title>PatchCharacterSet</title>
+      <link>http://yarraframework.com/modules_user/patchcharacterset/</link>
+      <pubDate>Fri, 15 Jun 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://yarraframework.com/modules_user/patchcharacterset/</guid>
+      <description>Purpose Patches the character set of the reconstructed DICOMs and encodes the patient name in the local patient name. Necessary when using the GRASP module with certain PACS systems.
+Usage PatchPatientName [input folder] [output folder] [TWIX file]  Typical call:
+[PostProcessing] Bin1=%bu/PatchCharacterSet/PatchPatientName.sh Args1=%pid %pod %rid/%rif  Configuration The character set can be changed directly in the script PatchPatientName.sh.</description>
+    </item>
+    
+    <item>
+      <title>Subtraction</title>
+      <link>http://yarraframework.com/modules_user/subtraction/</link>
+      <pubDate>Fri, 15 Jun 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://yarraframework.com/modules_user/subtraction/</guid>
+      <description>Purpose Calculates subtraction images from reconstructed image series.
+Usage Subtraction [input folder] [output folder] [mode file]  Typical call:
+[PostProcessing] Bin=%bu/Subtraction/Subtraction Args=%pid %pod %mc  Configuration In .mode file:
+[Subtraction] BaselineSeries=2 KeepSourceImages=true SubtractionMode=0 IncludeSeries=3:end#4 ExcludeSeries=  Keep source images If KeepSourceImages=false, then only the subtraction images will be sent. If KeepSourceImages=true, both the original images and subtraction images will be sent.
+Subtraction mode If SubtractionMode=0, then negative values will be discarded.</description>
+    </item>
+    
+  </channel>
+</rss>

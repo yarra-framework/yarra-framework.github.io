@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Ismrm on Yarra Framework</title>
+    <link>http://yarraframework.com/tags/ismrm/</link>
+    <description>Recent content in Ismrm on Yarra Framework</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 10 May 2019 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://yarraframework.com/tags/ismrm/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Workshop at ISMRM 2019</title>
+      <link>http://yarraframework.com/blog/ismrm2019/</link>
+      <pubDate>Fri, 10 May 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://yarraframework.com/blog/ismrm2019/</guid>
+      <description>We will present Yarra in the Weekend Educational Session on Open-Source Software Tools that will take place at the ISMRM 2019 Meeting in Montreal. Roy Wiggins will give an overview talk at 11:00am and give a practical demonstration on how reconstruction algorithms can be integrated into Yarra at 1:30pm, 2:20pm, and 3:10pm.
+You can find the training material also in the Resources section.
+&amp;nbsp;ISMRM Educational Session on Open-Source Software Tools</description>
+    </item>
+    
+  </channel>
+</rss>

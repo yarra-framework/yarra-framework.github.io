@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Modules_cores on Yarra Framework</title>
+    <link>http://yarraframework.com/modules_core/</link>
+    <description>Recent content in Modules_cores on Yarra Framework</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 15 Jun 2018 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://yarraframework.com/modules_core/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>DriveTransfer</title>
+      <link>http://yarraframework.com/modules_core/drivetransfer/</link>
+      <pubDate>Fri, 15 Jun 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://yarraframework.com/modules_core/drivetransfer/</guid>
+      <description> Purpose Transfers reconstructed DICOM images onto a network share (or mounted disk drive).
+Usage DriveTransfer [mode file] [directory with DICOMs] [unique task name]  Typical call:
+[Transfer] Bin=%bd/DriveTransfer Args=%mc %td %vuid  Configuration In .mode file:
+[DriveTransfer] TargetPath=#Path to target location, e.g. /media/yarra_out  </description>
+    </item>
+    
+    <item>
+      <title>IniPatch</title>
+      <link>http://yarraframework.com/modules_core/inipatch/</link>
+      <pubDate>Fri, 15 Jun 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://yarraframework.com/modules_core/inipatch/</guid>
+      <description>Purpose Creates a “patched” copy of a source ini file in the work directory with the given name. All keys specified in the mode file will be replaced by the param value passed as 4th argument, or by statically defined values written into the mode file.
+Usage IniPatch [mode file] [source ini file] [target (in work dir)] [param value]  Typical call:
+[PreProcessing] Bin=%bd/IniPatch Args=%mc %md/template.ini %rid/settings.ini %vparam  Configuration In .</description>
+    </item>
+    
+    <item>
+      <title>SetDCMTags</title>
+      <link>http://yarraframework.com/modules_core/setdcmtags/</link>
+      <pubDate>Fri, 15 Jun 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://yarraframework.com/modules_core/setdcmtags/</guid>
+      <description>Purpose Populates the DICOM tags of reconstructed images based on patient and scan information read from the Twix file. It also combines DICOM files into series based on the file name and sets the needed DICOM UUIDs.
+Usage SetDCMTags [options] input output rawfile  Parameters:
+ input -- Folder with DICOM files to process output -- Folder where modified DICOM files will be written rawfile -- Path and name of raw-data file  Options:</description>
+    </item>
+    
+    <item>
+      <title>PACSTransfer</title>
+      <link>http://yarraframework.com/modules_core/pacstransfer/</link>
+      <pubDate>Fri, 15 Jun 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://yarraframework.com/modules_core/pacstransfer/</guid>
+      <description>Purpose Sends all reconstructed DICOM images to one or multiple DICOM nodes (PACS or DICOM workstation). Requires installation of the OFFIS dcmtk package on the server.
+Usage PACSTransfer [mode file] [directory with DICOMs]  Typical call:
+[Transfer] Bin=%bd/PACSTransfer Args=%mc %td  Configuration In .mode file:
+[PACSTransfer] AEC=#AEC of PACS IP=#IP of PACS, e.g. 10.142.23.54 Port=#Port of PACS, e.g. 104 AET=#AET to be used, e.g. YARRA  If the images should be sent to multiple DICOM nodes (up to 20), add to .</description>
+    </item>
+    
+  </channel>
+</rss>

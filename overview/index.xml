@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Overview on Yarra Framework</title>
+    <link>http://yarraframework.com/overview/</link>
+    <description>Recent content in Overview on Yarra Framework</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 15 Jun 2018 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://yarraframework.com/overview/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Team</title>
+      <link>http://yarraframework.com/overview/team/</link>
+      <pubDate>Fri, 15 Jun 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://yarraframework.com/overview/team/</guid>
+      <description>&amp;nbsp;Yarra Development Team Yarra has been developed by members of the Center for Advanced Imaging Innovation and Research (CAI2R) at New York University Langone Health.
+&amp;nbsp;   Kai Tobias Block Tobias has been developing Yarra since 2012 after leaving his former position at Siemens Healthcare MR. He is an Associate Professor at NYU Langone Health.   &amp;nbsp;   Roy Wiggins Roy started working on Yarra in 2016 when he joined NYU Langone Health as Research Software Engineer.</description>
+    </item>
+    
+    <item>
+      <title>Support</title>
+      <link>http://yarraframework.com/overview/support/</link>
+      <pubDate>Fri, 15 Jun 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://yarraframework.com/overview/support/</guid>
+      <description>&amp;nbsp;User Support We are trying our best to support users of the Yarra Framework, but unfortunately our time is limited since we are a very small group. Please use our Gitter channel to send us your questions and requests. This is the most effective way for getting in touch with us and ensures that everyone from the Yarra team can answer your post. We also would like to encourage other members from the community to support users with questions on Yarra through the channel.</description>
+    </item>
+    
+    <item>
+      <title>FAQ</title>
+      <link>http://yarraframework.com/overview/faq/</link>
+      <pubDate>Fri, 15 Jun 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://yarraframework.com/overview/faq/</guid>
+      <description>&amp;nbsp;Frequently Asked Questions &amp;nbsp; General &amp;nbsp; If I only want to collect raw-data from clinical scans, do I need to install a Linux server?No. If you only want to collect raw-data without automatic offline reconstruction, then you can simply use the Yarra RDS client on your MR systems without need to install a Linux server. The data can be stored on any network share or USB drive. Are you planning to support other MRI vendors besides Siemens?</description>
+    </item>
+    
+    <item>
+      <title>YarraCloud</title>
+      <link>http://yarraframework.com/overview/yarracloud/</link>
+      <pubDate>Fri, 15 Jun 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://yarraframework.com/overview/yarracloud/</guid>
+      <description>&amp;nbsp;Cloud-Driven Reconstruction Service YarraCloud is a cloud-based service that allows performing offline reconstructions without the need to install local Yarra servers. YarraCloud has been built on a containerized version of the YarraServer binary and integrates seamlessly into the Yarra ORT and SAC clients. It enables centers that don&amp;rsquo;t have the funds available for purchasing an on-premise server or that don&amp;rsquo;t have the technical expertize to operate a Linux server to perform offline-reconstructions through a pay-per-use model.</description>
+    </item>
+    
+  </channel>
+</rss>

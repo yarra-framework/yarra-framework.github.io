@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Developer Resources on Yarra Framework</title>
+    <link>http://yarraframework.com/developer/</link>
+    <description>Recent content in Developer Resources on Yarra Framework</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 03 Jun 2019 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://yarraframework.com/developer/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Building YarraServer</title>
+      <link>http://yarraframework.com/developer/build-server/</link>
+      <pubDate>Mon, 03 Jun 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://yarraframework.com/developer/build-server/</guid>
+      <description>&amp;nbsp;Build-Instructions for YarraServer &amp;nbsp; Setting up the Build Environment &amp;nbsp;  Download Xubuntu 16.04.06 LTS Desktop Edition and install (preferably in VM). The Desktop Edition is preferred because the Qt installation requires X11. When using VirtualBox, install the VirtualBox Guest Additions CD. Update the apt-get chache:   sudo apt-get update   Install build system, required tools, and required libraries:   sudo apt install build-essential mercurial tortoisehg git cmake sudo apt install libboost-all-dev libssl-dev libpq-dev libssl-dev libfcgi-dev  &amp;nbsp; Installing Qt and Qt Creator &amp;nbsp;  Download the Qt offline installer and run the setup.</description>
+    </item>
+    
+    <item>
+      <title>Building Clients</title>
+      <link>http://yarraframework.com/developer/build-client/</link>
+      <pubDate>Mon, 03 Jun 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://yarraframework.com/developer/build-client/</guid>
+      <description> &amp;nbsp;Build-Instructions for Yarra Clients &amp;nbsp;Under ConstructionSorry, this section is still missing. Please check again soon.
+</description>
+    </item>
+    
+    <item>
+      <title>IDEA Hints</title>
+      <link>http://yarraframework.com/developer/idea/</link>
+      <pubDate>Mon, 03 Jun 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://yarraframework.com/developer/idea/</guid>
+      <description>&amp;nbsp;IDEA Developer Notes &amp;nbsp; Installing VE11D  Make sure to update MARS to the version supplied with VE11D. Otherwise, the linker will have unresolved functions. The regtarg tool seems broken. Targets have to be manually added to the Windows and Linux target lists in (C:\MIDEA\N4_VE11D_LATEST_20180608\MedMake\cfg\n4 and \n4linux).  When running the MARS VM as &amp;ldquo;external VM&amp;rdquo; (i.e. managed manually via a separate VirtualBox installation):
+ Recreate the VM from scratch and import the 2 VDI disks (don&amp;rsquo;t just use the existing vbox files - will result in kernal panic and and endless boot loop).</description>
+    </item>
+    
+  </channel>
+</rss>

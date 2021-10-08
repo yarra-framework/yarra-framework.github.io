@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Yct on Yarra Framework</title>
+    <link>http://yarraframework.com/tags/yct/</link>
+    <description>Recent content in Yct on Yarra Framework</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 13 Aug 2021 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://yarraframework.com/tags/yct/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Client Tools 0.4</title>
+      <link>http://yarraframework.com/blog/clienttools_v4/</link>
+      <pubDate>Fri, 13 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>http://yarraframework.com/blog/clienttools_v4/</guid>
+      <description>A new version of the Yarra Client Tools (YCT) has been released (version 0.4). Please replace old versions of the Yarra Client Tools with this latest release, as it contains improvements of the anonymization tool.
+The version is now available in the Download section.</description>
+    </item>
+    
+    <item>
+      <title>Client Tools 0.3</title>
+      <link>http://yarraframework.com/blog/clienttools_v3/</link>
+      <pubDate>Thu, 22 Jul 2021 00:00:00 +0000</pubDate>
+      
+      <guid>http://yarraframework.com/blog/clienttools_v3/</guid>
+      <description>A new version of the Yarra Client Tools (YCT) has been released (version 0.3). Please replace old versions of the Yarra Client Tools with this latest release, as it contains improvements of the anonymization tool.
+The version is now available in the Download section.</description>
+    </item>
+    
+  </channel>
+</rss>
