@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Dicom on Yarra Framework</title>
-    <link>http://yarraframework.com/tags/dicom/</link>
+    <link>http://yarra-framework.org/tags/dicom/</link>
     <description>Recent content in Dicom on Yarra Framework</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 02 Sep 2019 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="http://yarraframework.com/tags/dicom/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://yarra-framework.org/tags/dicom/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Hermes DICOM Router</title>
-      <link>http://yarraframework.com/blog/hermes/</link>
+      <link>http://yarra-framework.org/blog/hermes/</link>
       <pubDate>Mon, 02 Sep 2019 00:00:00 +0000</pubDate>
       
-      <guid>http://yarraframework.com/blog/hermes/</guid>
+      <guid>http://yarra-framework.org/blog/hermes/</guid>
       <description>Looking for a flexible and powerful DICOM Router to integrate your image-analysis prototypes or AI solutions into your clinical workflow? Check out Yarra&amp;rsquo;s sister open-source project &amp;ldquo;Hermes Router&amp;rdquo;, which is now publicly available:
 http://hermes-router.github.io</description>
     </item>

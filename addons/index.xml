@@ -2,49 +2,49 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Addons on Yarra Framework</title>
-    <link>http://yarraframework.com/addons/</link>
+    <link>http://yarra-framework.org/addons/</link>
     <description>Recent content in Addons on Yarra Framework</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 15 Jun 2018 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="http://yarraframework.com/addons/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://yarra-framework.org/addons/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Client Tools</title>
-      <link>http://yarraframework.com/addons/clienttools/</link>
+      <link>http://yarra-framework.org/addons/clienttools/</link>
       <pubDate>Wed, 03 Jul 2019 00:00:00 +0000</pubDate>
       
-      <guid>http://yarraframework.com/addons/clienttools/</guid>
+      <guid>http://yarra-framework.org/addons/clienttools/</guid>
       <description>&amp;nbsp;Introduction The Yarra Client Tools (YCT) are several small command-line tools for Windows that can be helpful when working with Siemens raw-data files (aka Twix files). They are distributed in a separate package because they are targeted at advanced users. It is recommended to extract the package into the installation folder of the Yarra Client package because the tools require runtime libraries that are contained in the Yarra Client package.</description>
     </item>
     
     <item>
       <title>Archive Search</title>
-      <link>http://yarraframework.com/addons/yas/</link>
+      <link>http://yarra-framework.org/addons/yas/</link>
       <pubDate>Fri, 15 Jun 2018 00:00:00 +0000</pubDate>
       
-      <guid>http://yarraframework.com/addons/yas/</guid>
+      <guid>http://yarra-framework.org/addons/yas/</guid>
       <description>&amp;nbsp;Introduction When collecting raw-data files from a large number of patients (e.g., through Yarra offline reconstructions or using the Yarra RDS client), it can quickly become difficult to find the data file from a certain patient or exam (as needed for performing retrospective studies). This problem is solved by Yarra Archive Search (YAS), which can be used as add-on for a YarraServer installation or completely independently from other Yarra components.</description>
     </item>
     
     <item>
       <title>File Mover</title>
-      <link>http://yarraframework.com/addons/filemover/</link>
+      <link>http://yarra-framework.org/addons/filemover/</link>
       <pubDate>Fri, 15 Jun 2018 00:00:00 +0000</pubDate>
       
-      <guid>http://yarraframework.com/addons/filemover/</guid>
+      <guid>http://yarra-framework.org/addons/filemover/</guid>
       <description>&amp;nbsp;Introduction Yarra FileMover is a small helper tool that moves files regularly from a source location to an archive destination. If the file transfer fails, it sends out email notifications to specified recipients.
 We are using it to move processed raw-data files from our YarraServers to a central archive location on a network share. Because the network transfer takes time, we decided to decouple the file transfer from the YarraServer process, so that the server process doesn&amp;rsquo;t get blocked due to the transfer operation.</description>
     </item>
     
     <item>
       <title>YarraLink</title>
-      <link>http://yarraframework.com/addons/yarralink/</link>
+      <link>http://yarra-framework.org/addons/yarralink/</link>
       <pubDate>Fri, 15 Jun 2018 00:00:00 +0000</pubDate>
       
-      <guid>http://yarraframework.com/addons/yarralink/</guid>
+      <guid>http://yarra-framework.org/addons/yarralink/</guid>
       <description>&amp;nbsp;Introduction Installing or copying executables on the host computer of Siemens MR systems is officially not permitted by Siemens Healthcare. Therefore, installing the Yarra Client Package on the host computer of a Siemens MR system is at the user’s own risk.
 As a “legally safe” alternative, it is possible to use the YarraLink sequence, which is a pseudo-sequence written in the Siemens IDEA framework that, instead of performing an MRI scan, opens the Yarra ORT client.</description>
     </item>

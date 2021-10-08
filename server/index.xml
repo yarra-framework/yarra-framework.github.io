@@ -2,49 +2,49 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Server on Yarra Framework</title>
-    <link>http://yarraframework.com/server/</link>
+    <link>http://yarra-framework.org/server/</link>
     <description>Recent content in Server on Yarra Framework</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 15 Jun 2018 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="http://yarraframework.com/server/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://yarra-framework.org/server/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Installation</title>
-      <link>http://yarraframework.com/server/installation/</link>
+      <link>http://yarra-framework.org/server/installation/</link>
       <pubDate>Fri, 15 Jun 2018 00:00:00 +0000</pubDate>
       
-      <guid>http://yarraframework.com/server/installation/</guid>
+      <guid>http://yarra-framework.org/server/installation/</guid>
       <description>&amp;nbsp;Operating System The currently supported operating systems for YarraServer are Ubuntu 16.04 LTS 64bit and Ubuntu 18.04 LTS 64bit, which can be downloaded here (using older Ubuntu versions is not recommended). It is possible to use both, the Server Edition as well as the Desktop Edition. It might be easier for users less familiar with Linux to use the Desktop edition because it comes with many helpful tools such as graphical editors.</description>
     </item>
     
     <item>
       <title>Configuration</title>
-      <link>http://yarraframework.com/server/configuration/</link>
+      <link>http://yarra-framework.org/server/configuration/</link>
       <pubDate>Fri, 15 Jun 2018 00:00:00 +0000</pubDate>
       
-      <guid>http://yarraframework.com/server/configuration/</guid>
+      <guid>http://yarra-framework.org/server/configuration/</guid>
       <description>&amp;nbsp;Directory Structure After the initial installation, the YarraServer folder has the following directory structure:
    Path Purpose     fail/ Target folder for failed reconstruction tasks   finished/ Target folder for completed tasks (if data should be kept)   install/ Folder with supplementary files for the installation   log/ Folder for log files   modes/ Folder with definitions of reconstruction modes   modules/ Folder with binaries of core processing modules (shipped with Yarra)   modules_user/ Folder with binaries of custom-developed modules   queue/ Queue directory with incoming reconstruction tasks   webgui/ Folder for the web-based user interface   work/ Working directory for temporary files during processing     By default, these folders are local subfolders in the ~/yarra installation directory.</description>
     </item>
     
     <item>
       <title>WebGUI</title>
-      <link>http://yarraframework.com/server/webgui/</link>
+      <link>http://yarra-framework.org/server/webgui/</link>
       <pubDate>Fri, 15 Jun 2018 00:00:00 +0000</pubDate>
       
-      <guid>http://yarraframework.com/server/webgui/</guid>
+      <guid>http://yarra-framework.org/server/webgui/</guid>
       <description>&amp;nbsp;Introduction Yarra provides a convenient web-based user interface for YarraServer (WebGUI), which can be used to monitor, control, and configure the server. The WebGUI is accessible from every web browser, including smartphones, by using the server address as URL with extension :8080, e.g. 192.168.56.101:8080. The port can also be changed to a different number. The WebGUI offers a user authentication system with different access levels, ranging from view-only monitoring of the reconstruction queue to full configuration rights for the YarraServer.</description>
     </item>
     
     <item>
       <title>Manual Control</title>
-      <link>http://yarraframework.com/server/usage/</link>
+      <link>http://yarra-framework.org/server/usage/</link>
       <pubDate>Fri, 15 Jun 2018 00:00:00 +0000</pubDate>
       
-      <guid>http://yarraframework.com/server/usage/</guid>
+      <guid>http://yarra-framework.org/server/usage/</guid>
       <description>&amp;nbsp;Starting and Stopping the Server &amp;nbsp; In most use cases, the YarraServer process is controlled via the WebGUI. However, it is also possible to control the server using command-line tools. &amp;nbsp;
 If Running as Linux Daemon When the YarraServer has been installed as daemon (recommended and described here), the YarraServer can be started using a terminal shell (as user yarraserver) and typing:
 sudo systemctl start yarra  The server is now running in the background.</description>
@@ -52,29 +52,29 @@ sudo systemctl start yarra  The server is now running in the background.</descri
     
     <item>
       <title>Reconstruction Modes</title>
-      <link>http://yarraframework.com/server/modes/</link>
+      <link>http://yarra-framework.org/server/modes/</link>
       <pubDate>Fri, 15 Jun 2018 00:00:00 +0000</pubDate>
       
-      <guid>http://yarraframework.com/server/modes/</guid>
+      <guid>http://yarra-framework.org/server/modes/</guid>
       <description>&amp;nbsp;Defining Reconstruction Modes Adding a new reconstruction mode to YarraServer involves two steps:
  A new .mode file needs to be created in the yarra/modes directory and named according to the internal ID of the reconstruction mode. The mode needs to be added to the list of available modes, read by the Yarra clients from the file yarra/queue/YarraModes.cfg. With recent versions of Yarra, this step is normally done via the Yarra WebGUI.</description>
     </item>
     
     <item>
       <title>Notifications</title>
-      <link>http://yarraframework.com/server/notifications/</link>
+      <link>http://yarra-framework.org/server/notifications/</link>
       <pubDate>Fri, 15 Jun 2018 00:00:00 +0000</pubDate>
       
-      <guid>http://yarraframework.com/server/notifications/</guid>
+      <guid>http://yarra-framework.org/server/notifications/</guid>
       <description>&amp;nbsp;Notification Emails The YarraServer will send notification emails on completion or failure of tasks (prerequisites are that the sendmail package is installed and that notifications are enabled in the server configuration). Completion notifications will be sent to a) receivers listed in the Yarra client during submission and b) receivers listed in the reconstruction-mode file. Failure notifications will be, in addition, also sent to those receivers listed in the server configuration file under Options/ErrorMail.</description>
     </item>
     
     <item>
       <title>Load Balancing</title>
-      <link>http://yarraframework.com/server/loadbalancing/</link>
+      <link>http://yarra-framework.org/server/loadbalancing/</link>
       <pubDate>Fri, 15 Jun 2018 00:00:00 +0000</pubDate>
       
-      <guid>http://yarraframework.com/server/loadbalancing/</guid>
+      <guid>http://yarra-framework.org/server/loadbalancing/</guid>
       <description>&amp;nbsp;Routing and Load Balancing If multiple Yarra servers have been installed in a network, it is possible to route certain reconstruction tasks to dedicated servers as well as to distribute the task load across multiple servers. &amp;nbsp;
 &amp;nbsp;Server List File To use multiple servers with the Yarra ORT client, it is necessary to create a server-list file named “YarraServerList.cfg” in the queue directory of the Yarra server that has been entered in the ORT configuration (preferably, the file should be placed in the queue directory of all Yarra servers and kept consistent).</description>
     </item>

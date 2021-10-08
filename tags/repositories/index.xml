@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Repositories on Yarra Framework</title>
-    <link>http://yarraframework.com/tags/repositories/</link>
+    <link>http://yarra-framework.org/tags/repositories/</link>
     <description>Recent content in Repositories on Yarra Framework</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 12 Feb 2020 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="http://yarraframework.com/tags/repositories/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://yarra-framework.org/tags/repositories/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Migration to Git</title>
-      <link>http://yarraframework.com/blog/gitmigration/</link>
+      <link>http://yarra-framework.org/blog/gitmigration/</link>
       <pubDate>Wed, 12 Feb 2020 00:00:00 +0000</pubDate>
       
-      <guid>http://yarraframework.com/blog/gitmigration/</guid>
+      <guid>http://yarra-framework.org/blog/gitmigration/</guid>
       <description>We are currently migrating our source code repositories from Mercurial to Git. This is necessary because BitBucket, which we are using as provider for hosting the Yarra source code, is ending support for Mercurial. Some of the repositories might be temporarily unavailable during the time of conversion. After the migration, the repositories will have the same name (slug) and same website URLs, but you will need to use Git if you want to checkout the code.</description>
     </item>
     

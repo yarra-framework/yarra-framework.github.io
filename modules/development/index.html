@@ -15,7 +15,7 @@
 
 <meta property="og:title" content="Development  &middot; Yarra Framework ">
 <meta property="og:site_name" content="Yarra Framework"/>
-<meta property="og:url" content="http://yarraframework.com/modules/development/" />
+<meta property="og:url" content="http://yarra-framework.org/modules/development/" />
 <meta property="og:locale" content="en-us">
 
 
@@ -42,7 +42,7 @@
 </script>
 
 
-<link rel="canonical" href="http://yarraframework.com/modules/development/" />
+<link rel="canonical" href="http://yarra-framework.org/modules/development/" />
 
 <meta name="generator" content="Hugo 0.54.0" />
 
@@ -65,7 +65,7 @@
 </head>
 <body>
 <nav class="navbar navbar-expand-lg fixed-top site-navbar navbar-inverse">
-  <a class="navbar-brand text-white" href="http://yarraframework.com/">Yarra Framework</a>
+  <a class="navbar-brand text-white" href="http://yarra-framework.org/">Yarra Framework</a>
   <button class="navbar-toggler text-white" 
   type="button" data-toggle="collapse" data-target="#exCollapsingNavbar2" aria-controls="exCollapsingNavbar2"
     aria-expanded="false" aria-label="Toggle navigation">
@@ -166,7 +166,7 @@
     <div class="row m-l-0 m-r-0">
       <div class="col-xs-12 col-lg-3">
       <div class="list-group mr-3 mb-4">
-        <a href="http://yarraframework.com/modules/" class="list-group-item list-group-item-action">Overview</a>
+        <a href="http://yarra-framework.org/modules/" class="list-group-item list-group-item-action">Overview</a>
         
         
         
@@ -184,7 +184,7 @@
       <div class="content pt-2">
   
 
-<h3 id="hahahugoshortcode-0xc000a25400-1-hbhb">
+<h3 id="hahahugoshortcode-0xc000a2cf00-1-hbhb">
 <i class="fas fa-angle-double-right" style="color: #580F8B; font-size: 24px;">&nbsp;</i>Implementing Custom Modules
 
 </h3>
@@ -194,7 +194,7 @@
 <p>The command-line arguments act as simple interface between the YarraServer and the executed module (thus, Yarra modules need to read parameters from the command-line arguments). The call arguments are defined together with the path of the command-line executable in the .mode file of the <a href="/server/modes">reconstruction mode</a> (Bin=…, Args=…). The order in which parameters should be passed to the Yarra module can be defined by the developer of the module (i.e., when adding a module to a reconstruction mode it is necessary to adapt the Args= entry according to the syntax requested by the module). A number of convenience macros are provided for writing the command-line arguments, which avoids having to write absolute paths into the .mode file and makes the mode file independent from the actual installation location on the Linux server. For example, if %rid is written into the command-line argument, Yarra will replace it during the execution with the absolute path of the work directory (e.g., /home/yarraserver/yarra/work). Also, there are macros available that give access to some of the task parameters, e.g. %vacc will return the Accession Number that was entered into the submission dialog of the Yarra client. A list of all available macros is found <a href="/server/modes">here</a>.
 <div style="margin-bottom: 40px; font-size: 0px;">&nbsp;</div></p>
 
-<h3 id="hahahugoshortcode-0xc000a25400-3-hbhb">
+<h3 id="hahahugoshortcode-0xc000a2cf00-3-hbhb">
 <i class="fas fa-angle-double-right" style="color: #580F8B; font-size: 24px;">&nbsp;</i>Module Interface &amp; Conventions
 
 </h3>
@@ -210,7 +210,7 @@
 <p>After the transfer module has finished, YarraServer will clean the work directory. If an error occurred during the processing, the task files will be moved into a subfolder created in Yarra’s “Fail” folder, so that the task can be restarted at a later time. If the reconstruction was successful and the option KeepRawdata was set in the .mode file, the task files will be moved to Yarra’s “Storage” folder. Otherwise, the files will be permanently deleted.
 <div style="margin-bottom: 40px; font-size: 0px;">&nbsp;</div></p>
 
-<h3 id="hahahugoshortcode-0xc000a25400-5-hbhb">
+<h3 id="hahahugoshortcode-0xc000a2cf00-5-hbhb">
 <i class="fas fa-angle-double-right" style="color: #580F8B; font-size: 24px;">&nbsp;</i>Process Monitoring
 
 </h3>
@@ -225,7 +225,7 @@
 <div style="margin-bottom: 40px; font-size: 0px;">&nbsp;</div></li>
 </ul>
 
-<h3 id="hahahugoshortcode-0xc000a25400-7-hbhb">
+<h3 id="hahahugoshortcode-0xc000a2cf00-7-hbhb">
 <i class="fas fa-angle-double-right" style="color: #580F8B; font-size: 24px;">&nbsp;</i>Using Matlab
 
 </h3>

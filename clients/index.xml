@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Clients on Yarra Framework</title>
-    <link>http://yarraframework.com/clients/</link>
+    <link>http://yarra-framework.org/clients/</link>
     <description>Recent content in Clients on Yarra Framework</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 15 Jun 2018 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="http://yarraframework.com/clients/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://yarra-framework.org/clients/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Installation</title>
-      <link>http://yarraframework.com/clients/installation/</link>
+      <link>http://yarra-framework.org/clients/installation/</link>
       <pubDate>Fri, 15 Jun 2018 00:00:00 +0000</pubDate>
       
-      <guid>http://yarraframework.com/clients/installation/</guid>
+      <guid>http://yarra-framework.org/clients/installation/</guid>
       <description>&amp;nbsp;Package Installation To install Yarra clients, download the Yarra client package form the Download Page.
 Extract the archive into a folder on the host computer of the MRI system (or workstation PC for the SAC). The package can be unzipped into any directory. We recommend installing it into the folder C:\yarra.
 &amp;nbsp; Advanced User To perform this procedure on a Siemens MRI system, it is necessary to first switch to “Advanced User Mode” by selecting the item in the Start menu and entering the password.</description>
@@ -24,30 +24,30 @@ Extract the archive into a folder on the host computer of the MRI system (or wor
     
     <item>
       <title>ORT Client</title>
-      <link>http://yarraframework.com/clients/ort/</link>
+      <link>http://yarra-framework.org/clients/ort/</link>
       <pubDate>Fri, 15 Jun 2018 00:00:00 +0000</pubDate>
       
-      <guid>http://yarraframework.com/clients/ort/</guid>
+      <guid>http://yarra-framework.org/clients/ort/</guid>
       <description>&amp;nbsp;Usage The ORT client is the Yarra client for submitting reconstructions tasks from the consoles (host computer) of Siemens MRI systems. When started, the client will automatically connect to the Yarra server and read the list of configured reconstruction modes (see this page on how to configure of reconstruction modes).
 Afterwards, it will show the main application window where all recent patient exams are listed that match to the defined reconstruction modes (i.</description>
     </item>
     
     <item>
       <title>SAC Client</title>
-      <link>http://yarraframework.com/clients/sac/</link>
+      <link>http://yarra-framework.org/clients/sac/</link>
       <pubDate>Fri, 15 Jun 2018 00:00:00 +0000</pubDate>
       
-      <guid>http://yarraframework.com/clients/sac/</guid>
+      <guid>http://yarra-framework.org/clients/sac/</guid>
       <description>&amp;nbsp;Usage The SAC client is intended for installation on stand-alone Windows workstations and can be used to submit measurement files for reconstruction that have been previously saved either manually using the Siemens TWIX tool or automatically using the Yarra RDS client.
 To send a task, click on the “Select…” button and choose the .dat (TWIX) file that you want to reconstruct. The client will show the patient name and pre-select the reconstruction mode according to the protocol tags contained in the protocol name.</description>
     </item>
     
     <item>
       <title>RDS Client</title>
-      <link>http://yarraframework.com/clients/rds/</link>
+      <link>http://yarra-framework.org/clients/rds/</link>
       <pubDate>Fri, 15 Jun 2018 00:00:00 +0000</pubDate>
       
-      <guid>http://yarraframework.com/clients/rds/</guid>
+      <guid>http://yarra-framework.org/clients/rds/</guid>
       <description>&amp;nbsp;Introduction The Yarra RDS client is a service that runs in the background on the host computer of Siemens MRI systems and can be used to automatically collect the raw data (Twix data) of certain scans and to transfer the data to a network location (or disk drive). RDS is part of the Yarra package for historical reasons and does not directly interact with the Yarra server. However, the data collected with RDS can later be submitted to a Yarra server using the SAC client.</description>
     </item>
     

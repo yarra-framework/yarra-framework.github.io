@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Grasp on Yarra Framework</title>
-    <link>http://yarraframework.com/tags/grasp/</link>
+    <link>http://yarra-framework.org/tags/grasp/</link>
     <description>Recent content in Grasp on Yarra Framework</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 15 Jul 2019 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="http://yarraframework.com/tags/grasp/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://yarra-framework.org/tags/grasp/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Matlab GRASP Module</title>
-      <link>http://yarraframework.com/blog/matlab_grasp/</link>
+      <link>http://yarra-framework.org/blog/matlab_grasp/</link>
       <pubDate>Mon, 15 Jul 2019 00:00:00 +0000</pubDate>
       
-      <guid>http://yarraframework.com/blog/matlab_grasp/</guid>
+      <guid>http://yarra-framework.org/blog/matlab_grasp/</guid>
       <description>A new Matlab-based public version of the GRASP reconstruction algorithm has been released, which integrates into the Yarra offline-reconstruction pipeline. The module has been parallelized using Matlab&amp;rsquo;s Parallel Computation Toolbox and achieves reconstruction speed in the same magnitude as our C++ implementation of the algorithm.
 The algorithm can be downloaded on the User Modules page. Please note that Matlab R2016a or newer is required.
 The required pulse sequence for GRASP scans, known as &amp;ldquo;RAVE&amp;rdquo; or &amp;ldquo;Radial-VIBE&amp;rdquo; sequence, can be obtained from us after filing a C2P agreement with Siemens.</description>

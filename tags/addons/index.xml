@@ -2,31 +2,31 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Addons on Yarra Framework</title>
-    <link>http://yarraframework.com/tags/addons/</link>
+    <link>http://yarra-framework.org/tags/addons/</link>
     <description>Recent content in Addons on Yarra Framework</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 02 Sep 2019 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="http://yarraframework.com/tags/addons/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://yarra-framework.org/tags/addons/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Hermes DICOM Router</title>
-      <link>http://yarraframework.com/blog/hermes/</link>
+      <link>http://yarra-framework.org/blog/hermes/</link>
       <pubDate>Mon, 02 Sep 2019 00:00:00 +0000</pubDate>
       
-      <guid>http://yarraframework.com/blog/hermes/</guid>
+      <guid>http://yarra-framework.org/blog/hermes/</guid>
       <description>Looking for a flexible and powerful DICOM Router to integrate your image-analysis prototypes or AI solutions into your clinical workflow? Check out Yarra&amp;rsquo;s sister open-source project &amp;ldquo;Hermes Router&amp;rdquo;, which is now publicly available:
 http://hermes-router.github.io</description>
     </item>
     
     <item>
       <title>Yarra Client Tools</title>
-      <link>http://yarraframework.com/blog/clienttools/</link>
+      <link>http://yarra-framework.org/blog/clienttools/</link>
       <pubDate>Fri, 05 Jul 2019 00:00:00 +0000</pubDate>
       
-      <guid>http://yarraframework.com/blog/clienttools/</guid>
+      <guid>http://yarra-framework.org/blog/clienttools/</guid>
       <description>The Yarra Client Tools (YCT) are now available for download. Yarra Client Tools are small command-line tools that help with processing Siemens Twix files. They provide functions for batch anonymization, protocol extraction, and for displaying individual scan parameters. The package should be extracted into the installation folder of the Yarra Client package.
 The version is now available in the Download section.</description>
     </item>

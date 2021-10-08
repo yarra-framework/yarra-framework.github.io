@@ -2,30 +2,30 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Clients on Yarra Framework</title>
-    <link>http://yarraframework.com/download/</link>
+    <link>http://yarra-framework.org/download/</link>
     <description>Recent content in Clients on Yarra Framework</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 15 Jun 2018 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="http://yarraframework.com/download/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://yarra-framework.org/download/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Previous Releases</title>
-      <link>http://yarraframework.com/download/archive/</link>
+      <link>http://yarra-framework.org/download/archive/</link>
       <pubDate>Fri, 15 Jun 2018 00:00:00 +0000</pubDate>
       
-      <guid>http://yarraframework.com/download/archive/</guid>
+      <guid>http://yarra-framework.org/download/archive/</guid>
       <description>&amp;nbsp;Release History &amp;nbsp; Yarra Client Package &amp;nbsp; &amp;nbsp;&amp;nbsp;Version 0.58 &amp;ndash; Release Date: 2020-07-26Support for XA20A and XA20BVarious bugfixes&amp;nbsp;Download Version &amp;nbsp;&amp;nbsp;Version 0.55 &amp;ndash; Release Date: 2019-11-06Support for VE11SAdded SAC option to send additional files with taskAdditional logserver notification for improved client monitoringConfigurable timeouts for rawdata export with RDS&amp;nbsp;Download Version &amp;nbsp;&amp;nbsp;Version 0.54 &amp;ndash; Release Date: 2019-06-27Improved support for XA11A and XA11BAdded menu to launch ORT and other components that opens when right-clicking on the small Yarra status icon&amp;nbsp;Download Version &amp;nbsp;&amp;nbsp;Version 0.</description>
     </item>
     
     <item>
       <title>Source Code</title>
-      <link>http://yarraframework.com/download/sourcecode/</link>
+      <link>http://yarra-framework.org/download/sourcecode/</link>
       <pubDate>Fri, 15 Jun 2018 00:00:00 +0000</pubDate>
       
-      <guid>http://yarraframework.com/download/sourcecode/</guid>
+      <guid>http://yarra-framework.org/download/sourcecode/</guid>
       <description> &amp;nbsp;Open Source Access The Yarra Framework is an open-source project. The code for all components of Yarra is publicly hosted on bitbucket.org. Click the buttons below to get to the repositories of the individual components. The source code is provided under the GNU General Public License (GPL).
 If you want to build Yarra binaries yourself, you can find setup instructions for the build environmnet here.
 &amp;nbsp; &amp;nbsp;Yarra Client Page on Bitbucket&amp;nbsp;Yarra Server Page on Bitbucket&amp;nbsp;Yarra WebGUI Page on Bitbucket&amp;nbsp;Yarra LogServer Page on Bitbucket&amp;nbsp;Yarra Archive Search Page on Bitbucket&amp;nbsp;Yarra FileMover Page on Bitbucket&amp;nbsp;Yarra Link Page on Bitbucket</description>
@@ -33,10 +33,10 @@ If you want to build Yarra binaries yourself, you can find setup instructions fo
     
     <item>
       <title>Resources</title>
-      <link>http://yarraframework.com/download/resources/</link>
+      <link>http://yarra-framework.org/download/resources/</link>
       <pubDate>Fri, 15 Jun 2018 00:00:00 +0000</pubDate>
       
-      <guid>http://yarraframework.com/download/resources/</guid>
+      <guid>http://yarra-framework.org/download/resources/</guid>
       <description> &amp;nbsp;Additional Material &amp;nbsp; ISMRM 2019 Educational Session on Open-Source Software Tools &amp;nbsp; &amp;nbsp;Whitepaper on Concept &amp;nbsp;Overview Slides &amp;nbsp;Tutorial Slides on Offline Reconstruction
 &amp;nbsp; </description>
     </item>

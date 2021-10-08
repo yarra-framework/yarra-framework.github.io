@@ -2,50 +2,50 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>LogServer on Yarra Framework</title>
-    <link>http://yarraframework.com/logserver/</link>
+    <link>http://yarra-framework.org/logserver/</link>
     <description>Recent content in LogServer on Yarra Framework</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 15 Jun 2018 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="http://yarraframework.com/logserver/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://yarra-framework.org/logserver/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Installation</title>
-      <link>http://yarraframework.com/logserver/installation/</link>
+      <link>http://yarra-framework.org/logserver/installation/</link>
       <pubDate>Fri, 15 Jun 2018 00:00:00 +0000</pubDate>
       
-      <guid>http://yarraframework.com/logserver/installation/</guid>
+      <guid>http://yarra-framework.org/logserver/installation/</guid>
       <description>&amp;nbsp;Installing LogServer Yarra LogServer (YLS) has been tested and developed under Ubuntu 16.04. Therefore, it is most likely to work when running on a server with this version of Ubuntu.
 YLS is not designed to be made available to the internet. It should never be made available outside your internal network. The system uses common-sense security measures to protect patient data, but it was not designed to withstand a determined attack across the public internet.</description>
     </item>
     
     <item>
       <title>Configuration</title>
-      <link>http://yarraframework.com/logserver/configuration/</link>
+      <link>http://yarra-framework.org/logserver/configuration/</link>
       <pubDate>Fri, 15 Jun 2018 00:00:00 +0000</pubDate>
       
-      <guid>http://yarraframework.com/logserver/configuration/</guid>
+      <guid>http://yarra-framework.org/logserver/configuration/</guid>
       <description>&amp;nbsp;LogServer Configuration &amp;nbsp; Initial User for Admin Interface After the installation, there won’t be any users set up in the web interface. Click the “Register” link and provide your email and set a password. LogServer will send an email with a link to verify the email address. It is recommended to only use institutional email addresses. You can skip verifying your own email address by running this command:</description>
     </item>
     
     <item>
       <title>Administration</title>
-      <link>http://yarraframework.com/logserver/administration/</link>
+      <link>http://yarra-framework.org/logserver/administration/</link>
       <pubDate>Fri, 15 Jun 2018 00:00:00 +0000</pubDate>
       
-      <guid>http://yarraframework.com/logserver/administration/</guid>
+      <guid>http://yarra-framework.org/logserver/administration/</guid>
       <description>&amp;nbsp;Administration &amp;nbsp; Administration of Yarra LogServer is done with a web-based interface (&amp;ldquo;LogViewer&amp;rdquo;), which normally runs on port 4444 (e.g., https://localhost:4444 when opening the browser directly on the server). It is recommended to use a modern web browser (e.g., Chrome) when working with LogViewer.
 &amp;nbsp; Accounts New user accounts can be created on the login page by going through the Registration procedure. However, new accounts are disabled by default and need to authorized by an administrator.</description>
     </item>
     
     <item>
       <title>Data Visualization</title>
-      <link>http://yarraframework.com/logserver/redash/</link>
+      <link>http://yarra-framework.org/logserver/redash/</link>
       <pubDate>Fri, 15 Jun 2018 00:00:00 +0000</pubDate>
       
-      <guid>http://yarraframework.com/logserver/redash/</guid>
+      <guid>http://yarra-framework.org/logserver/redash/</guid>
       <description>&amp;nbsp;Data Visualization with Redash While the included Yarra LogViewer provides access to all collected data in tabular form, it is often desired to visualize data or to perform advanced queries. This can be done with Redash, which is a web-based open-source tool for creating SQL-driven dashboards.
 &amp;nbsp;More information on Redash
 Please use only the Self Hosted Open Source version of Redash. Do not use the hosted cloud version, as this would transfer sensitive data to external cloud servers.</description>
@@ -53,10 +53,10 @@ Please use only the Self Hosted Open Source version of Redash. Do not use the ho
     
     <item>
       <title>Example Queries</title>
-      <link>http://yarraframework.com/logserver/queries/</link>
+      <link>http://yarra-framework.org/logserver/queries/</link>
       <pubDate>Fri, 15 Jun 2018 00:00:00 +0000</pubDate>
       
-      <guid>http://yarraframework.com/logserver/queries/</guid>
+      <guid>http://yarra-framework.org/logserver/queries/</guid>
       <description> &amp;nbsp;Sample LogServer Queries &amp;nbsp;Under ConstructionSorry, this section is still missing. Please check again soon.
 </description>
     </item>
