@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Developer Resources on Yarra Framework</title>
@@ -17,7 +17,7 @@
       <pubDate>Mon, 03 Jun 2019 00:00:00 +0000</pubDate>
       
       <guid>http://yarra-framework.org/developer/build-server/</guid>
-      <description>&amp;nbsp;Build-Instructions for YarraServer &amp;nbsp; Setting up the Build Environment &amp;nbsp;  Download Xubuntu 16.04.06 LTS Desktop Edition and install (preferably in VM). The Desktop Edition is preferred because the Qt installation requires X11. When using VirtualBox, install the VirtualBox Guest Additions CD. Update the apt-get chache:   sudo apt-get update   Install build system, required tools, and required libraries:   sudo apt install build-essential mercurial tortoisehg git cmake sudo apt install libboost-all-dev libssl-dev libpq-dev libssl-dev libfcgi-dev  &amp;nbsp; Installing Qt and Qt Creator &amp;nbsp;  Download the Qt offline installer and run the setup.</description>
+      <description>&amp;nbsp;Build-Instructions for YarraServer &amp;nbsp; Setting up the Build Environment &amp;nbsp;  Download Xubuntu 16.04.06 LTS Desktop Edition and install (preferably in VM). The Desktop Edition is preferred because the Qt installation requires X11. When using VirtualBox, install the VirtualBox Guest Additions CD. Update the apt-get chache: sudo apt-get update  Install build system, required tools, and required libraries: sudo apt install build-essential mercurial tortoisehg git cmake sudo apt install libboost-all-dev libssl-dev libpq-dev libssl-dev libfcgi-dev   &amp;nbsp; Installing Qt and Qt Creator &amp;nbsp;  Download the Qt offline installer and run the setup.</description>
     </item>
     
     <item>

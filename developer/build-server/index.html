@@ -37,14 +37,14 @@
     },
     "datePublished": "2019-06-03",
     "description": "",
-    "wordCount": 403
+    "wordCount":  403 
   }
 </script>
 
 
 <link rel="canonical" href="http://yarra-framework.org/developer/build-server/" />
 
-<meta name="generator" content="Hugo 0.54.0" />
+<meta name="generator" content="Hugo 0.59.1" />
 
 
   <link rel="stylesheet" href="/assets/css/bootstrap.min.css" />
@@ -182,7 +182,7 @@
       <div class="content pt-2">
   
 
-<h3 id="hahahugoshortcode-0xc000a4ea00-1-hbhb">
+<h3 id="hahahugoshortcode-s0-hbhb">
 <i class="fas fa-angle-double-right" style="color: #580F8B; font-size: 24px;">&nbsp;</i>Build-Instructions for YarraServer
 
 </h3>
@@ -195,19 +195,18 @@
 
 <ul>
 <li>Download <a href="http://ftp.uni-kl.de/pub/linux/ubuntu-dvd/xubuntu/releases/16.04.6/release/" target="_blank">Xubuntu 16.04.06 LTS Desktop Edition</a> and install (preferably in VM). The Desktop Edition is preferred because the Qt installation requires X11. When using <a href="https://www.virtualbox.org/" target="_blank">VirtualBox</a>, install the VirtualBox Guest Additions CD.</li>
-<li>Update the apt-get chache: <br></li>
-</ul>
+
+<li><p>Update the apt-get chache: <br></p>
 
 <pre><code>sudo apt-get update
-</code></pre>
+</code></pre></li>
 
-<ul>
-<li>Install build system, required tools, and required libraries: <br></li>
-</ul>
+<li><p>Install build system, required tools, and required libraries: <br></p>
 
 <pre><code>sudo apt install build-essential mercurial tortoisehg git cmake
 sudo apt install libboost-all-dev libssl-dev libpq-dev libssl-dev libfcgi-dev
-</code></pre>
+</code></pre></li>
+</ul>
 
 <div style="margin-bottom: 40px; font-size: 0px;">&nbsp;</div>
 
@@ -216,13 +215,13 @@ sudo apt install libboost-all-dev libssl-dev libpq-dev libssl-dev libfcgi-dev
 <div style="margin-bottom: 5px; font-size: 0px;">&nbsp;</div>
 
 <ul>
-<li>Download the Qt offline installer and run the setup. Version 5.5.1 libraries come with Ubuntu 16.04, so we are using this version for the build. Start the installer and use all default options. <br></li>
-</ul>
+<li><p>Download the Qt offline installer and run the setup. Version 5.5.1 libraries come with Ubuntu 16.04, so we are using this version for the build. Start the installer and use all default options. <br></p>
 
 <pre><code>wget http://download.qt.io/archive/qt/5.5/5.5.1/qt-opensource-linux-x64-5.5.1.run
 chmod 700 qt-opensource-linux-x64-5.5.1.run
 ./qt-opensource-linux-x64-5.5.1.run
-</code></pre>
+</code></pre></li>
+</ul>
 
 <div style="margin-bottom: 40px; font-size: 0px;">&nbsp;</div>
 
@@ -231,8 +230,7 @@ chmod 700 qt-opensource-linux-x64-5.5.1.run
 <div style="margin-bottom: 5px; font-size: 0px;">&nbsp;</div>
 
 <ul>
-<li>Download the Wt Library Code v 3.3.12 (release 2018-12-14) and untar:</li>
-</ul>
+<li><p>Download the Wt Library Code v 3.3.12 (release 2018-12-14) and untar:</p>
 
 <pre><code>mkdir wt
 cd wt
@@ -244,7 +242,8 @@ cd build
 cmake .. -DSHARED_LIBS=OFF
 make
 sudo make install
-</code></pre>
+</code></pre></li>
+</ul>
 
 
 <div class="bs-callout bs-callout-primary"  >
@@ -255,12 +254,12 @@ sudo make install
 
 
 <ul>
-<li>Install additional libraries for linking the WebGUI binary:</li>
-</ul>
+<li><p>Install additional libraries for linking the WebGUI binary:</p>
 
 <pre><code>sudo apt install libglib2.0-dev libxml2-dev libjpeg-dev libx11-dev libxext-dev
 sudo apt install libgl1-mesa-dev libfreetype6-dev libgraphicsmagick-dev libomp-dev
-</code></pre>
+</code></pre></li>
+</ul>
 
 <div style="margin-bottom: 40px; font-size: 0px;">&nbsp;</div>
 
@@ -269,27 +268,26 @@ sudo apt install libgl1-mesa-dev libfreetype6-dev libgraphicsmagick-dev libomp-d
 <div style="margin-bottom: 5px; font-size: 0px;">&nbsp;</div>
 
 <ul>
-<li>Create folder for the individual Yarra components <br></li>
-</ul>
+<li><p>Create folder for the individual Yarra components <br></p>
 
 <pre><code>mkdir NMRProjects
 cd NMRProjects
-</code></pre>
+</code></pre></li>
 
-<ul>
-<li>Now clone the Yarra source code repositories</li>
-</ul>
+<li><p>Now clone the Yarra source code repositories</p>
 
 <pre><code>hg clone https://tblock@bitbucket.org/yarra-dev/yarraserver
 hg clone https://tblock@bitbucket.org/yarra-dev/yarrawebgui
 git clone https://tblock@bitbucket.org/yarra-dev/yarrasupport-ziplib.git ~/NMRProjects/yarrawebgui/ziplib
-</code></pre>
+</code></pre></li>
 
-<ul>
-<li>Open the Server.pro project in QtCreater and build release version</li>
-<li>Open ServerCtrl.pro and build release version</li>
-<li>Open yarrawebgui.pro and build release version</li>
-<li>Open yarradexec.pro and build release version</li>
+<li><p>Open the Server.pro project in QtCreater and build release version</p></li>
+
+<li><p>Open ServerCtrl.pro and build release version</p></li>
+
+<li><p>Open yarrawebgui.pro and build release version</p></li>
+
+<li><p>Open yarradexec.pro and build release version</p></li>
 </ul>
 
 <div style="margin-bottom: 40px; font-size: 0px;">&nbsp;</div>
@@ -299,8 +297,7 @@ git clone https://tblock@bitbucket.org/yarra-dev/yarrasupport-ziplib.git ~/NMRPr
 <div style="margin-bottom: 5px; font-size: 0px;">&nbsp;</div>
 
 <ul>
-<li>Download the DCMTK source code and compile</li>
-</ul>
+<li><p>Download the DCMTK source code and compile</p>
 
 <pre><code>sudo apt-get install libarmadillo-dev libblas-dev
 cd ~
@@ -313,30 +310,27 @@ mkdir build; cd build
 cmake -D DCMTK_ENABLE_BUILTIN_DICTIONARY=ON -D DCMTK_ENABLE_PRIVATE_TAGS=ON ..
 make -j8
 sudo make install
-</code></pre>
+</code></pre></li>
 
-<ul>
-<li>Checkout code from Bitbucket</li>
-</ul>
+<li><p>Checkout code from Bitbucket</p>
 
 <pre><code>cd ~/NMRProjects
 hg clone https://tblock@bitbucket.org/yarra-dev/yarramodules-setdcmtags
-</code></pre>
+</code></pre></li>
 
-<ul>
-<li>The current version of the module requires that certain private Siemens DICOM tags are added to the DICOM Tag Dictionary on the server. Therefore, the file dicom.dic needs to be edited:</li>
-</ul>
+<li><p>The current version of the module requires that certain private Siemens DICOM tags are added to the DICOM Tag Dictionary on the server. Therefore, the file dicom.dic needs to be edited:</p>
 
 <pre><code>cd /usr/local/share/dcmtk/
 sudo nano dicom.dic
-</code></pre>
+</code></pre></li>
+</ul>
 
 <p>and the following 4 lines need to be inserted:</p>
 
-<pre><code>(0019,1008) LO  Private 1   DICOM
-(0029,1008) LO  Private 1   DICOM
-(0029,1018) LO  Private 1   DICOM
-(0051,1008) CS  Private 1   DICOM
+<pre><code>(0019,1008)	LO	Private	1	DICOM
+(0029,1008)	LO	Private	1	DICOM
+(0029,1018)	LO	Private	1	DICOM
+(0051,1008)	CS	Private	1	DICOM
 </code></pre>
 
 <ul>

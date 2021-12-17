@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Client on Yarra Framework</title>
@@ -6,10 +6,20 @@
     <description>Recent content in Client on Yarra Framework</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 26 Jul 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 17 Dec 2021 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="http://yarra-framework.org/tags/client/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Client Package 0.59 with Support for XA30/XA31</title>
+      <link>http://yarra-framework.org/blog/client_059/</link>
+      <pubDate>Fri, 17 Dec 2021 00:00:00 +0000</pubDate>
+      
+      <guid>http://yarra-framework.org/blog/client_059/</guid>
+      <description>A new version of the Yarra Client package has been released (version 0.59) that adds support for the Siemens software versions XA30A and XA31A. In addition, RDS now has an option to disconnect from the network share after the update has been completed.
+The version is now available in the Download section.</description>
+    </item>
     
     <item>
       <title>Client Package 0.58</title>

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Clients on Yarra Framework</title>
@@ -17,7 +17,7 @@
       <pubDate>Fri, 15 Jun 2018 00:00:00 +0000</pubDate>
       
       <guid>http://yarra-framework.org/download/archive/</guid>
-      <description>&amp;nbsp;Release History &amp;nbsp; Yarra Client Package &amp;nbsp; &amp;nbsp;&amp;nbsp;Version 0.58 &amp;ndash; Release Date: 2020-07-26Support for XA20A and XA20BVarious bugfixes&amp;nbsp;Download Version &amp;nbsp;&amp;nbsp;Version 0.55 &amp;ndash; Release Date: 2019-11-06Support for VE11SAdded SAC option to send additional files with taskAdditional logserver notification for improved client monitoringConfigurable timeouts for rawdata export with RDS&amp;nbsp;Download Version &amp;nbsp;&amp;nbsp;Version 0.54 &amp;ndash; Release Date: 2019-06-27Improved support for XA11A and XA11BAdded menu to launch ORT and other components that opens when right-clicking on the small Yarra status icon&amp;nbsp;Download Version &amp;nbsp;&amp;nbsp;Version 0.</description>
+      <description>&amp;nbsp;Release History &amp;nbsp; Yarra Client Package &amp;nbsp; &amp;nbsp;&amp;nbsp;Version 0.59 &amp;ndash; Release Date: 2021-12-17Support for XA30A and XA31AIntroduced disconnect command for RDSAdded RDS option for remote LPFI file&amp;nbsp;Download Version &amp;nbsp;&amp;nbsp;Version 0.58 &amp;ndash; Release Date: 2020-07-26Support for XA20A and XA20BVarious bugfixes&amp;nbsp;Download Version &amp;nbsp;&amp;nbsp;Version 0.55 &amp;ndash; Release Date: 2019-11-06Support for VE11SAdded SAC option to send additional files with taskAdditional logserver notification for improved client monitoringConfigurable timeouts for rawdata export with RDS&amp;nbsp;Download Version &amp;nbsp;&amp;nbsp;Version 0.</description>
     </item>
     
     <item>

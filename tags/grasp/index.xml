@@ -1,9 +1,9 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Grasp on Yarra Framework</title>
+    <title>GRASP on Yarra Framework</title>
     <link>http://yarra-framework.org/tags/grasp/</link>
-    <description>Recent content in Grasp on Yarra Framework</description>
+    <description>Recent content in GRASP on Yarra Framework</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 15 Jul 2019 00:00:00 +0000</lastBuildDate>

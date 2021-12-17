@@ -24,7 +24,7 @@
 
 <link rel="canonical" href="http://yarra-framework.org/" />
 
-<meta name="generator" content="Hugo 0.54.0" />
+<meta name="generator" content="Hugo 0.59.1" />
 
 
   <link rel="stylesheet" href="/assets/css/bootstrap.min.css" />
@@ -148,7 +148,7 @@
 
 <div style="margin-bottom: 20px; font-size: 0px;">&nbsp;</div>
 
-<h3 id="hahahugoshortcode-0xc0009f7400-2-hbhb">
+<h3 id="hahahugoshortcode-s1-hbhb">
 <i class="fas fa-angle-double-right" style="color: #580F8B; font-size: 24px;">&nbsp;</i>What is Yarra?
 
 </h3>
@@ -173,7 +173,7 @@
 
 <div style="margin-bottom: 40px; font-size: 0px;">&nbsp;</div></p>
 
-<h3 id="hahahugoshortcode-0xc0009f7400-6-hbhb">
+<h3 id="hahahugoshortcode-s5-hbhb">
 <i class="fas fa-angle-double-right" style="color: #580F8B; font-size: 24px;">&nbsp;</i>Why Do I Need It?
 
 </h3>
@@ -183,7 +183,7 @@
 <p>The Yarra Framework is an open-source toolbox intended to bridge this gap and facilitate rapid clinical translation of advanced MRI reconstruction techniques. It comprises a set of tools that can be used either together or independently if only certain functionality is needed. Currently, support is limited to Siemens MRI systems.
 <div style="margin-bottom: 40px; font-size: 0px;">&nbsp;</div></p>
 
-<h3 id="hahahugoshortcode-0xc0009f7400-8-hbhb">
+<h3 id="hahahugoshortcode-s7-hbhb">
 <i class="fas fa-angle-double-right" style="color: #580F8B; font-size: 24px;">&nbsp;</i>Raw-Data Collection and Management
 
 </h3>
@@ -191,7 +191,7 @@
 <p><a href="/clients/rds">Yarra Raw-Data Service (RDS)</a> offers automatic collection of raw k-space data. It runs as background process on the host computers of the MRI scanners and performs a nightly export of raw data from the desired scan protocols into separate project folders on a network share or USB drive. This enables creating extensive libraries of raw data from routine exams without need to access the scanners during clinical work hours. <a href="/addons/yas">Yarra Archive Search (YAS)</a> can be used to index large amounts of collected cases. It provides a convenient web interface that allows searching for cases by project, sequence, or patient information and shows the storage location of the corresponding raw-data files.
 <div style="margin-bottom: 40px; font-size: 0px;">&nbsp;</div></p>
 
-<h3 id="hahahugoshortcode-0xc0009f7400-10-hbhb">
+<h3 id="hahahugoshortcode-s9-hbhb">
 <i class="fas fa-angle-double-right" style="color: #580F8B; font-size: 24px;">&nbsp;</i>Clinical Workflow Analysis
 
 </h3>
@@ -199,7 +199,7 @@
 <p>The Yarra RDS software also allows collecting workflow information from the scanners. When used in combination with <a href="/logserver">Yarra LogServer</a>, data on all executed sequences and adjustments are transferred hourly to an intranet server where the information is aggregated into exams and stored in an SQL database. Using business-intelligence tools such as <a href="/logserver/redash">Redash</a>, it is then possible to analyze the workflow and create customized dashboards and visualizations. This enables easy calculation of performance indicators, such as scanner utilization, exam durations and efficiencies, patient turnaround times, or sequence repetitions, on a large data base. It also simplifies monitoring research scans across the enterprise. Moreover, LogServer can be connected to additional data sources such as scheduling, dictation, or EMR systems.
 <div style="margin-bottom: 40px; font-size: 0px;">&nbsp;</div></p>
 
-<h3 id="hahahugoshortcode-0xc0009f7400-12-hbhb">
+<h3 id="hahahugoshortcode-s11-hbhb">
 <i class="fas fa-angle-double-right" style="color: #580F8B; font-size: 24px;">&nbsp;</i>Offline-Reconstruction Pipeline
 
 </h3>
@@ -207,7 +207,7 @@
 <p><a href="/server">YarraServer</a> automates offline reconstructions on external Linux servers and enables integration of reconstruction prototypes into the clinical workflow with minimal effort. Cases can be submitted with two mouse-clicks from MRI scanners with the <a href="/clients/ort">Yarra Offline-Reconstruction Task (ORT)</a> client, or from workstations with the <a href="/clients/sac">Yarra Stand-Alone Client (SAC)</a>. The reconstruction prototypes can be implemented using any programming language running under Linux, ranging from Matlab over Python to C++, or using existing frameworks like BART, Gadgetron, and TensorFlow. Yarra servers can be monitored and controlled using the web-based <a href="/server/webgui">Yarra WebGUI</a>, which includes an interface for configuring reconstruction settings and a packaging system for simple installation of additional processing modules. Moreover, Yarra features a <a href="/server/loadbalancing">load-balancing and routing mechanism</a> for distributing jobs across multiple servers, as well as an email notification system.
 <div style="margin-bottom: 40px; font-size: 0px;">&nbsp;</div></p>
 
-<h3 id="hahahugoshortcode-0xc0009f7400-14-hbhb">
+<h3 id="hahahugoshortcode-s13-hbhb">
 <i class="fas fa-angle-double-right" style="color: #580F8B; font-size: 24px;">&nbsp;</i>Cloud-Based Reconstruction Service
 
 </h3>
@@ -226,6 +226,14 @@
   <div class="card-text">
     <div class="widget">
       <ul id="recent-post">
+        
+        <li>
+          <div class="item-inner mb-2">
+            <p class="item-title">
+                <a href="/blog/client_059/" class="title"><i class="fas fa-angle-double-right">&nbsp;</i>Client Package 0.59 with Support for XA30/XA31</a>
+            </p>
+          </div>
+        </li>
         
         <li>
           <div class="item-inner mb-2">
@@ -255,14 +263,6 @@
           <div class="item-inner mb-2">
             <p class="item-title">
                 <a href="/blog/gitmigration/" class="title"><i class="fas fa-angle-double-right">&nbsp;</i>Migration to Git</a>
-            </p>
-          </div>
-        </li>
-        
-        <li>
-          <div class="item-inner mb-2">
-            <p class="item-title">
-                <a href="/blog/upgrade_webgui/" class="title"><i class="fas fa-angle-double-right">&nbsp;</i>Upgrade Your WebGUI</a>
             </p>
           </div>
         </li>

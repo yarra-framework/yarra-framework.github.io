@@ -37,14 +37,14 @@
     },
     "datePublished": "2018-06-15",
     "description": "",
-    "wordCount": 699
+    "wordCount":  699 
   }
 </script>
 
 
 <link rel="canonical" href="http://yarra-framework.org/addons/yarralink/" />
 
-<meta name="generator" content="Hugo 0.54.0" />
+<meta name="generator" content="Hugo 0.59.1" />
 
 
   <link rel="stylesheet" href="/assets/css/bootstrap.min.css" />
@@ -184,7 +184,7 @@
       <div class="content pt-2">
   
 
-<h3 id="hahahugoshortcode-0xc0006d4000-1-hbhb">
+<h3 id="hahahugoshortcode-s0-hbhb">
 <i class="fas fa-angle-double-right" style="color: #580F8B; font-size: 24px;">&nbsp;</i>Introduction
 
 </h3>
@@ -202,7 +202,7 @@
 
 <div style="margin-bottom: 40px; font-size: 0px;">&nbsp;</div></p>
 
-<h3 id="hahahugoshortcode-0xc0006d4000-4-hbhb">
+<h3 id="hahahugoshortcode-s3-hbhb">
 <i class="fas fa-angle-double-right" style="color: #580F8B; font-size: 24px;">&nbsp;</i>Usage
 
 </h3>
@@ -226,7 +226,7 @@
 <p>As for any Siemens IDEA sequence, the MR system will run a number of adjustment steps prior to execution of the sequence (frequency adjustment, etc). If no patient or water phantom is positioned in the magnet, the adjustment procedure will fail and the YarraLink sequence will not be executed. In this case, it is possible to manually open the Yarra ORT client by opening the sequence parameter UI, selecting the Sequence/Special card and clicking on the checkbox labeled “Click to open &gt;&gt;&gt;”.
 <div style="margin-bottom: 40px; font-size: 0px;">&nbsp;</div></p>
 
-<h3 id="hahahugoshortcode-0xc0006d4000-6-hbhb">
+<h3 id="hahahugoshortcode-s5-hbhb">
 <i class="fas fa-angle-double-right" style="color: #580F8B; font-size: 24px;">&nbsp;</i>Compilation
 
 </h3>
@@ -248,8 +248,7 @@
 
 <li><p>Open the two makefiles yarralink.mk and makefile.trs with a text editor.</p></li>
 
-<li><p>Uncomment/Comment the compiler switches depending on the version of the Siemens SyngoMR version in both make files by adding/removing the # character at the start of the line. For example, for version VE11A the section in file yarralink.mk should read:</p></li>
-</ol>
+<li><p>Uncomment/Comment the compiler switches depending on the version of the Siemens SyngoMR version in both make files by adding/removing the # character at the start of the line. For example, for version VE11A the section in file yarralink.mk should read:</p>
 
 <pre><code>#************************************************************************
 # Define the software version
@@ -258,13 +257,14 @@
 #CPPFLAGS_LOCAL += -DVER_VB20
 #CPPFLAGS_LOCAL += -DVER_VD
 CPPFLAGS_LOCAL += -DVER_VE
-</code></pre>
+</code></pre></li>
 
-<ol>
-<li>In addition, it is necessary to comment-out several link libraries for VE11A. Follow the instructions given in the make files.</li>
-<li>Compile the sequence using the normal IDEA make sequence command.</li>
-<li>Install the sequence binaries on the MR system in the folder C:\MedCom\MriCustomer\seq
-Copy the YarraLink dll package into the subfolder C:\MedCom\MriCustomer\seq\yarra. The YarraLink dll package can be obtained from the <a href="/download">Download page</a>.</li>
+<li><p>In addition, it is necessary to comment-out several link libraries for VE11A. Follow the instructions given in the make files.</p></li>
+
+<li><p>Compile the sequence using the normal IDEA make sequence command.</p></li>
+
+<li><p>Install the sequence binaries on the MR system in the folder C:\MedCom\MriCustomer\seq
+Copy the YarraLink dll package into the subfolder C:\MedCom\MriCustomer\seq\yarra. The YarraLink dll package can be obtained from the <a href="/download">Download page</a>.</p></li>
 </ol>
 
 </div>

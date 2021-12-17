@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
@@ -213,7 +213,37 @@
   </url>
   
   <url>
+    <loc>http://yarra-framework.org/blog/</loc>
+    <lastmod>2021-12-17T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://yarra-framework.org/tags/client/</loc>
+    <lastmod>2021-12-17T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://yarra-framework.org/blog/client_059/</loc>
+    <lastmod>2021-12-17T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://yarra-framework.org/tags/release/</loc>
+    <lastmod>2021-12-17T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://yarra-framework.org/tags/</loc>
+    <lastmod>2021-12-17T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://yarra-framework.org/blog/clienttools_v4/</loc>
+    <lastmod>2021-08-13T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://yarra-framework.org/tags/yct/</loc>
     <lastmod>2021-08-13T00:00:00+00:00</lastmod>
   </url>
   
@@ -233,6 +263,26 @@
   </url>
   
   <url>
+    <loc>http://yarra-framework.org/tags/repositories/</loc>
+    <lastmod>2020-02-12T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://yarra-framework.org/tags/source-code/</loc>
+    <lastmod>2020-02-12T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://yarra-framework.org/tags/server/</loc>
+    <lastmod>2019-11-07T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://yarra-framework.org/tags/update/</loc>
+    <lastmod>2019-11-07T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://yarra-framework.org/blog/upgrade_webgui/</loc>
     <lastmod>2019-11-07T00:00:00+00:00</lastmod>
   </url>
@@ -243,13 +293,58 @@
   </url>
   
   <url>
+    <loc>http://yarra-framework.org/tags/addons/</loc>
+    <lastmod>2019-09-02T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://yarra-framework.org/tags/dicom/</loc>
+    <lastmod>2019-09-02T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://yarra-framework.org/blog/hermes/</loc>
     <lastmod>2019-09-02T00:00:00+00:00</lastmod>
   </url>
   
   <url>
+    <loc>http://yarra-framework.org/tags/routing/</loc>
+    <lastmod>2019-09-02T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://yarra-framework.org/tags/tools/</loc>
+    <lastmod>2019-09-02T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://yarra-framework.org/tags/grasp/</loc>
+    <lastmod>2019-07-15T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://yarra-framework.org/tags/matlab/</loc>
+    <lastmod>2019-07-15T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://yarra-framework.org/blog/matlab_grasp/</loc>
     <lastmod>2019-07-15T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://yarra-framework.org/modules_user/</loc>
+    <lastmod>2019-07-15T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://yarra-framework.org/tags/reconstruction/</loc>
+    <lastmod>2019-07-15T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://yarra-framework.org/tags/anonymizer/</loc>
+    <lastmod>2019-07-05T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -278,6 +373,21 @@
   </url>
   
   <url>
+    <loc>http://yarra-framework.org/tags/ismrm/</loc>
+    <lastmod>2019-05-10T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://yarra-framework.org/tags/training/</loc>
+    <lastmod>2019-05-10T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://yarra-framework.org/tags/workshop/</loc>
+    <lastmod>2019-05-10T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://yarra-framework.org/blog/ismrm2019/</loc>
     <lastmod>2019-05-10T00:00:00+00:00</lastmod>
   </url>
@@ -288,7 +398,27 @@
   </url>
   
   <url>
+    <loc>http://yarra-framework.org/tags/lts/</loc>
+    <lastmod>2019-05-03T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://yarra-framework.org/tags/ubuntu/</loc>
+    <lastmod>2019-05-03T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://yarra-framework.org/blog/new-website/</loc>
+    <lastmod>2019-03-26T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://yarra-framework.org/tags/website/</loc>
+    <lastmod>2019-03-26T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://yarra-framework.org/tags/yarra/</loc>
     <lastmod>2019-03-26T00:00:00+00:00</lastmod>
   </url>
   
@@ -314,6 +444,11 @@
   
   <url>
     <loc>http://yarra-framework.org/logserver/</loc>
+    <lastmod>2018-06-15T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://yarra-framework.org/modules_core/</loc>
     <lastmod>2018-06-15T00:00:00+00:00</lastmod>
   </url>
   
@@ -348,164 +483,7 @@
   </url>
   
   <url>
-    <loc>http://yarra-framework.org/tags/addons/</loc>
-    <lastmod>2019-09-02T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://yarra-framework.org/tags/anonymizer/</loc>
-    <lastmod>2019-07-05T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://yarra-framework.org/blog/</loc>
-    <lastmod>2021-08-13T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>http://yarra-framework.org/categories/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://yarra-framework.org/tags/client/</loc>
-    <lastmod>2020-07-26T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://yarra-framework.org/tags/dicom/</loc>
-    <lastmod>2019-09-02T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://yarra-framework.org/tags/grasp/</loc>
-    <lastmod>2019-07-15T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://yarra-framework.org/tags/ismrm/</loc>
-    <lastmod>2019-05-10T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://yarra-framework.org/tags/lts/</loc>
-    <lastmod>2019-05-03T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://yarra-framework.org/tags/matlab/</loc>
-    <lastmod>2019-07-15T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://yarra-framework.org/modules_core/</loc>
-    <lastmod>2018-06-15T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://yarra-framework.org/modules_user/</loc>
-    <lastmod>2019-07-15T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://yarra-framework.org/tags/reconstruction/</loc>
-    <lastmod>2019-07-15T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://yarra-framework.org/tags/release/</loc>
-    <lastmod>2021-08-13T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://yarra-framework.org/tags/repositories/</loc>
-    <lastmod>2020-02-12T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://yarra-framework.org/tags/routing/</loc>
-    <lastmod>2019-09-02T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://yarra-framework.org/tags/server/</loc>
-    <lastmod>2019-11-07T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://yarra-framework.org/tags/source-code/</loc>
-    <lastmod>2020-02-12T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://yarra-framework.org/tags/</loc>
-    <lastmod>2019-09-02T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://yarra-framework.org/tags/tools/</loc>
-    <lastmod>2019-09-02T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://yarra-framework.org/tags/training/</loc>
-    <lastmod>2019-05-10T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://yarra-framework.org/tags/ubuntu/</loc>
-    <lastmod>2019-05-03T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://yarra-framework.org/tags/update/</loc>
-    <lastmod>2019-11-07T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://yarra-framework.org/tags/website/</loc>
-    <lastmod>2019-03-26T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://yarra-framework.org/tags/workshop/</loc>
-    <lastmod>2019-05-10T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://yarra-framework.org/tags/yarra/</loc>
-    <lastmod>2019-03-26T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://yarra-framework.org/tags/yct/</loc>
-    <lastmod>2021-08-13T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
 </urlset>

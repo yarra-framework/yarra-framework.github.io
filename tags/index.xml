@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Yarra Framework</title>
@@ -6,10 +6,73 @@
     <description>Recent content in Tags on Yarra Framework</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 02 Sep 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 17 Dec 2021 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="http://yarra-framework.org/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Client</title>
+      <link>http://yarra-framework.org/tags/client/</link>
+      <pubDate>Fri, 17 Dec 2021 00:00:00 +0000</pubDate>
+      
+      <guid>http://yarra-framework.org/tags/client/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Release</title>
+      <link>http://yarra-framework.org/tags/release/</link>
+      <pubDate>Fri, 17 Dec 2021 00:00:00 +0000</pubDate>
+      
+      <guid>http://yarra-framework.org/tags/release/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>YCT</title>
+      <link>http://yarra-framework.org/tags/yct/</link>
+      <pubDate>Fri, 13 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>http://yarra-framework.org/tags/yct/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Repositories</title>
+      <link>http://yarra-framework.org/tags/repositories/</link>
+      <pubDate>Wed, 12 Feb 2020 00:00:00 +0000</pubDate>
+      
+      <guid>http://yarra-framework.org/tags/repositories/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Source code</title>
+      <link>http://yarra-framework.org/tags/source-code/</link>
+      <pubDate>Wed, 12 Feb 2020 00:00:00 +0000</pubDate>
+      
+      <guid>http://yarra-framework.org/tags/source-code/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Server</title>
+      <link>http://yarra-framework.org/tags/server/</link>
+      <pubDate>Thu, 07 Nov 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://yarra-framework.org/tags/server/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Update</title>
+      <link>http://yarra-framework.org/tags/update/</link>
+      <pubDate>Thu, 07 Nov 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://yarra-framework.org/tags/update/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Addons</title>
@@ -21,25 +84,7 @@
     </item>
     
     <item>
-      <title>Anonymizer</title>
-      <link>http://yarra-framework.org/tags/anonymizer/</link>
-      <pubDate>Fri, 05 Jul 2019 00:00:00 +0000</pubDate>
-      
-      <guid>http://yarra-framework.org/tags/anonymizer/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Client</title>
-      <link>http://yarra-framework.org/tags/client/</link>
-      <pubDate>Sun, 26 Jul 2020 00:00:00 +0000</pubDate>
-      
-      <guid>http://yarra-framework.org/tags/client/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Dicom</title>
+      <title>DICOM</title>
       <link>http://yarra-framework.org/tags/dicom/</link>
       <pubDate>Mon, 02 Sep 2019 00:00:00 +0000</pubDate>
       
@@ -48,29 +93,29 @@
     </item>
     
     <item>
-      <title>Grasp</title>
+      <title>Routing</title>
+      <link>http://yarra-framework.org/tags/routing/</link>
+      <pubDate>Mon, 02 Sep 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://yarra-framework.org/tags/routing/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Tools</title>
+      <link>http://yarra-framework.org/tags/tools/</link>
+      <pubDate>Mon, 02 Sep 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://yarra-framework.org/tags/tools/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>GRASP</title>
       <link>http://yarra-framework.org/tags/grasp/</link>
       <pubDate>Mon, 15 Jul 2019 00:00:00 +0000</pubDate>
       
       <guid>http://yarra-framework.org/tags/grasp/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Ismrm</title>
-      <link>http://yarra-framework.org/tags/ismrm/</link>
-      <pubDate>Fri, 10 May 2019 00:00:00 +0000</pubDate>
-      
-      <guid>http://yarra-framework.org/tags/ismrm/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Lts</title>
-      <link>http://yarra-framework.org/tags/lts/</link>
-      <pubDate>Fri, 03 May 2019 00:00:00 +0000</pubDate>
-      
-      <guid>http://yarra-framework.org/tags/lts/</guid>
       <description></description>
     </item>
     
@@ -93,56 +138,20 @@
     </item>
     
     <item>
-      <title>Release</title>
-      <link>http://yarra-framework.org/tags/release/</link>
-      <pubDate>Fri, 13 Aug 2021 00:00:00 +0000</pubDate>
+      <title>Anonymizer</title>
+      <link>http://yarra-framework.org/tags/anonymizer/</link>
+      <pubDate>Fri, 05 Jul 2019 00:00:00 +0000</pubDate>
       
-      <guid>http://yarra-framework.org/tags/release/</guid>
+      <guid>http://yarra-framework.org/tags/anonymizer/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Repositories</title>
-      <link>http://yarra-framework.org/tags/repositories/</link>
-      <pubDate>Wed, 12 Feb 2020 00:00:00 +0000</pubDate>
+      <title>ISMRM</title>
+      <link>http://yarra-framework.org/tags/ismrm/</link>
+      <pubDate>Fri, 10 May 2019 00:00:00 +0000</pubDate>
       
-      <guid>http://yarra-framework.org/tags/repositories/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Routing</title>
-      <link>http://yarra-framework.org/tags/routing/</link>
-      <pubDate>Mon, 02 Sep 2019 00:00:00 +0000</pubDate>
-      
-      <guid>http://yarra-framework.org/tags/routing/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Server</title>
-      <link>http://yarra-framework.org/tags/server/</link>
-      <pubDate>Thu, 07 Nov 2019 00:00:00 +0000</pubDate>
-      
-      <guid>http://yarra-framework.org/tags/server/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Source Code</title>
-      <link>http://yarra-framework.org/tags/source-code/</link>
-      <pubDate>Wed, 12 Feb 2020 00:00:00 +0000</pubDate>
-      
-      <guid>http://yarra-framework.org/tags/source-code/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Tools</title>
-      <link>http://yarra-framework.org/tags/tools/</link>
-      <pubDate>Mon, 02 Sep 2019 00:00:00 +0000</pubDate>
-      
-      <guid>http://yarra-framework.org/tags/tools/</guid>
+      <guid>http://yarra-framework.org/tags/ismrm/</guid>
       <description></description>
     </item>
     
@@ -156,20 +165,29 @@
     </item>
     
     <item>
+      <title>Workshop</title>
+      <link>http://yarra-framework.org/tags/workshop/</link>
+      <pubDate>Fri, 10 May 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://yarra-framework.org/tags/workshop/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>LTS</title>
+      <link>http://yarra-framework.org/tags/lts/</link>
+      <pubDate>Fri, 03 May 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://yarra-framework.org/tags/lts/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Ubuntu</title>
       <link>http://yarra-framework.org/tags/ubuntu/</link>
       <pubDate>Fri, 03 May 2019 00:00:00 +0000</pubDate>
       
       <guid>http://yarra-framework.org/tags/ubuntu/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Update</title>
-      <link>http://yarra-framework.org/tags/update/</link>
-      <pubDate>Thu, 07 Nov 2019 00:00:00 +0000</pubDate>
-      
-      <guid>http://yarra-framework.org/tags/update/</guid>
       <description></description>
     </item>
     
@@ -183,29 +201,11 @@
     </item>
     
     <item>
-      <title>Workshop</title>
-      <link>http://yarra-framework.org/tags/workshop/</link>
-      <pubDate>Fri, 10 May 2019 00:00:00 +0000</pubDate>
-      
-      <guid>http://yarra-framework.org/tags/workshop/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Yarra</title>
       <link>http://yarra-framework.org/tags/yarra/</link>
       <pubDate>Tue, 26 Mar 2019 00:00:00 +0000</pubDate>
       
       <guid>http://yarra-framework.org/tags/yarra/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Yct</title>
-      <link>http://yarra-framework.org/tags/yct/</link>
-      <pubDate>Fri, 13 Aug 2021 00:00:00 +0000</pubDate>
-      
-      <guid>http://yarra-framework.org/tags/yct/</guid>
       <description></description>
     </item>
     
