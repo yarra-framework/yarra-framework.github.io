@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Jobs on Yarra Framework</title>
+    <link>http://yarra-framework.org/tags/jobs/</link>
+    <description>Recent content in Jobs on Yarra Framework</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 11 Jan 2022 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://yarra-framework.org/tags/jobs/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Join Our Development Team</title>
+      <link>http://yarra-framework.org/blog/join_us/</link>
+      <pubDate>Tue, 11 Jan 2022 00:00:00 +0000</pubDate>
+      
+      <guid>http://yarra-framework.org/blog/join_us/</guid>
+      <description>We are currently looking for software engineers to join our NYU open-source development team, which creates various tools and platforms to simplify clinical translational research, including the Yarra Framework and its sister projects mercure and mtrk.
+All positions are based in NYC, full-time roles, and come with competitive compensation and benefits packages.
+Specifically, we are looking for open-source enthusiasts interested in one of the following roles:
+ Software Engineer – Imaging Platforms DevOps Engineer – Imaging Tools Web and Frontend Designer  If this sounds exciting to you, please follow the links above and submit your application!</description>
+    </item>
+    
+  </channel>
+</rss>
