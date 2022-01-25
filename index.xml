@@ -168,7 +168,7 @@ Usage PatchPatientName [input folder] [output folder] [TWIX file]  Typical call:
       <pubDate>Fri, 15 Jun 2018 00:00:00 +0000</pubDate>
       
       <guid>http://yarra-framework.org/download/archive/</guid>
-      <description>&amp;nbsp;Release History &amp;nbsp; Yarra Client Package &amp;nbsp; &amp;nbsp;&amp;nbsp;Version 0.59 &amp;ndash; Release Date: 2021-12-17Support for XA30A and XA31AIntroduced disconnect command for RDSAdded RDS option for remote LPFI file&amp;nbsp;Download Version &amp;nbsp;&amp;nbsp;Version 0.58 &amp;ndash; Release Date: 2020-07-26Support for XA20A and XA20BVarious bugfixes&amp;nbsp;Download Version &amp;nbsp;&amp;nbsp;Version 0.55 &amp;ndash; Release Date: 2019-11-06Support for VE11SAdded SAC option to send additional files with taskAdditional logserver notification for improved client monitoringConfigurable timeouts for rawdata export with RDS&amp;nbsp;Download Version &amp;nbsp;&amp;nbsp;Version 0.</description>
+      <description>&amp;nbsp;Release History &amp;nbsp; Yarra Client Package &amp;nbsp; &amp;nbsp;&amp;nbsp;Version 0.60 &amp;ndash; Release Date: 2022-01-25ORT: Increased possible length of ACCRDS: Excluding invalid characters from sequence names&amp;nbsp;Download Version &amp;nbsp;&amp;nbsp;Version 0.59 &amp;ndash; Release Date: 2021-12-17Support for XA30A and XA31AIntroduced disconnect command for RDSAdded RDS option for remote LPFI file&amp;nbsp;Download Version &amp;nbsp;&amp;nbsp;Version 0.58 &amp;ndash; Release Date: 2020-07-26Support for XA20A and XA20BVarious bugfixes&amp;nbsp;Download Version &amp;nbsp;&amp;nbsp;Version 0.</description>
     </item>
     
     <item>
@@ -435,13 +435,23 @@ As a “legally safe” alternative, it is possible to use the YarraLink sequenc
     <item>
       <title>Join Our Development Team</title>
       <link>http://yarra-framework.org/blog/join_us/</link>
-      <pubDate>Tue, 11 Jan 2022 00:00:00 +0000</pubDate>
+      <pubDate>Tue, 25 Jan 2022 00:00:00 +0000</pubDate>
       
       <guid>http://yarra-framework.org/blog/join_us/</guid>
       <description>We are currently looking for software engineers to join our NYU open-source development team, which creates various tools and platforms to simplify clinical translational research, including the Yarra Framework and its sister projects mercure and mtrk.
 All positions are based in NYC, full-time roles, and come with competitive compensation and benefits packages.
 Specifically, we are looking for open-source enthusiasts interested in one of the following roles:
  Software Engineer – Imaging Platforms DevOps Engineer – Imaging Tools Web and Frontend Designer  If this sounds exciting to you, please follow the links above and submit your application!</description>
+    </item>
+    
+    <item>
+      <title>Client Package 0.60</title>
+      <link>http://yarra-framework.org/blog/client_060/</link>
+      <pubDate>Sat, 25 Dec 2021 00:00:00 +0000</pubDate>
+      
+      <guid>http://yarra-framework.org/blog/client_060/</guid>
+      <description>A new version of the Yarra Client package with minor improvements has been released (version 0.60).
+The version is now available in the Download section.</description>
     </item>
     
     <item>

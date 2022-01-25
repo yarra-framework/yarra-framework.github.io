@@ -6,7 +6,7 @@
     <description>Recent content in Tags on Yarra Framework</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 11 Jan 2022 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 25 Jan 2022 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="http://yarra-framework.org/tags/index.xml" rel="self" type="application/rss+xml" />
     
@@ -14,9 +14,27 @@
     <item>
       <title>Jobs</title>
       <link>http://yarra-framework.org/tags/jobs/</link>
-      <pubDate>Tue, 11 Jan 2022 00:00:00 +0000</pubDate>
+      <pubDate>Tue, 25 Jan 2022 00:00:00 +0000</pubDate>
       
       <guid>http://yarra-framework.org/tags/jobs/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Client</title>
+      <link>http://yarra-framework.org/tags/client/</link>
+      <pubDate>Sat, 25 Dec 2021 00:00:00 +0000</pubDate>
+      
+      <guid>http://yarra-framework.org/tags/client/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Release</title>
+      <link>http://yarra-framework.org/tags/release/</link>
+      <pubDate>Sat, 25 Dec 2021 00:00:00 +0000</pubDate>
+      
+      <guid>http://yarra-framework.org/tags/release/</guid>
       <description></description>
     </item>
     
@@ -26,24 +44,6 @@
       <pubDate>Tue, 21 Dec 2021 00:00:00 +0000</pubDate>
       
       <guid>http://yarra-framework.org/tags/talks/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Client</title>
-      <link>http://yarra-framework.org/tags/client/</link>
-      <pubDate>Fri, 17 Dec 2021 00:00:00 +0000</pubDate>
-      
-      <guid>http://yarra-framework.org/tags/client/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Release</title>
-      <link>http://yarra-framework.org/tags/release/</link>
-      <pubDate>Fri, 17 Dec 2021 00:00:00 +0000</pubDate>
-      
-      <guid>http://yarra-framework.org/tags/release/</guid>
       <description></description>
     </item>
     

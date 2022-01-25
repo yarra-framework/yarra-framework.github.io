@@ -17,7 +17,7 @@
       <pubDate>Fri, 15 Jun 2018 00:00:00 +0000</pubDate>
       
       <guid>http://yarra-framework.org/download/archive/</guid>
-      <description>&amp;nbsp;Release History &amp;nbsp; Yarra Client Package &amp;nbsp; &amp;nbsp;&amp;nbsp;Version 0.59 &amp;ndash; Release Date: 2021-12-17Support for XA30A and XA31AIntroduced disconnect command for RDSAdded RDS option for remote LPFI file&amp;nbsp;Download Version &amp;nbsp;&amp;nbsp;Version 0.58 &amp;ndash; Release Date: 2020-07-26Support for XA20A and XA20BVarious bugfixes&amp;nbsp;Download Version &amp;nbsp;&amp;nbsp;Version 0.55 &amp;ndash; Release Date: 2019-11-06Support for VE11SAdded SAC option to send additional files with taskAdditional logserver notification for improved client monitoringConfigurable timeouts for rawdata export with RDS&amp;nbsp;Download Version &amp;nbsp;&amp;nbsp;Version 0.</description>
+      <description>&amp;nbsp;Release History &amp;nbsp; Yarra Client Package &amp;nbsp; &amp;nbsp;&amp;nbsp;Version 0.60 &amp;ndash; Release Date: 2022-01-25ORT: Increased possible length of ACCRDS: Excluding invalid characters from sequence names&amp;nbsp;Download Version &amp;nbsp;&amp;nbsp;Version 0.59 &amp;ndash; Release Date: 2021-12-17Support for XA30A and XA31AIntroduced disconnect command for RDSAdded RDS option for remote LPFI file&amp;nbsp;Download Version &amp;nbsp;&amp;nbsp;Version 0.58 &amp;ndash; Release Date: 2020-07-26Support for XA20A and XA20BVarious bugfixes&amp;nbsp;Download Version &amp;nbsp;&amp;nbsp;Version 0.</description>
     </item>
     
     <item>
