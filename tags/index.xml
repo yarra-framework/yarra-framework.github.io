@@ -6,7 +6,7 @@
     <description>Recent content in Tags on Yarra Framework</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 25 Jan 2022 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 21 Feb 2022 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="http://yarra-framework.org/tags/index.xml" rel="self" type="application/rss+xml" />
     
@@ -14,9 +14,45 @@
     <item>
       <title>Jobs</title>
       <link>http://yarra-framework.org/tags/jobs/</link>
-      <pubDate>Tue, 25 Jan 2022 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 21 Feb 2022 00:00:00 +0000</pubDate>
       
       <guid>http://yarra-framework.org/tags/jobs/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Addons</title>
+      <link>http://yarra-framework.org/tags/addons/</link>
+      <pubDate>Sun, 20 Feb 2022 00:00:00 +0000</pubDate>
+      
+      <guid>http://yarra-framework.org/tags/addons/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>DICOM</title>
+      <link>http://yarra-framework.org/tags/dicom/</link>
+      <pubDate>Sun, 20 Feb 2022 00:00:00 +0000</pubDate>
+      
+      <guid>http://yarra-framework.org/tags/dicom/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Routing</title>
+      <link>http://yarra-framework.org/tags/routing/</link>
+      <pubDate>Sun, 20 Feb 2022 00:00:00 +0000</pubDate>
+      
+      <guid>http://yarra-framework.org/tags/routing/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Tools</title>
+      <link>http://yarra-framework.org/tags/tools/</link>
+      <pubDate>Sun, 20 Feb 2022 00:00:00 +0000</pubDate>
+      
+      <guid>http://yarra-framework.org/tags/tools/</guid>
       <description></description>
     </item>
     
@@ -89,42 +125,6 @@
       <pubDate>Thu, 07 Nov 2019 00:00:00 +0000</pubDate>
       
       <guid>http://yarra-framework.org/tags/update/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Addons</title>
-      <link>http://yarra-framework.org/tags/addons/</link>
-      <pubDate>Mon, 02 Sep 2019 00:00:00 +0000</pubDate>
-      
-      <guid>http://yarra-framework.org/tags/addons/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>DICOM</title>
-      <link>http://yarra-framework.org/tags/dicom/</link>
-      <pubDate>Mon, 02 Sep 2019 00:00:00 +0000</pubDate>
-      
-      <guid>http://yarra-framework.org/tags/dicom/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Routing</title>
-      <link>http://yarra-framework.org/tags/routing/</link>
-      <pubDate>Mon, 02 Sep 2019 00:00:00 +0000</pubDate>
-      
-      <guid>http://yarra-framework.org/tags/routing/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Tools</title>
-      <link>http://yarra-framework.org/tags/tools/</link>
-      <pubDate>Mon, 02 Sep 2019 00:00:00 +0000</pubDate>
-      
-      <guid>http://yarra-framework.org/tags/tools/</guid>
       <description></description>
     </item>
     

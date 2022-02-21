@@ -435,13 +435,23 @@ As a “legally safe” alternative, it is possible to use the YarraLink sequenc
     <item>
       <title>Join Our Development Team</title>
       <link>http://yarra-framework.org/blog/join_us/</link>
-      <pubDate>Tue, 25 Jan 2022 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 21 Feb 2022 00:00:00 +0000</pubDate>
       
       <guid>http://yarra-framework.org/blog/join_us/</guid>
       <description>We are currently looking for software engineers to join our NYU open-source development team, which creates various tools and platforms to simplify clinical translational research, including the Yarra Framework and its sister projects mercure and mtrk.
 All positions are based in NYC, full-time roles, and come with competitive compensation and benefits packages.
 Specifically, we are looking for open-source enthusiasts interested in one of the following roles:
  Software Engineer – Imaging Platforms DevOps Engineer – Imaging Tools Web and Frontend Designer  If this sounds exciting to you, please follow the links above and submit your application!</description>
+    </item>
+    
+    <item>
+      <title>mercure DICOM Orchestrator</title>
+      <link>http://yarra-framework.org/blog/mercure/</link>
+      <pubDate>Sun, 20 Feb 2022 00:00:00 +0000</pubDate>
+      
+      <guid>http://yarra-framework.org/blog/mercure/</guid>
+      <description>If you are looking for an open-source solution to automate tasks when working with DICOM images, such as running image-processing algorithms or routing studies, please check out Yarra&amp;rsquo;s sister project &amp;ldquo;mercure&amp;rdquo; (think of it as &amp;ldquo;Yarra for DICOMs&amp;rdquo;). You can learn more about mercure in the video embedded below or by visiting the mercure homepage at: http://mercure-imaging.org/docs
+&amp;nbsp; &amp;nbsp;</description>
     </item>
     
     <item>
