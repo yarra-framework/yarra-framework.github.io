@@ -214,22 +214,37 @@
   
   <url>
     <loc>http://yarra-framework.org/blog/</loc>
-    <lastmod>2022-02-21T00:00:00+00:00</lastmod>
+    <lastmod>2022-03-23T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>http://yarra-framework.org/tags/jobs/</loc>
-    <lastmod>2022-02-21T00:00:00+00:00</lastmod>
+    <lastmod>2022-03-23T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>http://yarra-framework.org/blog/join_us/</loc>
-    <lastmod>2022-02-21T00:00:00+00:00</lastmod>
+    <lastmod>2022-03-23T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>http://yarra-framework.org/tags/</loc>
-    <lastmod>2022-02-21T00:00:00+00:00</lastmod>
+    <lastmod>2022-03-23T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://yarra-framework.org/blog/clienttools_v5/</loc>
+    <lastmod>2022-03-22T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://yarra-framework.org/tags/release/</loc>
+    <lastmod>2022-03-22T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://yarra-framework.org/tags/yct/</loc>
+    <lastmod>2022-03-22T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -268,11 +283,6 @@
   </url>
   
   <url>
-    <loc>http://yarra-framework.org/tags/release/</loc>
-    <lastmod>2021-12-25T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>http://yarra-framework.org/tags/talks/</loc>
     <lastmod>2021-12-21T00:00:00+00:00</lastmod>
   </url>
@@ -289,11 +299,6 @@
   
   <url>
     <loc>http://yarra-framework.org/blog/clienttools_v4/</loc>
-    <lastmod>2021-08-13T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://yarra-framework.org/tags/yct/</loc>
     <lastmod>2021-08-13T00:00:00+00:00</lastmod>
   </url>
   

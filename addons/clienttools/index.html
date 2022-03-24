@@ -37,7 +37,7 @@
     },
     "datePublished": "2019-07-03",
     "description": "",
-    "wordCount":  865 
+    "wordCount":  1006 
   }
 </script>
 
@@ -219,12 +219,12 @@
 
 
 <p>Currently, only raw-data files from the following software versions are supported (other versions are blocked):<br>
- <span class="badge badge-info">VB17</span> <span class="badge badge-info">VB18P</span> <span class="badge badge-info">VB19</span> <span class="badge badge-info">VB20P</span> <span class="badge badge-info">VD11</span> <span class="badge badge-info">VD13</span> <span class="badge badge-info">VE11</span> <span class="badge badge-info">XA10</span> <span class="badge badge-info">XA11</span> <span class="badge badge-info">XA20</span>
+ <span class="badge badge-info">VB17</span> <span class="badge badge-info">VB18P</span> <span class="badge badge-info">VB19</span> <span class="badge badge-info">VB20P</span> <span class="badge badge-info">VD11</span> <span class="badge badge-info">VD13</span> <span class="badge badge-info">VE11</span> <span class="badge badge-info">XA10</span> <span class="badge badge-info">XA11</span> <span class="badge badge-info">XA20</span> <span class="badge badge-info">XA30</span> <span class="badge badge-info">XA31</span>
  <br>New versions will be added when we get access to files from these versions, as we need to test the anonymizer.</p>
 
 <div style="margin-bottom: 10px; font-size: 0px;">&nbsp;</div>
 
-<pre><code>Yarra Client Tools - Batch Anonymizer 0.2b7
+<pre><code>Yarra Client Tools - Batch Anonymizer 0.2b8
 -------------------------------------------
 
 Usage:    yct_anonymizer [input path] [output path] [optional: patient-name replacement]
@@ -268,23 +268,27 @@ Purpose:  Show information about the protocols contained in the Twix file
 
 </h3>
 
-<p>The tool &ldquo;yct_getseqparams&rdquo; can be used to extract parameter values from a Twix file. When calling the tool with parameter &ldquo;show&rdquo;, it will return a default set of parameters. When adding &ldquo;show all&rdquo;, it will return an extensive list of parameters (including all parameters from the mrprot structure). When adding the name of one particular entry, e.g. &ldquo;show BolusAgent&rdquo;, only this specific value will be returned.</p>
+<p>The tool &ldquo;yct_getseqparams&rdquo; can be used to extract parameter values from a Twix file. When calling the tool with command &ldquo;show&rdquo;, it will return a default set of parameters. When adding &ldquo;show all&rdquo;, it will return an extensive list of parameters (including all parameters from the mrprot protocol structure). When adding the name of one particular entry, e.g. &ldquo;show BolusAgent&rdquo;, only this specific value will be returned.</p>
 
-<p>By piping the output, it is possible to pass the result to other commandline tools, which can be helpful when writing batch scripts. Using the option &ldquo;write&rdquo;, all parameter values are written into a file with the &ldquo;.ini&rdquo; format. Hence, the information can  be conveniently processed using a standard reader for ini files. A Linux version of the tool is available as well.</p>
+<p>By piping the output, it is possible to pass the result to other command-line tools, which can be helpful when writing batch scripts. Using the command &ldquo;write&rdquo;, all parameter values are written into a file with the &ldquo;.ini&rdquo; format. Hence, the information can be processed using a standard reader for ini files. A Linux version of the tool is available as well.</p>
+
+<p>The command &ldquo;index&rdquo; allows creating a CSV file that summarizes parameters from all Twix files contained in a provided path and its subfolders. The created CSV file can be opened with, e.g., Microsoft Excel. The search path is defined by the first argument (thus, the first argument is a folder path instead of a Twix filename, e.g. &ldquo;.&rdquo;). The parameters that should be collected in the columns of the CSV file are defined by the last argument and need to be concatenated using the # character without any whitespace (e.g., &ldquo;PatientName#ManufacturersModelName#HasAdjustments#mrprot.sKSpace.lBaseResolution&rdquo;). To see a list of the available parameters, call the &ldquo;show all&rdquo; command for a sample Twix file.</p>
 
 <div style="margin-bottom: 10px; font-size: 0px;">&nbsp;</div>
 
-<pre><code>Yarra Client Tools - GetSeqParams 0.1b3
+<pre><code>Yarra Client Tools - GetSeqParams 0.1b4
 ---------------------------------------
 
-Usage: yct_getseqparams [TWIX file] [command] [options]
+Usage: yct_getseqparams [filename/path] [command] [options]
 
 Available commands:
 
-    show              -- Shows relevant parameters from Twix file
-    show  [parameter] -- Shows specific parameter from Twix file
-    show  all         -- Shows all parameters from Twix file
-    write [filename]  -- Writes parameter summary into ini file
+    show                               --  Shows relevant parameters from Twix file
+    show  [parameter]                  --  Shows specific parameter from Twix file
+    show  all                          --  Shows all parameters from Twix file
+    write [filename]                   --  Writes parameter summary into ini file
+    index [csv filename] [parameters]  --  Reads parameters from all Twix files in the path (and subfolders) and creates CSV file
+                                           CSV columns specified with param_1#param_2#param_3 (see available parameters with &quot;show all&quot;)
 </code></pre>
 
 </div>
