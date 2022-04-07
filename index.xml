@@ -6,11 +6,7 @@
     <description>Recent content in Home on Yarra Framework</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 30 May 2018 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="http://yarra-framework.org/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Wed, 30 May 2018 00:00:00 +0000</lastBuildDate><atom:link href="http://yarra-framework.org/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Basic GRASP (Matlab)</title>
       <link>http://yarra-framework.org/modules_user/grasp-basic/</link>
@@ -57,8 +53,9 @@ Extract the archive into a folder on the host computer of the MRI system (or wor
       <pubDate>Fri, 15 Jun 2018 00:00:00 +0000</pubDate>
       
       <guid>http://yarra-framework.org/logserver/installation/</guid>
-      <description>&amp;nbsp;Installing LogServer Yarra LogServer (YLS) has been tested and developed under Ubuntu 16.04. Therefore, it is most likely to work when running on a server with this version of Ubuntu.
-YLS is not designed to be made available to the internet. It should never be made available outside your internal network. The system uses common-sense security measures to protect patient data, but it was not designed to withstand a determined attack across the public internet.</description>
+      <description>&amp;nbsp;Installing LogServer Yarra LogServer (YLS) is currently built and packaged for Ubuntu 18.04 and 20.04.
+YLS is not designed to be made available to the internet. It should never be made available outside your internal network. The system uses common-sense security measures to protect patient data, but it was not designed to withstand a determined attack across the public internet.
+Installation is simple. First, download the most recent yarralogserver package for your Ubuntu version here.</description>
     </item>
     
     <item>
@@ -69,7 +66,7 @@ YLS is not designed to be made available to the internet. It should never be mad
       <guid>http://yarra-framework.org/modules_user/grasp/</guid>
       <description>Purpose Performs a Compressed-Sensing-based 4D DCE-MRI reconstruction using the GRASP reconstruction technique. This module has been implemented in C++ and uses OpenMP parallelization to achieve high reconstruction speed.
 Note: This module can only be downloaded after a C2P contract with Siemens has been signed. Please contact your local Siemens collaboration manager. Alternatively, the Matlab-based version of GRASP can be used.
-Usage GraspR [input Twix file] [ini file] [output folder] [tmp folder] [acc #]  Typical call:</description>
+Usage GraspR [input Twix file] [ini file] [output folder] [tmp folder] [acc #] Typical call:</description>
     </item>
     
     <item>
@@ -79,7 +76,7 @@ Usage GraspR [input Twix file] [ini file] [output folder] [tmp folder] [acc #]  
       
       <guid>http://yarra-framework.org/overview/team/</guid>
       <description>&amp;nbsp;Yarra Development Team Yarra has been developed by members of the Center for Advanced Imaging Innovation and Research (CAI2R) at New York University Langone Health.
-&amp;nbsp;   Kai Tobias Block Tobias has been developing Yarra since 2012 after leaving his former position at Siemens Healthcare MR. He is an Associate Professor at NYU Langone Health.   &amp;nbsp;   Roy Wiggins Roy started working on Yarra in 2016 when he joined NYU Langone Health as Research Software Engineer.</description>
+&amp;nbsp; Kai Tobias BlockTobias has been developing Yarra since 2012 after leaving his former position at Siemens Healthcare MR. He is an Associate Professor at NYU Langone Health.&amp;nbsp; Roy WigginsRoy started working on Yarra in 2016 when he joined NYU Langone Health as Research Software Engineer.</description>
     </item>
     
     <item>
@@ -88,7 +85,7 @@ Usage GraspR [input Twix file] [ini file] [output folder] [tmp folder] [acc #]  
       <pubDate>Mon, 03 Jun 2019 00:00:00 +0000</pubDate>
       
       <guid>http://yarra-framework.org/developer/build-server/</guid>
-      <description>&amp;nbsp;Build-Instructions for YarraServer &amp;nbsp; Setting up the Build Environment &amp;nbsp;  Download Xubuntu 16.04.06 LTS Desktop Edition and install (preferably in VM). The Desktop Edition is preferred because the Qt installation requires X11. When using VirtualBox, install the VirtualBox Guest Additions CD. Update the apt-get chache: sudo apt-get update  Install build system, required tools, and required libraries: sudo apt install build-essential mercurial tortoisehg git cmake sudo apt install libboost-all-dev libssl-dev libpq-dev libssl-dev libfcgi-dev   &amp;nbsp; Installing Qt and Qt Creator &amp;nbsp;  Download the Qt offline installer and run the setup.</description>
+      <description>&amp;nbsp;Build-Instructions for YarraServer &amp;nbsp; Setting up the Build Environment &amp;nbsp;  Download Xubuntu 16.04.06 LTS Desktop Edition and install (preferably in VM). The Desktop Edition is preferred because the Qt installation requires X11. When using VirtualBox, install the VirtualBox Guest Additions CD. Update the apt-get chache:   sudo apt-get update  Install build system, required tools, and required libraries:   sudo apt install build-essential mercurial tortoisehg git cmakesudo apt install libboost-all-dev libssl-dev libpq-dev libssl-dev libfcgi-dev &amp;nbsp; Installing Qt and Qt Creator &amp;nbsp;  Download the Qt offline installer and run the setup.</description>
     </item>
     
     <item>
@@ -106,7 +103,8 @@ Usage GraspR [input Twix file] [ini file] [output folder] [tmp folder] [acc #]  
       <pubDate>Fri, 15 Jun 2018 00:00:00 +0000</pubDate>
       
       <guid>http://yarra-framework.org/logserver/configuration/</guid>
-      <description>&amp;nbsp;LogServer Configuration &amp;nbsp; Initial User for Admin Interface After the installation, there won’t be any users set up in the web interface. Click the “Register” link and provide your email and set a password. LogServer will send an email with a link to verify the email address. It is recommended to only use institutional email addresses. You can skip verifying your own email address by running this command:</description>
+      <description>&amp;nbsp;LogServer Configuration &amp;nbsp; Initial User for Admin Interface After the installation, there won’t be any users set up in the web interface. Click the “Register” link and provide your email and set a password. LogServer will send an email with a link to verify the email address. It is recommended to only use institutional email addresses. You can skip verifying your own email address by running this command:
+sudo su postgres -c &amp;#34;psql -d yarralog -c &amp;#39;update auth_info set email=unverified_email where id=1;&amp;#39;&amp;#34; After verifying your email address, you need to activate the account (this is normally done in the web interface by one of the admin accounts, but not possible for the initial user).</description>
     </item>
     
     <item>
@@ -115,10 +113,10 @@ Usage GraspR [input Twix file] [ini file] [output folder] [tmp folder] [acc #]  
       <pubDate>Fri, 15 Jun 2018 00:00:00 +0000</pubDate>
       
       <guid>http://yarra-framework.org/modules_core/drivetransfer/</guid>
-      <description> Purpose Transfers reconstructed DICOM images onto a network share (or mounted disk drive).
-Usage DriveTransfer [mode file] [directory with DICOMs] [unique task name]  Typical call:
-[Transfer] Bin=%bd/DriveTransfer Args=%mc %td %vuid  Configuration In .mode file:
-[DriveTransfer] TargetPath=#Path to target location, e.g. /media/yarra_out  </description>
+      <description>Purpose Transfers reconstructed DICOM images onto a network share (or mounted disk drive).
+Usage DriveTransfer [mode file] [directory with DICOMs] [unique task name] Typical call:
+[Transfer]Bin=%bd/DriveTransferArgs=%mc %td %vuid Configuration In .mode file:
+[DriveTransfer]TargetPath=#Path to target location, e.g. /media/yarra_out </description>
     </item>
     
     <item>
@@ -138,8 +136,8 @@ We are using it to move processed raw-data files from our YarraServers to a cent
       
       <guid>http://yarra-framework.org/modules_core/inipatch/</guid>
       <description>Purpose Creates a “patched” copy of a source ini file in the work directory with the given name. All keys specified in the mode file will be replaced by the param value passed as 4th argument, or by statically defined values written into the mode file.
-Usage IniPatch [mode file] [source ini file] [target (in work dir)] [param value]  Typical call:
-[PreProcessing] Bin=%bd/IniPatch Args=%mc %md/template.ini %rid/settings.ini %vparam  Configuration In .</description>
+Usage IniPatch [mode file] [source ini file] [target (in work dir)] [param value] Typical call:
+[PreProcessing]Bin=%bd/IniPatchArgs=%mc %md/template.ini %rid/settings.ini %vparam Configuration In .mode file:</description>
     </item>
     
     <item>
@@ -158,8 +156,8 @@ Usage IniPatch [mode file] [source ini file] [target (in work dir)] [param value
       
       <guid>http://yarra-framework.org/modules_user/patchcharacterset/</guid>
       <description>Purpose Patches the character set of the reconstructed DICOMs and encodes the patient name in the local patient name. Necessary when using the GRASP module with certain PACS systems.
-Usage PatchPatientName [input folder] [output folder] [TWIX file]  Typical call:
-[PostProcessing] Bin1=%bu/PatchCharacterSet/PatchPatientName.sh Args1=%pid %pod %rid/%rif  Configuration The character set can be changed directly in the script PatchPatientName.sh.</description>
+Usage PatchPatientName [input folder] [output folder] [TWIX file] Typical call:
+[PostProcessing]Bin1=%bu/PatchCharacterSet/PatchPatientName.shArgs1=%pid %pod %rid/%rif Configuration The character set can be changed directly in the script PatchPatientName.sh.</description>
     </item>
     
     <item>
@@ -178,8 +176,8 @@ Usage PatchPatientName [input folder] [output folder] [TWIX file]  Typical call:
       
       <guid>http://yarra-framework.org/modules_core/setdcmtags/</guid>
       <description>Purpose Populates the DICOM tags of reconstructed images based on patient and scan information read from the Twix file. It also combines DICOM files into series based on the file name and sets the needed DICOM UUIDs.
-Usage SetDCMTags [options] input output rawfile  Parameters:
- input -- Folder with DICOM files to process output -- Folder where modified DICOM files will be written rawfile -- Path and name of raw-data file  Options:</description>
+Usage SetDCMTags [options] input output rawfile Parameters:
+ input -- Folder with DICOM files to processoutput -- Folder where modified DICOM files will be writtenrawfile -- Path and name of raw-data file Options:</description>
     </item>
     
     <item>
@@ -189,10 +187,10 @@ Usage SetDCMTags [options] input output rawfile  Parameters:
       
       <guid>http://yarra-framework.org/modules_user/subtraction/</guid>
       <description>Purpose Calculates subtraction images from reconstructed image series.
-Usage Subtraction [input folder] [output folder] [mode file]  Typical call:
-[PostProcessing] Bin=%bu/Subtraction/Subtraction Args=%pid %pod %mc  Configuration In .mode file:
-[Subtraction] BaselineSeries=2 KeepSourceImages=true SubtractionMode=0 IncludeSeries=3:end#4 ExcludeSeries=  Keep source images If KeepSourceImages=false, then only the subtraction images will be sent. If KeepSourceImages=true, both the original images and subtraction images will be sent.
-Subtraction mode If SubtractionMode=0, then negative values will be discarded.</description>
+Usage Subtraction [input folder] [output folder] [mode file] Typical call:
+[PostProcessing]Bin=%bu/Subtraction/SubtractionArgs=%pid %pod %mc Configuration In .mode file:
+[Subtraction]BaselineSeries=2KeepSourceImages=trueSubtractionMode=0IncludeSeries=3:end#4ExcludeSeries= Keep source images If KeepSourceImages=false, then only the subtraction images will be sent. If KeepSourceImages=true, both the original images and subtraction images will be sent.
+Subtraction mode If SubtractionMode=0, then negative values will be discarded. If SubtractionMode=1, then the absolute value of the difference is calculated.</description>
     </item>
     
     <item>
@@ -219,7 +217,7 @@ Subtraction mode If SubtractionMode=0, then negative values will be discarded.</
       <pubDate>Mon, 03 Jun 2019 00:00:00 +0000</pubDate>
       
       <guid>http://yarra-framework.org/developer/build-client/</guid>
-      <description> &amp;nbsp;Build-Instructions for Yarra Clients &amp;nbsp;Under ConstructionSorry, this section is still missing. Please check again soon.
+      <description>&amp;nbsp;Build-Instructions for Yarra Clients &amp;nbsp;Under ConstructionSorry, this section is still missing. Please check again soon.
 </description>
     </item>
     
@@ -240,7 +238,7 @@ Subtraction mode If SubtractionMode=0, then negative values will be discarded.</
       
       <guid>http://yarra-framework.org/server/configuration/</guid>
       <description>&amp;nbsp;Directory Structure After the initial installation, the YarraServer folder has the following directory structure:
-   Path Purpose     fail/ Target folder for failed reconstruction tasks   finished/ Target folder for completed tasks (if data should be kept)   install/ Folder with supplementary files for the installation   log/ Folder for log files   modes/ Folder with definitions of reconstruction modes   modules/ Folder with binaries of core processing modules (shipped with Yarra)   modules_user/ Folder with binaries of custom-developed modules   queue/ Queue directory with incoming reconstruction tasks   webgui/ Folder for the web-based user interface   work/ Working directory for temporary files during processing     By default, these folders are local subfolders in the ~/yarra installation directory.</description>
+   Path Purpose     fail/ Target folder for failed reconstruction tasks   finished/ Target folder for completed tasks (if data should be kept)   install/ Folder with supplementary files for the installation   log/ Folder for log files   modes/ Folder with definitions of reconstruction modes   modules/ Folder with binaries of core processing modules (shipped with Yarra)   modules_user/ Folder with binaries of custom-developed modules   queue/ Queue directory with incoming reconstruction tasks   webgui/ Folder for the web-based user interface   work/ Working directory for temporary files during processing    By default, these folders are local subfolders in the ~/yarra installation directory.</description>
     </item>
     
     <item>
@@ -278,9 +276,9 @@ Afterwards, it will show the main application window where all recent patient ex
       
       <guid>http://yarra-framework.org/modules_core/pacstransfer/</guid>
       <description>Purpose Sends all reconstructed DICOM images to one or multiple DICOM nodes (PACS or DICOM workstation). Requires installation of the OFFIS dcmtk package on the server.
-Usage PACSTransfer [mode file] [directory with DICOMs]  Typical call:
-[Transfer] Bin=%bd/PACSTransfer Args=%mc %td  Configuration In .mode file:
-[PACSTransfer] AEC=#AEC of PACS IP=#IP of PACS, e.g. 10.142.23.54 Port=#Port of PACS, e.g. 104 AET=#AET to be used, e.g. YARRA  If the images should be sent to multiple DICOM nodes (up to 20), add to .</description>
+Usage PACSTransfer [mode file] [directory with DICOMs] Typical call:
+[Transfer]Bin=%bd/PACSTransferArgs=%mc %td Configuration In .mode file:
+[PACSTransfer]AEC=#AEC of PACSIP=#IP of PACS, e.g. 10.142.23.54Port=#Port of PACS, e.g. 104AET=#AET to be used, e.g. YARRA If the images should be sent to multiple DICOM nodes (up to 20), add to .</description>
     </item>
     
     <item>
@@ -309,7 +307,7 @@ Usage PACSTransfer [mode file] [directory with DICOMs]  Typical call:
       
       <guid>http://yarra-framework.org/logserver/redash/</guid>
       <description>&amp;nbsp;Data Visualization with Redash While the included Yarra LogViewer provides access to all collected data in tabular form, it is often desired to visualize data or to perform advanced queries. This can be done with Redash, which is a web-based open-source tool for creating SQL-driven dashboards.
-&amp;nbsp;More information on Redash
+More information on Redash
 Please use only the Self Hosted Open Source version of Redash. Do not use the hosted cloud version, as this would transfer sensitive data to external cloud servers.</description>
     </item>
     
@@ -321,7 +319,7 @@ Please use only the Self Hosted Open Source version of Redash. Do not use the ho
       <guid>http://yarra-framework.org/server/usage/</guid>
       <description>&amp;nbsp;Starting and Stopping the Server &amp;nbsp; In most use cases, the YarraServer process is controlled via the WebGUI. However, it is also possible to control the server using command-line tools. &amp;nbsp;
 If Running as Linux Daemon When the YarraServer has been installed as daemon (recommended and described here), the YarraServer can be started using a terminal shell (as user yarraserver) and typing:
-sudo systemctl start yarra  The server is now running in the background.</description>
+sudo systemctl start yarra The server is now running in the background.</description>
     </item>
     
     <item>
@@ -350,7 +348,7 @@ To send a task, click on the “Select…” button and choose the .dat (TWIX) f
       <pubDate>Fri, 15 Jun 2018 00:00:00 +0000</pubDate>
       
       <guid>http://yarra-framework.org/download/sourcecode/</guid>
-      <description> &amp;nbsp;Open Source Access The Yarra Framework is an open-source project. The code for all components of Yarra is publicly hosted on bitbucket.org. Click the buttons below to get to the repositories of the individual components. The source code is provided under the GNU General Public License (GPL).
+      <description>&amp;nbsp;Open Source Access The Yarra Framework is an open-source project. The code for all components of Yarra is publicly hosted on bitbucket.org. Click the buttons below to get to the repositories of the individual components. The source code is provided under the GNU General Public License (GPL).
 If you want to build Yarra binaries yourself, you can find setup instructions for the build environmnet here.
 &amp;nbsp; &amp;nbsp;Yarra Client Page on Bitbucket&amp;nbsp;Yarra Server Page on Bitbucket&amp;nbsp;Yarra WebGUI Page on Bitbucket&amp;nbsp;Yarra LogServer Page on Bitbucket&amp;nbsp;Yarra Archive Search Page on Bitbucket&amp;nbsp;Yarra FileMover Page on Bitbucket&amp;nbsp;Yarra Link Page on Bitbucket</description>
     </item>
@@ -361,7 +359,7 @@ If you want to build Yarra binaries yourself, you can find setup instructions fo
       <pubDate>Fri, 15 Jun 2018 00:00:00 +0000</pubDate>
       
       <guid>http://yarra-framework.org/logserver/queries/</guid>
-      <description> &amp;nbsp;Sample LogServer Queries &amp;nbsp;Under ConstructionSorry, this section is still missing. Please check again soon.
+      <description>&amp;nbsp;Sample LogServer Queries &amp;nbsp;Under ConstructionSorry, this section is still missing. Please check again soon.
 </description>
     </item>
     
@@ -371,7 +369,7 @@ If you want to build Yarra binaries yourself, you can find setup instructions fo
       <pubDate>Fri, 15 Jun 2018 00:00:00 +0000</pubDate>
       
       <guid>http://yarra-framework.org/download/resources/</guid>
-      <description> &amp;nbsp;Additional Material &amp;nbsp; ISMRM 2019 Educational Session on Open-Source Software Tools &amp;nbsp; &amp;nbsp;Whitepaper on Concept &amp;nbsp;Overview Slides &amp;nbsp;Tutorial Slides on Offline Reconstruction
+      <description>&amp;nbsp;Additional Material &amp;nbsp; ISMRM 2019 Educational Session on Open-Source Software Tools &amp;nbsp; &amp;nbsp;Whitepaper on Concept &amp;nbsp;Overview Slides &amp;nbsp;Tutorial Slides on Offline Reconstruction
 &amp;nbsp; </description>
     </item>
     
@@ -621,7 +619,7 @@ YarraServer 0.97 has now been built using an Ubuntu 16.</description>
       <guid>http://yarra-framework.org/blog/ismrm2019/</guid>
       <description>We will present Yarra in the Weekend Educational Session on Open-Source Software Tools that will take place at the ISMRM 2019 Meeting in Montreal. Roy Wiggins will give an overview talk at 11:00am and give a practical demonstration on how reconstruction algorithms can be integrated into Yarra at 1:30pm, 2:20pm, and 3:10pm.
 You can find the training material also in the Resources section.
-&amp;nbsp;ISMRM Educational Session on Open-Source Software Tools</description>
+ISMRM Educational Session on Open-Source Software Tools</description>
     </item>
     
     <item>
@@ -649,7 +647,7 @@ For reference, the old website is still available under this link. Note, however
       <pubDate>Thu, 01 Oct 2015 00:00:00 +0000</pubDate>
       
       <guid>http://yarra-framework.org/disclaimer/</guid>
-      <description>Disclaimer The Yarra framework is provided free of charge for use in research applications. It must not be used for diagnostic applications. The authors take no responsibility of any kind for the accuracy or integrity of the created data sets. No data created using the framework should be used to make diagnostic decisions.  The Yarra framework provided through this website, including all of its software components, comes without any warranties.</description>
+      <description>DisclaimerThe Yarra framework is provided free of charge for use in research applications. It must not be used for diagnostic applications. The authors take no responsibility of any kind for the accuracy or integrity of the created data sets. No data created using the framework should be used to make diagnostic decisions.The Yarra framework provided through this website, including all of its software components, comes without any warranties.</description>
     </item>
     
     <item>
@@ -658,7 +656,7 @@ For reference, the old website is still available under this link. Note, however
       <pubDate>Thu, 01 Oct 2015 00:00:00 +0000</pubDate>
       
       <guid>http://yarra-framework.org/license/</guid>
-      <description>License Information The Yarra framework is provided free of charge for use in research applications. It must not be used for diagnostic applications. The author takes no responsibility of any kind for the accuracy or integrity of the created data sets. No data created using the framework should be used to make diagnostic decisions.  The Yarra framework, including all of its software components, comes without any warranties. Operation of the software is solely on the user’s own risk.</description>
+      <description>License InformationThe Yarra framework is provided free of charge for use in research applications. It must not be used for diagnostic applications. The author takes no responsibility of any kind for the accuracy or integrity of the created data sets. No data created using the framework should be used to make diagnostic decisions.The Yarra framework, including all of its software components, comes without any warranties. Operation of the software is solely on the user’s own risk.</description>
     </item>
     
     <item>

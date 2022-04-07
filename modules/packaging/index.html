@@ -44,7 +44,7 @@
 
 <link rel="canonical" href="http://yarra-framework.org/modules/packaging/" />
 
-<meta name="generator" content="Hugo 0.59.1" />
+<meta name="generator" content="Hugo 0.96.0" />
 
 
   <link rel="stylesheet" href="/assets/css/bootstrap.min.css" />
@@ -76,7 +76,7 @@
                
         
         <li class="nav-item">
-          <a class="nav-link menu-item " href="/overview">
+          <a class="nav-link menu-item " href="/overview/">
             
             <span class="text-capitalize no-decoration text-white">Overview</span>
           </a>
@@ -85,7 +85,7 @@
               
         
         <li class="nav-item">
-          <a class="nav-link menu-item " href="/clients">
+          <a class="nav-link menu-item " href="/clients/">
             
             <span class="text-capitalize no-decoration text-white">Clients</span>
           </a>
@@ -94,7 +94,7 @@
               
         
         <li class="nav-item">
-          <a class="nav-link menu-item " href="/server">
+          <a class="nav-link menu-item " href="/server/">
             
             <span class="text-capitalize no-decoration text-white">Server</span>
           </a>
@@ -103,7 +103,7 @@
               
         
         <li class="nav-item">
-          <a class="nav-link menu-item active" href="/modules">
+          <a class="nav-link menu-item active" href="/modules/">
             
             <span class="text-capitalize no-decoration text-white">Modules</span>
           </a>
@@ -112,7 +112,7 @@
               
         
         <li class="nav-item">
-          <a class="nav-link menu-item " href="/logserver">
+          <a class="nav-link menu-item " href="/logserver/">
             
             <span class="text-capitalize no-decoration text-white">LogServer</span>
           </a>
@@ -121,7 +121,7 @@
               
         
         <li class="nav-item">
-          <a class="nav-link menu-item " href="/addons">
+          <a class="nav-link menu-item " href="/addons/">
             
             <span class="text-capitalize no-decoration text-white">Addons</span>
           </a>
@@ -130,7 +130,7 @@
               
         
         <li class="nav-item">
-          <a class="nav-link menu-item " href="/download">
+          <a class="nav-link menu-item " href="/download/">
             
             <span class="text-capitalize no-decoration text-white">Download</span>
           </a>
@@ -139,7 +139,7 @@
               
         
         <li class="nav-item">
-          <a class="nav-link menu-item " href="/blog">
+          <a class="nav-link menu-item " href="/blog/">
             
             <span class="text-capitalize no-decoration text-white">Blog</span>
           </a>
@@ -182,31 +182,21 @@
     </div>
     <div class="col-xs-12 col-lg-9 post-container">
       <div class="content pt-2">
-  
-
-<h3 id="hahahugoshortcode-s0-hbhb">
+  <h3 id="hahahugoshortcode-s0-hbhb">
 <i class="fas fa-angle-double-right" style="color: #580F8B; font-size: 24px;">&nbsp;</i>Module Packaging
 
 </h3>
-
 <p>Modules can be packaged by creating a ZIP archive of all files. In addition, a <strong>manifest file</strong> has to be placed inside the ZIP file.</p>
-
 <p>When installing a module through the WebGUI, the ZIP file will be extracted into a subfolder under <strong>/yarra/modules_user</strong>. The installation folder is named according to the filename of the manifest file that is contained in the ZIP archive. Thus, it is possible to append a version number to the ZIP file (e.g., setdcmtags_012b.zip) without affecting the installation location.</p>
-
 <p>During the installation process, the Yarra WebGUI checks if the ZIP archive contains a manifest file (.ymf). If the ZIP file does not contain a manifest file, the installation will be aborted. As next step, the Yarra WebGUI checks if a module with the name of the manifest file already exists in the /yarra/modules_user folder. If not, a subfolder will be created and the ZIP file will be extracted. If it already exists, the WebGUI will compare the version number of the installed module with the version number in the manifest file of the ZIP archive. If the version number in the ZIP archive is higher, the installed module will be removed (i.e. the subfolder will be deleted) and the ZIP file will be extracted; otherwise the installation will be aborted.</p>
-
 <p>It should be noted that the WebGUI just extracts the files contained in the ZIP file (including subfolders). However, it does not install any Linux dependencies. If the module requires any dependencies that have to be installed via apt-get, this should be listed in the documentation of the module.</p>
-
 <h3 id="hahahugoshortcode-s1-hbhb"><div style="margin-bottom: 40px; font-size: 0px;">&nbsp;</div></h3>
-
 <h3 id="hahahugoshortcode-s2-hbhb">
 <i class="fas fa-angle-double-right" style="color: #580F8B; font-size: 24px;">&nbsp;</i>Manifest File
 
 </h3>
-
 <p>The manifest file is a text file in the &ldquo;ini format&rdquo; with extension .ymf. It is used to display information about the module in the WebGUI (Configuration page) and for the version management (only newer versions will be installed if the module does already exist). Note that the name of the manifest file determines the name of installation folder.</p>
-
-<pre><code>[YarraModule]
+<pre tabindex="0"><code>[YarraModule]
 Name=
 Version=
 Author=
@@ -214,18 +204,14 @@ Description=
 Homepage=
 DownloadURL=
 RequiresMatlab=
-</code></pre>
-
-<p>Example:</p>
-
-<pre><code>[YarraModule]
+</code></pre><p>Example:</p>
+<pre tabindex="0"><code>[YarraModule]
 Name=GRASP (Matlab)
 Description=GRASP reconstruction implemented in Matlab
 Version=0.1
 Author=Li Feng
 RequiresMatlab=true
 </code></pre>
-
 </div>
 
       

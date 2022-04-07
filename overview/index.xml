@@ -6,11 +6,7 @@
     <description>Recent content in Overview on Yarra Framework</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 15 Jun 2018 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="http://yarra-framework.org/overview/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Fri, 15 Jun 2018 00:00:00 +0000</lastBuildDate><atom:link href="http://yarra-framework.org/overview/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Team</title>
       <link>http://yarra-framework.org/overview/team/</link>
@@ -18,7 +14,7 @@
       
       <guid>http://yarra-framework.org/overview/team/</guid>
       <description>&amp;nbsp;Yarra Development Team Yarra has been developed by members of the Center for Advanced Imaging Innovation and Research (CAI2R) at New York University Langone Health.
-&amp;nbsp;   Kai Tobias Block Tobias has been developing Yarra since 2012 after leaving his former position at Siemens Healthcare MR. He is an Associate Professor at NYU Langone Health.   &amp;nbsp;   Roy Wiggins Roy started working on Yarra in 2016 when he joined NYU Langone Health as Research Software Engineer.</description>
+&amp;nbsp; Kai Tobias BlockTobias has been developing Yarra since 2012 after leaving his former position at Siemens Healthcare MR. He is an Associate Professor at NYU Langone Health.&amp;nbsp; Roy WigginsRoy started working on Yarra in 2016 when he joined NYU Langone Health as Research Software Engineer.</description>
     </item>
     
     <item>

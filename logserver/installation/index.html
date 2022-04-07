@@ -37,14 +37,14 @@
     },
     "datePublished": "2018-06-15",
     "description": "",
-    "wordCount":  272 
+    "wordCount":  270 
   }
 </script>
 
 
 <link rel="canonical" href="http://yarra-framework.org/logserver/installation/" />
 
-<meta name="generator" content="Hugo 0.59.1" />
+<meta name="generator" content="Hugo 0.96.0" />
 
 
   <link rel="stylesheet" href="/assets/css/bootstrap.min.css" />
@@ -76,7 +76,7 @@
                
         
         <li class="nav-item">
-          <a class="nav-link menu-item " href="/overview">
+          <a class="nav-link menu-item " href="/overview/">
             
             <span class="text-capitalize no-decoration text-white">Overview</span>
           </a>
@@ -85,7 +85,7 @@
               
         
         <li class="nav-item">
-          <a class="nav-link menu-item " href="/clients">
+          <a class="nav-link menu-item " href="/clients/">
             
             <span class="text-capitalize no-decoration text-white">Clients</span>
           </a>
@@ -94,7 +94,7 @@
               
         
         <li class="nav-item">
-          <a class="nav-link menu-item " href="/server">
+          <a class="nav-link menu-item " href="/server/">
             
             <span class="text-capitalize no-decoration text-white">Server</span>
           </a>
@@ -103,7 +103,7 @@
               
         
         <li class="nav-item">
-          <a class="nav-link menu-item " href="/modules">
+          <a class="nav-link menu-item " href="/modules/">
             
             <span class="text-capitalize no-decoration text-white">Modules</span>
           </a>
@@ -112,7 +112,7 @@
               
         
         <li class="nav-item">
-          <a class="nav-link menu-item active" href="/logserver">
+          <a class="nav-link menu-item active" href="/logserver/">
             
             <span class="text-capitalize no-decoration text-white">LogServer</span>
           </a>
@@ -121,7 +121,7 @@
               
         
         <li class="nav-item">
-          <a class="nav-link menu-item " href="/addons">
+          <a class="nav-link menu-item " href="/addons/">
             
             <span class="text-capitalize no-decoration text-white">Addons</span>
           </a>
@@ -130,7 +130,7 @@
               
         
         <li class="nav-item">
-          <a class="nav-link menu-item " href="/download">
+          <a class="nav-link menu-item " href="/download/">
             
             <span class="text-capitalize no-decoration text-white">Download</span>
           </a>
@@ -139,7 +139,7 @@
               
         
         <li class="nav-item">
-          <a class="nav-link menu-item " href="/blog">
+          <a class="nav-link menu-item " href="/blog/">
             
             <span class="text-capitalize no-decoration text-white">Blog</span>
           </a>
@@ -184,15 +184,11 @@
     </div>
     <div class="col-xs-12 col-lg-9 post-container">
       <div class="content pt-2">
-  
-
-<h3 id="hahahugoshortcode-s0-hbhb">
+  <h3 id="hahahugoshortcode-s0-hbhb">
 <i class="fas fa-angle-double-right" style="color: #580F8B; font-size: 24px;">&nbsp;</i>Installing LogServer
 
 </h3>
-
-<p>Yarra LogServer (YLS) has been tested and developed under Ubuntu 16.04. Therefore, it is most likely to work when running on a server with this version of Ubuntu.</p>
-
+<p>Yarra LogServer (YLS) is currently built and packaged for Ubuntu 18.04 and 20.04.</p>
 
 <div class="bs-callout bs-callout-danger"  >
     
@@ -200,25 +196,20 @@
 </div>
 
 
-
-<p>Installation is simple. First, download the most recent yarralogserver package. Install it like this:</p>
-
-<pre><code>sudo dpkg -i yarralogserver_0.8-0ubuntu1_amd64.deb &amp;&amp; sudo apt-get install -f
-</code></pre>
-
-<p>All the main drudge work should be done by the installation script. It creates a yarra system user, installs two services (YarraLogServer and YarraLogViewer, the latter provides a web administration interface and simple search mechanism).</p>
-
-<p>To verify that it has been installed correctly, visit <a href="https://localhost:4444" target="_blank">https://localhost:4444</a> to open the web-based admin interface. You will probably have to click through a security warning regarding the self-signed certificate that the server is using (the server will not respond to unencrypted http requests). This is normal and can be ignored.</p>
-
+<p>Installation is simple. First, download the most recent yarralogserver package for your Ubuntu version <a href="/download#logserver">here</a>.</p>
+<p>On Ubuntu 18.04, install it like this:</p>
+<pre tabindex="0"><code>sudo dpkg -i &lt;the package&gt;.deb &amp;&amp; sudo apt-get install -f
+</code></pre><p>On Ubuntu 20.04, this is the recommended method:</p>
+<pre tabindex="0"><code>sudo apt install ./&lt;the package&gt;.deb
+</code></pre><p>After installation, initialize the database locally by running</p>
+<pre tabindex="0"><code>sudo /opt/yarralogserver/dbinit.sh
+</code></pre><p>To verify that it has been installed correctly, visit <a href="https://localhost:4444">https://localhost:4444</a> to open the web-based admin interface. You will probably have to click through a security warning regarding the self-signed certificate that the server is using (the server will not respond to unencrypted http requests). This is expected and not an error.</p>
 <img style="margin-left: auto; margin-right: auto; display: block;  margin-top: 40px; margin-bottom: 40px; "  class="img-fluid" src="/yls_login.png" />
 
-
 <p>If the login page does not appear, check the health of the yarralogviewer process. Any number of things might have broken it here. If it looks like it’s something we broke, please get in touch.</p>
-
-<pre><code>sudo systemctl status yarralogviewer
-</code></pre>
-
-<p>The next thing to check is the health of the LogServer service. This is the process that receives and stores the information coming from the clients. Navigate to <a href="https://localhost:4443/test" target="_blank">https://localhost:4443/test</a>, which should give you an empty page, but not error. This verifies that the LogServer is running and accepting connections.</p>
+<pre tabindex="0"><code>sudo systemctl status yarralogviewer
+</code></pre><p>The next thing to check is the health of the LogServer service. This is the process that receives and stores the information coming from the clients. Navigate to <a href="https://localhost:4443/test">https://localhost:4443/test</a>, which should give you an empty page, but not error. This verifies that the LogServer is running and accepting connections.</p>
+<p>Now that the software is installed, before it can be used it must be <a href="../configuration">configured <i class="fas fa-angle-double-right" style=""></i></a>.</p>
 
 </div>
 

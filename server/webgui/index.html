@@ -44,7 +44,7 @@
 
 <link rel="canonical" href="http://yarra-framework.org/server/webgui/" />
 
-<meta name="generator" content="Hugo 0.59.1" />
+<meta name="generator" content="Hugo 0.96.0" />
 
 
   <link rel="stylesheet" href="/assets/css/bootstrap.min.css" />
@@ -76,7 +76,7 @@
                
         
         <li class="nav-item">
-          <a class="nav-link menu-item " href="/overview">
+          <a class="nav-link menu-item " href="/overview/">
             
             <span class="text-capitalize no-decoration text-white">Overview</span>
           </a>
@@ -85,7 +85,7 @@
               
         
         <li class="nav-item">
-          <a class="nav-link menu-item " href="/clients">
+          <a class="nav-link menu-item " href="/clients/">
             
             <span class="text-capitalize no-decoration text-white">Clients</span>
           </a>
@@ -94,7 +94,7 @@
               
         
         <li class="nav-item">
-          <a class="nav-link menu-item active" href="/server">
+          <a class="nav-link menu-item active" href="/server/">
             
             <span class="text-capitalize no-decoration text-white">Server</span>
           </a>
@@ -103,7 +103,7 @@
               
         
         <li class="nav-item">
-          <a class="nav-link menu-item " href="/modules">
+          <a class="nav-link menu-item " href="/modules/">
             
             <span class="text-capitalize no-decoration text-white">Modules</span>
           </a>
@@ -112,7 +112,7 @@
               
         
         <li class="nav-item">
-          <a class="nav-link menu-item " href="/logserver">
+          <a class="nav-link menu-item " href="/logserver/">
             
             <span class="text-capitalize no-decoration text-white">LogServer</span>
           </a>
@@ -121,7 +121,7 @@
               
         
         <li class="nav-item">
-          <a class="nav-link menu-item " href="/addons">
+          <a class="nav-link menu-item " href="/addons/">
             
             <span class="text-capitalize no-decoration text-white">Addons</span>
           </a>
@@ -130,7 +130,7 @@
               
         
         <li class="nav-item">
-          <a class="nav-link menu-item " href="/download">
+          <a class="nav-link menu-item " href="/download/">
             
             <span class="text-capitalize no-decoration text-white">Download</span>
           </a>
@@ -139,7 +139,7 @@
               
         
         <li class="nav-item">
-          <a class="nav-link menu-item " href="/blog">
+          <a class="nav-link menu-item " href="/blog/">
             
             <span class="text-capitalize no-decoration text-white">Blog</span>
           </a>
@@ -188,17 +188,12 @@
     </div>
     <div class="col-xs-12 col-lg-9 post-container">
       <div class="content pt-2">
-  
-
-<h3 id="hahahugoshortcode-s0-hbhb">
+  <h3 id="hahahugoshortcode-s0-hbhb">
 <i class="fas fa-angle-double-right" style="color: #580F8B; font-size: 24px;">&nbsp;</i>Introduction
 
 </h3>
-
 <p>Yarra provides a convenient web-based user interface for YarraServer (WebGUI), which can be used to monitor, control, and configure the server. The WebGUI is accessible from every web browser, including smartphones, by using the server address as URL with extension :8080, e.g. 192.168.56.101:8080. The port can also be changed to a different number. The WebGUI offers a user authentication system with different access levels, ranging from view-only monitoring of the reconstruction queue to full configuration rights for the YarraServer.</p>
-
 <div style="margin-bottom: 10px; font-size: 0px;">&nbsp;</div>
-
 <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
   <ol class="carousel-indicators">
     <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -261,18 +256,13 @@
     <span class="sr-only">Next</span>
   </a>
 </div>
-
 <div style="margin-bottom: 40px; font-size: 0px;">&nbsp;</div>
-
 <h3 id="hahahugoshortcode-s3-hbhb">
 <i class="fas fa-angle-double-right" style="color: #580F8B; font-size: 24px;">&nbsp;</i>Installation
 
 </h3>
-
 <p>The WebGUI is now part of the YarraServer package and will be installed into the subfolder /yarra/webgui when extracting the YarraServer package, as described <a href="/server/installation">here</a>. The folder contains the binary, configuration files, as well as support files.</p>
-
 <p>The WebGUI can be started by calling the executable YarraWebGUI. However, it is strongly recommended to install the WebGUI as Linux daemon instead (similar to the YarraServer itself). This ensures that the WebGUI is automatically started when the server is rebooted, and it ensures that the WebGUI is immediately restarted in the case that it should crash.</p>
-
 
 <div class="bs-callout bs-callout-info"  >
     
@@ -280,10 +270,8 @@
 </div>
 
 
-
 <p>To install the daemon, open a terminal with administrator rights (sudo account). Review the file yarrawebgui.service, which is located in the /yarra/install subfolder. By default, this file should read:</p>
-
-<pre><code>[Unit]
+<pre tabindex="0"><code>[Unit]
 Description=Yarra WebGUI
 Documentation=http://yarraframework.com
 After=smbd.service
@@ -300,30 +288,18 @@ RestartSec=3
 
 [Install]
 WantedBy=multi-user.target
-</code></pre>
-
-<p>Depending on the location of your YarraServer installation, it is necessary to adjust the path of the &ldquo;EnvironmentFile=&rdquo; file and its content (this file specifies where the Qt binaries are located). It might also be necessary to adapt the &ldquo;User=&rdquo; setting if a different user name for running YarraServer is used.</p>
-
+</code></pre><p>Depending on the location of your YarraServer installation, it is necessary to adjust the path of the &ldquo;EnvironmentFile=&rdquo; file and its content (this file specifies where the Qt binaries are located). It might also be necessary to adapt the &ldquo;User=&rdquo; setting if a different user name for running YarraServer is used.</p>
 <p>Copy the yarrawebgui.service file to the directory /etc/systemd/system (this can only be done using administrator rights):</p>
-
-<pre><code>sudo cp yarrawebgui.service /etc/systemd/system
-</code></pre>
-
-<p>Then, activate the Yarra daemon by typing:</p>
-
-<pre><code>sudo systemctl enable yarrawebgui
-</code></pre>
-
-<div style="margin-bottom: 40px; font-size: 0px;">&nbsp;</div>
-
+<pre tabindex="0"><code>sudo cp yarrawebgui.service /etc/systemd/system
+</code></pre><p>Then, activate the Yarra daemon by typing:</p>
+<pre tabindex="0"><code>sudo systemctl enable yarrawebgui
+</code></pre><div style="margin-bottom: 40px; font-size: 0px;">&nbsp;</div>
 <h3 id="hahahugoshortcode-s6-hbhb">
 <i class="fas fa-angle-double-right" style="color: #580F8B; font-size: 24px;">&nbsp;</i>Configuration
 
 </h3>
-
 <p>All settings of the WebGUI are contained in the file YarraWebGUI.ini, which is located in the folder webgui. Below, you can see a sample configuration:</p>
-
-<pre><code>;### Yarra WebGUI Configuration ###
+<pre tabindex="0"><code>;### Yarra WebGUI Configuration ###
  
 [Setup]
 ;# Specifies the port for the webgui (added to the URL in the browser) 
@@ -353,14 +329,9 @@ DisableSupportForum=false
 Name=username 
 Password=password 
 Level=1 
-</code></pre>
-
-<p>By default, the WebGUI runs on port 8080, which means that the WebGUI can be accessed from any browser by entering the URL <a href="http://x.x.x.x:8080" target="_blank">http://x.x.x.x:8080</a> where x.x.x.x is the IP address of the Yarra server. If necessary, the port number can be changed.</p>
-
+</code></pre><p>By default, the WebGUI runs on port 8080, which means that the WebGUI can be accessed from any browser by entering the URL <a href="http://x.x.x.x:8080">http://x.x.x.x:8080</a> where x.x.x.x is the IP address of the Yarra server. If necessary, the port number can be changed.</p>
 <p>When accessing the URL, it is necessary to login using a username and password. Up to 100 different user accounts can be defined in the configuration file (using separate sections with increasing index [User1], [User2], [User3], &hellip; ).</p>
-
 <p>Three different access levels can be selected for each user. Level 1 is a view-only mode, which is intended, e.g., for technicians to monitor the reconstruction queue. Level 2 allows deleting or modifying scheduled tasks (e.g., changing the reconstruction mode or adding notification recipients), restarting failed tasks, or viewing log files. This mode should assigned to managers or researchers that Yarra for their studies. Finally, Level 3 allows controlling the server (shutdown / restart) and modifying the configuration. This user level should only be assigned to the administrators of the server.</p>
-
 
 <div class="bs-callout bs-callout-warning"  >
     
@@ -368,25 +339,16 @@ Level=1
 </div>
 
 
-
 <div style="margin-bottom: 40px; font-size: 0px;">&nbsp;</div>
-
 <h3 id="hahahugoshortcode-s9-hbhb">
 <i class="fas fa-angle-double-right" style="color: #580F8B; font-size: 24px;">&nbsp;</i>Starting and Stopping the WebGUI
 
 </h3>
-
 <p>To start the WebGUI, type the following command (using the administrator account):</p>
-
-<pre><code>sudo systemctl start yarrawebgui
-</code></pre>
-
-<p>If you need to stop (or restart) the WebGUI, type:</p>
-
-<pre><code>sudo systemctl stop yarrawebgui
-</code></pre>
-
-<p><div style="margin-bottom: 40px; font-size: 0px;">&nbsp;</div>
+<pre tabindex="0"><code>sudo systemctl start yarrawebgui
+</code></pre><p>If you need to stop (or restart) the WebGUI, type:</p>
+<pre tabindex="0"><code>sudo systemctl stop yarrawebgui
+</code></pre><p><div style="margin-bottom: 40px; font-size: 0px;">&nbsp;</div>
 
 <div class="bs-callout bs-callout-info"  >
     

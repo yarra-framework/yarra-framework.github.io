@@ -44,7 +44,7 @@
 
 <link rel="canonical" href="http://yarra-framework.org/addons/clienttools/" />
 
-<meta name="generator" content="Hugo 0.59.1" />
+<meta name="generator" content="Hugo 0.96.0" />
 
 
   <link rel="stylesheet" href="/assets/css/bootstrap.min.css" />
@@ -76,7 +76,7 @@
                
         
         <li class="nav-item">
-          <a class="nav-link menu-item " href="/overview">
+          <a class="nav-link menu-item " href="/overview/">
             
             <span class="text-capitalize no-decoration text-white">Overview</span>
           </a>
@@ -85,7 +85,7 @@
               
         
         <li class="nav-item">
-          <a class="nav-link menu-item " href="/clients">
+          <a class="nav-link menu-item " href="/clients/">
             
             <span class="text-capitalize no-decoration text-white">Clients</span>
           </a>
@@ -94,7 +94,7 @@
               
         
         <li class="nav-item">
-          <a class="nav-link menu-item " href="/server">
+          <a class="nav-link menu-item " href="/server/">
             
             <span class="text-capitalize no-decoration text-white">Server</span>
           </a>
@@ -103,7 +103,7 @@
               
         
         <li class="nav-item">
-          <a class="nav-link menu-item " href="/modules">
+          <a class="nav-link menu-item " href="/modules/">
             
             <span class="text-capitalize no-decoration text-white">Modules</span>
           </a>
@@ -112,7 +112,7 @@
               
         
         <li class="nav-item">
-          <a class="nav-link menu-item " href="/logserver">
+          <a class="nav-link menu-item " href="/logserver/">
             
             <span class="text-capitalize no-decoration text-white">LogServer</span>
           </a>
@@ -121,7 +121,7 @@
               
         
         <li class="nav-item">
-          <a class="nav-link menu-item active" href="/addons">
+          <a class="nav-link menu-item active" href="/addons/">
             
             <span class="text-capitalize no-decoration text-white">Addons</span>
           </a>
@@ -130,7 +130,7 @@
               
         
         <li class="nav-item">
-          <a class="nav-link menu-item " href="/download">
+          <a class="nav-link menu-item " href="/download/">
             
             <span class="text-capitalize no-decoration text-white">Download</span>
           </a>
@@ -139,7 +139,7 @@
               
         
         <li class="nav-item">
-          <a class="nav-link menu-item " href="/blog">
+          <a class="nav-link menu-item " href="/blog/">
             
             <span class="text-capitalize no-decoration text-white">Blog</span>
           </a>
@@ -182,49 +182,37 @@
     </div>
     <div class="col-xs-12 col-lg-9 post-container">
       <div class="content pt-2">
-  
-
-<h3 id="hahahugoshortcode-s0-hbhb">
+  <h3 id="hahahugoshortcode-s0-hbhb">
 <i class="fas fa-angle-double-right" style="color: #580F8B; font-size: 24px;">&nbsp;</i>Introduction
 
 </h3>
-
 <p>The Yarra Client Tools (YCT) are several small command-line tools for Windows that can be helpful when working with Siemens raw-data files (aka Twix files). They are distributed in a separate package because they are targeted at advanced users. It is recommended to extract the package into the installation folder of the Yarra Client package because the tools require runtime libraries that are contained in the Yarra Client package.</p>
-
 
 <div class="bs-callout bs-callout-primary"  >
     
-<p>If you receive an error message stating that &lsquo;libgcc_s_dw2-1.dll&rsquo; is missing, make sure that the client tools are located inside the installation folder of the Yarra client package.</p>
+<p>If you receive an error message stating that &rsquo;libgcc_s_dw2-1.dll&rsquo; is missing, make sure that the client tools are located inside the installation folder of the Yarra client package.</p>
 </div>
 
 
-
 <div style="margin-bottom: 40px; font-size: 0px;">&nbsp;</div>
-
 <h3 id="hahahugoshortcode-s3-hbhb">
 <i class="fas fa-angle-double-right" style="color: #580F8B; font-size: 24px;">&nbsp;</i>yct_anonymize
 
 </h3>
-
 <p>The tool &ldquo;yct_anonymize&rdquo; can be used to anonymize a batch of Twix raw-data files. It will remove the patient name, patient ID (i.e. the medical record number), date of birth, and referring physician. In addition, the filename will be changed to a universally unique identifier ID (UUID). The same UUID will be inserted as patient name (up to the length of the original patient, as the size of the file must be preserved). This enables identifying cases in PACS through the UUID.</p>
-
 <p>When anonymizing a set of files, the tool creates a CSV file that contains the original filename, the name of the anonymized file, the UUID, as well as the removed PHI such as patient name, MRN, and DOB. This file can later be used to lookup the original patient name from the UUID (e.g., in case of an accidental finding on an anonymized scan). The file can be opened with Excel or any texteditor. It should be kept in a secure location and must <strong>not be shared</strong> with people who should not have access to the PHI (e.g., collaboration partners).</p>
-
 
 <div class="bs-callout bs-callout-danger"  >
     
-<p>The yct_anonymize tool should be used with caution. The tool has been tested to the best of our abilities. However, use of the tool is solely <strong>at the user’s own risk</strong>. We take no responsibility for possible misfunction or damages resulting from the use of the tool. If you are planning to share anonymized files with collaborators, it is recommended to double-check the files for residual PHI by opening them with a suited editor (e.g., <a href="http://www.pilotedit.com" target="_blank">PilotEdit</a> can handle large files). Also make sure to always use the latest release of the client tools.</p>
+<p>The yct_anonymize tool should be used with caution. The tool has been tested to the best of our abilities. However, use of the tool is solely <strong>at the user’s own risk</strong>. We take no responsibility for possible misfunction or damages resulting from the use of the tool. If you are planning to share anonymized files with collaborators, it is recommended to double-check the files for residual PHI by opening them with a suited editor (e.g., <a href="http://www.pilotedit.com">PilotEdit</a> can handle large files). Also make sure to always use the latest release of the client tools.</p>
 </div>
 
 
-
 <p>Currently, only raw-data files from the following software versions are supported (other versions are blocked):<br>
- <span class="badge badge-info">VB17</span> <span class="badge badge-info">VB18P</span> <span class="badge badge-info">VB19</span> <span class="badge badge-info">VB20P</span> <span class="badge badge-info">VD11</span> <span class="badge badge-info">VD13</span> <span class="badge badge-info">VE11</span> <span class="badge badge-info">XA10</span> <span class="badge badge-info">XA11</span> <span class="badge badge-info">XA20</span> <span class="badge badge-info">XA30</span> <span class="badge badge-info">XA31</span>
- <br>New versions will be added when we get access to files from these versions, as we need to test the anonymizer.</p>
-
+<span class="badge badge-info">VB17</span> <span class="badge badge-info">VB18P</span> <span class="badge badge-info">VB19</span> <span class="badge badge-info">VB20P</span> <span class="badge badge-info">VD11</span> <span class="badge badge-info">VD13</span> <span class="badge badge-info">VE11</span> <span class="badge badge-info">XA10</span> <span class="badge badge-info">XA11</span> <span class="badge badge-info">XA20</span> <span class="badge badge-info">XA30</span> <span class="badge badge-info">XA31</span>
+<br>New versions will be added when we get access to files from these versions, as we need to test the anonymizer.</p>
 <div style="margin-bottom: 10px; font-size: 0px;">&nbsp;</div>
-
-<pre><code>Yarra Client Tools - Batch Anonymizer 0.2b8
+<pre tabindex="0"><code>Yarra Client Tools - Batch Anonymizer 0.2b8
 -------------------------------------------
 
 Usage:    yct_anonymizer [input path] [output path] [optional: patient-name replacement]
@@ -236,22 +224,16 @@ Purpose:  Anonymizes all Twix files located in [input path]. The anonymized file
           the patient name. A file in CSV format will be created (files.csv) that lists the
           original and anonymized file names, as well as the removed PHI.
 
-Note:     Please use this tool with caution. Operation of the software is at the user's
+Note:     Please use this tool with caution. Operation of the software is at the user&#39;s
           own risk. The authors take no responsibility of any kind.
-</code></pre>
-
-<div style="margin-bottom: 40px; font-size: 0px;">&nbsp;</div>
-
+</code></pre><div style="margin-bottom: 40px; font-size: 0px;">&nbsp;</div>
 <h3 id="hahahugoshortcode-s7-hbhb">
 <i class="fas fa-angle-double-right" style="color: #580F8B; font-size: 24px;">&nbsp;</i>yct_dumpprot
 
 </h3>
-
-<p>The tool &ldquo;yct_dumpprot&rdquo; extracts the measurement header from a Twix file into a separate file with extension .prot. This allows analyzing the acquisition parameters using  standard text editors (e.g., <a href="https://notepad-plus-plus.org/" target="_blank">Notepad++</a>), which are typically not capable of loading large Twix files. If a Twix file contains multiple measurements (multi-measurement format introduced with VD11), the headers from the individual scans will be concatenated. The tool also provides an option to list the embedded measurements, which allows determining if a file contains adjustment data in addition to the actual scan data.</p>
-
+<p>The tool &ldquo;yct_dumpprot&rdquo; extracts the measurement header from a Twix file into a separate file with extension .prot. This allows analyzing the acquisition parameters using  standard text editors (e.g., <a href="https://notepad-plus-plus.org/">Notepad++</a>), which are typically not capable of loading large Twix files. If a Twix file contains multiple measurements (multi-measurement format introduced with VD11), the headers from the individual scans will be concatenated. The tool also provides an option to list the embedded measurements, which allows determining if a file contains adjustment data in addition to the actual scan data.</p>
 <div style="margin-bottom: 10px; font-size: 0px;">&nbsp;</div>
-
-<pre><code>Yarra Client Tools - Dump Protocol 0.1b5
+<pre tabindex="0"><code>Yarra Client Tools - Dump Protocol 0.1b5
 ----------------------------------------
 
 Usage:    yct_dumpprot dump [twixfile]
@@ -259,24 +241,16 @@ Purpose:  Extract the scan protocol from a Twix file into a text file (with exte
 
 Usage:    yct_dumpprot info [twixfile]
 Purpose:  Show information about the protocols contained in the Twix file
-</code></pre>
-
-<div style="margin-bottom: 40px; font-size: 0px;">&nbsp;</div>
-
+</code></pre><div style="margin-bottom: 40px; font-size: 0px;">&nbsp;</div>
 <h3 id="hahahugoshortcode-s10-hbhb">
 <i class="fas fa-angle-double-right" style="color: #580F8B; font-size: 24px;">&nbsp;</i>yct_getseqparams
 
 </h3>
-
 <p>The tool &ldquo;yct_getseqparams&rdquo; can be used to extract parameter values from a Twix file. When calling the tool with command &ldquo;show&rdquo;, it will return a default set of parameters. When adding &ldquo;show all&rdquo;, it will return an extensive list of parameters (including all parameters from the mrprot protocol structure). When adding the name of one particular entry, e.g. &ldquo;show BolusAgent&rdquo;, only this specific value will be returned.</p>
-
 <p>By piping the output, it is possible to pass the result to other command-line tools, which can be helpful when writing batch scripts. Using the command &ldquo;write&rdquo;, all parameter values are written into a file with the &ldquo;.ini&rdquo; format. Hence, the information can be processed using a standard reader for ini files. A Linux version of the tool is available as well.</p>
-
 <p>The command &ldquo;index&rdquo; allows creating a CSV file that summarizes parameters from all Twix files contained in a provided path and its subfolders. The created CSV file can be opened with, e.g., Microsoft Excel. The search path is defined by the first argument (thus, the first argument is a folder path instead of a Twix filename, e.g. &ldquo;.&rdquo;). The parameters that should be collected in the columns of the CSV file are defined by the last argument and need to be concatenated using the # character without any whitespace (e.g., &ldquo;PatientName#ManufacturersModelName#HasAdjustments#mrprot.sKSpace.lBaseResolution&rdquo;). To see a list of the available parameters, call the &ldquo;show all&rdquo; command for a sample Twix file.</p>
-
 <div style="margin-bottom: 10px; font-size: 0px;">&nbsp;</div>
-
-<pre><code>Yarra Client Tools - GetSeqParams 0.1b4
+<pre tabindex="0"><code>Yarra Client Tools - GetSeqParams 0.1b4
 ---------------------------------------
 
 Usage: yct_getseqparams [filename/path] [command] [options]
@@ -288,9 +262,8 @@ Available commands:
     show  all                          --  Shows all parameters from Twix file
     write [filename]                   --  Writes parameter summary into ini file
     index [csv filename] [parameters]  --  Reads parameters from all Twix files in the path (and subfolders) and creates CSV file
-                                           CSV columns specified with param_1#param_2#param_3 (see available parameters with &quot;show all&quot;)
+                                           CSV columns specified with param_1#param_2#param_3 (see available parameters with &#34;show all&#34;)
 </code></pre>
-
 </div>
 
       

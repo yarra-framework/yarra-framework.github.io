@@ -6,11 +6,7 @@
     <description>Recent content in Server on Yarra Framework</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 15 Jun 2018 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="http://yarra-framework.org/server/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Fri, 15 Jun 2018 00:00:00 +0000</lastBuildDate><atom:link href="http://yarra-framework.org/server/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Installation</title>
       <link>http://yarra-framework.org/server/installation/</link>
@@ -27,7 +23,7 @@
       
       <guid>http://yarra-framework.org/server/configuration/</guid>
       <description>&amp;nbsp;Directory Structure After the initial installation, the YarraServer folder has the following directory structure:
-   Path Purpose     fail/ Target folder for failed reconstruction tasks   finished/ Target folder for completed tasks (if data should be kept)   install/ Folder with supplementary files for the installation   log/ Folder for log files   modes/ Folder with definitions of reconstruction modes   modules/ Folder with binaries of core processing modules (shipped with Yarra)   modules_user/ Folder with binaries of custom-developed modules   queue/ Queue directory with incoming reconstruction tasks   webgui/ Folder for the web-based user interface   work/ Working directory for temporary files during processing     By default, these folders are local subfolders in the ~/yarra installation directory.</description>
+   Path Purpose     fail/ Target folder for failed reconstruction tasks   finished/ Target folder for completed tasks (if data should be kept)   install/ Folder with supplementary files for the installation   log/ Folder for log files   modes/ Folder with definitions of reconstruction modes   modules/ Folder with binaries of core processing modules (shipped with Yarra)   modules_user/ Folder with binaries of custom-developed modules   queue/ Queue directory with incoming reconstruction tasks   webgui/ Folder for the web-based user interface   work/ Working directory for temporary files during processing    By default, these folders are local subfolders in the ~/yarra installation directory.</description>
     </item>
     
     <item>
@@ -47,7 +43,7 @@
       <guid>http://yarra-framework.org/server/usage/</guid>
       <description>&amp;nbsp;Starting and Stopping the Server &amp;nbsp; In most use cases, the YarraServer process is controlled via the WebGUI. However, it is also possible to control the server using command-line tools. &amp;nbsp;
 If Running as Linux Daemon When the YarraServer has been installed as daemon (recommended and described here), the YarraServer can be started using a terminal shell (as user yarraserver) and typing:
-sudo systemctl start yarra  The server is now running in the background.</description>
+sudo systemctl start yarra The server is now running in the background.</description>
     </item>
     
     <item>

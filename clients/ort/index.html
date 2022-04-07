@@ -44,7 +44,7 @@
 
 <link rel="canonical" href="http://yarra-framework.org/clients/ort/" />
 
-<meta name="generator" content="Hugo 0.59.1" />
+<meta name="generator" content="Hugo 0.96.0" />
 
 
   <link rel="stylesheet" href="/assets/css/bootstrap.min.css" />
@@ -76,7 +76,7 @@
                
         
         <li class="nav-item">
-          <a class="nav-link menu-item " href="/overview">
+          <a class="nav-link menu-item " href="/overview/">
             
             <span class="text-capitalize no-decoration text-white">Overview</span>
           </a>
@@ -85,7 +85,7 @@
               
         
         <li class="nav-item">
-          <a class="nav-link menu-item active" href="/clients">
+          <a class="nav-link menu-item active" href="/clients/">
             
             <span class="text-capitalize no-decoration text-white">Clients</span>
           </a>
@@ -94,7 +94,7 @@
               
         
         <li class="nav-item">
-          <a class="nav-link menu-item " href="/server">
+          <a class="nav-link menu-item " href="/server/">
             
             <span class="text-capitalize no-decoration text-white">Server</span>
           </a>
@@ -103,7 +103,7 @@
               
         
         <li class="nav-item">
-          <a class="nav-link menu-item " href="/modules">
+          <a class="nav-link menu-item " href="/modules/">
             
             <span class="text-capitalize no-decoration text-white">Modules</span>
           </a>
@@ -112,7 +112,7 @@
               
         
         <li class="nav-item">
-          <a class="nav-link menu-item " href="/logserver">
+          <a class="nav-link menu-item " href="/logserver/">
             
             <span class="text-capitalize no-decoration text-white">LogServer</span>
           </a>
@@ -121,7 +121,7 @@
               
         
         <li class="nav-item">
-          <a class="nav-link menu-item " href="/addons">
+          <a class="nav-link menu-item " href="/addons/">
             
             <span class="text-capitalize no-decoration text-white">Addons</span>
           </a>
@@ -130,7 +130,7 @@
               
         
         <li class="nav-item">
-          <a class="nav-link menu-item " href="/download">
+          <a class="nav-link menu-item " href="/download/">
             
             <span class="text-capitalize no-decoration text-white">Download</span>
           </a>
@@ -139,7 +139,7 @@
               
         
         <li class="nav-item">
-          <a class="nav-link menu-item " href="/blog">
+          <a class="nav-link menu-item " href="/blog/">
             
             <span class="text-capitalize no-decoration text-white">Blog</span>
           </a>
@@ -182,32 +182,21 @@
     </div>
     <div class="col-xs-12 col-lg-9 post-container">
       <div class="content pt-2">
-  
-
-<h3 id="hahahugoshortcode-s0-hbhb">
+  <h3 id="hahahugoshortcode-s0-hbhb">
 <i class="fas fa-angle-double-right" style="color: #580F8B; font-size: 24px;">&nbsp;</i>Usage
 
 </h3>
-
 <p>The ORT client is the Yarra client for submitting reconstructions tasks from the consoles (host computer) of Siemens MRI systems. When started, the client will automatically connect to the Yarra server and read the list of configured reconstruction modes (see <a href="/server/modes">this page</a> on how to configure of reconstruction modes).</p>
-
 <p>Afterwards, it will show the main application window where all recent patient exams are listed that match to the defined reconstruction modes (i.e., protocols that contain the protocol tags defined in the reconstruction modes). When reconstruction tasks are submitted right after a patient exam (e.g., before the patient is taken from the table), the scan to-be-reconstructed is shown in the top row. The client will automatically assign the correct reconstruction mode based on the tags contained in the protocol name. The selected reconstruction mode can be seen in the user control “Reconstruction Mode:”, which is shown below the list of scans.</p>
-
 <img style="margin-left: auto; margin-right: auto; display: block;  margin-top: 30px; margin-bottom: 30px; "  class="img-fluid" src="/ort1m.jpg" />
 
-
 <p>If a scan has been performed with incorrect protocol name (or if the protocol tag has not been added to the protocol name yet), it is possible to overwrite the automatic assignment of the reconstruction mode. This can be achieved by clicking the button “Manual Assignment” (see below). The client will now show all scans available on the system (including the adjustment scans) and not just those that match the protocol tags. It is then possible to select the scan in the list and to manually choose the desired reconstruction mode in the user control “Reconstruction Mode:”.</p>
-
 <img style="margin-left: auto; margin-right: auto; display: block;  margin-top: 30px; margin-bottom: 30px; "  class="img-fluid" src="/ort2m.jpg" />
 
-
 <p>When clicking on the “Send Task…” button, a confirmation window will appear. If images should be sent to a PACS system, it is necessary to enter the Accession Number (ACC#) for the patient into this dialog. Some reconstruction mode also might ask for additional parameters.</p>
-
 <img style="margin-left: auto; margin-right: auto; display: block;  margin-top: 30px; margin-bottom: 30px; "  class="img-fluid" src="/ort3m.jpg" />
 
-
 <p>If desired, an email address can be entered into the field “E-Mail”. The Yarra server will then send email notifications if the reconstruction task has been completed or if an error occurred.</p>
-
 
 <div class="bs-callout bs-callout-danger"  >
     
@@ -215,45 +204,29 @@
 </div>
 
 
-
 <p>When clicking “Confirm” the client will start transferring the data to the Yarra server. This occurs in 2 steps: In the first step, the window shown below will appear.  Until this window disappears (usually only several seconds), scanning is not possible.</p>
-
 <img style="margin-left: auto; margin-right: auto; display: block;  margin-top: 20px; margin-bottom: 20px; "  class="img-fluid" src="/ort4m.jpg" />
 
-
 <p>Afterwards, a small “running indicator” will appear in the right-bottom corner of the screen (not shown). When this indicator appears, scanning can continue.</p>
-
 <p>When the data has been received by the Yarra server, the task will be placed in the task queue and processed. If many tasks are already in the reconstruction queue, it may take some time until the tasks is processed. If a reconstruction is needed urgently, it is possible to press the “Priority” button on the client’s main window, which will ensure that the task will be reconstructed before other tasks that are already in the queue. The status of the task queue can be monitored using the <a href="/server/webgui">Yarra WebGUI</a>.</p>
-
 <div style="margin-bottom: 40px; font-size: 0px;">&nbsp;</div>
-
 <h3 id="hahahugoshortcode-s7-hbhb">
 <i class="fas fa-angle-double-right" style="color: #580F8B; font-size: 24px;">&nbsp;</i>Configuration
 
 </h3>
-
 <p>During the first start of the ORT client, it will automatically open the configuration window. Later, the configuration window can be opened by right-clicking on the orange Yarra logo of the main window and selecting “Configuration…”. The configuration window is protected by a password to prevent users from accidentally changing the configuration. The password is “nyc2012”.</p>
-
 <img style="margin-left: auto; margin-right: auto; display: block;  margin-top: 30px; margin-bottom: 30px; "  class="img-fluid" src="/ort5m.jpg" />
 
-
 <p>A unique <strong>System Name</strong> should be selected that allows to identify the MR system. This name will appear in log files and notification emails. The detected version of the Siemens Syngo MR software is shown below. The <strong>Server Path</strong> defines where the network share of the Yarra server can be found. In standard installations, the Yarra server will share the queue directory using the SMB protocol (see <a href="/server/installation">Server Installation</a>), which is mapped to some drive letter. It is recommended to use the drive Y:\ for the mapping (unless drive Y:\ is already used on the host computer).</p>
-
 <p>In the fields <strong>Connect Cmd</strong> and <strong>Disconnect Cmd</strong>, the Windows shell commands for connecting and disconnecting from the Yarra share should be entered. For standard installations using SMB shares, this is done using the “net use” command (but the Yarra clients also allow using different network systems if necessary).</p>
-
 <p>If the Yarra server has been installed according to the steps on the <a href="/server/installation">Server Installation</a> page, the following entries should be used:</p>
-
-<p><strong>Server Path:</strong> Y:<br />
+<p><strong>Server Path:</strong> Y:<br>
 <strong>Connect Cmd:</strong> net use Y: \[ip of server]\YarraServer [password of user yarra] /USER:yarra /yes <br>
 <strong>Disconnect Cmd:</strong> net use y: /delete /yes</p>
-
 <p>If a second Yarra server is available, it is possible to optionally enter a <strong>Fallback Connect Cmd</strong>. If the client is unable to reach the server listed under Connect Cmd, it will automatically connect to the fallback server and submit the task to the fallback server. Thus, if the main Yarra server should become unavailable for some reason, the reconstructions will be seamlessly redirected to the fallback server.</p>
-
 <img style="margin-left: auto; margin-right: auto; display: block;  margin-top: 30px; margin-bottom: 30px; "  class="img-fluid" src="/ort6m.jpg" />
 
-
 <p>It is possible to define presets for the notification email addresses, which can be inserted into the confirmation dialog by right-clicking on the notification field. These email addresses have to be written into the textbox on the <strong>E-Mail Presets</strong> tab. Each email address should be written into a separate row (with no separator characters between the addresses).</p>
-
 
 <div class="bs-callout bs-callout-danger"  >
     

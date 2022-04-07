@@ -44,7 +44,7 @@
 
 <link rel="canonical" href="http://yarra-framework.org/clients/rds/" />
 
-<meta name="generator" content="Hugo 0.59.1" />
+<meta name="generator" content="Hugo 0.96.0" />
 
 
   <link rel="stylesheet" href="/assets/css/bootstrap.min.css" />
@@ -76,7 +76,7 @@
                
         
         <li class="nav-item">
-          <a class="nav-link menu-item " href="/overview">
+          <a class="nav-link menu-item " href="/overview/">
             
             <span class="text-capitalize no-decoration text-white">Overview</span>
           </a>
@@ -85,7 +85,7 @@
               
         
         <li class="nav-item">
-          <a class="nav-link menu-item active" href="/clients">
+          <a class="nav-link menu-item active" href="/clients/">
             
             <span class="text-capitalize no-decoration text-white">Clients</span>
           </a>
@@ -94,7 +94,7 @@
               
         
         <li class="nav-item">
-          <a class="nav-link menu-item " href="/server">
+          <a class="nav-link menu-item " href="/server/">
             
             <span class="text-capitalize no-decoration text-white">Server</span>
           </a>
@@ -103,7 +103,7 @@
               
         
         <li class="nav-item">
-          <a class="nav-link menu-item " href="/modules">
+          <a class="nav-link menu-item " href="/modules/">
             
             <span class="text-capitalize no-decoration text-white">Modules</span>
           </a>
@@ -112,7 +112,7 @@
               
         
         <li class="nav-item">
-          <a class="nav-link menu-item " href="/logserver">
+          <a class="nav-link menu-item " href="/logserver/">
             
             <span class="text-capitalize no-decoration text-white">LogServer</span>
           </a>
@@ -121,7 +121,7 @@
               
         
         <li class="nav-item">
-          <a class="nav-link menu-item " href="/addons">
+          <a class="nav-link menu-item " href="/addons/">
             
             <span class="text-capitalize no-decoration text-white">Addons</span>
           </a>
@@ -130,7 +130,7 @@
               
         
         <li class="nav-item">
-          <a class="nav-link menu-item " href="/download">
+          <a class="nav-link menu-item " href="/download/">
             
             <span class="text-capitalize no-decoration text-white">Download</span>
           </a>
@@ -139,7 +139,7 @@
               
         
         <li class="nav-item">
-          <a class="nav-link menu-item " href="/blog">
+          <a class="nav-link menu-item " href="/blog/">
             
             <span class="text-capitalize no-decoration text-white">Blog</span>
           </a>
@@ -182,24 +182,17 @@
     </div>
     <div class="col-xs-12 col-lg-9 post-container">
       <div class="content pt-2">
-  
-
-<h3 id="hahahugoshortcode-s0-hbhb">
+  <h3 id="hahahugoshortcode-s0-hbhb">
 <i class="fas fa-angle-double-right" style="color: #580F8B; font-size: 24px;">&nbsp;</i>Introduction
 
 </h3>
-
 <p>The Yarra RDS client is a service that runs in the background on the host computer of Siemens MRI systems and can be used to automatically collect the raw data (Twix data) of certain scans and to transfer the data to a network location (or disk drive). RDS is part of the Yarra package for historical reasons and does not directly interact with the Yarra server. However, the data collected with RDS can later be submitted to a Yarra server using the <a href="/clients/sac">SAC client</a>. The typical use-case of RDS is to collect k-space data from scans acquired in routine clinical practice, in order to reprocess the data at a later time or to use the data for the development of new reconstruction algorithms.</p>
-
 <div style="margin-bottom: 40px; font-size: 0px;">&nbsp;</div>
-
 <h3 id="hahahugoshortcode-s2-hbhb">
 <i class="fas fa-angle-double-right" style="color: #580F8B; font-size: 24px;">&nbsp;</i>Configuration
 
 </h3>
-
 <p>On the first start of the tool, it is required to configure the service. This can be done by double-clicking on the RDS.exe icon, which then shows a message that the service has not been configured yet and opens the configuration dialog. If the RDS client has already been configured, the configuration dialog can be accessed via the status screen by clicking on the “Configuration” button.</p>
-
 
 <div class="bs-callout bs-callout-primary"  >
     
@@ -207,20 +200,13 @@
 </div>
 
 
-
 <p>The configuration area is protected by a password to prevent users not familiar with the software from changing the configuration. The password is fixed for all installations and is “nyc2012”. The configuration dialog has three sections (tabs) relevant for RDS.</p>
-
 <div style="margin-bottom: 20px; font-size: 0px;">&nbsp;</div>
-
 <h4 id="general">General</h4>
-
 <img style="margin-left: auto; margin-right: auto; display: block;  margin-top: 20px; margin-bottom: 20px; "  class="img-fluid" src="/rds3m.jpg" />
 
-
 <p>On the General tab, a unique <strong>System Name</strong> for the MR system has to be selected. The tab also shows the syngoMR <strong>Software Version</strong> that was detected on the system.</p>
-
 <p>The <strong>Update Rule</strong> setting determines when the raw data is saved and transferred:</p>
-
 <ul>
 <li><strong>On Startup:</strong> The update will be performed after the scanner is turned on and while the RF amplifier warms up. This setting should be used for MR systems that are shut down in the evening.</li>
 <li><strong>At Fixed Time:</strong> The update will be performed at a certain time. Up to three update times can be defined. This setting should be used for systems that are not shut down in the evening, so that the update can be performed during the night.</li>
@@ -228,18 +214,12 @@
 <li><strong>Only Manually:</strong> The update will be performed only on manual trigger. To perform an update, open the main dialog by clicking on RDS.exe (or on the short-cut icon in the “Startup” folder) and clicking on “Transfer Now”. Alternatively, the update can be triggered with a separate icon in the Start menu (see optional installation steps).</li>
 <li><strong>On Startup and at Fixed Time:</strong> With this setting, the raw data is transferred either when the scanner is turned on or at a certain time. It should be used on systems that are sometimes shutdown and sometimes run throughout the night. This rule is now the default setting for the update rule.</li>
 </ul>
-
 <div style="margin-bottom: 20px; font-size: 0px;">&nbsp;</div>
-
 <h4 id="protocols">Protocols</h4>
-
 <img style="margin-left: auto; margin-right: auto; display: block;  margin-top: 20px; margin-bottom: 20px; "  class="img-fluid" src="/rds4m.jpg" />
 
-
 <p>The Protocols tab allows to define which protocols should be saved. It is possible to create different “projects”. The raw data from different projects are then saved in individual subfolders. This helps to separate the data data from different research projects or researchers. To create a new project, press the <strong>Add</strong> button. Enter a project name into the field <strong>Project</strong> and a protocol tag into the field <strong>Protocol Filter</strong> (similar to the protocol tag of the Yarra reconstruction modes). The tool will then transfer the raw data from all scan protocols containing the name tag into the corresponding raw-data folder.</p>
-
 <p>Example: For settings Project = ProstateT2 and Protocol Filter = _RDS, the tool will save all raw data from scan protocols containing the name tag _RDS, e.g. “TSE2D AX_RDS”. The files will be saved into a subfolder called “ProstateT2”.</p>
-
 
 <div class="bs-callout bs-callout-danger"  >
     
@@ -247,92 +227,59 @@
 </div>
 
 
-
 <p>If you want to also save the corresponding adjustment data (pre-scan normalize), click the checkbox <strong>Save Adjustment Data</strong>. On VB software versions, this will create separate files containing the adjustment data where the file name indicates the corresponding main raw data file. On VD software versions, the adjustment data will be included into the main raw data file (multi-measurement format). If the patient data should be anonymized before the transfer, click the checkbox <strong>Anonymize Patient Information</strong>. This will remove the patient name, date of birth, and patient ID from the raw data (the institutional information will remain in the file).</p>
-
 <p>On Siemens MR systems, shim scans that are performed prior to a scan appear in the scan list as protocol with identical name to the following imaging protocol. These scans have a small size (usually around 500-700 kB) and are often confused with the imaging data. Therefore, the RDS client ignores scans with a rawdata size smaller than 1 MB. If the desired rawdata is expected to be actually smaller than 1 MB, click the checkbox <strong>Enable Transfer of Small Scans</strong>.</p>
-
 <div style="margin-bottom: 20px; font-size: 0px;">&nbsp;</div>
-
 <h4 id="network">Network</h4>
-
 <img style="margin-left: auto; margin-right: auto; display: block;  margin-top: 20px; margin-bottom: 20px; "  class="img-fluid" src="/rds5m.jpg" />
 
-
 <p>On the Network tab, the <strong>Base Path</strong> has to be selected where all data should be saved. In most use-cases, this path points to a mapped network share but it is also possible to save the data on an internal or USB disk drive. Usually, the same path is used for all installations of the RDS client. The client will then automatically create subfolders for each MR system under the base path. The path can be selected by pressing the button right of the Base Path field.</p>
-
 <p>To ensure that the connection to the network share is always established when a data transfer should be performed, it is possible to enter a Windows shell command into the field <strong>Connect Cmd</strong> that maps the network share to the base bath. This command will be executed by RDS before each transfer run.</p>
-
 <p>For Windows SMB shares (recommended as SMB share do not require installation of a network client), a network drive can be mapped using the “net use” command:</p>
-
-<pre><code>net use z: \\[servername]\[share] [password] /USER:[username] /PERSISTENT:YES /yes
-</code></pre>
-
-<p>where [servername] is the name or address of the server, [share] the share on the server, [password] the password and [username] the username on the server.</p>
-
+<pre tabindex="0"><code>net use z: \\[servername]\[share] [password] /USER:[username] /PERSISTENT:YES /yes
+</code></pre><p>where [servername] is the name or address of the server, [share] the share on the server, [password] the password and [username] the username on the server.</p>
 <div style="margin-bottom: 40px; font-size: 0px;">&nbsp;</div>
-
 <h3 id="hahahugoshortcode-s12-hbhb">
 <i class="fas fa-angle-double-right" style="color: #580F8B; font-size: 24px;">&nbsp;</i>Usage
 
 </h3>
-
 <p>The RDS client runs as background process and is normally not visible. In the moment when a data transfer is performed (e.g., because the update time has been reached), the window shown below will appear. While this window is visible, scanning is not possible with the MRI system. If the scanner is urgently needed, it is possible to press the <strong>Postpone Transfer</strong> button, which will end the process and continue the transfer during the next update cycle.</p>
-
 <img style="margin-left: auto; margin-right: auto; display: block;  margin-top: 20px; margin-bottom: 20px; "  class="img-fluid" src="/rds2m.jpg" />
 
-
 <p>The client first saves all data onto the local hard drive. Afterwards, the data will be copied to the final network location. During the latter, scanning is possible again (a small running indicator will be visible at the right-bottom of the screen). Therefore, the scanner will only be blocked for a short period of time, which makes it possible to run data transfers in-between patient scans.</p>
-
 <div style="margin-bottom: 40px; font-size: 0px;">&nbsp;</div>
-
 <h3 id="hahahugoshortcode-s15-hbhb">
 <i class="fas fa-angle-double-right" style="color: #580F8B; font-size: 24px;">&nbsp;</i>Status Window
 
 </h3>
-
 <p>The activity of the RDS client can be monitored using the status window, which can be displayed by double-clicking on RDS.exe (or a corresponding shortcut in the Windows Start menu) when the RDS client is running. The status window can also be used for triggering the data transfer manually (by clicking <strong>Transfer Now</strong>), accessing the configuration window, and terminating the RDS client by clicking <strong>Shut Down Service</strong>. If this window is closed, either by clicking Close Window or the X on the top-right Window corner, the RDS client will continue to run in the background.</p>
-
 <img style="margin-left: auto; margin-right: auto; display: block;  margin-top: 20px; margin-bottom: 20px; "  class="img-fluid" src="/rds1m.jpg" />
 
-
 <div style="margin-bottom: 40px; font-size: 0px;">&nbsp;</div>
-
 <h3 id="hahahugoshortcode-s18-hbhb">
 <i class="fas fa-angle-double-right" style="color: #580F8B; font-size: 24px;">&nbsp;</i>Storage Location
 
 </h3>
-
 <p>The raw data files will be transferred to the Base Path specified in the configuration dialog and stored using the following folder scheme:</p>
-
 <p>[base path] \ [system name] \ [project name]</p>
-
 <p>Thus, the data from different projects and MR systems are separated into different folders. At this time, the folder structure is fixed and cannot be modified. This may be changed in a forthcoming update.</p>
-
 <div style="margin-bottom: 40px; font-size: 0px;">&nbsp;</div>
-
 <h3 id="hahahugoshortcode-s20-hbhb">
 <i class="fas fa-angle-double-right" style="color: #580F8B; font-size: 24px;">&nbsp;</i>Log Files
 
 </h3>
-
 <p>All operations of the software are documented chronologically in a log file. This log file can be found in the subfolder “log” and is called “rds.log”. To facilitate the remote diagnosis of problems with the data transfer, the log file from each system is copied into the system’s subfolder on the network drive after each update procedure. If the log file exceeds a critical size, it will be archived and a clean file will be created.</p>
-
 <div style="margin-bottom: 40px; font-size: 0px;">&nbsp;</div>
-
 <h3 id="hahahugoshortcode-s22-hbhb">
 <i class="fas fa-angle-double-right" style="color: #580F8B; font-size: 24px;">&nbsp;</i>Creating “Transfer Now” Shortcut
 
 </h3>
-
 <p>The RDS tool will automatically transfer the raw data when the transfer condition is met (e.g. at a certain time). However, in practice it is sometimes necessary to start the data transfer earlier. For this purpose, it is possible to create a shortcut in the Windows Start menu, which will trigger the data transfer.</p>
-
 
 <div class="bs-callout bs-callout-primary"  >
     
 <p>Starting with version 0.54, the Yarra RDS client offers a menu that opens by right-clicking on the small Yarra icon in the top-right corner (center-bottom on XA versions). This menu contains an item for triggering the transfer, so that it&rsquo;s not necessary anymore to create a separate shortcut. See it <a href="/blog/client_054/">here</a>.</p>
 </div>
-
 
 
 <p>Create a Windows shortcut linking to the executable RDS.exe, as described in the <a href="/clients/installation">installation section</a>. Then right-click on the shortcut file, select “Properties”, and change the target to “C:\yarra\RDS.exe –update”. Afterwards, rename the shortcut “Transfer Now” (or something similar) and move it into the Windows Start menu.</p>

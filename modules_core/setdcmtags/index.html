@@ -44,7 +44,7 @@
 
 <link rel="canonical" href="http://yarra-framework.org/modules_core/setdcmtags/" />
 
-<meta name="generator" content="Hugo 0.59.1" />
+<meta name="generator" content="Hugo 0.96.0" />
 
 
   <link rel="stylesheet" href="/assets/css/bootstrap.min.css" />
@@ -76,7 +76,7 @@
                
         
         <li class="nav-item">
-          <a class="nav-link menu-item " href="/overview">
+          <a class="nav-link menu-item " href="/overview/">
             
             <span class="text-capitalize no-decoration text-white">Overview</span>
           </a>
@@ -85,7 +85,7 @@
               
         
         <li class="nav-item">
-          <a class="nav-link menu-item " href="/clients">
+          <a class="nav-link menu-item " href="/clients/">
             
             <span class="text-capitalize no-decoration text-white">Clients</span>
           </a>
@@ -94,7 +94,7 @@
               
         
         <li class="nav-item">
-          <a class="nav-link menu-item " href="/server">
+          <a class="nav-link menu-item " href="/server/">
             
             <span class="text-capitalize no-decoration text-white">Server</span>
           </a>
@@ -103,7 +103,7 @@
               
         
         <li class="nav-item">
-          <a class="nav-link menu-item " href="/modules">
+          <a class="nav-link menu-item " href="/modules/">
             
             <span class="text-capitalize no-decoration text-white">Modules</span>
           </a>
@@ -112,7 +112,7 @@
               
         
         <li class="nav-item">
-          <a class="nav-link menu-item " href="/logserver">
+          <a class="nav-link menu-item " href="/logserver/">
             
             <span class="text-capitalize no-decoration text-white">LogServer</span>
           </a>
@@ -121,7 +121,7 @@
               
         
         <li class="nav-item">
-          <a class="nav-link menu-item " href="/addons">
+          <a class="nav-link menu-item " href="/addons/">
             
             <span class="text-capitalize no-decoration text-white">Addons</span>
           </a>
@@ -130,7 +130,7 @@
               
         
         <li class="nav-item">
-          <a class="nav-link menu-item " href="/download">
+          <a class="nav-link menu-item " href="/download/">
             
             <span class="text-capitalize no-decoration text-white">Download</span>
           </a>
@@ -139,7 +139,7 @@
               
         
         <li class="nav-item">
-          <a class="nav-link menu-item " href="/blog">
+          <a class="nav-link menu-item " href="/blog/">
             
             <span class="text-capitalize no-decoration text-white">Blog</span>
           </a>
@@ -182,57 +182,33 @@
     </div>
     <div class="col-xs-12 col-lg-9 post-container">
       <div class="content pt-2">
-  
-
-<h4 id="purpose">Purpose</h4>
-
+  <h4 id="purpose">Purpose</h4>
 <p>Populates the DICOM tags of reconstructed images based on patient and scan information read from the Twix file. It also combines DICOM files into series based on the file name and sets the needed DICOM UUIDs.</p>
-
 <h4 id="usage">Usage</h4>
-
-<pre><code>SetDCMTags [options] input output rawfile
-</code></pre>
-
-<p>Parameters:<br></p>
-
-<pre><code>  input   -- Folder with DICOM files to process
+<pre tabindex="0"><code>SetDCMTags [options] input output rawfile
+</code></pre><p>Parameters:<br></p>
+<pre tabindex="0"><code>  input   -- Folder with DICOM files to process
   output  -- Folder where modified DICOM files will be written
   rawfile -- Path and name of raw-data file
-</code></pre>
-
-<p>Options:<br></p>
-
-<pre><code>  -a -- Accession number
+</code></pre><p>Options:<br></p>
+<pre tabindex="0"><code>  -a -- Accession number
   -t -- Path and name of task file
   -m -- Path and name of mode file
   -d -- Path and name of dynamic settings
   -l -- Extended log output for debugging
   -v -- Show version information and exit
-</code></pre>
-
-<p>Typical call:</p>
-
-<pre><code>[PostProcessing]
+</code></pre><p>Typical call:</p>
+<pre tabindex="0"><code>[PostProcessing]
 Bin=%bd/SetDCMTags
 Args=%pid %pod %rid/%rif -a %vacc -m %mc -t %rid/rit
-</code></pre>
-
-<h4 id="configuration">Configuration</h4>
-
+</code></pre><h4 id="configuration">Configuration</h4>
 <h5 id="file-naming-convention">File naming convention</h5>
-
 <p>In order for SetDCMTags to correctly group images into series, the DICOMs written by the reconstruction module have to be named according to the syntax:</p>
-
-<pre><code>series{n}.slice{m}.dcm
-</code></pre>
-
-<p>where <em>{n}</em> is the series # (e.g. time point, in case of 4D MRI data) and <em>{m}</em> is the slice number.</p>
-
+<pre tabindex="0"><code>series{n}.slice{m}.dcm
+</code></pre><p>where <em>{n}</em> is the series # (e.g. time point, in case of 4D MRI data) and <em>{m}</em> is the slice number.</p>
 <h5 id="global-options">Global options</h5>
-
 <p>The following settings can be defined in the [SetDCMTags] section of the .mode file:</p>
-
-<pre><code>[SetDCMTags]
+<pre tabindex="0"><code>[SetDCMTags]
 SeriesOffset=        // Adds an offset to the series number
 Color=               // Set to TRUE if the images are color images
 ClearDefaults=       // Set to TRUE if the default tag assignment should not be used
@@ -241,34 +217,19 @@ FrameDuration=       // Defines the duration of one frame of the 4D dataset (in 
 TimeOffset=          // Adds a time offset for the first frame (in ms)
 InterleaveSeries=    // Set to TRUE if the order of series/slices should be swapped
 StackSeries=         // Set to TRUE is all images should be stacked in one series
-</code></pre>
-
-<h5 id="adding-or-overwriting-tags">Adding or overwriting tags</h5>
-
+</code></pre><h5 id="adding-or-overwriting-tags">Adding or overwriting tags</h5>
 <p>SetDCMTags sets most DICOM tags automatically. However, it is possible to overwrite the default assignment or to set additional tags:</p>
-
-<pre><code>[SetDCMTags]
+<pre tabindex="0"><code>[SetDCMTags]
 (n,m)=value
-</code></pre>
-
-<p>where <em>n</em>,<em>m</em> specifies the ID of the tag (see a list of all available DICOM tags <a href="https://www.dicomlibrary.com/dicom/dicom-tags/" target="_blank">here</a>).</p>
-
+</code></pre><p>where <em>n</em>,<em>m</em> specifies the ID of the tag (see a list of all available DICOM tags <a href="https://www.dicomlibrary.com/dicom/dicom-tags/">here</a>).</p>
 <p>Various macros can be used for setting the tags. Using the <strong>@</strong> operator, it is possible to reference values from the Twix file. For example, <strong>@PatientName</strong> returns the patient name. Values contained in the measurement protocol can be referenced using <strong>@mrpot</strong>. For example, <strong>@mrprot.adFlipAngleDegree[0]</strong> returns the flip angle of the first pulse. The original value of the DICOM tag can be accessed via <strong>#keep</strong> (thus, using #keep will preserve the original value instead of overwriting the DICOM tag).</p>
-
 <p>Using the <strong>#</strong> operator, it is possible to access helper variables that are calculated by SetDCMTags. For example, <strong>#series</strong> returns the current series number. Using the <strong>$</strong> operator, helper functions can be called for manipulating the value: <strong>$EXT</strong> allows appending information. For example, <strong>$EXT(@ProtocolName,_modified)</strong> appends the string &ldquo;_modified&rdquo; to the protocol name. <strong>$DIV</strong> divides the value by an integer (as, e.g., needed when converting between ms and sec). For example, <strong>$DIV(@mrprot.alTE[0],1000,2)</strong> divides the TE time from the protocol by 1000 and keeps 2 digits.</p>
-
-<p>The list of available helper variables can be seen in <a href="https://bitbucket.org/yarra-dev/yarramodules-setdcmtags/src/master/sdt_global.h" target="_blank">this file</a>, while the list of values parsed from the Twix file can be found on the bottom of <a href="https://bitbucket.org/yarra-dev/yarramodules-setdcmtags/src/master/sdt_twixreader.cpp" target="_blank">this file</a>. The default assignment that SetDCMTags uses can be seen in <a href="https://bitbucket.org/yarra-dev/yarramodules-setdcmtags/src/master/sdt_tagmapping.cpp" target="_blank">this file</a>.</p>
-
+<p>The list of available helper variables can be seen in <a href="https://bitbucket.org/yarra-dev/yarramodules-setdcmtags/src/master/sdt_global.h">this file</a>, while the list of values parsed from the Twix file can be found on the bottom of <a href="https://bitbucket.org/yarra-dev/yarramodules-setdcmtags/src/master/sdt_twixreader.cpp">this file</a>. The default assignment that SetDCMTags uses can be seen in <a href="https://bitbucket.org/yarra-dev/yarramodules-setdcmtags/src/master/sdt_tagmapping.cpp">this file</a>.</p>
 <h5 id="setting-series-specific-tags">Setting series-specific tags</h5>
-
 <p>The values defined in the [SetDCMTags] section will be appied to all series. It is also possible to define values only for certain series. This can be done by adding a section to the .mode file where the series number is appended to the section name. In the following example, these settings would only be applied to series 2:</p>
-
-<pre><code>[SetDCMTags_Series2]
+<pre tabindex="0"><code>[SetDCMTags_Series2]
 (0008,103E)=$EXT(inphase_,@ProtocolName)
-</code></pre>
-
-<h5 id="setting-tags-dynamically">Setting tags dynamically</h5>
-
+</code></pre><h5 id="setting-tags-dynamically">Setting tags dynamically</h5>
 <p>Settings for SetDCMTags can be written into the .mode file, so that different settings can be defined for every reconstruction mode. However, sometimes it is necessary to set DICOM tags depending on the result of the indiviudal reconstruction. This is possible by writing these dynamic settings into a new text file that is created by the reconstruction module in the &ldquo;work&rdquo; folder %rid (where also the raw-data file is located). The name of the file has to be passed to SetDCMTags via the <em>-d</em> option. SetDCMTags then reads these settings as last step (overwriting all previously defined settings).</p>
 
 </div>

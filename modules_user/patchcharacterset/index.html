@@ -44,7 +44,7 @@
 
 <link rel="canonical" href="http://yarra-framework.org/modules_user/patchcharacterset/" />
 
-<meta name="generator" content="Hugo 0.59.1" />
+<meta name="generator" content="Hugo 0.96.0" />
 
 
   <link rel="stylesheet" href="/assets/css/bootstrap.min.css" />
@@ -76,7 +76,7 @@
                
         
         <li class="nav-item">
-          <a class="nav-link menu-item " href="/overview">
+          <a class="nav-link menu-item " href="/overview/">
             
             <span class="text-capitalize no-decoration text-white">Overview</span>
           </a>
@@ -85,7 +85,7 @@
               
         
         <li class="nav-item">
-          <a class="nav-link menu-item " href="/clients">
+          <a class="nav-link menu-item " href="/clients/">
             
             <span class="text-capitalize no-decoration text-white">Clients</span>
           </a>
@@ -94,7 +94,7 @@
               
         
         <li class="nav-item">
-          <a class="nav-link menu-item " href="/server">
+          <a class="nav-link menu-item " href="/server/">
             
             <span class="text-capitalize no-decoration text-white">Server</span>
           </a>
@@ -103,7 +103,7 @@
               
         
         <li class="nav-item">
-          <a class="nav-link menu-item " href="/modules">
+          <a class="nav-link menu-item " href="/modules/">
             
             <span class="text-capitalize no-decoration text-white">Modules</span>
           </a>
@@ -112,7 +112,7 @@
               
         
         <li class="nav-item">
-          <a class="nav-link menu-item " href="/logserver">
+          <a class="nav-link menu-item " href="/logserver/">
             
             <span class="text-capitalize no-decoration text-white">LogServer</span>
           </a>
@@ -121,7 +121,7 @@
               
         
         <li class="nav-item">
-          <a class="nav-link menu-item " href="/addons">
+          <a class="nav-link menu-item " href="/addons/">
             
             <span class="text-capitalize no-decoration text-white">Addons</span>
           </a>
@@ -130,7 +130,7 @@
               
         
         <li class="nav-item">
-          <a class="nav-link menu-item " href="/download">
+          <a class="nav-link menu-item " href="/download/">
             
             <span class="text-capitalize no-decoration text-white">Download</span>
           </a>
@@ -139,7 +139,7 @@
               
         
         <li class="nav-item">
-          <a class="nav-link menu-item " href="/blog">
+          <a class="nav-link menu-item " href="/blog/">
             
             <span class="text-capitalize no-decoration text-white">Blog</span>
           </a>
@@ -182,26 +182,15 @@
     </div>
     <div class="col-xs-12 col-lg-9 post-container">
       <div class="content pt-2">
-  
-
-<h4 id="purpose">Purpose</h4>
-
+  <h4 id="purpose">Purpose</h4>
 <p>Patches the character set of the reconstructed DICOMs and encodes the patient name in the local patient name. Necessary when using the GRASP module with certain PACS systems.</p>
-
 <h4 id="usage">Usage</h4>
-
-<pre><code>PatchPatientName [input folder] [output folder] [TWIX file]
-</code></pre>
-
-<p>Typical call:</p>
-
-<pre><code>[PostProcessing]
+<pre tabindex="0"><code>PatchPatientName [input folder] [output folder] [TWIX file]
+</code></pre><p>Typical call:</p>
+<pre tabindex="0"><code>[PostProcessing]
 Bin1=%bu/PatchCharacterSet/PatchPatientName.sh
 Args1=%pid %pod %rid/%rif
-</code></pre>
-
-<h4 id="configuration">Configuration</h4>
-
+</code></pre><h4 id="configuration">Configuration</h4>
 <p>The character set can be changed directly in the script PatchPatientName.sh.</p>
 
 </div>

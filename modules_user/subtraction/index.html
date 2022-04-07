@@ -44,7 +44,7 @@
 
 <link rel="canonical" href="http://yarra-framework.org/modules_user/subtraction/" />
 
-<meta name="generator" content="Hugo 0.59.1" />
+<meta name="generator" content="Hugo 0.96.0" />
 
 
   <link rel="stylesheet" href="/assets/css/bootstrap.min.css" />
@@ -76,7 +76,7 @@
                
         
         <li class="nav-item">
-          <a class="nav-link menu-item " href="/overview">
+          <a class="nav-link menu-item " href="/overview/">
             
             <span class="text-capitalize no-decoration text-white">Overview</span>
           </a>
@@ -85,7 +85,7 @@
               
         
         <li class="nav-item">
-          <a class="nav-link menu-item " href="/clients">
+          <a class="nav-link menu-item " href="/clients/">
             
             <span class="text-capitalize no-decoration text-white">Clients</span>
           </a>
@@ -94,7 +94,7 @@
               
         
         <li class="nav-item">
-          <a class="nav-link menu-item " href="/server">
+          <a class="nav-link menu-item " href="/server/">
             
             <span class="text-capitalize no-decoration text-white">Server</span>
           </a>
@@ -103,7 +103,7 @@
               
         
         <li class="nav-item">
-          <a class="nav-link menu-item " href="/modules">
+          <a class="nav-link menu-item " href="/modules/">
             
             <span class="text-capitalize no-decoration text-white">Modules</span>
           </a>
@@ -112,7 +112,7 @@
               
         
         <li class="nav-item">
-          <a class="nav-link menu-item " href="/logserver">
+          <a class="nav-link menu-item " href="/logserver/">
             
             <span class="text-capitalize no-decoration text-white">LogServer</span>
           </a>
@@ -121,7 +121,7 @@
               
         
         <li class="nav-item">
-          <a class="nav-link menu-item " href="/addons">
+          <a class="nav-link menu-item " href="/addons/">
             
             <span class="text-capitalize no-decoration text-white">Addons</span>
           </a>
@@ -130,7 +130,7 @@
               
         
         <li class="nav-item">
-          <a class="nav-link menu-item " href="/download">
+          <a class="nav-link menu-item " href="/download/">
             
             <span class="text-capitalize no-decoration text-white">Download</span>
           </a>
@@ -139,7 +139,7 @@
               
         
         <li class="nav-item">
-          <a class="nav-link menu-item " href="/blog">
+          <a class="nav-link menu-item " href="/blog/">
             
             <span class="text-capitalize no-decoration text-white">Blog</span>
           </a>
@@ -182,46 +182,27 @@
     </div>
     <div class="col-xs-12 col-lg-9 post-container">
       <div class="content pt-2">
-  
-
-<h4 id="purpose">Purpose</h4>
-
+  <h4 id="purpose">Purpose</h4>
 <p>Calculates subtraction images from reconstructed image series.</p>
-
 <h4 id="usage">Usage</h4>
-
-<pre><code>Subtraction [input folder] [output folder] [mode file]
-</code></pre>
-
-<p>Typical call:</p>
-
-<pre><code>[PostProcessing]
+<pre tabindex="0"><code>Subtraction [input folder] [output folder] [mode file]
+</code></pre><p>Typical call:</p>
+<pre tabindex="0"><code>[PostProcessing]
 Bin=%bu/Subtraction/Subtraction
 Args=%pid %pod %mc
-</code></pre>
-
-<h4 id="configuration">Configuration</h4>
-
+</code></pre><h4 id="configuration">Configuration</h4>
 <p>In .mode file:</p>
-
-<pre><code>[Subtraction]
+<pre tabindex="0"><code>[Subtraction]
 BaselineSeries=2
 KeepSourceImages=true
 SubtractionMode=0
 IncludeSeries=3:end#4
 ExcludeSeries=
-</code></pre>
-
-<h5 id="keep-source-images">Keep source images</h5>
-
+</code></pre><h5 id="keep-source-images">Keep source images</h5>
 <p>If <em>KeepSourceImages=false</em>, then only the subtraction images will be sent. If <em>KeepSourceImages=true</em>, both the original images and subtraction images will be sent.</p>
-
 <h5 id="subtraction-mode">Subtraction mode</h5>
-
 <p>If <em>SubtractionMode=0</em>, then negative values will be discarded. If <em>SubtractionMode=1</em>, then the absolute value of the difference is calculated.</p>
-
 <h5 id="range-specification">Range specification</h5>
-
 <p>Using the parameter <em>IncludeSeries</em>, it is possible to specify for which time points subtractions should be calculated (by default, subtractions will be calculated for all images). It is possible to append multiple values using the comma separator (e.g., <em>4,7,9</em>), and it is possible to specify ranges (e.g <em>3:7</em>). The keyword <em>end</em> can be used to refer to the last time point, and it is possible to subtract integers (e.g. <em>end-1</em> refers to the second-last time point). When using the syntax <em>start:end#step</em>, it is possible to specify a step width if a subtraction image should not be calculated for every frame (e.g., <em>3:end#4</em>). Using the parameter <em>ExcludeSeries</em>, it is possible to exclude individual time points from the calculation. This setting will be evaluated after <em>IncludeSeries</em>.</p>
 
 </div>

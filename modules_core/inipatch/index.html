@@ -44,7 +44,7 @@
 
 <link rel="canonical" href="http://yarra-framework.org/modules_core/inipatch/" />
 
-<meta name="generator" content="Hugo 0.59.1" />
+<meta name="generator" content="Hugo 0.96.0" />
 
 
   <link rel="stylesheet" href="/assets/css/bootstrap.min.css" />
@@ -76,7 +76,7 @@
                
         
         <li class="nav-item">
-          <a class="nav-link menu-item " href="/overview">
+          <a class="nav-link menu-item " href="/overview/">
             
             <span class="text-capitalize no-decoration text-white">Overview</span>
           </a>
@@ -85,7 +85,7 @@
               
         
         <li class="nav-item">
-          <a class="nav-link menu-item " href="/clients">
+          <a class="nav-link menu-item " href="/clients/">
             
             <span class="text-capitalize no-decoration text-white">Clients</span>
           </a>
@@ -94,7 +94,7 @@
               
         
         <li class="nav-item">
-          <a class="nav-link menu-item " href="/server">
+          <a class="nav-link menu-item " href="/server/">
             
             <span class="text-capitalize no-decoration text-white">Server</span>
           </a>
@@ -103,7 +103,7 @@
               
         
         <li class="nav-item">
-          <a class="nav-link menu-item " href="/modules">
+          <a class="nav-link menu-item " href="/modules/">
             
             <span class="text-capitalize no-decoration text-white">Modules</span>
           </a>
@@ -112,7 +112,7 @@
               
         
         <li class="nav-item">
-          <a class="nav-link menu-item " href="/logserver">
+          <a class="nav-link menu-item " href="/logserver/">
             
             <span class="text-capitalize no-decoration text-white">LogServer</span>
           </a>
@@ -121,7 +121,7 @@
               
         
         <li class="nav-item">
-          <a class="nav-link menu-item " href="/addons">
+          <a class="nav-link menu-item " href="/addons/">
             
             <span class="text-capitalize no-decoration text-white">Addons</span>
           </a>
@@ -130,7 +130,7 @@
               
         
         <li class="nav-item">
-          <a class="nav-link menu-item " href="/download">
+          <a class="nav-link menu-item " href="/download/">
             
             <span class="text-capitalize no-decoration text-white">Download</span>
           </a>
@@ -139,7 +139,7 @@
               
         
         <li class="nav-item">
-          <a class="nav-link menu-item " href="/blog">
+          <a class="nav-link menu-item " href="/blog/">
             
             <span class="text-capitalize no-decoration text-white">Blog</span>
           </a>
@@ -182,29 +182,17 @@
     </div>
     <div class="col-xs-12 col-lg-9 post-container">
       <div class="content pt-2">
-  
-
-<h4 id="purpose">Purpose</h4>
-
+  <h4 id="purpose">Purpose</h4>
 <p>Creates a “patched” copy of a source ini file in the work directory with the given name. All keys specified in the mode file will be replaced by the param value passed as 4th argument, or by statically defined values written into the mode file.</p>
-
 <h4 id="usage">Usage</h4>
-
-<pre><code>IniPatch [mode file] [source ini file] [target (in work dir)] [param value]
-</code></pre>
-
-<p>Typical call:</p>
-
-<pre><code>[PreProcessing]
+<pre tabindex="0"><code>IniPatch [mode file] [source ini file] [target (in work dir)] [param value]
+</code></pre><p>Typical call:</p>
+<pre tabindex="0"><code>[PreProcessing]
 Bin=%bd/IniPatch
 Args=%mc %md/template.ini %rid/settings.ini %vparam
-</code></pre>
-
-<h4 id="configuration">Configuration</h4>
-
+</code></pre><h4 id="configuration">Configuration</h4>
 <p>In .mode file:</p>
-
-<pre><code>[IniPatch]
+<pre tabindex="0"><code>[IniPatch]
 PatchKey1=#Name of entry to patch in format section/entry, e.g. Preprocessing/SpokesPerFrame1
 PatchKey2=#Name of 2nd entry to patch
 PatchKey3=#Name of addition entry (up to 50 possible)
@@ -212,9 +200,7 @@ PatchKey3=#Name of addition entry (up to 50 possible)
 [IniPatch_static]
 Section/Key=Value
 AnotherSection/AnotherKey=AnotherValue
-</code></pre>
-
-<p>The section [IniPatch] defines those keys that should be overwritten (dynamically) with the value passed as 4th function argument. The section [IniPatch_static] can be used to define a number of keys that are overwritten by fixed values. An unlimited number of keys can be defined using the notation SectionName/KeyName=Value.</p>
+</code></pre><p>The section [IniPatch] defines those keys that should be overwritten (dynamically) with the value passed as 4th function argument. The section [IniPatch_static] can be used to define a number of keys that are overwritten by fixed values. An unlimited number of keys can be defined using the notation SectionName/KeyName=Value.</p>
 
 </div>
 

@@ -44,7 +44,7 @@
 
 <link rel="canonical" href="http://yarra-framework.org/modules/development/" />
 
-<meta name="generator" content="Hugo 0.59.1" />
+<meta name="generator" content="Hugo 0.96.0" />
 
 
   <link rel="stylesheet" href="/assets/css/bootstrap.min.css" />
@@ -76,7 +76,7 @@
                
         
         <li class="nav-item">
-          <a class="nav-link menu-item " href="/overview">
+          <a class="nav-link menu-item " href="/overview/">
             
             <span class="text-capitalize no-decoration text-white">Overview</span>
           </a>
@@ -85,7 +85,7 @@
               
         
         <li class="nav-item">
-          <a class="nav-link menu-item " href="/clients">
+          <a class="nav-link menu-item " href="/clients/">
             
             <span class="text-capitalize no-decoration text-white">Clients</span>
           </a>
@@ -94,7 +94,7 @@
               
         
         <li class="nav-item">
-          <a class="nav-link menu-item " href="/server">
+          <a class="nav-link menu-item " href="/server/">
             
             <span class="text-capitalize no-decoration text-white">Server</span>
           </a>
@@ -103,7 +103,7 @@
               
         
         <li class="nav-item">
-          <a class="nav-link menu-item active" href="/modules">
+          <a class="nav-link menu-item active" href="/modules/">
             
             <span class="text-capitalize no-decoration text-white">Modules</span>
           </a>
@@ -112,7 +112,7 @@
               
         
         <li class="nav-item">
-          <a class="nav-link menu-item " href="/logserver">
+          <a class="nav-link menu-item " href="/logserver/">
             
             <span class="text-capitalize no-decoration text-white">LogServer</span>
           </a>
@@ -121,7 +121,7 @@
               
         
         <li class="nav-item">
-          <a class="nav-link menu-item " href="/addons">
+          <a class="nav-link menu-item " href="/addons/">
             
             <span class="text-capitalize no-decoration text-white">Addons</span>
           </a>
@@ -130,7 +130,7 @@
               
         
         <li class="nav-item">
-          <a class="nav-link menu-item " href="/download">
+          <a class="nav-link menu-item " href="/download/">
             
             <span class="text-capitalize no-decoration text-white">Download</span>
           </a>
@@ -139,7 +139,7 @@
               
         
         <li class="nav-item">
-          <a class="nav-link menu-item " href="/blog">
+          <a class="nav-link menu-item " href="/blog/">
             
             <span class="text-capitalize no-decoration text-white">Blog</span>
           </a>
@@ -182,41 +182,28 @@
     </div>
     <div class="col-xs-12 col-lg-9 post-container">
       <div class="content pt-2">
-  
-
-<h3 id="hahahugoshortcode-s0-hbhb">
+  <h3 id="hahahugoshortcode-s0-hbhb">
 <i class="fas fa-angle-double-right" style="color: #580F8B; font-size: 24px;">&nbsp;</i>Implementing Custom Modules
 
 </h3>
-
-<p>Implementing new reconstruction modules in Yarra is easy. Yarra modules are essentially just Linux command-line calls with a defined set of arguments. In addition, a number of processing conventions exist. The modules can be implemented in any language running on the Ubuntu 16.04/18.04 operation system (compiled or scripted). The spectrum ranges from simple Matlab, Bash, or Python scripts – typically used for clinical evaluation of early prototypes – to performance optimized C++ or GPU-supported implementations. It is also possible to employ third-party reconstruction frameworks for the algorithmic implementation, such as <a href="http://gadgetron.github.io" target="_blank">Gadgetron</a>, <a href="https://mrirecon.github.io/bart" target="_blank">BART</a>, or ICE, and to invoke these frameworks from within Yarra.</p>
-
+<p>Implementing new reconstruction modules in Yarra is easy. Yarra modules are essentially just Linux command-line calls with a defined set of arguments. In addition, a number of processing conventions exist. The modules can be implemented in any language running on the Ubuntu 16.04/18.04 operation system (compiled or scripted). The spectrum ranges from simple Matlab, Bash, or Python scripts – typically used for clinical evaluation of early prototypes – to performance optimized C++ or GPU-supported implementations. It is also possible to employ third-party reconstruction frameworks for the algorithmic implementation, such as <a href="http://gadgetron.github.io">Gadgetron</a>, <a href="https://mrirecon.github.io/bart">BART</a>, or ICE, and to invoke these frameworks from within Yarra.</p>
 <p>The command-line arguments act as simple interface between the YarraServer and the executed module (thus, Yarra modules need to read parameters from the command-line arguments). The call arguments are defined together with the path of the command-line executable in the .mode file of the <a href="/server/modes">reconstruction mode</a> (Bin=…, Args=…). The order in which parameters should be passed to the Yarra module can be defined by the developer of the module (i.e., when adding a module to a reconstruction mode it is necessary to adapt the Args= entry according to the syntax requested by the module). A number of convenience macros are provided for writing the command-line arguments, which avoids having to write absolute paths into the .mode file and makes the mode file independent from the actual installation location on the Linux server. For example, if %rid is written into the command-line argument, Yarra will replace it during the execution with the absolute path of the work directory (e.g., /home/yarraserver/yarra/work). Also, there are macros available that give access to some of the task parameters, e.g. %vacc will return the Accession Number that was entered into the submission dialog of the Yarra client. A list of all available macros is found <a href="/server/modes">here</a>.
 <div style="margin-bottom: 40px; font-size: 0px;">&nbsp;</div></p>
-
 <h3 id="hahahugoshortcode-s2-hbhb">
 <i class="fas fa-angle-double-right" style="color: #580F8B; font-size: 24px;">&nbsp;</i>Module Interface &amp; Conventions
 
 </h3>
-
 <p>When processing a new reconstruction job, the YarraServer will first execute the (up to) 20 pre-processing steps defined in the [PreProcessing] section of the mode file. During this time, all files that belong to the task (at least the task-description file (.task) and the main measurement file (.dat)) will be present in the work directory of the Yarra installation (i.e., in %rid). Pre-processing modules can perform calculations using the data from these files and store the intermediate results in newly created files placed in the work directory. The original measurement and task files itself must not be modified (no additional copy of these files exists!). Temporary files can be created in the folder defined by macro %tmp, which will be cleared after each module-execution step.</p>
-
 <p>Following the pre-processing phase, YarraServer will execute the core reconstruction module, which is specified in the [Reconstruction] section of the mode file. The reconstruction module is supposed to read the measurement data from the work directory (i.e. from the file given by %rid/%rif) and write the results into the output directory defined by %rod. In most cases, the results should be image files written in the DICOM format. However, depending on the application, the created files can also have a different format (e.g., for spectroscopy). It is recommended that DICOM files are named sequentially, e.g. slice1.dcm, slice2.dcm, slice3.dcm, … . If the reconstructed dataset has an additional dimension (e.g., 3D dataset with multiple timepoints), the additional dimension should be indicated by introducing an extra index between the filename and the extension, e.g. slice1.1.dcm, slice2.1.dcm, slice1.2.dcm, … . This enables the SetDCMTags post-processing module to automatically generate corresponding SeriesUIDs. Again, temporary files can be written into the folder %tmp, which will be cleared after the reconstruction step.</p>
-
 <p>After the reconstruction, the (up to 20) post-processing steps are executed (as defined in the [PostProcessing] section), which can apply modifications to the reconstructed images. By convention, a post-processing module is expected to read all results from folder %pid and write the modified files into the folder %pod. If modification of the provided files is not necessary, the files still need to be copied (or moved) into the folder %pod. Note that the absolute paths for %pid and %pod will vary for each individual post-processing step. The folder %tmp will be cleared after each step.</p>
-
 <p>Finally, at the end of the reconstruction queue, the transfer module defined in section [Transfer] will be called. A transfer module is supposed to read the final results from the directory defined by %td and process these files. For example, the PACSTransfer module takes all files existing in folder %td and pushes them to PACS.</p>
-
 <p>After the transfer module has finished, YarraServer will clean the work directory. If an error occurred during the processing, the task files will be moved into a subfolder created in Yarra’s “Fail” folder, so that the task can be restarted at a later time. If the reconstruction was successful and the option KeepRawdata was set in the .mode file, the task files will be moved to Yarra’s “Storage” folder. Otherwise, the files will be permanently deleted.
 <div style="margin-bottom: 40px; font-size: 0px;">&nbsp;</div></p>
-
 <h3 id="hahahugoshortcode-s4-hbhb">
 <i class="fas fa-angle-double-right" style="color: #580F8B; font-size: 24px;">&nbsp;</i>Process Monitoring
 
 </h3>
-
 <p>Yarra uses multiple monitoring mechanisms to ensure that the server never becomes unresponsive due to malfunction of a running module. It will terminate modules under the following conditions:</p>
-
 <ul>
 <li>If the memory allocation by the module exceeds 95% of the server’s physical memory, it will be terminated to avoid heavy swapping that may make the server unresponsive. The threshold value can be overwritten in the configuration file of the server. In addition, the mechanism can be disabled for individual modules in the mode file.</li>
 <li>If the processing time exceeds 24 hours, it is assumed that the module hangs and it will be terminated. This threshold value can be overwritten in the server configuration.</li>
@@ -224,75 +211,54 @@
 <li>If the module does not create any screen output for 30 min, it is assumed that it hangs and will be terminated. This value can be overwritten for each module in the mode file. If it is expected that the normal runtime of a module will exceed 30 min, the module should create screen output periodically to inform the YarraServer that it is still alive.
 <div style="margin-bottom: 40px; font-size: 0px;">&nbsp;</div></li>
 </ul>
-
 <h3 id="hahahugoshortcode-s6-hbhb">
 <i class="fas fa-angle-double-right" style="color: #580F8B; font-size: 24px;">&nbsp;</i>Using Matlab
 
 </h3>
 
-
 <div class="bs-callout bs-callout-primary" style="margin-top: 25px; margin-bottom: 25px;" >
  <h4>Matlab Integration Example</h4>    
-<p>Please follow <a href="https://bitbucket.org/yarra-dev/yarramodules-examples" target="_blank">this link</a> for a simple example that shows how a Matlab reconstruction can be integrated and called from Yarra.</p>
+<p>Please follow <a href="https://bitbucket.org/yarra-dev/yarramodules-examples">this link</a> for a simple example that shows how a Matlab reconstruction can be integrated and called from Yarra.</p>
 </div>
 
 
-
 <h4 id="calling-matlab">Calling Matlab</h4>
-
 <p>The following example from a mode file shows how a reconstruction algorithm written in Matlab can be launched. In this example, the Matlab file my_recon_func.m with the algorithm is located in the subdirectory to the modules folder yarra/modules/my_recon (it is advisable to place the reconstruction files into a separate subfolder). The function is launched by adding the parameter -r “…” to the Matlab call. To avoid nested quotation marks, the helper macro %hq needs to be used instead of the ” character when enclosing the parameters of the -r argument.</p>
-
 <p>If functions from external Matlab files should be called from the reconstruction algorithm, an addpath statement should be added before calling the reconstruction function. Furthermore, it makes sense to put an exit command after the call to the reconstruction algorithm to ensure that Matlab terminates after the algorithm has finished.</p>
-
-<pre><code>[Reconstruction]
+<pre tabindex="0"><code>[Reconstruction]
 Bin=/usr/local/MATLAB/R2015a/bin/matlab
-Args=&quot;-nodesktop -nosplash -nojvm -r %hq addpath(genpath('%bd/my_recon/')); my_recon_func('%rid','%rif','%rod','%tmp'); exit; %hq &quot;
-</code></pre>
-
-<p>The actual reconstruction algorithm needs to be implemented in the file my_recon_func.m and take the following form:</p>
-
-<pre><code>function my_recon_func(work_path, meas_file, output_path, temp_path)
+Args=&#34;-nodesktop -nosplash -nojvm -r %hq addpath(genpath(&#39;%bd/my_recon/&#39;)); my_recon_func(&#39;%rid&#39;,&#39;%rif&#39;,&#39;%rod&#39;,&#39;%tmp&#39;); exit; %hq &#34;
+</code></pre><p>The actual reconstruction algorithm needs to be implemented in the file my_recon_func.m and take the following form:</p>
+<pre tabindex="0"><code>function my_recon_func(work_path, meas_file, output_path, temp_path)
  
    ...
  
 end
-</code></pre>
-
-<p>The values from the mode-file macros can now be accessed through the function-call arguments. For example, the absolute path of the measurement file is given by [workpath,’\’,meas_file].
+</code></pre><p>The values from the mode-file macros can now be accessed through the function-call arguments. For example, the absolute path of the measurement file is given by [workpath,’\’,meas_file].
 <div style="margin-bottom: 20px; font-size: 0px;">&nbsp;</div></p>
-
 <h4 id="reading-measurement-data">Reading Measurement Data</h4>
-
-<p>Several public Matlab libraries exist for reading Siemens MR raw data into Matlab. We often use the mapVBVD library from Philipp Ehses for this purpose, which can be found on the internet by searching for mapVBVD on Google (it can also be found on the <a href="http://www.mr-idea.com" target="_blank">Siemens MR Idea discussion board</a>). The file can then be read using the following statement:</p>
-
-<pre><code>function my_recon_func(work_path, meas_file, output_path, temp_path)
+<p>Several public Matlab libraries exist for reading Siemens MR raw data into Matlab. We often use the mapVBVD library from Philipp Ehses for this purpose, which can be found on the internet by searching for mapVBVD on Google (it can also be found on the <a href="http://www.mr-idea.com">Siemens MR Idea discussion board</a>). The file can then be read using the following statement:</p>
+<pre tabindex="0"><code>function my_recon_func(work_path, meas_file, output_path, temp_path)
  
-    rawdata = mapVBVD([workpath,'\',meas_file]);
+    rawdata = mapVBVD([workpath,&#39;\&#39;,meas_file]);
     ...
  
 end
-</code></pre>
-
-<div style="margin-bottom: 20px; font-size: 0px;">&nbsp;</div>
-
+</code></pre><div style="margin-bottom: 20px; font-size: 0px;">&nbsp;</div>
 <h4 id="writing-dicoms">Writing DICOMs</h4>
-
 <p>The reconstructed images can be written into DICOM files using Matlab’s writedicom function. It is important to use this function without the MultiframeSingleFile option, so that each slice is written into a separate file. It is not necessary to insert DICOM tags into the files, as this can be done automatically by calling the SetDCMTags module as one of the Yarra post-processing modules in the reconstruction mode.</p>
-
 <p>The following pseudocode shows how to output the reconstructed images contained in an array called recon_images (value range 0…1) as DICOM files:</p>
-
-<pre><code>function my_recon_func(work_path, meas_file, output_path, temp_path)
+<pre tabindex="0"><code>function my_recon_func(work_path, meas_file, output_path, temp_path)
  
-    rawdata = mapVBVD([workpath,'\',meas_file]);
+    rawdata = mapVBVD([workpath,&#39;\&#39;,meas_file]);
     ...
  
     I = abs(recon_images);
     I = uint8(I*(2^8));
-    dicomwrite(I, [output_path,'/slice.dcm'], 'MultiframeSingleFile', false);
+    dicomwrite(I, [output_path,&#39;/slice.dcm&#39;], &#39;MultiframeSingleFile&#39;, false);
  
 end
 </code></pre>
-
 </div>
 
       

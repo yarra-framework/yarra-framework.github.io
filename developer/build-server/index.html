@@ -44,7 +44,7 @@
 
 <link rel="canonical" href="http://yarra-framework.org/developer/build-server/" />
 
-<meta name="generator" content="Hugo 0.59.1" />
+<meta name="generator" content="Hugo 0.96.0" />
 
 
   <link rel="stylesheet" href="/assets/css/bootstrap.min.css" />
@@ -76,7 +76,7 @@
                
         
         <li class="nav-item">
-          <a class="nav-link menu-item " href="/overview">
+          <a class="nav-link menu-item " href="/overview/">
             
             <span class="text-capitalize no-decoration text-white">Overview</span>
           </a>
@@ -85,7 +85,7 @@
               
         
         <li class="nav-item">
-          <a class="nav-link menu-item " href="/clients">
+          <a class="nav-link menu-item " href="/clients/">
             
             <span class="text-capitalize no-decoration text-white">Clients</span>
           </a>
@@ -94,7 +94,7 @@
               
         
         <li class="nav-item">
-          <a class="nav-link menu-item " href="/server">
+          <a class="nav-link menu-item " href="/server/">
             
             <span class="text-capitalize no-decoration text-white">Server</span>
           </a>
@@ -103,7 +103,7 @@
               
         
         <li class="nav-item">
-          <a class="nav-link menu-item " href="/modules">
+          <a class="nav-link menu-item " href="/modules/">
             
             <span class="text-capitalize no-decoration text-white">Modules</span>
           </a>
@@ -112,7 +112,7 @@
               
         
         <li class="nav-item">
-          <a class="nav-link menu-item " href="/logserver">
+          <a class="nav-link menu-item " href="/logserver/">
             
             <span class="text-capitalize no-decoration text-white">LogServer</span>
           </a>
@@ -121,7 +121,7 @@
               
         
         <li class="nav-item">
-          <a class="nav-link menu-item " href="/addons">
+          <a class="nav-link menu-item " href="/addons/">
             
             <span class="text-capitalize no-decoration text-white">Addons</span>
           </a>
@@ -130,7 +130,7 @@
               
         
         <li class="nav-item">
-          <a class="nav-link menu-item " href="/download">
+          <a class="nav-link menu-item " href="/download/">
             
             <span class="text-capitalize no-decoration text-white">Download</span>
           </a>
@@ -139,7 +139,7 @@
               
         
         <li class="nav-item">
-          <a class="nav-link menu-item " href="/blog">
+          <a class="nav-link menu-item " href="/blog/">
             
             <span class="text-capitalize no-decoration text-white">Blog</span>
           </a>
@@ -180,59 +180,39 @@
     </div>
     <div class="col-xs-12 col-lg-9 post-container">
       <div class="content pt-2">
-  
-
-<h3 id="hahahugoshortcode-s0-hbhb">
+  <h3 id="hahahugoshortcode-s0-hbhb">
 <i class="fas fa-angle-double-right" style="color: #580F8B; font-size: 24px;">&nbsp;</i>Build-Instructions for YarraServer
 
 </h3>
-
 <div style="margin-bottom: 10px; font-size: 0px;">&nbsp;</div>
-
 <h4 id="setting-up-the-build-environment">Setting up the Build Environment</h4>
-
 <div style="margin-bottom: 5px; font-size: 0px;">&nbsp;</div>
-
 <ul>
-<li>Download <a href="http://ftp.uni-kl.de/pub/linux/ubuntu-dvd/xubuntu/releases/16.04.6/release/" target="_blank">Xubuntu 16.04.06 LTS Desktop Edition</a> and install (preferably in VM). The Desktop Edition is preferred because the Qt installation requires X11. When using <a href="https://www.virtualbox.org/" target="_blank">VirtualBox</a>, install the VirtualBox Guest Additions CD.</li>
-
-<li><p>Update the apt-get chache: <br></p>
-
-<pre><code>sudo apt-get update
-</code></pre></li>
-
-<li><p>Install build system, required tools, and required libraries: <br></p>
-
-<pre><code>sudo apt install build-essential mercurial tortoisehg git cmake
-sudo apt install libboost-all-dev libssl-dev libpq-dev libssl-dev libfcgi-dev
-</code></pre></li>
+<li>Download <a href="http://ftp.uni-kl.de/pub/linux/ubuntu-dvd/xubuntu/releases/16.04.6/release/">Xubuntu 16.04.06 LTS Desktop Edition</a> and install (preferably in VM). The Desktop Edition is preferred because the Qt installation requires X11. When using <a href="https://www.virtualbox.org/">VirtualBox</a>, install the VirtualBox Guest Additions CD.</li>
+<li>Update the apt-get chache: <br></li>
 </ul>
-
-<div style="margin-bottom: 40px; font-size: 0px;">&nbsp;</div>
-
+<pre tabindex="0"><code>sudo apt-get update
+</code></pre><ul>
+<li>Install build system, required tools, and required libraries: <br></li>
+</ul>
+<pre tabindex="0"><code>sudo apt install build-essential mercurial tortoisehg git cmake
+sudo apt install libboost-all-dev libssl-dev libpq-dev libssl-dev libfcgi-dev
+</code></pre><div style="margin-bottom: 40px; font-size: 0px;">&nbsp;</div>
 <h4 id="installing-qt-and-qt-creator">Installing Qt and Qt Creator</h4>
-
 <div style="margin-bottom: 5px; font-size: 0px;">&nbsp;</div>
-
 <ul>
-<li><p>Download the Qt offline installer and run the setup. Version 5.5.1 libraries come with Ubuntu 16.04, so we are using this version for the build. Start the installer and use all default options. <br></p>
-
-<pre><code>wget http://download.qt.io/archive/qt/5.5/5.5.1/qt-opensource-linux-x64-5.5.1.run
+<li>Download the Qt offline installer and run the setup. Version 5.5.1 libraries come with Ubuntu 16.04, so we are using this version for the build. Start the installer and use all default options. <br></li>
+</ul>
+<pre tabindex="0"><code>wget http://download.qt.io/archive/qt/5.5/5.5.1/qt-opensource-linux-x64-5.5.1.run
 chmod 700 qt-opensource-linux-x64-5.5.1.run
 ./qt-opensource-linux-x64-5.5.1.run
-</code></pre></li>
-</ul>
-
-<div style="margin-bottom: 40px; font-size: 0px;">&nbsp;</div>
-
+</code></pre><div style="margin-bottom: 40px; font-size: 0px;">&nbsp;</div>
 <h4 id="building-the-wt-library">Building the Wt Library</h4>
-
 <div style="margin-bottom: 5px; font-size: 0px;">&nbsp;</div>
-
 <ul>
-<li><p>Download the Wt Library Code v 3.3.12 (release 2018-12-14) and untar:</p>
-
-<pre><code>mkdir wt
+<li>Download the Wt Library Code v 3.3.12 (release 2018-12-14) and untar:</li>
+</ul>
+<pre tabindex="0"><code>mkdir wt
 cd wt
 wget https://github.com/emweb/wt/archive/3.3.12.tar.gz
 tar xvxf 3.3.12.tar.gz
@@ -242,64 +222,45 @@ cd build
 cmake .. -DSHARED_LIBS=OFF
 make
 sudo make install
-</code></pre></li>
-</ul>
-
-
+</code></pre>
 <div class="bs-callout bs-callout-primary"  >
     
 <p>If using a multi-core machine, the compilation can be accelerated via multithreaded compilation: make -j8</p>
 </div>
 
 
-
 <ul>
-<li><p>Install additional libraries for linking the WebGUI binary:</p>
-
-<pre><code>sudo apt install libglib2.0-dev libxml2-dev libjpeg-dev libx11-dev libxext-dev
-sudo apt install libgl1-mesa-dev libfreetype6-dev libgraphicsmagick-dev libomp-dev
-</code></pre></li>
+<li>Install additional libraries for linking the WebGUI binary:</li>
 </ul>
-
-<div style="margin-bottom: 40px; font-size: 0px;">&nbsp;</div>
-
+<pre tabindex="0"><code>sudo apt install libglib2.0-dev libxml2-dev libjpeg-dev libx11-dev libxext-dev
+sudo apt install libgl1-mesa-dev libfreetype6-dev libgraphicsmagick-dev libomp-dev
+</code></pre><div style="margin-bottom: 40px; font-size: 0px;">&nbsp;</div>
 <h4 id="code-checkout-and-building-yarraserver">Code Checkout and Building YarraServer</h4>
-
 <div style="margin-bottom: 5px; font-size: 0px;">&nbsp;</div>
-
 <ul>
-<li><p>Create folder for the individual Yarra components <br></p>
-
-<pre><code>mkdir NMRProjects
+<li>Create folder for the individual Yarra components <br></li>
+</ul>
+<pre tabindex="0"><code>mkdir NMRProjects
 cd NMRProjects
-</code></pre></li>
-
-<li><p>Now clone the Yarra source code repositories</p>
-
-<pre><code>hg clone https://tblock@bitbucket.org/yarra-dev/yarraserver
+</code></pre><ul>
+<li>Now clone the Yarra source code repositories</li>
+</ul>
+<pre tabindex="0"><code>hg clone https://tblock@bitbucket.org/yarra-dev/yarraserver
 hg clone https://tblock@bitbucket.org/yarra-dev/yarrawebgui
 git clone https://tblock@bitbucket.org/yarra-dev/yarrasupport-ziplib.git ~/NMRProjects/yarrawebgui/ziplib
-</code></pre></li>
-
-<li><p>Open the Server.pro project in QtCreater and build release version</p></li>
-
-<li><p>Open ServerCtrl.pro and build release version</p></li>
-
-<li><p>Open yarrawebgui.pro and build release version</p></li>
-
-<li><p>Open yarradexec.pro and build release version</p></li>
+</code></pre><ul>
+<li>Open the Server.pro project in QtCreater and build release version</li>
+<li>Open ServerCtrl.pro and build release version</li>
+<li>Open yarrawebgui.pro and build release version</li>
+<li>Open yarradexec.pro and build release version</li>
 </ul>
-
 <div style="margin-bottom: 40px; font-size: 0px;">&nbsp;</div>
-
 <h4 id="building-the-setdcmtags-module">Building the SetDCMTags Module</h4>
-
 <div style="margin-bottom: 5px; font-size: 0px;">&nbsp;</div>
-
 <ul>
-<li><p>Download the DCMTK source code and compile</p>
-
-<pre><code>sudo apt-get install libarmadillo-dev libblas-dev
+<li>Download the DCMTK source code and compile</li>
+</ul>
+<pre tabindex="0"><code>sudo apt-get install libarmadillo-dev libblas-dev
 cd ~
 mkdir dcmtk
 cd dcmtk
@@ -310,39 +271,27 @@ mkdir build; cd build
 cmake -D DCMTK_ENABLE_BUILTIN_DICTIONARY=ON -D DCMTK_ENABLE_PRIVATE_TAGS=ON ..
 make -j8
 sudo make install
-</code></pre></li>
-
-<li><p>Checkout code from Bitbucket</p>
-
-<pre><code>cd ~/NMRProjects
-hg clone https://tblock@bitbucket.org/yarra-dev/yarramodules-setdcmtags
-</code></pre></li>
-
-<li><p>The current version of the module requires that certain private Siemens DICOM tags are added to the DICOM Tag Dictionary on the server. Therefore, the file dicom.dic needs to be edited:</p>
-
-<pre><code>cd /usr/local/share/dcmtk/
-sudo nano dicom.dic
-</code></pre></li>
+</code></pre><ul>
+<li>Checkout code from Bitbucket</li>
 </ul>
-
-<p>and the following 4 lines need to be inserted:</p>
-
-<pre><code>(0019,1008)	LO	Private	1	DICOM
+<pre tabindex="0"><code>cd ~/NMRProjects
+hg clone https://tblock@bitbucket.org/yarra-dev/yarramodules-setdcmtags
+</code></pre><ul>
+<li>The current version of the module requires that certain private Siemens DICOM tags are added to the DICOM Tag Dictionary on the server. Therefore, the file dicom.dic needs to be edited:</li>
+</ul>
+<pre tabindex="0"><code>cd /usr/local/share/dcmtk/
+sudo nano dicom.dic
+</code></pre><p>and the following 4 lines need to be inserted:</p>
+<pre tabindex="0"><code>(0019,1008)	LO	Private	1	DICOM
 (0029,1008)	LO	Private	1	DICOM
 (0029,1018)	LO	Private	1	DICOM
 (0051,1008)	CS	Private	1	DICOM
-</code></pre>
-
-<ul>
+</code></pre><ul>
 <li>Open project SetDCMTags.pro in QtCreator and build the release version</li>
 </ul>
-
 <div style="margin-bottom: 40px; font-size: 0px;">&nbsp;</div>
-
 <h4 id="packaging">Packaging</h4>
-
 <div style="margin-bottom: 5px; font-size: 0px;">&nbsp;</div>
-
 <div class="bs-callout bs-callout-info">
 <h4><span class="fas fa-tools"></span>&nbsp;Under Construction</h4>
 <p>Sorry, this section is still missing. Please check again soon.</p>

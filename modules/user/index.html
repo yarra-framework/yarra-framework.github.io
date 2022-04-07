@@ -44,7 +44,7 @@
 
 <link rel="canonical" href="http://yarra-framework.org/modules/user/" />
 
-<meta name="generator" content="Hugo 0.59.1" />
+<meta name="generator" content="Hugo 0.96.0" />
 
 
   <link rel="stylesheet" href="/assets/css/bootstrap.min.css" />
@@ -76,7 +76,7 @@
                
         
         <li class="nav-item">
-          <a class="nav-link menu-item " href="/overview">
+          <a class="nav-link menu-item " href="/overview/">
             
             <span class="text-capitalize no-decoration text-white">Overview</span>
           </a>
@@ -85,7 +85,7 @@
               
         
         <li class="nav-item">
-          <a class="nav-link menu-item " href="/clients">
+          <a class="nav-link menu-item " href="/clients/">
             
             <span class="text-capitalize no-decoration text-white">Clients</span>
           </a>
@@ -94,7 +94,7 @@
               
         
         <li class="nav-item">
-          <a class="nav-link menu-item " href="/server">
+          <a class="nav-link menu-item " href="/server/">
             
             <span class="text-capitalize no-decoration text-white">Server</span>
           </a>
@@ -103,7 +103,7 @@
               
         
         <li class="nav-item">
-          <a class="nav-link menu-item active" href="/modules">
+          <a class="nav-link menu-item active" href="/modules/">
             
             <span class="text-capitalize no-decoration text-white">Modules</span>
           </a>
@@ -112,7 +112,7 @@
               
         
         <li class="nav-item">
-          <a class="nav-link menu-item " href="/logserver">
+          <a class="nav-link menu-item " href="/logserver/">
             
             <span class="text-capitalize no-decoration text-white">LogServer</span>
           </a>
@@ -121,7 +121,7 @@
               
         
         <li class="nav-item">
-          <a class="nav-link menu-item " href="/addons">
+          <a class="nav-link menu-item " href="/addons/">
             
             <span class="text-capitalize no-decoration text-white">Addons</span>
           </a>
@@ -130,7 +130,7 @@
               
         
         <li class="nav-item">
-          <a class="nav-link menu-item " href="/download">
+          <a class="nav-link menu-item " href="/download/">
             
             <span class="text-capitalize no-decoration text-white">Download</span>
           </a>
@@ -139,7 +139,7 @@
               
         
         <li class="nav-item">
-          <a class="nav-link menu-item " href="/blog">
+          <a class="nav-link menu-item " href="/blog/">
             
             <span class="text-capitalize no-decoration text-white">Blog</span>
           </a>
@@ -182,23 +182,17 @@
     </div>
     <div class="col-xs-12 col-lg-9 post-container">
       <div class="content pt-2">
-  
-
-<h3 id="hahahugoshortcode-s0-hbhb">
+  <h3 id="hahahugoshortcode-s0-hbhb">
 <i class="fas fa-angle-double-right" style="color: #580F8B; font-size: 24px;">&nbsp;</i>Additional Installable Modules
 
 </h3>
-
 <p>Additional modules can be installed via the module installer of the WebGUI (on the Configuration page). User modules are extracted into separate folders under the directory <strong>yarra/modules_user</strong>. The helper macro for referencing this folder is <strong>%bu</strong>. For example, when installing the Subtraction module, this binary can be called via %bu/Subtraction/Subtraction (the latter Subtraction refers to the executable name, while the former corresponds to the installation folder name).</p>
-
 <div style="margin-bottom: 20px; font-size: 0px;">&nbsp;</div>
-
 
 <div class="bs-callout bs-callout-primary"  >
  <h4>User-Developed Modules</h4>    
 <p>Want to see your module featured here? Please <a href="/overview/support">contact</a> us</p>
 </div>
-
 
 
 <div style="margin-bottom: 20px; font-size: 0px;">&nbsp;</div>
@@ -223,43 +217,25 @@
             </div>   
             <div class="">
               <div class="content pt-2">
-  
-
-<h4 id="purpose">Purpose</h4>
-
+  <h4 id="purpose">Purpose</h4>
 <p>This module provides a stable Matlab implementation of the GRASP DCE-MRI reconstruction technique. It requires Matlab R2016a or newer. If the Parallel Computing Toolbox has been installed, the reconstruction will be parallelized across slices depending on the available CPU cores. By default, all available cores will be used for the calculation.</p>
-
 <p>When using the module, please cite the following publication:</p>
-
-<p>Feng L, Grimm R, Block KT, Chandarana H, Kim S, Xu J, Axel L, Sodickson DK, Otazo R.
-Golden-angle radial sparse parallel MRI: combination of compressed sensing, parallel imaging, and golden-angle radial sampling for fast and flexible dynamic volumetric MRI.
+<p>Feng L, Grimm R, Block KT, Chandarana H, Kim S, Xu J, Axel L, Sodickson DK, Otazo R. 
+Golden-angle radial sparse parallel MRI: combination of compressed sensing, parallel imaging, and golden-angle radial sampling for fast and flexible dynamic volumetric MRI. 
 Magn Reson Med. 2014 Sep;72(3):707-17.</p>
-
 <p>This module uses several open-source Matlab packages developed by other contributors, including the mapVBVD library by Philip Ehses, the NUFFT library developed by Jeff Fessler, and the inifile reader developed by Primoz Cermelj. Please give credit to these developers when using the module.</p>
-
 <div style="margin-bottom: 20px; font-size: 0px;">&nbsp;</div>
-
 <h4 id="usage">Usage</h4>
-
 <p>The ZIP archive contains a template for a mode file that shows how the module can be called. The module should be used in combination with the SetDCMTags module.</p>
-
-<pre><code>yarra_GRASP_basic [input folder] [input file] [output folder] [tmp folder] [mode file]
-</code></pre>
-
-<p>Typical call:</p>
-
-<pre><code>[Reconstruction]
+<pre tabindex="0"><code>yarra_GRASP_basic [input folder] [input file] [output folder] [tmp folder] [mode file]
+</code></pre><p>Typical call:</p>
+<pre tabindex="0"><code>[Reconstruction]
 Bin=%hmb
-Args=&quot;-nodesktop -nosplash -r %hq try, addpath(genpath('%bu/GRASP_basic/')); yarra_GRASP_basic('%rid/','%rif','%rod','%tmp','%mc'); catch e, disp(e.message); end, quit; %hq&quot;
-</code></pre>
-
-<div style="margin-bottom: 20px; font-size: 0px;">&nbsp;</div>
-
+Args=&#34;-nodesktop -nosplash -r %hq try, addpath(genpath(&#39;%bu/GRASP_basic/&#39;)); yarra_GRASP_basic(&#39;%rid/&#39;,&#39;%rif&#39;,&#39;%rod&#39;,&#39;%tmp&#39;,&#39;%mc&#39;); catch e, disp(e.message); end, quit; %hq&#34;
+</code></pre><div style="margin-bottom: 20px; font-size: 0px;">&nbsp;</div>
 <h4 id="configuration">Configuration</h4>
-
 <p>Reconstruction settings can be configured in the [GRASP] section of the mode file. If settings are missing, the default values shown below will be used.</p>
-
-<pre><code>[GRASP]
+<pre tabindex="0"><code>[GRASP]
 SpokesPerFrame=144     % Defines how many numbers should be used per frame
 Lambda=0.02            % Defines the strength of the temporal TV regularization
 MaxThreads=[all]       % Defines how many CPU cores should be used. By default, all will be used
@@ -267,16 +243,11 @@ ApplyKzFilter=true     % Defines if k-space filtering along kz should be applied
 CompressedChannels=10  % Defines when/if channel compression should be used and how many Eigenmodes should be used
 SliceFrom=0            % Allows restricting the range of slices to calculate (for faster testing)   
 SliceTo=0
-</code></pre>
-
-<div style="margin-bottom: 20px; font-size: 0px;">&nbsp;</div>
-
+</code></pre><div style="margin-bottom: 20px; font-size: 0px;">&nbsp;</div>
 <h4 id="limitations">Limitations</h4>
-
 <ul>
 <li>The module currently does not perform image-intenstiy normalization (aka Prescan Normalize).</li>
 </ul>
-
 <div style="margin-bottom: 20px; font-size: 0px;">&nbsp;</div>
 
 </div>
@@ -303,28 +274,16 @@ SliceTo=0
             </div>   
             <div class="">
               <div class="content pt-2">
-  
-
-<h4 id="purpose">Purpose</h4>
-
+  <h4 id="purpose">Purpose</h4>
 <p>Performs a Compressed-Sensing-based 4D DCE-MRI reconstruction using the GRASP reconstruction technique. This module has been implemented in C++ and uses OpenMP parallelization to achieve high reconstruction speed.</p>
-
 <p><strong>Note:</strong> This module can only be downloaded after a C2P contract with Siemens has been signed. Please contact your local Siemens collaboration manager. Alternatively, the Matlab-based version of GRASP can be used.</p>
-
 <h4 id="usage">Usage</h4>
-
-<pre><code>GraspR [input Twix file] [ini file] [output folder] [tmp folder] [acc #]
-</code></pre>
-
-<p>Typical call:</p>
-
-<pre><code>[Reconstruction]
+<pre tabindex="0"><code>GraspR [input Twix file] [ini file] [output folder] [tmp folder] [acc #]
+</code></pre><p>Typical call:</p>
+<pre tabindex="0"><code>[Reconstruction]
 Bin=%bu/GRASP/GraspR
 Args=%rid/%rif %rid/settings.ini %rod %tmp %vacc
-</code></pre>
-
-<h4 id="configuration">Configuration</h4>
-
+</code></pre><h4 id="configuration">Configuration</h4>
 <p>The configuration for the GRASP module is done via an ini file (an example file comes with the module). It is recommended to use the example file as template and to overwrite the settings with help of the the IniPatch module (in this way, everything is stored in the .mode file and it is not necessary to maintain multiple ini files).</p>
 
 </div>
@@ -351,26 +310,15 @@ Args=%rid/%rif %rid/settings.ini %rod %tmp %vacc
             </div>   
             <div class="">
               <div class="content pt-2">
-  
-
-<h4 id="purpose">Purpose</h4>
-
+  <h4 id="purpose">Purpose</h4>
 <p>Patches the character set of the reconstructed DICOMs and encodes the patient name in the local patient name. Necessary when using the GRASP module with certain PACS systems.</p>
-
 <h4 id="usage">Usage</h4>
-
-<pre><code>PatchPatientName [input folder] [output folder] [TWIX file]
-</code></pre>
-
-<p>Typical call:</p>
-
-<pre><code>[PostProcessing]
+<pre tabindex="0"><code>PatchPatientName [input folder] [output folder] [TWIX file]
+</code></pre><p>Typical call:</p>
+<pre tabindex="0"><code>[PostProcessing]
 Bin1=%bu/PatchCharacterSet/PatchPatientName.sh
 Args1=%pid %pod %rid/%rif
-</code></pre>
-
-<h4 id="configuration">Configuration</h4>
-
+</code></pre><h4 id="configuration">Configuration</h4>
 <p>The character set can be changed directly in the script PatchPatientName.sh.</p>
 
 </div>
@@ -397,46 +345,27 @@ Args1=%pid %pod %rid/%rif
             </div>   
             <div class="">
               <div class="content pt-2">
-  
-
-<h4 id="purpose">Purpose</h4>
-
+  <h4 id="purpose">Purpose</h4>
 <p>Calculates subtraction images from reconstructed image series.</p>
-
 <h4 id="usage">Usage</h4>
-
-<pre><code>Subtraction [input folder] [output folder] [mode file]
-</code></pre>
-
-<p>Typical call:</p>
-
-<pre><code>[PostProcessing]
+<pre tabindex="0"><code>Subtraction [input folder] [output folder] [mode file]
+</code></pre><p>Typical call:</p>
+<pre tabindex="0"><code>[PostProcessing]
 Bin=%bu/Subtraction/Subtraction
 Args=%pid %pod %mc
-</code></pre>
-
-<h4 id="configuration">Configuration</h4>
-
+</code></pre><h4 id="configuration">Configuration</h4>
 <p>In .mode file:</p>
-
-<pre><code>[Subtraction]
+<pre tabindex="0"><code>[Subtraction]
 BaselineSeries=2
 KeepSourceImages=true
 SubtractionMode=0
 IncludeSeries=3:end#4
 ExcludeSeries=
-</code></pre>
-
-<h5 id="keep-source-images">Keep source images</h5>
-
+</code></pre><h5 id="keep-source-images">Keep source images</h5>
 <p>If <em>KeepSourceImages=false</em>, then only the subtraction images will be sent. If <em>KeepSourceImages=true</em>, both the original images and subtraction images will be sent.</p>
-
 <h5 id="subtraction-mode">Subtraction mode</h5>
-
 <p>If <em>SubtractionMode=0</em>, then negative values will be discarded. If <em>SubtractionMode=1</em>, then the absolute value of the difference is calculated.</p>
-
 <h5 id="range-specification">Range specification</h5>
-
 <p>Using the parameter <em>IncludeSeries</em>, it is possible to specify for which time points subtractions should be calculated (by default, subtractions will be calculated for all images). It is possible to append multiple values using the comma separator (e.g., <em>4,7,9</em>), and it is possible to specify ranges (e.g <em>3:7</em>). The keyword <em>end</em> can be used to refer to the last time point, and it is possible to subtract integers (e.g. <em>end-1</em> refers to the second-last time point). When using the syntax <em>start:end#step</em>, it is possible to specify a step width if a subtraction image should not be calculated for every frame (e.g., <em>3:end#4</em>). Using the parameter <em>ExcludeSeries</em>, it is possible to exclude individual time points from the calculation. This setting will be evaluated after <em>IncludeSeries</em>.</p>
 
 </div>

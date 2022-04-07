@@ -44,7 +44,7 @@
 
 <link rel="canonical" href="http://yarra-framework.org/server/modes/" />
 
-<meta name="generator" content="Hugo 0.59.1" />
+<meta name="generator" content="Hugo 0.96.0" />
 
 
   <link rel="stylesheet" href="/assets/css/bootstrap.min.css" />
@@ -76,7 +76,7 @@
                
         
         <li class="nav-item">
-          <a class="nav-link menu-item " href="/overview">
+          <a class="nav-link menu-item " href="/overview/">
             
             <span class="text-capitalize no-decoration text-white">Overview</span>
           </a>
@@ -85,7 +85,7 @@
               
         
         <li class="nav-item">
-          <a class="nav-link menu-item " href="/clients">
+          <a class="nav-link menu-item " href="/clients/">
             
             <span class="text-capitalize no-decoration text-white">Clients</span>
           </a>
@@ -94,7 +94,7 @@
               
         
         <li class="nav-item">
-          <a class="nav-link menu-item active" href="/server">
+          <a class="nav-link menu-item active" href="/server/">
             
             <span class="text-capitalize no-decoration text-white">Server</span>
           </a>
@@ -103,7 +103,7 @@
               
         
         <li class="nav-item">
-          <a class="nav-link menu-item " href="/modules">
+          <a class="nav-link menu-item " href="/modules/">
             
             <span class="text-capitalize no-decoration text-white">Modules</span>
           </a>
@@ -112,7 +112,7 @@
               
         
         <li class="nav-item">
-          <a class="nav-link menu-item " href="/logserver">
+          <a class="nav-link menu-item " href="/logserver/">
             
             <span class="text-capitalize no-decoration text-white">LogServer</span>
           </a>
@@ -121,7 +121,7 @@
               
         
         <li class="nav-item">
-          <a class="nav-link menu-item " href="/addons">
+          <a class="nav-link menu-item " href="/addons/">
             
             <span class="text-capitalize no-decoration text-white">Addons</span>
           </a>
@@ -130,7 +130,7 @@
               
         
         <li class="nav-item">
-          <a class="nav-link menu-item " href="/download">
+          <a class="nav-link menu-item " href="/download/">
             
             <span class="text-capitalize no-decoration text-white">Download</span>
           </a>
@@ -139,7 +139,7 @@
               
         
         <li class="nav-item">
-          <a class="nav-link menu-item " href="/blog">
+          <a class="nav-link menu-item " href="/blog/">
             
             <span class="text-capitalize no-decoration text-white">Blog</span>
           </a>
@@ -188,40 +188,30 @@
     </div>
     <div class="col-xs-12 col-lg-9 post-container">
       <div class="content pt-2">
-  
-
-<h3 id="hahahugoshortcode-s0-hbhb">
+  <h3 id="hahahugoshortcode-s0-hbhb">
 <i class="fas fa-angle-double-right" style="color: #580F8B; font-size: 24px;">&nbsp;</i>Defining Reconstruction Modes
 
 </h3>
-
 <p>Adding a new reconstruction mode to YarraServer involves two steps:</p>
-
 <ol>
 <li>A new .mode file needs to be created in the yarra/modes directory and named according to the internal ID of the reconstruction mode.</li>
 <li>The mode needs to be added to the list of available modes, read by the Yarra clients from the file yarra/queue/YarraModes.cfg. With recent versions of Yarra, this step is normally done via the Yarra WebGUI.</li>
 </ol>
 
-
 <div class="bs-callout bs-callout-primary"  >
     
-<p>It is strongly recommended to use the Yarra WebGUI for defining and editing reconstruction modes. If the Yarra WebGUI cannot be installed, a graphical login to the Ubuntu server should be used to simplify the editing. If the server is in a remote location, this can be done using remote access tools, such as <a href="https://wiki.x2go.org" target="_blank">X2Go</a>.</p>
+<p>It is strongly recommended to use the Yarra WebGUI for defining and editing reconstruction modes. If the Yarra WebGUI cannot be installed, a graphical login to the Ubuntu server should be used to simplify the editing. If the server is in a remote location, this can be done using remote access tools, such as <a href="https://wiki.x2go.org">X2Go</a>.</p>
 </div>
 
 
-
 <div style="margin-bottom: 40px; font-size: 0px;">&nbsp;</div>
-
 <h3 id="hahahugoshortcode-s3-hbhb">
 <i class="fas fa-angle-double-right" style="color: #580F8B; font-size: 24px;">&nbsp;</i>Creating Mode Files
 
 </h3>
-
 <p>It is usually the easiest way to start with an existing <strong>.mode</strong> file (from the <strong>yarra/modes</strong> subfolder), to create a copy of the file, and to modify this files using the WebGUI (recommended) or a Linux editor such as gedit or nano. The name of the .mode file is important, as this name is internally used as ID for the reconstruction mode. Note: The file name of the .mode file is <strong>case sensitive</strong>.</p>
-
 <p>Below you can see an example mode file, which can be used as template:</p>
-
-<pre><code>;## YarraServer -- Reconstruction Mode Definition
+<pre tabindex="0"><code>;## YarraServer -- Reconstruction Mode Definition
 ;##
 
 ;## Information for Yarra client ##
@@ -266,25 +256,14 @@ PatchKey3=Preprocessing/SpokesPerTimestep
  
 [DriveTransfer]
 TargetPath=/media/networkshare/yarra_out
-</code></pre>
-
-<p>The first part of the file contains information that is used by the Yarra client (see section below).
+</code></pre><p>The first part of the file contains information that is used by the Yarra client (see section below).
 The second part defines the module chain executed on the YarraServer, i.e. the modules that are sequentially executed when a dataset is processed using this reconstruction mode. In each of the sections [PreProcessing], [Reconstruction], [PostProcessing], and [Transfer], modules can be specified by setting the binary location (Bin=…) and the arguments for calling the module (Args=…). Because multiple pre- and post-processing modules can be set, the entry names in the sections [PreProcessing] and [PostProcessing] have an index at the end, running from 1 to a maximum of 20 (Bin1, Bin2, … , Bin20). As additional parameter, it is possible to disable the memory monitoring for each of the processing steps by adding:</p>
-
-<pre><code>DisableMemKill=true
-</code></pre>
-
-<p>to each of these sections (this entry does not have an index value). If set to true, YarraServer will not terminate the module when the memory usage threshold is exceeded. This should be used only if necessary because excessive memory usage might lead to heavy memory swapping that can make the server unresponsive. In addition to checking the memory, YarraServer measures the duration how long a module does not create any output. If the threshold of 1800 sec without output is exceeded, the module will be terminated because it is assumed that the modules hangs. The threshold value (in seconds) can be overwritten for each module by adding the following statement to the corresponding section:</p>
-
-<pre><code>MaxOutputIdle=7200
-</code></pre>
-
-<p>The third part of the mode file defines general options of the reconstruction mode. If KeepRawdata is set to true, the submitted measurements files will be moved to the yarra/finished directory after the reconstruction. This setting needs to be used if the data should archived for later reprocessing (e.g., for additional research studies). If the setting is false (this is the default setting), the raw data files will be deleted and cannot be recovered after the reconstruction has been completed successfully. If the setting NightTask is set to true, all reconstruction tasks that are submitted with this for this mode will be processed with night priority (i.e. during night time). This can be useful for certain reconstruction techniques that are known to run over a longer period of time, so that clinical reconstructions would be blocked if processed during normal working hours.</p>
-
+<pre tabindex="0"><code>DisableMemKill=true
+</code></pre><p>to each of these sections (this entry does not have an index value). If set to true, YarraServer will not terminate the module when the memory usage threshold is exceeded. This should be used only if necessary because excessive memory usage might lead to heavy memory swapping that can make the server unresponsive. In addition to checking the memory, YarraServer measures the duration how long a module does not create any output. If the threshold of 1800 sec without output is exceeded, the module will be terminated because it is assumed that the modules hangs. The threshold value (in seconds) can be overwritten for each module by adding the following statement to the corresponding section:</p>
+<pre tabindex="0"><code>MaxOutputIdle=7200
+</code></pre><p>The third part of the mode file defines general options of the reconstruction mode. If KeepRawdata is set to true, the submitted measurements files will be moved to the yarra/finished directory after the reconstruction. This setting needs to be used if the data should archived for later reprocessing (e.g., for additional research studies). If the setting is false (this is the default setting), the raw data files will be deleted and cannot be recovered after the reconstruction has been completed successfully. If the setting NightTask is set to true, all reconstruction tasks that are submitted with this for this mode will be processed with night priority (i.e. during night time). This can be useful for certain reconstruction techniques that are known to run over a longer period of time, so that clinical reconstructions would be blocked if processed during normal working hours.</p>
 <p>Finally, the last part of the .mode file contains module-specific settings. By convention, these settings are written into a section with a name equal to the corresponding module. Which module-specific settings exist as well as which arguments should be used for the function calls can be seen in the documentation of the individual modules (see <a href="/modules/core">here</a> for the modules that come with YarraServer).</p>
-
 <p>A number of macros are available that can be used to write the binary paths and calling arguments. The following macros are currently available:</p>
-
 <div class='table  table-hover'>
     <table>
 <thead>
@@ -293,98 +272,79 @@ The second part defines the module chain executed on the YarraServer, i.e. the m
 <th>Meaning</th>
 </tr>
 </thead>
-
 <tbody>
 <tr>
 <td>%rif</td>
 <td>Name of the input file (TWIX file), including extension (.dat)</td>
 </tr>
-
 <tr>
 <td>%rid</td>
 <td>Path of the input file (normally yarra/work) without trailing “/”</td>
 </tr>
-
 <tr>
 <td>%rin</td>
 <td>Name of the input file without extension</td>
 </tr>
-
 <tr>
 <td>%rit</td>
 <td>Name if the task file, including the extension (.task, .task_prio, .task_night)</td>
 </tr>
-
 <tr>
 <td>%rod</td>
 <td>Output directory for the reconstruction module</td>
 </tr>
-
 <tr>
 <td>%pid</td>
 <td>For post-processing modules: Path with the input files</td>
 </tr>
-
 <tr>
 <td>%pod</td>
 <td>For post-processing modules: Output path</td>
 </tr>
-
 <tr>
 <td>%td</td>
 <td>For transfer modules: Path with the input files that should be transferred</td>
 </tr>
-
 <tr>
 <td>%bd</td>
 <td>Directory where the binaries of the modules are located (usually yarra/modules)</td>
 </tr>
-
 <tr>
 <td>%md</td>
 <td>Path to the mode files (usually yarra/modes)</td>
 </tr>
-
 <tr>
 <td>%mf</td>
 <td>Name of the mode file of the current reconstruction mode</td>
 </tr>
-
 <tr>
 <td>%mc</td>
 <td>Name of the mode file including the path (%md/%mc)</td>
 </tr>
-
 <tr>
 <td>%tmp</td>
 <td>Path where modules can create temporary files (deleted after each step)</td>
 </tr>
-
 <tr>
 <td>%vacc</td>
 <td>Submitted accession number</td>
 </tr>
-
 <tr>
 <td>%vparam</td>
 <td>Submitted free parameter value (if provided by mode)</td>
 </tr>
-
 <tr>
 <td>%vuid</td>
 <td>Unique task ID (incl processing time stamp)</td>
 </tr>
-
 <tr>
 <td>%vtid</td>
 <td>Task ID without time stamp (not unique if task sent twice)</td>
 </tr>
-
 <tr>
 <td>%hq</td>
 <td>Quote mark character (needed for nested Matlab calls with arguments)</td>
 </tr>
-
 <tr>
 <td>%hmb</td>
 <td>Matlab binary including path (as defined in server configuration)</td>
@@ -392,21 +352,15 @@ The second part defines the module chain executed on the YarraServer, i.e. the m
 </tbody>
 </table>
   </div>
-
 <div style="margin-bottom: 40px; font-size: 0px;">&nbsp;</div>
-
 <h3 id="hahahugoshortcode-s6-hbhb">
 <i class="fas fa-angle-double-right" style="color: #580F8B; font-size: 24px;">&nbsp;</i>Updating the List of Available Modes
 
 </h3>
-
 <p>The .mode file describes what the YarraServer should do if a reconstruction task of this kind is received. In order that the Yarra clients know what reconstruction modes are available, they need to be listed in the file <strong>queue/YarraModes.cfg</strong>.</p>
-
 <h4 id="generating-the-mode-list-with-yarrawebgui">Generating the Mode List with YarraWebGUI</h4>
-
 <p>The YarraWebGUI provides a convenient mechanism to automatically generate the file queue/YarraModes.cfg from information provided in the .mode files. This has the advantage that all information about a reconstruction mode, i.e. the information that the server needs as well as the information that the clients need, are contained in only a single file. To provide the client information in the .mode files, a section called [ClientConfig] needs to be added to the .mode file:</p>
-
-<pre><code>[ClientConfig]
+<pre tabindex="0"><code>[ClientConfig]
 Name=GRASP Hematuria (3T/1.5T)
 Tag=_YH
 RequiresACC=TRUE
@@ -414,12 +368,8 @@ RequiresAdjScans=FALSE
 ConfirmationMail=
 SortIndex=1
 Disabled=false
-</code></pre>
-
-<p>The entries SortIndex and Disabled are optional. SortIndex allows to specify at what position the mode should appear in the list as displayed in the UI. Disabled can be used to temporarily remove a mode from the list without deleting the mode file. The mode list can then be created by pressing the button “Generate Mode List” on the Configuration page of the WebGUI. The WebGUI will afterwards show an overview of all modes written into the mode list.</p>
-
+</code></pre><p>The entries SortIndex and Disabled are optional. SortIndex allows to specify at what position the mode should appear in the list as displayed in the UI. Disabled can be used to temporarily remove a mode from the list without deleting the mode file. The mode list can then be created by pressing the button “Generate Mode List” on the Configuration page of the WebGUI. The WebGUI will afterwards show an overview of all modes written into the mode list.</p>
 <p>The following entries can be defined in the individual section for each reconstruction mode (Name, Tag, and RequiresACC are required entries):</p>
-
 <div class='table  table-hover'>
     <table>
 <thead>
@@ -428,53 +378,43 @@ Disabled=false
 <th>Meaning</th>
 </tr>
 </thead>
-
 <tbody>
 <tr>
 <td>Name</td>
 <td>Readable name of the reconstruction mode (can be long), e.g. “GRASP Prostate 3T”</td>
 </tr>
-
 <tr>
 <td>Tag</td>
 <td>Protocol tag, used to automatically assign the reconstruction mode to scans, e.g. “_YP”</td>
 </tr>
-
 <tr>
 <td>RequiresACC</td>
 <td>Set to true of the Yarra client should request an ACC number (needed for sending DICOMs into PACS or to workstations)</td>
 </tr>
-
 <tr>
 <td>RequiresAdjScans</td>
 <td>Set to true if adjustment scans, such as prescan normalize, should be sent with the measurement data (only relevant for the VB software line)</td>
 </tr>
-
 <tr>
 <td>ConfirmationMail</td>
 <td>Email addresses that always should get notification emails (multiple addresses can be separated by comma)</td>
 </tr>
-
 <tr>
 <td>ParamLabel</td>
 <td>If a parameter should be requested by the client: Label for the parameter</td>
 </tr>
-
 <tr>
 <td>ParamDescription</td>
 <td>If a parameter should be requested by the client: Text description of the parameter</td>
 </tr>
-
 <tr>
 <td>ParamDefault</td>
 <td>If a parameter should be requested by the client: Default value (integer)</td>
 </tr>
-
 <tr>
 <td>ParamMin</td>
 <td>If a parameter should be requested by the client: Minimum value (integer)</td>
 </tr>
-
 <tr>
 <td>ParamMax</td>
 <td>If a parameter should be requested by the client: Maximum value (integer)</td>
@@ -483,32 +423,21 @@ Disabled=false
 </table>
   </div>
 
-
 <div class="bs-callout bs-callout-danger"  >
     
 <p>It is currently not possible to use comma characters “,” in the “Name= …” entries. If a comma is used, the name of the reconstruction mode might disappear in the ORT and SAC clients.</p>
 </div>
 
 
-
 <div style="margin-bottom: 40px; font-size: 0px;">&nbsp;</div>
-
 <h4 id="manually-editing-the-mode-list-using-a-linux-shell">Manually Editing the Mode List using a Linux Shell</h4>
-
 <p>If the WebGUI is not available, the files can be edited by logging into the Linux server using the account yarraserver and opening a command shell. The mode file is usually set to read-only permissions. To edit the file, it is first necessary to change the file permission:</p>
-
-<pre><code>chmod 640 queue/YarraModes.cfg 
+<pre tabindex="0"><code>chmod 640 queue/YarraModes.cfg 
 gedit queue/YarraModes.cfg
-</code></pre>
-
-<p>After the file has been edited, the permission should be set to read-only again:</p>
-
-<pre><code>chmod 440 queue/YarraModes.cfg
-</code></pre>
-
-<p>The file YarraModes.cfg has the following structure:</p>
-
-<pre><code>;## Ordered list of available modes
+</code></pre><p>After the file has been edited, the permission should be set to read-only again:</p>
+<pre tabindex="0"><code>chmod 440 queue/YarraModes.cfg
+</code></pre><p>The file YarraModes.cfg has the following structure:</p>
+<pre tabindex="0"><code>;## Ordered list of available modes
 [Modes]
 0=GRASP_Body
 1=GRASP_Prostate_15T
@@ -554,10 +483,7 @@ ParamDefault=21
 ParamMin=5
 ParamMax=9999
 ParamDescription=The GRASP reconstruction requires to select the number of spokes per frame.
-</code></pre>
-
-<p>The section [Modes] defines which reconstruction modes are available and in which order they should be shown in the UI (when using manual assignment). The index of the entries must start with 0 and increase by 1 for each mode. The name listed behind the equal sign must be identical with the name of the .mode with in the modes directory. Be aware that the names are case sensitive.</p>
-
+</code></pre><p>The section [Modes] defines which reconstruction modes are available and in which order they should be shown in the UI (when using manual assignment). The index of the entries must start with 0 and increase by 1 for each mode. The name listed behind the equal sign must be identical with the name of the .mode with in the modes directory. Be aware that the names are case sensitive.</p>
 <p>Each reconstruction mode must also have an individual section in the YarraModes.cfg file with additional information that is needed for the Yarra client. Make sure that the spelling of the section name is identical to the entry in the [Modes] section and identical to the file name of the .mode file.</p>
 
 </div>

@@ -6,11 +6,7 @@
     <description>Recent content in Yarra on Yarra Framework</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 26 Mar 2019 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="http://yarra-framework.org/tags/yarra/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Tue, 26 Mar 2019 00:00:00 +0000</lastBuildDate><atom:link href="http://yarra-framework.org/tags/yarra/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>New Website for Yarra</title>
       <link>http://yarra-framework.org/blog/new-website/</link>

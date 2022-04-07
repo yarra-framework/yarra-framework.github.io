@@ -44,7 +44,7 @@
 
 <link rel="canonical" href="http://yarra-framework.org/server/notifications/" />
 
-<meta name="generator" content="Hugo 0.59.1" />
+<meta name="generator" content="Hugo 0.96.0" />
 
 
   <link rel="stylesheet" href="/assets/css/bootstrap.min.css" />
@@ -76,7 +76,7 @@
                
         
         <li class="nav-item">
-          <a class="nav-link menu-item " href="/overview">
+          <a class="nav-link menu-item " href="/overview/">
             
             <span class="text-capitalize no-decoration text-white">Overview</span>
           </a>
@@ -85,7 +85,7 @@
               
         
         <li class="nav-item">
-          <a class="nav-link menu-item " href="/clients">
+          <a class="nav-link menu-item " href="/clients/">
             
             <span class="text-capitalize no-decoration text-white">Clients</span>
           </a>
@@ -94,7 +94,7 @@
               
         
         <li class="nav-item">
-          <a class="nav-link menu-item active" href="/server">
+          <a class="nav-link menu-item active" href="/server/">
             
             <span class="text-capitalize no-decoration text-white">Server</span>
           </a>
@@ -103,7 +103,7 @@
               
         
         <li class="nav-item">
-          <a class="nav-link menu-item " href="/modules">
+          <a class="nav-link menu-item " href="/modules/">
             
             <span class="text-capitalize no-decoration text-white">Modules</span>
           </a>
@@ -112,7 +112,7 @@
               
         
         <li class="nav-item">
-          <a class="nav-link menu-item " href="/logserver">
+          <a class="nav-link menu-item " href="/logserver/">
             
             <span class="text-capitalize no-decoration text-white">LogServer</span>
           </a>
@@ -121,7 +121,7 @@
               
         
         <li class="nav-item">
-          <a class="nav-link menu-item " href="/addons">
+          <a class="nav-link menu-item " href="/addons/">
             
             <span class="text-capitalize no-decoration text-white">Addons</span>
           </a>
@@ -130,7 +130,7 @@
               
         
         <li class="nav-item">
-          <a class="nav-link menu-item " href="/download">
+          <a class="nav-link menu-item " href="/download/">
             
             <span class="text-capitalize no-decoration text-white">Download</span>
           </a>
@@ -139,7 +139,7 @@
               
         
         <li class="nav-item">
-          <a class="nav-link menu-item " href="/blog">
+          <a class="nav-link menu-item " href="/blog/">
             
             <span class="text-capitalize no-decoration text-white">Blog</span>
           </a>
@@ -188,20 +188,14 @@
     </div>
     <div class="col-xs-12 col-lg-9 post-container">
       <div class="content pt-2">
-  
-
-<h3 id="hahahugoshortcode-s0-hbhb">
+  <h3 id="hahahugoshortcode-s0-hbhb">
 <i class="fas fa-angle-double-right" style="color: #580F8B; font-size: 24px;">&nbsp;</i>Notification Emails
 
 </h3>
-
 <p>The YarraServer will send notification emails on completion or failure of tasks (prerequisites are that the sendmail package is installed and that notifications are enabled in the server configuration). Completion notifications will be sent to a) receivers listed in the Yarra client during submission and b) receivers listed in the reconstruction-mode file. Failure notifications will be, in addition, also sent to those receivers listed in the server configuration file under Options/ErrorMail.</p>
-
 <img style="margin-left: auto; margin-right: auto; display: block;  margin-top: 20px; margin-bottom: 20px; "  class="img-fluid" src="/notifications.jpg" />
 
-
 <p>Completion mails are indicated by a purple color bar whereas failure message appear in red color. Failure emails contain the task log in the attachment.</p>
-
 
 <div class="bs-callout bs-callout-danger"  >
  <h4>PHI Information</h4>    
@@ -209,15 +203,12 @@
 </div>
 
 
-
 <div style="margin-bottom: 20px; font-size: 0px;">&nbsp;</div>
-
 <h3 id="hahahugoshortcode-s4-hbhb">
 <i class="fas fa-angle-double-right" style="color: #580F8B; font-size: 24px;">&nbsp;</i>Advanced Server Monitoring
 
 </h3>
-
-<p>Advanced monitoring of the server&rsquo;s activity is possible using the <a href="/logserver">Yarra LogServer</a> package, which allows central collection of information from multiple servers as well as from the clients used for the task submission. Because Yarra LogServer stores data in an SQL database, it is possible to setup custom notifications (e.g. to Slack) via SQL-driven alerting tools such as <a href="http://redash.io" target="_blank">Redash</a>.</p>
+<p>Advanced monitoring of the server&rsquo;s activity is possible using the <a href="/logserver">Yarra LogServer</a> package, which allows central collection of information from multiple servers as well as from the clients used for the task submission. Because Yarra LogServer stores data in an SQL database, it is possible to setup custom notifications (e.g. to Slack) via SQL-driven alerting tools such as <a href="http://redash.io">Redash</a>.</p>
 
 </div>
 

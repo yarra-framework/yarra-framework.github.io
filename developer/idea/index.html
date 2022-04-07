@@ -44,7 +44,7 @@
 
 <link rel="canonical" href="http://yarra-framework.org/developer/idea/" />
 
-<meta name="generator" content="Hugo 0.59.1" />
+<meta name="generator" content="Hugo 0.96.0" />
 
 
   <link rel="stylesheet" href="/assets/css/bootstrap.min.css" />
@@ -76,7 +76,7 @@
                
         
         <li class="nav-item">
-          <a class="nav-link menu-item " href="/overview">
+          <a class="nav-link menu-item " href="/overview/">
             
             <span class="text-capitalize no-decoration text-white">Overview</span>
           </a>
@@ -85,7 +85,7 @@
               
         
         <li class="nav-item">
-          <a class="nav-link menu-item " href="/clients">
+          <a class="nav-link menu-item " href="/clients/">
             
             <span class="text-capitalize no-decoration text-white">Clients</span>
           </a>
@@ -94,7 +94,7 @@
               
         
         <li class="nav-item">
-          <a class="nav-link menu-item " href="/server">
+          <a class="nav-link menu-item " href="/server/">
             
             <span class="text-capitalize no-decoration text-white">Server</span>
           </a>
@@ -103,7 +103,7 @@
               
         
         <li class="nav-item">
-          <a class="nav-link menu-item " href="/modules">
+          <a class="nav-link menu-item " href="/modules/">
             
             <span class="text-capitalize no-decoration text-white">Modules</span>
           </a>
@@ -112,7 +112,7 @@
               
         
         <li class="nav-item">
-          <a class="nav-link menu-item " href="/logserver">
+          <a class="nav-link menu-item " href="/logserver/">
             
             <span class="text-capitalize no-decoration text-white">LogServer</span>
           </a>
@@ -121,7 +121,7 @@
               
         
         <li class="nav-item">
-          <a class="nav-link menu-item " href="/addons">
+          <a class="nav-link menu-item " href="/addons/">
             
             <span class="text-capitalize no-decoration text-white">Addons</span>
           </a>
@@ -130,7 +130,7 @@
               
         
         <li class="nav-item">
-          <a class="nav-link menu-item " href="/download">
+          <a class="nav-link menu-item " href="/download/">
             
             <span class="text-capitalize no-decoration text-white">Download</span>
           </a>
@@ -139,7 +139,7 @@
               
         
         <li class="nav-item">
-          <a class="nav-link menu-item " href="/blog">
+          <a class="nav-link menu-item " href="/blog/">
             
             <span class="text-capitalize no-decoration text-white">Blog</span>
           </a>
@@ -180,24 +180,17 @@
     </div>
     <div class="col-xs-12 col-lg-9 post-container">
       <div class="content pt-2">
-  
-
-<h3 id="hahahugoshortcode-s0-hbhb">
+  <h3 id="hahahugoshortcode-s0-hbhb">
 <i class="fas fa-angle-double-right" style="color: #580F8B; font-size: 24px;">&nbsp;</i>IDEA Developer Notes
 
 </h3>
-
 <div style="margin-bottom: 20px; font-size: 0px;">&nbsp;</div>
-
 <h4 id="installing-ve11d">Installing VE11D</h4>
-
 <ul>
 <li>Make sure to update MARS to the version supplied with VE11D. Otherwise, the linker will have unresolved functions.</li>
 <li>The regtarg tool seems broken. Targets have to be manually added to the Windows and Linux target lists in (C:\MIDEA\N4_VE11D_LATEST_20180608\MedMake\cfg\n4 and \n4linux).</li>
 </ul>
-
 <p>When running the MARS VM as &ldquo;external VM&rdquo; (i.e. managed manually via a separate VirtualBox installation):</p>
-
 <ul>
 <li>Recreate the VM from scratch and import the 2 VDI disks (don&rsquo;t just use the existing vbox files - will result in kernal panic and and endless boot loop).</li>
 <li>Make sure to copy the exact MAC address for the Network Adapter from the original vbox file. Otherwise, the network interface might not be found or have the wrong name.</li>
@@ -205,23 +198,15 @@
 <li>Add the name of the Windows host to the /etc/hosts file. Otherwise, the time sync might not work (which delays the build each time).</li>
 <li>Run the time synchronization once by connecting to the VM via ideassh and calling &ldquo;net time set -S [servername as listed in /etc/hosts]&rdquo;</li>
 </ul>
-
 <div style="margin-bottom: 40px; font-size: 0px;">&nbsp;</div>
-
 <h4 id="installing-nx-va11a">Installing NX-VA11A</h4>
-
 <ul>
 <li>Make sure to activate SMB v1 support on the Windows 10 host system. Otherwise, the CIFS mount on the MARS won&rsquo;t work</li>
 </ul>
-
 <div style="margin-bottom: 40px; font-size: 0px;">&nbsp;</div>
-
 <h4 id="installing-nx-va20a">Installing NX-VA20A</h4>
-
 <p>When adding VA20A IDEA to an existing VA1x IDEA installation, there will be some old files left in the MIDEA\bin folder. These might interfere with the VA20A IDEA operation (the IDEA shell won&rsquo;t open for version VA20A).</p>
-
 <p>Remove the following files (should be also identifiable by their older timestamp) from the MIDEA\bin folder:</p>
-
 <ul>
 <li>syngo.MR.Environment.Implementation.dll</li>
 <li>syngo.MR.Environment.Interfaces.dll</li>

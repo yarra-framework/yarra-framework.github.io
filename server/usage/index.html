@@ -44,7 +44,7 @@
 
 <link rel="canonical" href="http://yarra-framework.org/server/usage/" />
 
-<meta name="generator" content="Hugo 0.59.1" />
+<meta name="generator" content="Hugo 0.96.0" />
 
 
   <link rel="stylesheet" href="/assets/css/bootstrap.min.css" />
@@ -76,7 +76,7 @@
                
         
         <li class="nav-item">
-          <a class="nav-link menu-item " href="/overview">
+          <a class="nav-link menu-item " href="/overview/">
             
             <span class="text-capitalize no-decoration text-white">Overview</span>
           </a>
@@ -85,7 +85,7 @@
               
         
         <li class="nav-item">
-          <a class="nav-link menu-item " href="/clients">
+          <a class="nav-link menu-item " href="/clients/">
             
             <span class="text-capitalize no-decoration text-white">Clients</span>
           </a>
@@ -94,7 +94,7 @@
               
         
         <li class="nav-item">
-          <a class="nav-link menu-item active" href="/server">
+          <a class="nav-link menu-item active" href="/server/">
             
             <span class="text-capitalize no-decoration text-white">Server</span>
           </a>
@@ -103,7 +103,7 @@
               
         
         <li class="nav-item">
-          <a class="nav-link menu-item " href="/modules">
+          <a class="nav-link menu-item " href="/modules/">
             
             <span class="text-capitalize no-decoration text-white">Modules</span>
           </a>
@@ -112,7 +112,7 @@
               
         
         <li class="nav-item">
-          <a class="nav-link menu-item " href="/logserver">
+          <a class="nav-link menu-item " href="/logserver/">
             
             <span class="text-capitalize no-decoration text-white">LogServer</span>
           </a>
@@ -121,7 +121,7 @@
               
         
         <li class="nav-item">
-          <a class="nav-link menu-item " href="/addons">
+          <a class="nav-link menu-item " href="/addons/">
             
             <span class="text-capitalize no-decoration text-white">Addons</span>
           </a>
@@ -130,7 +130,7 @@
               
         
         <li class="nav-item">
-          <a class="nav-link menu-item " href="/download">
+          <a class="nav-link menu-item " href="/download/">
             
             <span class="text-capitalize no-decoration text-white">Download</span>
           </a>
@@ -139,7 +139,7 @@
               
         
         <li class="nav-item">
-          <a class="nav-link menu-item " href="/blog">
+          <a class="nav-link menu-item " href="/blog/">
             
             <span class="text-capitalize no-decoration text-white">Blog</span>
           </a>
@@ -188,84 +188,45 @@
     </div>
     <div class="col-xs-12 col-lg-9 post-container">
       <div class="content pt-2">
-  
-
-<h3 id="hahahugoshortcode-s0-hbhb">
+  <h3 id="hahahugoshortcode-s0-hbhb">
 <i class="fas fa-angle-double-right" style="color: #580F8B; font-size: 24px;">&nbsp;</i>Starting and Stopping the Server
 
 </h3>
-
 <div style="margin-bottom: 10px; font-size: 0px;">&nbsp;</div>
-
-<p>In most use cases, the YarraServer process is controlled via the <a href="/server/webgui">WebGUI</a>. However, it is also possible to control the server using command-line tools.
+<p>In most use cases, the YarraServer process is controlled via the <a href="/server/webgui">WebGUI</a>. However, it is also possible to control the server using command-line tools. 
 <div style="margin-bottom: 20px; font-size: 0px;">&nbsp;</div></p>
-
 <h4 id="if-running-as-linux-daemon">If Running as Linux Daemon</h4>
-
 <p>When the YarraServer has been installed as daemon (recommended and described <a href="/server/installation">here</a>), the YarraServer can be started using a terminal shell (as user yarraserver) and typing:</p>
-
-<pre><code>sudo systemctl start yarra
-</code></pre>
-
-<p>The server is now running in the background. To stop the server, type:</p>
-
-<pre><code>sudo systemctl stop yarra
-</code></pre>
-
-<p>The server will shut down after completing the active task (if existing).</p>
-
+<pre tabindex="0"><code>sudo systemctl start yarra
+</code></pre><p>The server is now running in the background. To stop the server, type:</p>
+<pre tabindex="0"><code>sudo systemctl stop yarra
+</code></pre><p>The server will shut down after completing the active task (if existing).</p>
 <div style="margin-bottom: 20px; font-size: 0px;">&nbsp;</div>
-
 <h4 id="if-running-as-command-shell-application">If Running as Command-Shell Application</h4>
-
 <p>When running YarraServer as command-shell application (only recommended for testing purpose), the YarraServer can be started using a terminal shell (as user yarraserver) and typing:</p>
-
-<pre><code>~/yarra/ServerCtrl -l
-</code></pre>
-
-<p>The server is now running in the background. To stop the server, type:</p>
-
-<pre><code>~/yarra/ServerCtrl -s
-</code></pre>
-
-<p>The server will shut down after completing the active task (if existing).</p>
-
+<pre tabindex="0"><code>~/yarra/ServerCtrl -l
+</code></pre><p>The server is now running in the background. To stop the server, type:</p>
+<pre tabindex="0"><code>~/yarra/ServerCtrl -s
+</code></pre><p>The server will shut down after completing the active task (if existing).</p>
 <div style="margin-bottom: 40px; font-size: 0px;">&nbsp;</div>
-
 <h3 id="hahahugoshortcode-s5-hbhb">
 <i class="fas fa-angle-double-right" style="color: #580F8B; font-size: 24px;">&nbsp;</i>Monitoring the Server Activity
 
 </h3>
-
 <p>To test if the server is currently active, write the following command:</p>
-
-<pre><code>~/yarra/ServerCtrl -t
-</code></pre>
-
-<p>To check if the server is idle or processing a task, use the following command:</p>
-
-<pre><code>~/yarra/ServerCtrl -d
-</code></pre>
-
-<p>To view the output of the currently running reconstruction task, use the command:</p>
-
-<pre><code>~/yarra/ServerCtrl -v
-</code></pre>
-
-<div style="margin-bottom: 40px; font-size: 0px;">&nbsp;</div>
-
+<pre tabindex="0"><code>~/yarra/ServerCtrl -t
+</code></pre><p>To check if the server is idle or processing a task, use the following command:</p>
+<pre tabindex="0"><code>~/yarra/ServerCtrl -d
+</code></pre><p>To view the output of the currently running reconstruction task, use the command:</p>
+<pre tabindex="0"><code>~/yarra/ServerCtrl -v
+</code></pre><div style="margin-bottom: 40px; font-size: 0px;">&nbsp;</div>
 <h3 id="hahahugoshortcode-s7-hbhb">
 <i class="fas fa-angle-double-right" style="color: #580F8B; font-size: 24px;">&nbsp;</i>Terminating an Unresponsive Task
 
 </h3>
-
 <p>If reconstruction modules become unresponsive, termination of the YarraServer can be enforced by typing the command:</p>
-
-<pre><code>~/yarra/ServerCtrl -h
-</code></pre>
-
-<p>This will terminate module and shutdown the YarraServer immediately. If the server is running as daemon,it will be automatically restarted and will continue with the next reconstruction task (when running it as command-shell application, the server needs to be restarted manually).</p>
-
+<pre tabindex="0"><code>~/yarra/ServerCtrl -h
+</code></pre><p>This will terminate module and shutdown the YarraServer immediately. If the server is running as daemon,it will be automatically restarted and will continue with the next reconstruction task (when running it as command-shell application, the server needs to be restarted manually).</p>
 
 <div class="bs-callout bs-callout-primary"  >
     
@@ -273,31 +234,21 @@
 </div>
 
 
-
 <div style="margin-bottom: 40px; font-size: 0px;">&nbsp;</div>
-
 <h3 id="hahahugoshortcode-s10-hbhb">
 <i class="fas fa-angle-double-right" style="color: #580F8B; font-size: 24px;">&nbsp;</i>Output Directories
 
 </h3>
-
 <p>Reconstruction tasks that are  submitted by the Yarra clients are first placed in the <strong>queue</strong> directory. The server then selects one task an moves the files into the <strong>work</strong> directory. If a reconstruction problem should occur and the processing was not successful, the files of the failed task will be moved to a subfolder of the directory <strong>fail</strong> (thus, data from unsuccessful tasks will never be lost). If a reconstruction mode defines that also data from successful reconstructions should be kept (e.g., to archive the data for later reprocessing), the files form the task will be moved to a subfolder of the directory <strong>finished</strong>. To avoid that a lot of cases pile up in this directory, it is recommended to move older files to a long-term storage directory, e.g. using an automated cron job.</p>
-
 <div style="margin-bottom: 40px; font-size: 0px;">&nbsp;</div>
-
 <h3 id="hahahugoshortcode-s12-hbhb">
 <i class="fas fa-angle-double-right" style="color: #580F8B; font-size: 24px;">&nbsp;</i>Logfiles
 
 </h3>
-
 <p>The YarraServer has two logging mechanisms: A server log, which contains coarse information about what tasks were processed and when problems occurred, and an individual task log, which contains detailed information about each task, including all output that the modules created. This file can be very helpful when investigating reconstruction problems or crashes.</p>
-
 <p>All log files are stored in the subdirectory log. The server log has the fixed file name yarra.log. If the log file gets too large, it will be archived (by adding a time stamp to the file name) and a clean file will be created. The task log is named according to the task ID, i.e. the name of the submitted file, with the extension “.log”. If a task is submitted and a log file with this name already exists, a time stamp will be appended. Note: All notification emails show the task ID at the bottom of the mail, which makes it easy to identify the log file. The file name of the log file of the currently active task can be obtained by calling:</p>
-
-<pre><code>~/yarra/ServerCtrl -d
-</code></pre>
-
-<p>
+<pre tabindex="0"><code>~/yarra/ServerCtrl -d
+</code></pre><p>
 <div class="bs-callout bs-callout-primary"  >
     
 <p>The log files can also be viewed or downloaded using the WebGUI.</p>

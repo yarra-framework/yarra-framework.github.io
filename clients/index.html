@@ -24,7 +24,7 @@
 
 <link rel="canonical" href="http://yarra-framework.org/clients/" />
 
-<meta name="generator" content="Hugo 0.59.1" />
+<meta name="generator" content="Hugo 0.96.0" />
 
 
   <link rel="stylesheet" href="/assets/css/bootstrap.min.css" />
@@ -56,7 +56,7 @@
                
         
         <li class="nav-item">
-          <a class="nav-link menu-item " href="/overview">
+          <a class="nav-link menu-item " href="/overview/">
             
             <span class="text-capitalize no-decoration text-white">Overview</span>
           </a>
@@ -65,7 +65,7 @@
               
         
         <li class="nav-item">
-          <a class="nav-link menu-item active" href="/clients">
+          <a class="nav-link menu-item active" href="/clients/">
             
             <span class="text-capitalize no-decoration text-white">Clients</span>
           </a>
@@ -74,7 +74,7 @@
               
         
         <li class="nav-item">
-          <a class="nav-link menu-item " href="/server">
+          <a class="nav-link menu-item " href="/server/">
             
             <span class="text-capitalize no-decoration text-white">Server</span>
           </a>
@@ -83,7 +83,7 @@
               
         
         <li class="nav-item">
-          <a class="nav-link menu-item " href="/modules">
+          <a class="nav-link menu-item " href="/modules/">
             
             <span class="text-capitalize no-decoration text-white">Modules</span>
           </a>
@@ -92,7 +92,7 @@
               
         
         <li class="nav-item">
-          <a class="nav-link menu-item " href="/logserver">
+          <a class="nav-link menu-item " href="/logserver/">
             
             <span class="text-capitalize no-decoration text-white">LogServer</span>
           </a>
@@ -101,7 +101,7 @@
               
         
         <li class="nav-item">
-          <a class="nav-link menu-item " href="/addons">
+          <a class="nav-link menu-item " href="/addons/">
             
             <span class="text-capitalize no-decoration text-white">Addons</span>
           </a>
@@ -110,7 +110,7 @@
               
         
         <li class="nav-item">
-          <a class="nav-link menu-item " href="/download">
+          <a class="nav-link menu-item " href="/download/">
             
             <span class="text-capitalize no-decoration text-white">Download</span>
           </a>
@@ -119,7 +119,7 @@
               
         
         <li class="nav-item">
-          <a class="nav-link menu-item " href="/blog">
+          <a class="nav-link menu-item " href="/blog/">
             
             <span class="text-capitalize no-decoration text-white">Blog</span>
           </a>
@@ -160,17 +160,12 @@
       </div>
       <div class="col-xs-12 col-lg-9 post-container">
         <div class="content pt-2">
-          
-
-<h3 id="hahahugoshortcode-s0-hbhb">
+          <h3 id="hahahugoshortcode-s0-hbhb">
 <i class="fas fa-angle-double-right" style="color: #580F8B; font-size: 24px;">&nbsp;</i>Client Overview
 
 </h3>
-
 <p>To perform offline reconstructions with Yarra (or to collect workflow information), it is necessary to install a client software, which transfers the measurement data to the YarraServer. The Yarra client package comes with three different client programs (executables), which each have a different application:</p>
-
 <div style="margin-bottom: 20px; font-size: 0px;">&nbsp;</div>
-
 <div class='table  table-hover'>
     <table>
 <thead>
@@ -181,7 +176,6 @@
 <th>Purpose</th>
 </tr>
 </thead>
-
 <tbody>
 <tr>
 <td><img src="/orticon_48.png" /></td>
@@ -189,14 +183,12 @@
 <td>Offline Reconstruction Task</td>
 <td>Submission of acquired scans for offline reconstruction from Siemens MRI systems.</td>
 </tr>
-
 <tr>
 <td><img src="/sacicon_48.png" /></td>
 <td><a href="/clients/sac">SAC.exe</a></td>
 <td>Stand-Alone Client</td>
 <td>Submission of saved raw-data files (Twix) for retrospective offline reconstruction from stand-alone workstations.</td>
 </tr>
-
 <tr>
 <td><img src="/yarraicon_48.png" /></td>
 <td><a href="/clients/rds">RDS.exe</a></td>
@@ -206,13 +198,9 @@
 </tbody>
 </table>
   </div>
-
 <div style="margin-bottom: 10px; font-size: 0px;">&nbsp;</div>
-
 <p>The ORT client is the program that should be used if reconstruction tasks need to be submitted directly from the MRI systems (e.g., by the techs after the scan has been completed). This would be the case, for example, if a new reconstruction technique should be evaluated as part of routine scans. If the measurement data (rawdata) of scans should only be collected but not reconstructed automatically, this can be achieved using the RDS client. The RDS client runs invisible in the background on the host computer of the MRI system and will store the requested data on a network drive at night (or at another configurable time). This can be very helpful to collect a collection of measurement data from clinical routine scans. If these saved measurements files should be reconstructed at a later time, this can be done with the SAC client. The SAC client is normally used on external workstation PCs and not on the MRI systems. A typical use-case would be if a researcher wants to reconstruct a single dataset using different reconstruction algorithms or settings.</p>
-
 <p>All three clients are contained in the Yarra client package that can be downloaded <a href="/download">here</a>. Installation instructions can be found <a href="/clients/installation">here</a>.</p>
-
 <p>Currently, the following software versions of Syngo MR are supported: <br>
 <span class="badge badge-info">VB13A</span>
 <span class="badge badge-info">VB15A</span>
@@ -244,12 +232,10 @@
 <span class="badge badge-info">XA30A</span>
 <span class="badge badge-info">XA31A</span></p>
 
-
 <div class="bs-callout bs-callout-primary"  >
  <h4>Certificates</h4>    
 <p>To run the Yarra client on scanner versions XA10, XA11A, XA11B (e.g., MAGNETOM Vida or Sola), it is necessary to install software certificates before the client can be launched. Please contact us to obtain these certificates.</p>
 </div>
-
 
 
 <p>Alternatively to installing the ORT client as executable on the MR system, it is also possible to use the <a href="/addons/yarralink">YarraLink sequence</a>, which may circumvent regulatory issues related to installing application executables on a Siemens MR system.</p>

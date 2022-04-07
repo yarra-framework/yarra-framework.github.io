@@ -6,11 +6,7 @@
     <description>Recent content in Repositories on Yarra Framework</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 12 Feb 2020 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="http://yarra-framework.org/tags/repositories/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Wed, 12 Feb 2020 00:00:00 +0000</lastBuildDate><atom:link href="http://yarra-framework.org/tags/repositories/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Migration to Git</title>
       <link>http://yarra-framework.org/blog/gitmigration/</link>

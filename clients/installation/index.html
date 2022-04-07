@@ -44,7 +44,7 @@
 
 <link rel="canonical" href="http://yarra-framework.org/clients/installation/" />
 
-<meta name="generator" content="Hugo 0.59.1" />
+<meta name="generator" content="Hugo 0.96.0" />
 
 
   <link rel="stylesheet" href="/assets/css/bootstrap.min.css" />
@@ -76,7 +76,7 @@
                
         
         <li class="nav-item">
-          <a class="nav-link menu-item " href="/overview">
+          <a class="nav-link menu-item " href="/overview/">
             
             <span class="text-capitalize no-decoration text-white">Overview</span>
           </a>
@@ -85,7 +85,7 @@
               
         
         <li class="nav-item">
-          <a class="nav-link menu-item active" href="/clients">
+          <a class="nav-link menu-item active" href="/clients/">
             
             <span class="text-capitalize no-decoration text-white">Clients</span>
           </a>
@@ -94,7 +94,7 @@
               
         
         <li class="nav-item">
-          <a class="nav-link menu-item " href="/server">
+          <a class="nav-link menu-item " href="/server/">
             
             <span class="text-capitalize no-decoration text-white">Server</span>
           </a>
@@ -103,7 +103,7 @@
               
         
         <li class="nav-item">
-          <a class="nav-link menu-item " href="/modules">
+          <a class="nav-link menu-item " href="/modules/">
             
             <span class="text-capitalize no-decoration text-white">Modules</span>
           </a>
@@ -112,7 +112,7 @@
               
         
         <li class="nav-item">
-          <a class="nav-link menu-item " href="/logserver">
+          <a class="nav-link menu-item " href="/logserver/">
             
             <span class="text-capitalize no-decoration text-white">LogServer</span>
           </a>
@@ -121,7 +121,7 @@
               
         
         <li class="nav-item">
-          <a class="nav-link menu-item " href="/addons">
+          <a class="nav-link menu-item " href="/addons/">
             
             <span class="text-capitalize no-decoration text-white">Addons</span>
           </a>
@@ -130,7 +130,7 @@
               
         
         <li class="nav-item">
-          <a class="nav-link menu-item " href="/download">
+          <a class="nav-link menu-item " href="/download/">
             
             <span class="text-capitalize no-decoration text-white">Download</span>
           </a>
@@ -139,7 +139,7 @@
               
         
         <li class="nav-item">
-          <a class="nav-link menu-item " href="/blog">
+          <a class="nav-link menu-item " href="/blog/">
             
             <span class="text-capitalize no-decoration text-white">Blog</span>
           </a>
@@ -182,17 +182,12 @@
     </div>
     <div class="col-xs-12 col-lg-9 post-container">
       <div class="content pt-2">
-  
-
-<h3 id="hahahugoshortcode-s0-hbhb">
+  <h3 id="hahahugoshortcode-s0-hbhb">
 <i class="fas fa-angle-double-right" style="color: #580F8B; font-size: 24px;">&nbsp;</i>Package Installation
 
 </h3>
-
 <p>To install Yarra clients, download the Yarra client package form the <a href="/download">Download Page</a>.</p>
-
 <p>Extract the archive into a folder on the host computer of the MRI system (or workstation PC for the SAC). The package can be unzipped into any directory. We recommend installing it into the folder <strong>C:\yarra</strong>.</p>
-
 <p><div style="margin-bottom: 20px; font-size: 0px;">&nbsp;</div>
 
 <div class="bs-callout bs-callout-primary"  >
@@ -202,12 +197,10 @@
 
 </p>
 
-
 <div class="bs-callout bs-callout-primary"  >
  <h4>MREmbeddedControl</h4>    
 <p>On MR systems running software versions that use the MREmbeddedControl protection, it is necessary to start the MREmbeddedControlUI program and set the system into the <strong>Update Mode</strong> in order to white-list the Yarra binaries. Afterwards, the Yarra binaries can be copied. Start the binaries once and then switch the system back to <strong>Enabled Mode</strong>. It is recommended to use the installation path <strong>C:\MedCom\temp\yarra</strong> instead of C:\yarra on these systems.</p>
 </div>
-
 
 
 
@@ -217,25 +210,17 @@
 </div>
 
 
-
 <div style="margin-bottom: 40px; font-size: 0px;">&nbsp;</div>
-
 <h3 id="hahahugoshortcode-s6-hbhb">
 <i class="fas fa-angle-double-right" style="color: #580F8B; font-size: 24px;">&nbsp;</i>Shortcut Creation
 
 </h3>
-
 <p>For convenience, shortcuts to the client programs should be created and placed in the Windows Start menu. Currently, these shortcuts need to be created manually by clicking on the respective .exe file with the right mouse button and selecting the option “Create shortcut” in the menu. The created shortcut icon can then be dragged into the Start menu (or onto the desktop for workstation PCs).</p>
-
 <img style="margin-left: auto; margin-right: auto; display: block;  margin-top: 20px; margin-bottom: 20px; "  class="img-fluid" src="/install2.jpg" />
 
-
 <div style="margin-bottom: 20px; font-size: 0px;">&nbsp;</div>
-
 <p><strong>For ORT:</strong> We usually create a shortcut to ORT.exe and rename it to “Offline Reconstruction Task”. This shortcut is placed in the Start menu of the MRI systems.</p>
-
 <p><strong>For RDS:</strong> To ensure that the RDS client is loaded automatically during bootup of the scanner, a shortcut to RDS.exe must be created and placed in the “Startup” folder of the Start menu. The RDS client also provides an option to transfer the data immediately (instead of during the night). It is possible to trigger the transfer using a shortcut, which can also be placed in the Start menu of the MRI scans (this is optional). To this end, create a short cut, rename it to e.g. “Transfer Rawdata Now”, right-click and select “Properties”, and add the option ” –update” to the field “Target:”. The full entry should then read “C:\yarra\RDS.exe –update”.</p>
-
 
 <div class="bs-callout bs-callout-primary"  >
     

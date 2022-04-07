@@ -44,7 +44,7 @@
 
 <link rel="canonical" href="http://yarra-framework.org/modules_core/pacstransfer/" />
 
-<meta name="generator" content="Hugo 0.59.1" />
+<meta name="generator" content="Hugo 0.96.0" />
 
 
   <link rel="stylesheet" href="/assets/css/bootstrap.min.css" />
@@ -76,7 +76,7 @@
                
         
         <li class="nav-item">
-          <a class="nav-link menu-item " href="/overview">
+          <a class="nav-link menu-item " href="/overview/">
             
             <span class="text-capitalize no-decoration text-white">Overview</span>
           </a>
@@ -85,7 +85,7 @@
               
         
         <li class="nav-item">
-          <a class="nav-link menu-item " href="/clients">
+          <a class="nav-link menu-item " href="/clients/">
             
             <span class="text-capitalize no-decoration text-white">Clients</span>
           </a>
@@ -94,7 +94,7 @@
               
         
         <li class="nav-item">
-          <a class="nav-link menu-item " href="/server">
+          <a class="nav-link menu-item " href="/server/">
             
             <span class="text-capitalize no-decoration text-white">Server</span>
           </a>
@@ -103,7 +103,7 @@
               
         
         <li class="nav-item">
-          <a class="nav-link menu-item " href="/modules">
+          <a class="nav-link menu-item " href="/modules/">
             
             <span class="text-capitalize no-decoration text-white">Modules</span>
           </a>
@@ -112,7 +112,7 @@
               
         
         <li class="nav-item">
-          <a class="nav-link menu-item " href="/logserver">
+          <a class="nav-link menu-item " href="/logserver/">
             
             <span class="text-capitalize no-decoration text-white">LogServer</span>
           </a>
@@ -121,7 +121,7 @@
               
         
         <li class="nav-item">
-          <a class="nav-link menu-item " href="/addons">
+          <a class="nav-link menu-item " href="/addons/">
             
             <span class="text-capitalize no-decoration text-white">Addons</span>
           </a>
@@ -130,7 +130,7 @@
               
         
         <li class="nav-item">
-          <a class="nav-link menu-item " href="/download">
+          <a class="nav-link menu-item " href="/download/">
             
             <span class="text-capitalize no-decoration text-white">Download</span>
           </a>
@@ -139,7 +139,7 @@
               
         
         <li class="nav-item">
-          <a class="nav-link menu-item " href="/blog">
+          <a class="nav-link menu-item " href="/blog/">
             
             <span class="text-capitalize no-decoration text-white">Blog</span>
           </a>
@@ -182,39 +182,24 @@
     </div>
     <div class="col-xs-12 col-lg-9 post-container">
       <div class="content pt-2">
-  
-
-<h4 id="purpose">Purpose</h4>
-
+  <h4 id="purpose">Purpose</h4>
 <p>Sends all reconstructed DICOM images to one or multiple DICOM nodes (PACS or DICOM workstation).
 Requires installation of the OFFIS dcmtk package on the server.</p>
-
 <h4 id="usage">Usage</h4>
-
-<pre><code>PACSTransfer [mode file] [directory with DICOMs]
-</code></pre>
-
-<p>Typical call:</p>
-
-<pre><code>[Transfer]
+<pre tabindex="0"><code>PACSTransfer [mode file] [directory with DICOMs]
+</code></pre><p>Typical call:</p>
+<pre tabindex="0"><code>[Transfer]
 Bin=%bd/PACSTransfer
 Args=%mc %td
-</code></pre>
-
-<h4 id="configuration">Configuration</h4>
-
+</code></pre><h4 id="configuration">Configuration</h4>
 <p>In .mode file:</p>
-
-<pre><code>[PACSTransfer]
+<pre tabindex="0"><code>[PACSTransfer]
 AEC=#AEC of PACS
 IP=#IP of PACS, e.g. 10.142.23.54
 Port=#Port of PACS, e.g. 104
 AET=#AET to be used, e.g. YARRA
-</code></pre>
-
-<p>If the images should be sent to multiple DICOM nodes (up to 20), add to .mode file:</p>
-
-<pre><code>[PACSTransfer]
+</code></pre><p>If the images should be sent to multiple DICOM nodes (up to 20), add to .mode file:</p>
+<pre tabindex="0"><code>[PACSTransfer]
 AEC_1=#AEC of PACS 1
 IP_1=#IP of PACS 1, e.g. 10.142.23.54
 Port_1=#Port of PACS 1, e.g. 104
@@ -224,9 +209,7 @@ AEC_2=#AEC of PACS 2
 IP_2=#IP of PACS 2, e.g. 10.142.23.54
 Port_2=#Port of PACS 2, e.g. 104
 AET_2=#AET to be used, e.g. YARRA
-</code></pre>
-
-<p>By default, the PACSTransfer module sends the images one file at a time in the right series order. This is required for some of the PACS systems to ensure that the series are correctly ordered. However, sometimes it is also necessary to send the whole directory all at once (e.g., for recent Syngo.via versions). The latter can be enforced by writing the statement <strong>DirMode=true</strong> into the respective PACS section (i.e. if multple nodes are used, use DirMode_n=true respectively).</p>
+</code></pre><p>By default, the PACSTransfer module sends the images one file at a time in the right series order. This is required for some of the PACS systems to ensure that the series are correctly ordered. However, sometimes it is also necessary to send the whole directory all at once (e.g., for recent Syngo.via versions). The latter can be enforced by writing the statement <strong>DirMode=true</strong> into the respective PACS section (i.e. if multple nodes are used, use DirMode_n=true respectively).</p>
 
 </div>
 

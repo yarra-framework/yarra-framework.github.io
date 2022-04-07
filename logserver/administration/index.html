@@ -44,7 +44,7 @@
 
 <link rel="canonical" href="http://yarra-framework.org/logserver/administration/" />
 
-<meta name="generator" content="Hugo 0.59.1" />
+<meta name="generator" content="Hugo 0.96.0" />
 
 
   <link rel="stylesheet" href="/assets/css/bootstrap.min.css" />
@@ -76,7 +76,7 @@
                
         
         <li class="nav-item">
-          <a class="nav-link menu-item " href="/overview">
+          <a class="nav-link menu-item " href="/overview/">
             
             <span class="text-capitalize no-decoration text-white">Overview</span>
           </a>
@@ -85,7 +85,7 @@
               
         
         <li class="nav-item">
-          <a class="nav-link menu-item " href="/clients">
+          <a class="nav-link menu-item " href="/clients/">
             
             <span class="text-capitalize no-decoration text-white">Clients</span>
           </a>
@@ -94,7 +94,7 @@
               
         
         <li class="nav-item">
-          <a class="nav-link menu-item " href="/server">
+          <a class="nav-link menu-item " href="/server/">
             
             <span class="text-capitalize no-decoration text-white">Server</span>
           </a>
@@ -103,7 +103,7 @@
               
         
         <li class="nav-item">
-          <a class="nav-link menu-item " href="/modules">
+          <a class="nav-link menu-item " href="/modules/">
             
             <span class="text-capitalize no-decoration text-white">Modules</span>
           </a>
@@ -112,7 +112,7 @@
               
         
         <li class="nav-item">
-          <a class="nav-link menu-item active" href="/logserver">
+          <a class="nav-link menu-item active" href="/logserver/">
             
             <span class="text-capitalize no-decoration text-white">LogServer</span>
           </a>
@@ -121,7 +121,7 @@
               
         
         <li class="nav-item">
-          <a class="nav-link menu-item " href="/addons">
+          <a class="nav-link menu-item " href="/addons/">
             
             <span class="text-capitalize no-decoration text-white">Addons</span>
           </a>
@@ -130,7 +130,7 @@
               
         
         <li class="nav-item">
-          <a class="nav-link menu-item " href="/download">
+          <a class="nav-link menu-item " href="/download/">
             
             <span class="text-capitalize no-decoration text-white">Download</span>
           </a>
@@ -139,7 +139,7 @@
               
         
         <li class="nav-item">
-          <a class="nav-link menu-item " href="/blog">
+          <a class="nav-link menu-item " href="/blog/">
             
             <span class="text-capitalize no-decoration text-white">Blog</span>
           </a>
@@ -184,43 +184,26 @@
     </div>
     <div class="col-xs-12 col-lg-9 post-container">
       <div class="content pt-2">
-  
-
-<h3 id="hahahugoshortcode-s0-hbhb">
+  <h3 id="hahahugoshortcode-s0-hbhb">
 <i class="fas fa-angle-double-right" style="color: #580F8B; font-size: 24px;">&nbsp;</i>Administration
 
 </h3>
-
 <p><div style="margin-bottom: 10px; font-size: 0px;">&nbsp;</div>
-Administration of Yarra LogServer is done with a web-based interface (&ldquo;LogViewer&rdquo;), which normally runs on port 4444 (e.g., <a href="https://localhost:4444" target="_blank">https://localhost:4444</a> when opening the browser directly on the server). It is recommended to use a modern web browser (e.g., Chrome) when working with LogViewer.</p>
-
+Administration of Yarra LogServer is done with a web-based interface (&ldquo;LogViewer&rdquo;), which normally runs on port 4444 (e.g., https://localhost:4444 when opening the browser directly on the server). It is recommended to use a modern web browser (e.g., Chrome) when working with LogViewer.</p>
 <div style="margin-bottom: 20px; font-size: 0px;">&nbsp;</div>
-
 <h4 id="accounts">Accounts</h4>
-
 <p>New user accounts can be created on the login page by going through the Registration procedure. However, new accounts are disabled by default and need to authorized by an administrator. Administrators can enable accounts in the Users section of the Admin page, and they can promote accounts to admin status.</p>
-
 <img style="margin-left: auto; margin-right: auto; display: block;  margin-top: 40px; margin-bottom: 40px; "  class="img-fluid" src="/yls_admin.jpg" />
 
-
 <div style="margin-bottom: 20px; font-size: 0px;">&nbsp;</div>
-
 <h4 id="terminology">Terminology</h4>
-
 <p>It is important to understand the terminology when working with LogServer. An individual sequence run on a scanner (ex: AX T1 POST) is called a <em>scan</em>. Multiple sequences run on a patient in a row is an <em>exam</em>. An <em>exam</em> is associated with <em>protocol</em> if a tagging scan has been run (protocol refers to the examination protocol in this case, not the &ldquo;sequence protocol&rdquo;). An <em>event</em> is a piece of information sent from an RDS or ORT client, such as “Boot”, “Shutdown” and “RawDataStorage.” A <em>scanner</em> corresponds to the actual scanner.</p>
-
 <div style="margin-bottom: 20px; font-size: 0px;">&nbsp;</div>
-
 <h4 id="scanners">Scanners</h4>
-
 <p>The Scanners page shows a list of every scanner that has sent information to the LogServer. The Serial number is automatically filled in, but additionally a human-readable name should be assigned to each scanner (this needs to be done manually). Additional information fields can be set that relate to the scanner itself, such as (organizational) Unit, Field Strength, Address, and Phone Number. To edit a field, double click into the table cell, make your changes, and press enter.</p>
-
 <p>The Openings page lets you define opening hours (or working hours) for each scanner per day of the week. This can be useful when calculating, for instance, how much of the working day is spent running sequences.</p>
-
 <div style="margin-bottom: 20px; font-size: 0px;">&nbsp;</div>
-
 <h4 id="protocols">Protocols</h4>
-
 <p>The Protocols page allows editing the Section, Region, Bodypart, and Variant value for each protocol that the LogServer has received so far. It has been designed so that typos in the name of the tagging sequences can be corrected for without having to change the sequence name on the scanner. For instance, if an exam is tagged N<strong>UE</strong>RO_HEAD_BRAIN_SEIZURE, you can edit the associated section to “Neuro” and the exams tagged with the typoed section name will now be associated with the correct one. Nevertheless, it still makes sense to correct the typo in the sequence name at a later time when the scanner becomes available.</p>
 
 </div>

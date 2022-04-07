@@ -44,7 +44,7 @@
 
 <link rel="canonical" href="http://yarra-framework.org/logserver/redash/" />
 
-<meta name="generator" content="Hugo 0.59.1" />
+<meta name="generator" content="Hugo 0.96.0" />
 
 
   <link rel="stylesheet" href="/assets/css/bootstrap.min.css" />
@@ -76,7 +76,7 @@
                
         
         <li class="nav-item">
-          <a class="nav-link menu-item " href="/overview">
+          <a class="nav-link menu-item " href="/overview/">
             
             <span class="text-capitalize no-decoration text-white">Overview</span>
           </a>
@@ -85,7 +85,7 @@
               
         
         <li class="nav-item">
-          <a class="nav-link menu-item " href="/clients">
+          <a class="nav-link menu-item " href="/clients/">
             
             <span class="text-capitalize no-decoration text-white">Clients</span>
           </a>
@@ -94,7 +94,7 @@
               
         
         <li class="nav-item">
-          <a class="nav-link menu-item " href="/server">
+          <a class="nav-link menu-item " href="/server/">
             
             <span class="text-capitalize no-decoration text-white">Server</span>
           </a>
@@ -103,7 +103,7 @@
               
         
         <li class="nav-item">
-          <a class="nav-link menu-item " href="/modules">
+          <a class="nav-link menu-item " href="/modules/">
             
             <span class="text-capitalize no-decoration text-white">Modules</span>
           </a>
@@ -112,7 +112,7 @@
               
         
         <li class="nav-item">
-          <a class="nav-link menu-item active" href="/logserver">
+          <a class="nav-link menu-item active" href="/logserver/">
             
             <span class="text-capitalize no-decoration text-white">LogServer</span>
           </a>
@@ -121,7 +121,7 @@
               
         
         <li class="nav-item">
-          <a class="nav-link menu-item " href="/addons">
+          <a class="nav-link menu-item " href="/addons/">
             
             <span class="text-capitalize no-decoration text-white">Addons</span>
           </a>
@@ -130,7 +130,7 @@
               
         
         <li class="nav-item">
-          <a class="nav-link menu-item " href="/download">
+          <a class="nav-link menu-item " href="/download/">
             
             <span class="text-capitalize no-decoration text-white">Download</span>
           </a>
@@ -139,7 +139,7 @@
               
         
         <li class="nav-item">
-          <a class="nav-link menu-item " href="/blog">
+          <a class="nav-link menu-item " href="/blog/">
             
             <span class="text-capitalize no-decoration text-white">Blog</span>
           </a>
@@ -184,17 +184,12 @@
     </div>
     <div class="col-xs-12 col-lg-9 post-container">
       <div class="content pt-2">
-  
-
-<h3 id="hahahugoshortcode-s0-hbhb">
+  <h3 id="hahahugoshortcode-s0-hbhb">
 <i class="fas fa-angle-double-right" style="color: #580F8B; font-size: 24px;">&nbsp;</i>Data Visualization with Redash
 
 </h3>
-
 <p>While the included Yarra LogViewer provides access to all collected data in tabular form, it is often desired to visualize data or to perform advanced queries. This can be done with Redash, which is a web-based open-source tool for creating SQL-driven dashboards.</p>
-
-<p><a href="https://redash.io/" target="_blank" ><i class="fas fa-external-link-alt">&nbsp;</i>More information on Redash</a></p>
-
+<p><a href="https://redash.io/" target="_blank" ><i class="fas fa-external-link-alt"> </i>More information on Redash</a></p>
 
 <div class="bs-callout bs-callout-danger"  >
     
@@ -202,28 +197,16 @@
 </div>
 
 
-
 <p>To get you up and running quickly, we have built several basic &ldquo;seed&rdquo; dashboards for Redash. These dashboards have been tested to work with Redash version 2.0.1.b3080. Therefore, it is best to first install our dashboard set with this Redash version and then upgrade to the newest Redash version.</p>
-
 <p>The following instructions assume that you are running Redash on the same machine as Yarra LogServer, and they will not work with an existing Redash installation.</p>
-
-<p>To get started, first <a href="https://redash.io/help/open-source/setup" target="_blank">install</a> Redash 2.0.1.b3080. It might be prudent to <a href="https://github.com/getredash/redash/blob/v2.0.1/setup/ubuntu/bootstrap.sh" target="_blank">run the provisioning script</a> that was released with v2.0.1 rather than the one on the master branch.</p>
-
+<p>To get started, first <a href="https://redash.io/help/open-source/setup">install</a> Redash 2.0.1.b3080. It might be prudent to <a href="https://github.com/getredash/redash/blob/v2.0.1/setup/ubuntu/bootstrap.sh">run the provisioning script</a> that was released with v2.0.1 rather than the one on the master branch.</p>
 <p>Invoke the provisioning script like this:</p>
-
-<pre><code>REDASH-VERSION=2.0.1.b3080 ./bootstrap.sh
-</code></pre>
-
-<p>and create your administrator account. To insert our dashboards, run:</p>
-
-<pre><code>cd /opt/yarralogserver/redash &amp;&amp; sudo ./install_dashboards.sh
-</code></pre>
-
-<p>It will prompt you for a password for a database role that Redash will use to query the LogServer database.</p>
-
+<pre tabindex="0"><code>REDASH-VERSION=2.0.1.b3080 ./bootstrap.sh
+</code></pre><p>and create your administrator account. To insert our dashboards, run:</p>
+<pre tabindex="0"><code>cd /opt/yarralogserver/redash &amp;&amp; sudo ./install_dashboards.sh
+</code></pre><p>It will prompt you for a password for a database role that Redash will use to query the LogServer database.</p>
 <p>Verify that the installation has worked by logging into your Redash instance at localhost, navigating to the “Dashboards” page, and loading a dashboard. There may be no data but there should at least be no error messages.</p>
-
-<p>Now, you should upgrade to the latest Redash by following the <a href="https://redash.io/help/open-source/admin-guide/how-to-upgrade/" target="_blank">official upgrade instructions</a>.</p>
+<p>Now, you should upgrade to the latest Redash by following the <a href="https://redash.io/help/open-source/admin-guide/how-to-upgrade/">official upgrade instructions</a>.</p>
 
 </div>
 

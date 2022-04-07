@@ -44,7 +44,7 @@
 
 <link rel="canonical" href="http://yarra-framework.org/modules_user/grasp-basic/" />
 
-<meta name="generator" content="Hugo 0.59.1" />
+<meta name="generator" content="Hugo 0.96.0" />
 
 
   <link rel="stylesheet" href="/assets/css/bootstrap.min.css" />
@@ -76,7 +76,7 @@
                
         
         <li class="nav-item">
-          <a class="nav-link menu-item " href="/overview">
+          <a class="nav-link menu-item " href="/overview/">
             
             <span class="text-capitalize no-decoration text-white">Overview</span>
           </a>
@@ -85,7 +85,7 @@
               
         
         <li class="nav-item">
-          <a class="nav-link menu-item " href="/clients">
+          <a class="nav-link menu-item " href="/clients/">
             
             <span class="text-capitalize no-decoration text-white">Clients</span>
           </a>
@@ -94,7 +94,7 @@
               
         
         <li class="nav-item">
-          <a class="nav-link menu-item " href="/server">
+          <a class="nav-link menu-item " href="/server/">
             
             <span class="text-capitalize no-decoration text-white">Server</span>
           </a>
@@ -103,7 +103,7 @@
               
         
         <li class="nav-item">
-          <a class="nav-link menu-item " href="/modules">
+          <a class="nav-link menu-item " href="/modules/">
             
             <span class="text-capitalize no-decoration text-white">Modules</span>
           </a>
@@ -112,7 +112,7 @@
               
         
         <li class="nav-item">
-          <a class="nav-link menu-item " href="/logserver">
+          <a class="nav-link menu-item " href="/logserver/">
             
             <span class="text-capitalize no-decoration text-white">LogServer</span>
           </a>
@@ -121,7 +121,7 @@
               
         
         <li class="nav-item">
-          <a class="nav-link menu-item " href="/addons">
+          <a class="nav-link menu-item " href="/addons/">
             
             <span class="text-capitalize no-decoration text-white">Addons</span>
           </a>
@@ -130,7 +130,7 @@
               
         
         <li class="nav-item">
-          <a class="nav-link menu-item " href="/download">
+          <a class="nav-link menu-item " href="/download/">
             
             <span class="text-capitalize no-decoration text-white">Download</span>
           </a>
@@ -139,7 +139,7 @@
               
         
         <li class="nav-item">
-          <a class="nav-link menu-item " href="/blog">
+          <a class="nav-link menu-item " href="/blog/">
             
             <span class="text-capitalize no-decoration text-white">Blog</span>
           </a>
@@ -182,43 +182,25 @@
     </div>
     <div class="col-xs-12 col-lg-9 post-container">
       <div class="content pt-2">
-  
-
-<h4 id="purpose">Purpose</h4>
-
+  <h4 id="purpose">Purpose</h4>
 <p>This module provides a stable Matlab implementation of the GRASP DCE-MRI reconstruction technique. It requires Matlab R2016a or newer. If the Parallel Computing Toolbox has been installed, the reconstruction will be parallelized across slices depending on the available CPU cores. By default, all available cores will be used for the calculation.</p>
-
 <p>When using the module, please cite the following publication:</p>
-
-<p>Feng L, Grimm R, Block KT, Chandarana H, Kim S, Xu J, Axel L, Sodickson DK, Otazo R.
-Golden-angle radial sparse parallel MRI: combination of compressed sensing, parallel imaging, and golden-angle radial sampling for fast and flexible dynamic volumetric MRI.
+<p>Feng L, Grimm R, Block KT, Chandarana H, Kim S, Xu J, Axel L, Sodickson DK, Otazo R. 
+Golden-angle radial sparse parallel MRI: combination of compressed sensing, parallel imaging, and golden-angle radial sampling for fast and flexible dynamic volumetric MRI. 
 Magn Reson Med. 2014 Sep;72(3):707-17.</p>
-
 <p>This module uses several open-source Matlab packages developed by other contributors, including the mapVBVD library by Philip Ehses, the NUFFT library developed by Jeff Fessler, and the inifile reader developed by Primoz Cermelj. Please give credit to these developers when using the module.</p>
-
 <div style="margin-bottom: 20px; font-size: 0px;">&nbsp;</div>
-
 <h4 id="usage">Usage</h4>
-
 <p>The ZIP archive contains a template for a mode file that shows how the module can be called. The module should be used in combination with the SetDCMTags module.</p>
-
-<pre><code>yarra_GRASP_basic [input folder] [input file] [output folder] [tmp folder] [mode file]
-</code></pre>
-
-<p>Typical call:</p>
-
-<pre><code>[Reconstruction]
+<pre tabindex="0"><code>yarra_GRASP_basic [input folder] [input file] [output folder] [tmp folder] [mode file]
+</code></pre><p>Typical call:</p>
+<pre tabindex="0"><code>[Reconstruction]
 Bin=%hmb
-Args=&quot;-nodesktop -nosplash -r %hq try, addpath(genpath('%bu/GRASP_basic/')); yarra_GRASP_basic('%rid/','%rif','%rod','%tmp','%mc'); catch e, disp(e.message); end, quit; %hq&quot;
-</code></pre>
-
-<div style="margin-bottom: 20px; font-size: 0px;">&nbsp;</div>
-
+Args=&#34;-nodesktop -nosplash -r %hq try, addpath(genpath(&#39;%bu/GRASP_basic/&#39;)); yarra_GRASP_basic(&#39;%rid/&#39;,&#39;%rif&#39;,&#39;%rod&#39;,&#39;%tmp&#39;,&#39;%mc&#39;); catch e, disp(e.message); end, quit; %hq&#34;
+</code></pre><div style="margin-bottom: 20px; font-size: 0px;">&nbsp;</div>
 <h4 id="configuration">Configuration</h4>
-
 <p>Reconstruction settings can be configured in the [GRASP] section of the mode file. If settings are missing, the default values shown below will be used.</p>
-
-<pre><code>[GRASP]
+<pre tabindex="0"><code>[GRASP]
 SpokesPerFrame=144     % Defines how many numbers should be used per frame
 Lambda=0.02            % Defines the strength of the temporal TV regularization
 MaxThreads=[all]       % Defines how many CPU cores should be used. By default, all will be used
@@ -226,16 +208,11 @@ ApplyKzFilter=true     % Defines if k-space filtering along kz should be applied
 CompressedChannels=10  % Defines when/if channel compression should be used and how many Eigenmodes should be used
 SliceFrom=0            % Allows restricting the range of slices to calculate (for faster testing)   
 SliceTo=0
-</code></pre>
-
-<div style="margin-bottom: 20px; font-size: 0px;">&nbsp;</div>
-
+</code></pre><div style="margin-bottom: 20px; font-size: 0px;">&nbsp;</div>
 <h4 id="limitations">Limitations</h4>
-
 <ul>
 <li>The module currently does not perform image-intenstiy normalization (aka Prescan Normalize).</li>
 </ul>
-
 <div style="margin-bottom: 20px; font-size: 0px;">&nbsp;</div>
 
 </div>

@@ -44,7 +44,7 @@
 
 <link rel="canonical" href="http://yarra-framework.org/addons/yas/" />
 
-<meta name="generator" content="Hugo 0.59.1" />
+<meta name="generator" content="Hugo 0.96.0" />
 
 
   <link rel="stylesheet" href="/assets/css/bootstrap.min.css" />
@@ -76,7 +76,7 @@
                
         
         <li class="nav-item">
-          <a class="nav-link menu-item " href="/overview">
+          <a class="nav-link menu-item " href="/overview/">
             
             <span class="text-capitalize no-decoration text-white">Overview</span>
           </a>
@@ -85,7 +85,7 @@
               
         
         <li class="nav-item">
-          <a class="nav-link menu-item " href="/clients">
+          <a class="nav-link menu-item " href="/clients/">
             
             <span class="text-capitalize no-decoration text-white">Clients</span>
           </a>
@@ -94,7 +94,7 @@
               
         
         <li class="nav-item">
-          <a class="nav-link menu-item " href="/server">
+          <a class="nav-link menu-item " href="/server/">
             
             <span class="text-capitalize no-decoration text-white">Server</span>
           </a>
@@ -103,7 +103,7 @@
               
         
         <li class="nav-item">
-          <a class="nav-link menu-item " href="/modules">
+          <a class="nav-link menu-item " href="/modules/">
             
             <span class="text-capitalize no-decoration text-white">Modules</span>
           </a>
@@ -112,7 +112,7 @@
               
         
         <li class="nav-item">
-          <a class="nav-link menu-item " href="/logserver">
+          <a class="nav-link menu-item " href="/logserver/">
             
             <span class="text-capitalize no-decoration text-white">LogServer</span>
           </a>
@@ -121,7 +121,7 @@
               
         
         <li class="nav-item">
-          <a class="nav-link menu-item active" href="/addons">
+          <a class="nav-link menu-item active" href="/addons/">
             
             <span class="text-capitalize no-decoration text-white">Addons</span>
           </a>
@@ -130,7 +130,7 @@
               
         
         <li class="nav-item">
-          <a class="nav-link menu-item " href="/download">
+          <a class="nav-link menu-item " href="/download/">
             
             <span class="text-capitalize no-decoration text-white">Download</span>
           </a>
@@ -139,7 +139,7 @@
               
         
         <li class="nav-item">
-          <a class="nav-link menu-item " href="/blog">
+          <a class="nav-link menu-item " href="/blog/">
             
             <span class="text-capitalize no-decoration text-white">Blog</span>
           </a>
@@ -182,34 +182,23 @@
     </div>
     <div class="col-xs-12 col-lg-9 post-container">
       <div class="content pt-2">
-  
-
-<h3 id="hahahugoshortcode-s0-hbhb">
+  <h3 id="hahahugoshortcode-s0-hbhb">
 <i class="fas fa-angle-double-right" style="color: #580F8B; font-size: 24px;">&nbsp;</i>Introduction
 
 </h3>
-
 <p>When collecting raw-data files from a large number of patients (e.g., through Yarra offline reconstructions or using the Yarra RDS client), it can quickly become difficult to find the data file from a certain patient or exam (as needed for performing retrospective studies). This problem is solved by Yarra Archive Search (YAS), which can be used as add-on for a YarraServer installation or completely independently from other Yarra components.</p>
-
 <p>YAS consists of an indexing service, which typically runs every night as cron job on a Linux server, and a web-based front-end, which allows users to search for raw-data files by patient name, scan protocol, exam date etc. and provides the exact file location and additional information about the scan. Although intended for intranet use only, the front-end is password protected to ensure that only authorized staff has access to the scan information.</p>
-
 <img style="margin-left: auto; margin-right: auto; display: block;  margin-top: 30px; margin-bottom: 30px; "  class="img-fluid" src="/yas_small.jpg" />
 
-
 <div style="margin-bottom: 40px; font-size: 0px;">&nbsp;</div>
-
 <h3 id="hahahugoshortcode-s3-hbhb">
 <i class="fas fa-angle-double-right" style="color: #580F8B; font-size: 24px;">&nbsp;</i>Installation and Configuration
 
 </h3>
-
 <p>YAS requires a Linux based server running either Ubuntu 16.04 LTS or 18.04 LTS. It can be installed on a separate server, or in parallel to a YarraServer daemon.</p>
-
 <p>Download the YAS package and unzip it in a folder on the Linux server. This can be a subfolder in the home directory of user &ldquo;yarraserver&rdquo; or any other user, e.g. /home/[username]/yas.</p>
-
 <p>Edit the configuration file YAS.ini. It is necessary to define the port number, password for the user interface, and to list all folders that should be scanned for Siemens raw-data files (aka Twix files). By default the configuration file reads:</p>
-
-<pre><code>;### Configuration file for Yarra Archive Search ###
+<pre tabindex="0"><code>;### Configuration file for Yarra Archive Search ###
  
 [WebGUI]
 ;# Defines the port to be used for the web interface. The value needs to be different 
@@ -238,37 +227,23 @@ KeepUnseenEntries=14
 [FolderAlias]
 ;# This section allows defining alias names for each search path. This can be useful
 ;# if the mount point on the server is different from how the location is mapped
-;# at the users' workstations. For example, if the raw-data is located at /media/rawdata
+;# at the users&#39; workstations. For example, if the raw-data is located at /media/rawdata
 ;# on the server but end users map this folder under drive V:, it can be helpful to
 ;# define an alias /media/rawdata=V:. In this way, the file location will be displayed
 ;# relative to drive V: in the web interface, making it easier for the users to navigate
 ;# to the location. Entries must be named identical to the full path listed in [Folders].
  
 ;/path/to/rawdata=/alias/to/use
-</code></pre>
-
-<p>Run the indexer once by calling</p>
-
-<pre><code>./YASIndexer 
-</code></pre>
-
-<p>from the YAS installation folder. Depending on the amount of raw-data files, the search procedure might take a few minutes.</p>
-
+</code></pre><p>Run the indexer once by calling</p>
+<pre tabindex="0"><code>./YASIndexer 
+</code></pre><p>from the YAS installation folder. Depending on the amount of raw-data files, the search procedure might take a few minutes.</p>
 <p>Setup the YASIndexer as daily Cron job. It’s recommended to run it during the night when it is unlikely that people will use the frontend. Type in the following command:</p>
-
-<pre><code>crontab -e
-</code></pre>
-
-<p>and insert the following line:</p>
-
-<pre><code>0 5 * * * cd /home/[username]/yas &amp;&amp; /home/[username]/yas/YASIndexer &gt;&gt; /home/[username]/yas/cron.log 2&gt;&amp;1
-</code></pre>
-
-<p>where [username] denotes the name of the user under whose home folder YAS has been installed (the path might have to be adjusted depending on the actual installation location). This will launch the indexer every night at 5am and write the output into the file cron.log. On the first execution of the crontab command, it may ask you for the preferred editor. Nano should be selected here.</p>
-
+<pre tabindex="0"><code>crontab -e
+</code></pre><p>and insert the following line:</p>
+<pre tabindex="0"><code>0 5 * * * cd /home/[username]/yas &amp;&amp; /home/[username]/yas/YASIndexer &gt;&gt; /home/[username]/yas/cron.log 2&gt;&amp;1
+</code></pre><p>where [username] denotes the name of the user under whose home folder YAS has been installed (the path might have to be adjusted depending on the actual installation location). This will launch the indexer every night at 5am and write the output into the file cron.log. On the first execution of the crontab command, it may ask you for the preferred editor. Nano should be selected here.</p>
 <p>Setup the YASWebGUI as daemon service by editing the file yaswebgui.service (e.g. with “nano yaswebgui.service”) and adjusting the installation location if necessary (in the example shown below, it is assumed that YAS is installed in the home folder of a user, i.e. /home/[username]/yas where [username] needs to be replaced with the username):</p>
-
-<pre><code>[Unit]
+<pre tabindex="0"><code>[Unit]
 Description=YAS WebGUI
 Documentation=http://yarraframework.com
 After=smbd.service
@@ -285,33 +260,20 @@ RestartSec=3
 
 [Install]
 WantedBy=multi-user.target
-</code></pre>
-
-<p>Copy the file yaswebgui.service to the directory /etc/systemd/system (this can only be done using administrator rights). Start and enable the YASWebGUI with the commands:</p>
-
-<pre><code>sudo systemctl enable yaswebgui
+</code></pre><p>Copy the file yaswebgui.service to the directory /etc/systemd/system (this can only be done using administrator rights). Start and enable the YASWebGUI with the commands:</p>
+<pre tabindex="0"><code>sudo systemctl enable yaswebgui
 sudo systemctl start yaswebgui
-</code></pre>
-
-<p>Yarra Archive Search should now be ready to use.</p>
-
+</code></pre><p>Yarra Archive Search should now be ready to use.</p>
 <div style="margin-bottom: 40px; font-size: 0px;">&nbsp;</div>
-
 <h3 id="hahahugoshortcode-s5-hbhb">
 <i class="fas fa-angle-double-right" style="color: #580F8B; font-size: 24px;">&nbsp;</i>Usage
 
 </h3>
-
-<p>If configured as described above, the YASIndexer will automatically update the database of raw-data files every night. To search for scan, open a web browser and type in the URL <a href="http://xxx.xxx.xxx.xxx:[port" target="_blank">http://xxx.xxx.xxx.xxx:[port</a>], where port is the port number defined in the configuration file (e.g. <a href="http://192.168.1.101:9090" target="_blank">http://192.168.1.101:9090</a>). The port number can be omitted when using port 80, which however requires sudo rights on the server. The search page becomes visible after the password has been entered.</p>
-
+<p>If configured as described above, the YASIndexer will automatically update the database of raw-data files every night. To search for scan, open a web browser and type in the URL <a href="http://xxx.xxx.xxx.xxx">http://xxx.xxx.xxx.xxx</a>:[port], where port is the port number defined in the configuration file (e.g. http://192.168.1.101:9090). The port number can be omitted when using port 80, which however requires sudo rights on the server. The search page becomes visible after the password has been entered.</p>
 <p>Scans can be searched by patient name, patient ID (MRN, accession number (ACC), protocol name, or exam date. If multiple search entries are entered, scans are displayed that match to both search terms (AND). When clicking on an entry in the result table, details will be displayed in the Information box below the table. If the file comes from a Yarra offline reconstruction task, additional information about the task will shown. The exact file location is shown as a link and can be copied right into the file selection box of the <a href="/clients/sac">Yarra Stand-Alone Client</a> (SAC), which can be handy for submitting retrospective reconstruction tasks.</p>
-
 <p>To clear and rebuilt the database, call</p>
-
-<pre><code>./YASIndexer –clear 
-</code></pre>
-
-<p>and rerun the YASIndexer afterwards.</p>
+<pre tabindex="0"><code>./YASIndexer –clear 
+</code></pre><p>and rerun the YASIndexer afterwards.</p>
 
 </div>
 

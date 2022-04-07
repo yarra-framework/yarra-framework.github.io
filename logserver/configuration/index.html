@@ -44,7 +44,7 @@
 
 <link rel="canonical" href="http://yarra-framework.org/logserver/configuration/" />
 
-<meta name="generator" content="Hugo 0.59.1" />
+<meta name="generator" content="Hugo 0.96.0" />
 
 
   <link rel="stylesheet" href="/assets/css/bootstrap.min.css" />
@@ -76,7 +76,7 @@
                
         
         <li class="nav-item">
-          <a class="nav-link menu-item " href="/overview">
+          <a class="nav-link menu-item " href="/overview/">
             
             <span class="text-capitalize no-decoration text-white">Overview</span>
           </a>
@@ -85,7 +85,7 @@
               
         
         <li class="nav-item">
-          <a class="nav-link menu-item " href="/clients">
+          <a class="nav-link menu-item " href="/clients/">
             
             <span class="text-capitalize no-decoration text-white">Clients</span>
           </a>
@@ -94,7 +94,7 @@
               
         
         <li class="nav-item">
-          <a class="nav-link menu-item " href="/server">
+          <a class="nav-link menu-item " href="/server/">
             
             <span class="text-capitalize no-decoration text-white">Server</span>
           </a>
@@ -103,7 +103,7 @@
               
         
         <li class="nav-item">
-          <a class="nav-link menu-item " href="/modules">
+          <a class="nav-link menu-item " href="/modules/">
             
             <span class="text-capitalize no-decoration text-white">Modules</span>
           </a>
@@ -112,7 +112,7 @@
               
         
         <li class="nav-item">
-          <a class="nav-link menu-item active" href="/logserver">
+          <a class="nav-link menu-item active" href="/logserver/">
             
             <span class="text-capitalize no-decoration text-white">LogServer</span>
           </a>
@@ -121,7 +121,7 @@
               
         
         <li class="nav-item">
-          <a class="nav-link menu-item " href="/addons">
+          <a class="nav-link menu-item " href="/addons/">
             
             <span class="text-capitalize no-decoration text-white">Addons</span>
           </a>
@@ -130,7 +130,7 @@
               
         
         <li class="nav-item">
-          <a class="nav-link menu-item " href="/download">
+          <a class="nav-link menu-item " href="/download/">
             
             <span class="text-capitalize no-decoration text-white">Download</span>
           </a>
@@ -139,7 +139,7 @@
               
         
         <li class="nav-item">
-          <a class="nav-link menu-item " href="/blog">
+          <a class="nav-link menu-item " href="/blog/">
             
             <span class="text-capitalize no-decoration text-white">Blog</span>
           </a>
@@ -184,152 +184,83 @@
     </div>
     <div class="col-xs-12 col-lg-9 post-container">
       <div class="content pt-2">
-  
-
-<h3 id="hahahugoshortcode-s0-hbhb">
+  <h3 id="hahahugoshortcode-s0-hbhb">
 <i class="fas fa-angle-double-right" style="color: #580F8B; font-size: 24px;">&nbsp;</i>LogServer Configuration
 
 </h3>
-
 <div style="margin-bottom: 10px; font-size: 0px;">&nbsp;</div>
-
 <h4 id="initial-user-for-admin-interface">Initial User for Admin Interface</h4>
-
 <p>After the installation, there won’t be any users set up in the web interface. Click the “Register” link and provide your email and set a password. LogServer will send an email with a link to verify the email address. It is recommended to only use institutional email addresses. You can skip verifying your own email address by running this command:</p>
-
-<pre><code>sudo su postgres -c &quot;psql -d yarralog -c 'update auth_info set email=unverified_email where id=1;'&quot;
-</code></pre>
-
-<p>After verifying your email address, you need to activate the account (this is normally done in the web interface by one of the admin accounts, but not possible for the initial user). The initial user can be activated by running the command:</p>
-
-<pre><code>sudo su postgres -c &quot;psql -d yarralog -c 'update auth_info set status=1  where id=1; update \&quot;user\&quot; set role=1 where id=1;'&quot;
-</code></pre>
-
-<p>YarraLogServer configuration files (and resources) are  all stored in</p>
-
-<pre><code>/opt/yarralogserver/
-</code></pre>
-
-<p>The important config files are YarraLogServer.ini and wthttpd. Depending on your setup, you need to edit one or both of them.</p>
-
+<pre tabindex="0"><code>sudo su postgres -c &#34;psql -d yarralog -c &#39;update auth_info set email=unverified_email where id=1;&#39;&#34;
+</code></pre><p>After verifying your email address, you need to activate the account (this is normally done in the web interface by one of the admin accounts, but not possible for the initial user). The initial user can be activated by running the command:</p>
+<pre tabindex="0"><code>sudo su postgres -c &#34;psql -d yarralog -c &#39;update auth_info set status=1  where id=1; update \&#34;user\&#34; set role=1 where id=1;&#39;&#34;
+</code></pre><p>YarraLogServer configuration files (and resources) are  all stored in</p>
+<pre tabindex="0"><code>/opt/yarralogserver/
+</code></pre><p>The important config files are YarraLogServer.ini and wthttpd. Depending on your setup, you need to edit one or both of them.</p>
 <div style="margin-bottom: 20px; font-size: 0px;">&nbsp;</div>
-
 <h4 id="api-key">API Key</h4>
-
 <p>You need to select an API key to prevent unauthorized clients from sending data to LogServer (although this would be very unlikely, as the LogServer is only reachable within the intranet). The API key needs to be set on all your installations of RDS clients. This is a basic mechanism to only let RDS clients send information to the database. Set the API key in the [Server]  section of YarraLogServer.ini.</p>
-
 <div style="margin-bottom: 20px; font-size: 0px;">&nbsp;</div>
-
 <h4 id="ports">Ports</h4>
-
 <p>By default, LogServer runs on port 4444 and the web-based admin interface LogViewer under 4443. This can be changed in YarraLogServer.ini.</p>
-
 <div style="margin-bottom: 20px; font-size: 0px;">&nbsp;</div>
-
 <h4 id="database-connection">Database Connection</h4>
-
 <p>YarraLogServer.ini defines two database connection strings, one for the LogServer and one for the LogViewer. They do not need to be changed, but if you want to host the database on another server, this is the place to tell YarraLogServer about it. Make sure they are both connecting to the same server.</p>
-
 <div style="margin-bottom: 20px; font-size: 0px;">&nbsp;</div>
-
 <h4 id="ssl-certificate">SSL Certificate</h4>
-
 <p>By default, the installer creates a self-signed certificate that is valid for localhost and places it in /opt/yarralogserver/cert/. This is sufficient to get the system working, but you may want to generate a new certificate to match an internal domain or use a certificate signed by a real certificate authority (CA). You can set the paths to find your cert and the private key in wthttpd. The server will fail to start unless the private key is owned by user yarra with file permissions 0600.</p>
-
 <div style="margin-bottom: 40px; font-size: 0px;">&nbsp;</div>
-
 <h3 id="hahahugoshortcode-s7-hbhb">
 <i class="fas fa-angle-double-right" style="color: #580F8B; font-size: 24px;">&nbsp;</i>RDS Configuration
 
 </h3>
-
 <div style="margin-bottom: 10px; font-size: 0px;">&nbsp;</div>
-
 <p>Make sure that you are using the newest version of the <a href="/download">Yarra Client</a> package. It is recommended to install and configure RDS on one scanner first and to test that everything is working before installing on additional scanners. The basic installation instructions for RDS can be found <a href="/clients/rds">here</a>.</p>
-
 <p>If you are using a self-signed certificate for the server, you need to copy the public certificate into the installation folder of the Yarra client, so that the client will trust the server. Place it in the same directory as RDS.exe and rename it to <strong>logserver.crt</strong>.</p>
-
 <p>The configuration interface of RDS has a tab called “Log Server” where you can set the address of your LogServer and the API key. The “Push Frequency” specifies how often RDS should push workflow information to the server. Press the &ldquo;Test Connection&rdquo; button to validate that the client can talk to the LogServer. It should show &ldquo;Success&rdquo; in green color.</p>
-
 <img style="margin-left: auto; margin-right: auto; display: block;  margin-top: 40px; margin-bottom: 40px; "  class="img-fluid" src="/yls_rds.jpg" />
 
-
 <div style="margin-bottom: 40px; font-size: 0px;">&nbsp;</div>
-
 <h3 id="hahahugoshortcode-s11-hbhb">
 <i class="fas fa-angle-double-right" style="color: #580F8B; font-size: 24px;">&nbsp;</i>Additional Information
 
 </h3>
-
 <div style="margin-bottom: 10px; font-size: 0px;">&nbsp;</div>
-
 <h4 id="dns-validation">DNS Validation</h4>
-
 <p>As a safety measure, RDS will only connect to a Yarra LogServer if both the client computer and the server are in the same network domain. This prevents accidental misconfiguration or intentional rerouting of information outside of the hospital network.</p>
-
 <p>To validate that both systems are in the same network, the Yarra client will request the DNS name of both computers from the configured DNS server (via a nslookup call). Only if both computers are known to the DNS server and if their network domains match will the connection be established. This requires that both computers have an entry in the DNS server. Sometimes, this is not the case for MRI scanners by default, that a DNS entry for the scanner needs to be requested from the local IT department.</p>
-
 <p>The DNS validation can be disabled in the source code of the Yarra clients. However, we do not recommend this and do not provide compiled binaries with disabled validation.</p>
-
 <div style="margin-bottom: 20px; font-size: 0px;">&nbsp;</div>
-
 <h4 id="patient-names-in-epic-format">Patient Names in Epic Format</h4>
-
 <p>Our workflow uses patient names that come out of Epic’s database system. Therefore,  Yarra LogServer handles names that appear to be in the following format in a special way:</p>
-
-<pre><code>SURNAME^FORENAME^NAME^^,yyyymmdd
-</code></pre>
-
-<p>The last digits are the patient’s birthday. They are parsed and stored separately in the database. However, this is not required and LogServer also works if the patient name has a different &ldquo;non-Epic&rdquo; format.</p>
-
+<pre tabindex="0"><code>SURNAME^FORENAME^NAME^^,yyyymmdd
+</code></pre><p>The last digits are the patient’s birthday. They are parsed and stored separately in the database. However, this is not required and LogServer also works if the patient name has a different &ldquo;non-Epic&rdquo; format.</p>
 <div style="margin-bottom: 20px; font-size: 0px;">&nbsp;</div>
-
 <h4 id="exam-tagging">Exam Tagging</h4>
-
 <p>Because Yarra LogServer only receives the sequence names from the scanners, it doesn’t have information about the specific examination protocol or about the clincial indication of the examination. However, it is often important to be able to differentiate between different exam protocols or to exclude research / phantom scans from analyses.</p>
-
 <p>To enable this, we included a mechanism that utilizes a quick “dummy” sequence at the beginning of each patient exam (usually after the localizer) to obtain additional information on the exam. These &ldquo;dummy&rdquo; or &ldquo;tagging&rdquo; scans exist entirely to provide procedure information to the LogServer and do not create any images (we are typically using the standard &ldquo;GRE spectro&rdquo; sequence with minimal flip angle and shortest possible duration of ~200 ms). The name of the tagging sequences has to follow the naming scheme:</p>
-
-<pre><code>$SECTION_REGION_BODYPART_VARIANT #TAG1 #TAG2
-</code></pre>
-
-<p>For instance, you might name the tagging sequence of a brain scan for seizures:</p>
-
-<pre><code>$NEURO_HEAD_BRAIN_SEIZURE
-</code></pre>
-
-<p>In a retrospective analysis, it is then possible to filter on exams indicated for &ldquo;seizure&rdquo; or to identify all &ldquo;neuro&rdquo; scans. Moreover, it allows excluding research, phantom, or QA scans. The exact values for SECTION, REGION, BODYPART, and VARIANT can be selected freely. Additional &ldquo;hashtag&rdquo; values can be appended to the name of the tagging sequence. These hashtags allow giving exams further attributes and can be used to track anything that doesn’t fit into the section/region/bodypart/variant schema (e.g., #sedation for indicating that the exam was performed under sedation).</p>
-
+<pre tabindex="0"><code>$SECTION_REGION_BODYPART_VARIANT #TAG1 #TAG2
+</code></pre><p>For instance, you might name the tagging sequence of a brain scan for seizures:</p>
+<pre tabindex="0"><code>$NEURO_HEAD_BRAIN_SEIZURE
+</code></pre><p>In a retrospective analysis, it is then possible to filter on exams indicated for &ldquo;seizure&rdquo; or to identify all &ldquo;neuro&rdquo; scans. Moreover, it allows excluding research, phantom, or QA scans. The exact values for SECTION, REGION, BODYPART, and VARIANT can be selected freely. Additional &ldquo;hashtag&rdquo; values can be appended to the name of the tagging sequence. These hashtags allow giving exams further attributes and can be used to track anything that doesn’t fit into the section/region/bodypart/variant schema (e.g., #sedation for indicating that the exam was performed under sedation).</p>
 <div style="margin-bottom: 20px; font-size: 0px;">&nbsp;</div>
-
 <h4 id="long-patient-names">Long Patient Names</h4>
-
 <p>Long patient names combined with long sequence names can cause RDS to be confused in rare cases. It’s important to make sure that for every patient examined, there is at least one sequence run with fewer than 31 characters in its name. Usually this would be an adjustment scan or a scout scan.</p>
-
 <div style="margin-bottom: 40px; font-size: 0px;">&nbsp;</div>
-
 <h3 id="hahahugoshortcode-s17-hbhb">
 <i class="fas fa-angle-double-right" style="color: #580F8B; font-size: 24px;">&nbsp;</i>ORT Configuration
 
 </h3>
-
 <div style="margin-bottom: 10px; font-size: 0px;">&nbsp;</div>
-
 <p>Yarra LogServer can be used to monitor usage of the ORT client on the MRI scanners and to detect errors. If configured, ORT will transmit diagnostic information to the LogServer whenever tasks are submitted and if problems occur (e.g., if the ORT client cannot connect to a YarraServer or if the scanner&rsquo;s diskspace is running low).</p>
-
 <p>The activate LogServer support for ORT, open the configuration dialog (as described <a href="/clients/ort">here</a>) and go to the &ldquo;Log Server&rdquo; page. Follow the same configuration steps as described for RDS. It is also necessary to copy the SSL certificate into the installation folder of the client (if not already done for the RDS configuration).</p>
-
 <div style="margin-bottom: 40px; font-size: 0px;">&nbsp;</div>
-
 <h3 id="hahahugoshortcode-s20-hbhb">
 <i class="fas fa-angle-double-right" style="color: #580F8B; font-size: 24px;">&nbsp;</i>YarraServer Configuration
 
 </h3>
-
 <div style="margin-bottom: 10px; font-size: 0px;">&nbsp;</div>
-
 <p>Starting with the next release of YarraServer, also the server application can transmit diagnostic information to Yarra LogServer. This facilitates managing a large fleet of Yarra servers. The transmission of the diagnostic information needs to be enabled in the configuration file YarraServer.ini. The required settings will be posted on this page soon.</p>
-
 <div class="bs-callout bs-callout-info">
 <h4><span class="fas fa-tools"></span>&nbsp;Under Construction</h4>
 <p>Sorry, this section is still missing. Please check again soon.</p>

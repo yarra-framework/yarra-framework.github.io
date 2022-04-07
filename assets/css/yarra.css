@@ -390,9 +390,14 @@ box-shadow: none !important;
 a {
   color: #580F8B;
 }
+
+.content p > a, .content li > a,  .content td > a  {
+  text-decoration: underline;
+}
+
 a:hover,
 a:focus {
-  color: #490C73;
+  color: #C0985F;
 }
 
 .content a {

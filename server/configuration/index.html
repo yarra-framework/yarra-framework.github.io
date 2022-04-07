@@ -44,7 +44,7 @@
 
 <link rel="canonical" href="http://yarra-framework.org/server/configuration/" />
 
-<meta name="generator" content="Hugo 0.59.1" />
+<meta name="generator" content="Hugo 0.96.0" />
 
 
   <link rel="stylesheet" href="/assets/css/bootstrap.min.css" />
@@ -76,7 +76,7 @@
                
         
         <li class="nav-item">
-          <a class="nav-link menu-item " href="/overview">
+          <a class="nav-link menu-item " href="/overview/">
             
             <span class="text-capitalize no-decoration text-white">Overview</span>
           </a>
@@ -85,7 +85,7 @@
               
         
         <li class="nav-item">
-          <a class="nav-link menu-item " href="/clients">
+          <a class="nav-link menu-item " href="/clients/">
             
             <span class="text-capitalize no-decoration text-white">Clients</span>
           </a>
@@ -94,7 +94,7 @@
               
         
         <li class="nav-item">
-          <a class="nav-link menu-item active" href="/server">
+          <a class="nav-link menu-item active" href="/server/">
             
             <span class="text-capitalize no-decoration text-white">Server</span>
           </a>
@@ -103,7 +103,7 @@
               
         
         <li class="nav-item">
-          <a class="nav-link menu-item " href="/modules">
+          <a class="nav-link menu-item " href="/modules/">
             
             <span class="text-capitalize no-decoration text-white">Modules</span>
           </a>
@@ -112,7 +112,7 @@
               
         
         <li class="nav-item">
-          <a class="nav-link menu-item " href="/logserver">
+          <a class="nav-link menu-item " href="/logserver/">
             
             <span class="text-capitalize no-decoration text-white">LogServer</span>
           </a>
@@ -121,7 +121,7 @@
               
         
         <li class="nav-item">
-          <a class="nav-link menu-item " href="/addons">
+          <a class="nav-link menu-item " href="/addons/">
             
             <span class="text-capitalize no-decoration text-white">Addons</span>
           </a>
@@ -130,7 +130,7 @@
               
         
         <li class="nav-item">
-          <a class="nav-link menu-item " href="/download">
+          <a class="nav-link menu-item " href="/download/">
             
             <span class="text-capitalize no-decoration text-white">Download</span>
           </a>
@@ -139,7 +139,7 @@
               
         
         <li class="nav-item">
-          <a class="nav-link menu-item " href="/blog">
+          <a class="nav-link menu-item " href="/blog/">
             
             <span class="text-capitalize no-decoration text-white">Blog</span>
           </a>
@@ -188,15 +188,11 @@
     </div>
     <div class="col-xs-12 col-lg-9 post-container">
       <div class="content pt-2">
-  
-
-<h3 id="hahahugoshortcode-s0-hbhb">
+  <h3 id="hahahugoshortcode-s0-hbhb">
 <i class="fas fa-angle-double-right" style="color: #580F8B; font-size: 24px;">&nbsp;</i>Directory Structure
 
 </h3>
-
 <p>After the initial installation, the YarraServer folder has the following directory structure:</p>
-
 <div class='table  table-hover'>
     <table>
 <thead>
@@ -205,53 +201,43 @@
 <th>Purpose</th>
 </tr>
 </thead>
-
 <tbody>
 <tr>
 <td>fail/</td>
 <td>Target folder for failed reconstruction tasks</td>
 </tr>
-
 <tr>
 <td>finished/</td>
 <td>Target folder for completed tasks (if data should be kept)</td>
 </tr>
-
 <tr>
 <td>install/</td>
 <td>Folder with supplementary files for the installation</td>
 </tr>
-
 <tr>
 <td>log/</td>
 <td>Folder for log files</td>
 </tr>
-
 <tr>
 <td>modes/</td>
 <td>Folder with definitions of reconstruction modes</td>
 </tr>
-
 <tr>
 <td>modules/</td>
 <td>Folder with binaries of core processing modules (shipped with Yarra)</td>
 </tr>
-
 <tr>
 <td>modules_user/</td>
 <td>Folder with binaries of custom-developed modules</td>
 </tr>
-
 <tr>
 <td>queue/</td>
 <td>Queue directory with incoming reconstruction tasks</td>
 </tr>
-
 <tr>
 <td>webgui/</td>
 <td>Folder for the web-based user interface</td>
 </tr>
-
 <tr>
 <td>work/</td>
 <td>Working directory for temporary files during processing</td>
@@ -259,20 +245,15 @@
 </tbody>
 </table>
   </div>
-
 <p>By default, these folders are local subfolders in the ~/yarra installation directory. However, if necessary because of a special server configuration, the paths of these directories can also be overwritten in the file YarraServer.ini (see next section). In this way, it is possible, for example, to read the reconstruction-mode files from a remote directory shared across multiple servers, which can make it easier to manage installations with multiple processing servers. Adapting the paths is also necessary when the local drives have been configured such that only limited disk space is available in the home folder for the user yarraserver. Note: To run the server, it is necessary that sufficient disk space is available in the fail, finished, queue, and work folders (disk space in the order of 1TB is recommended).
 <div style="margin-bottom: 40px; font-size: 0px;">&nbsp;</div></p>
-
 <h3 id="hahahugoshortcode-s3-hbhb">
 <i class="fas fa-angle-double-right" style="color: #580F8B; font-size: 24px;">&nbsp;</i>Main Configuration File
 
 </h3>
-
 <p>The main settings of the YarraServer are defined in the file YarraServer.ini, which is located in the installation folder /yarra. This file can be edited with any texteditor, e.g. gedit or nano. After changing the settings in this file, it is necessary to reboot the server (see section <a href="/server/usage">Usage</a>). Most settings in the file are optional. If they are not set, a default value will be used. To overwrite settings, remove the semicolon in front of the entries and write the desired value behind the equal sign.</p>
-
 <p>The following box shows the default file with descriptions of the possible settings:</p>
-
-<pre><code>;### Configuration file for YarraServer ###
+<pre tabindex="0"><code>;### Configuration file for YarraServer ###
  
 ;# Note: Most entries in this file are optional and default values will be used.
 ;# Remove the semicolon in front of the entries to overwrite the defaults.
@@ -312,7 +293,7 @@ Name=YarraServer
 ;FromAddress=YarraServer &lt;noreply@localhost&gt;
  
 [Options]
-;# Set to true if tasks with &quot;night&quot; priority should only be processed during night time
+;# Set to true if tasks with &#34;night&#34; priority should only be processed during night time
 ;UseNightTasks=false
  
 ;# Defines the start of the night time (24-hour notation)
@@ -341,41 +322,25 @@ Name=YarraServer
 ;# Maximum allowed runtime for reconstruction modules (in ms). If modules run longer than
 ;# the specified value, they will be terminated and an error notification is sent.
 ;ProcessTimeout=86400000
-</code></pre>
-
-<div style="margin-bottom: 40px; font-size: 0px;">&nbsp;</div>
-
+</code></pre><div style="margin-bottom: 40px; font-size: 0px;">&nbsp;</div>
 <h3 id="hahahugoshortcode-s5-hbhb">
 <i class="fas fa-angle-double-right" style="color: #580F8B; font-size: 24px;">&nbsp;</i>Queue Configuration File
 
 </h3>
-
 <p>In addition to the main configuration file, the queue directory contains the file YarraServer.cfg, which also contains the name of the server. The purpose of this file is to provide the server information to the Yarra clients. By default, this file is write locked. To edit the file, it is necessary to first change the file permissions to (this should be done when logged in with the user yarraserver):</p>
-
-<pre><code>chmod 640 queue/YarraServer.cfg 
+<pre tabindex="0"><code>chmod 640 queue/YarraServer.cfg 
 nano queue/YarraServer.cfg
-</code></pre>
-
-<p>The following shows the content of the file. The settings should matched with the file YarraServer.ini, as described above.</p>
-
-<pre><code>[YarraServer]
+</code></pre><p>The following shows the content of the file. The settings should matched with the file YarraServer.ini, as described above.</p>
+<pre tabindex="0"><code>[YarraServer]
 Name=YarraServer
-</code></pre>
-
-<p>After editing the file, the permission should be set back to read-only by typing:</p>
-
-<pre><code>chmod 440 queue/YarraServer.cfg
-</code></pre>
-
-<div style="margin-bottom: 40px; font-size: 0px;">&nbsp;</div>
-
+</code></pre><p>After editing the file, the permission should be set back to read-only by typing:</p>
+<pre tabindex="0"><code>chmod 440 queue/YarraServer.cfg
+</code></pre><div style="margin-bottom: 40px; font-size: 0px;">&nbsp;</div>
 <h3 id="hahahugoshortcode-s7-hbhb">
 <i class="fas fa-angle-double-right" style="color: #580F8B; font-size: 24px;">&nbsp;</i>Installing the Server as Daemon
 
 </h3>
-
 <p>It is possible to run the server either as normal command-shell application or as Linux daemon (system service). The latter is highly recommended when using the server routinely. When running YarraServer as daemon, it will be started automatically when the server is booted. In addition, it will be automatically restarted in the case that the software should crash for some reason. Running YarraServer as daemon is also necessary when using the Yarra WebGUI.</p>
-
 
 <div class="bs-callout bs-callout-info"  >
     
@@ -383,10 +348,8 @@ Name=YarraServer
 </div>
 
 
-
 <p>To install the YarraServer as daemon, open a terminal with administrator rights (admin account). Edit the file yarra.service, which is located in the /yarra/install subfolder. By default, this file should read:</p>
-
-<pre><code>[Unit]
+<pre tabindex="0"><code>[Unit]
 Description=Yarra Server
 Documentation=http://yarraframework.com
 After=smbd.service
@@ -406,21 +369,12 @@ TimeoutStopSec=43800
 
 [Install]
 WantedBy=multi-user.target
-</code></pre>
-
-<p>Depending on the location of your YarraServer installation, it is necessary to adjust the path of the &ldquo;EnvironmentFile=&rdquo; file and its content (this file specifies where the Qt binaries are located). It might also be necessary to adapt the &ldquo;User=&rdquo; setting if a different user name for running YarraServer is used.</p>
-
+</code></pre><p>Depending on the location of your YarraServer installation, it is necessary to adjust the path of the &ldquo;EnvironmentFile=&rdquo; file and its content (this file specifies where the Qt binaries are located). It might also be necessary to adapt the &ldquo;User=&rdquo; setting if a different user name for running YarraServer is used.</p>
 <p>Copy the yarra.service file to the directory /etc/systemd/system (this can only be done using administrator rights):</p>
-
-<pre><code>sudo cp yarra.service /etc/systemd/system
-</code></pre>
-
-<p>Then, activate the Yarra daemon by typing:</p>
-
-<pre><code>sudo systemctl enable yarra
-</code></pre>
-
-<p>
+<pre tabindex="0"><code>sudo cp yarra.service /etc/systemd/system
+</code></pre><p>Then, activate the Yarra daemon by typing:</p>
+<pre tabindex="0"><code>sudo systemctl enable yarra
+</code></pre><p>
 <div class="bs-callout bs-callout-primary"  >
     
 <p>If the daemon fails to start, you can display the error log using the following command: <br>journalctl -u yarra</p>
@@ -428,19 +382,12 @@ WantedBy=multi-user.target
 
 
 <div style="margin-bottom: 10px; font-size: 0px;">&nbsp;</div></p>
-
 <p>Finally, edit file /etc/sudoers by typing:</p>
-
-<pre><code>sudo nano /etc/sudoers
-</code></pre>
-
-<p>and adding the following lines at the end of the file (this already includes the entries for the WebGUI):</p>
-
-<pre><code>yarraserver ALL = (root) NOPASSWD: /bin/systemctl start yarra, /bin/systemctl stop yarra
+<pre tabindex="0"><code>sudo nano /etc/sudoers
+</code></pre><p>and adding the following lines at the end of the file (this already includes the entries for the WebGUI):</p>
+<pre tabindex="0"><code>yarraserver ALL = (root) NOPASSWD: /bin/systemctl start yarra, /bin/systemctl stop yarra
 yarraserver ALL = (root) NOPASSWD: /bin/systemctl start yarrawebgui, /bin/systemctl stop yarrawebgui, /bin/systemctl restart yarrawebgui
-</code></pre>
-
-<p>Now, the configuration of the YarraServer is (almost) completed. It is recommended to continue with the installation of the <a href="/server/webgui">WebGUI</a>.</p>
+</code></pre><p>Now, the configuration of the YarraServer is (almost) completed. It is recommended to continue with the installation of the <a href="/server/webgui">WebGUI</a>.</p>
 
 </div>
 

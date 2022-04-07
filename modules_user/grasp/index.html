@@ -30,7 +30,7 @@
   {
     "@context": "http://schema.org",
     "@type": "Article",
-    "headline": "Performance-optimized GRASP (C\x2b\x2b)",
+    "headline": "Performance-optimized GRASP (C\u002b\u002b)",
     "author": {
       "@type": "Person",
       "name": "http://profiles.google.com/+?rel=author"
@@ -44,7 +44,7 @@
 
 <link rel="canonical" href="http://yarra-framework.org/modules_user/grasp/" />
 
-<meta name="generator" content="Hugo 0.59.1" />
+<meta name="generator" content="Hugo 0.96.0" />
 
 
   <link rel="stylesheet" href="/assets/css/bootstrap.min.css" />
@@ -76,7 +76,7 @@
                
         
         <li class="nav-item">
-          <a class="nav-link menu-item " href="/overview">
+          <a class="nav-link menu-item " href="/overview/">
             
             <span class="text-capitalize no-decoration text-white">Overview</span>
           </a>
@@ -85,7 +85,7 @@
               
         
         <li class="nav-item">
-          <a class="nav-link menu-item " href="/clients">
+          <a class="nav-link menu-item " href="/clients/">
             
             <span class="text-capitalize no-decoration text-white">Clients</span>
           </a>
@@ -94,7 +94,7 @@
               
         
         <li class="nav-item">
-          <a class="nav-link menu-item " href="/server">
+          <a class="nav-link menu-item " href="/server/">
             
             <span class="text-capitalize no-decoration text-white">Server</span>
           </a>
@@ -103,7 +103,7 @@
               
         
         <li class="nav-item">
-          <a class="nav-link menu-item " href="/modules">
+          <a class="nav-link menu-item " href="/modules/">
             
             <span class="text-capitalize no-decoration text-white">Modules</span>
           </a>
@@ -112,7 +112,7 @@
               
         
         <li class="nav-item">
-          <a class="nav-link menu-item " href="/logserver">
+          <a class="nav-link menu-item " href="/logserver/">
             
             <span class="text-capitalize no-decoration text-white">LogServer</span>
           </a>
@@ -121,7 +121,7 @@
               
         
         <li class="nav-item">
-          <a class="nav-link menu-item " href="/addons">
+          <a class="nav-link menu-item " href="/addons/">
             
             <span class="text-capitalize no-decoration text-white">Addons</span>
           </a>
@@ -130,7 +130,7 @@
               
         
         <li class="nav-item">
-          <a class="nav-link menu-item " href="/download">
+          <a class="nav-link menu-item " href="/download/">
             
             <span class="text-capitalize no-decoration text-white">Download</span>
           </a>
@@ -139,7 +139,7 @@
               
         
         <li class="nav-item">
-          <a class="nav-link menu-item " href="/blog">
+          <a class="nav-link menu-item " href="/blog/">
             
             <span class="text-capitalize no-decoration text-white">Blog</span>
           </a>
@@ -182,28 +182,16 @@
     </div>
     <div class="col-xs-12 col-lg-9 post-container">
       <div class="content pt-2">
-  
-
-<h4 id="purpose">Purpose</h4>
-
+  <h4 id="purpose">Purpose</h4>
 <p>Performs a Compressed-Sensing-based 4D DCE-MRI reconstruction using the GRASP reconstruction technique. This module has been implemented in C++ and uses OpenMP parallelization to achieve high reconstruction speed.</p>
-
 <p><strong>Note:</strong> This module can only be downloaded after a C2P contract with Siemens has been signed. Please contact your local Siemens collaboration manager. Alternatively, the Matlab-based version of GRASP can be used.</p>
-
 <h4 id="usage">Usage</h4>
-
-<pre><code>GraspR [input Twix file] [ini file] [output folder] [tmp folder] [acc #]
-</code></pre>
-
-<p>Typical call:</p>
-
-<pre><code>[Reconstruction]
+<pre tabindex="0"><code>GraspR [input Twix file] [ini file] [output folder] [tmp folder] [acc #]
+</code></pre><p>Typical call:</p>
+<pre tabindex="0"><code>[Reconstruction]
 Bin=%bu/GRASP/GraspR
 Args=%rid/%rif %rid/settings.ini %rod %tmp %vacc
-</code></pre>
-
-<h4 id="configuration">Configuration</h4>
-
+</code></pre><h4 id="configuration">Configuration</h4>
 <p>The configuration for the GRASP module is done via an ini file (an example file comes with the module). It is recommended to use the example file as template and to overwrite the settings with help of the the IniPatch module (in this way, everything is stored in the .mode file and it is not necessary to maintain multiple ini files).</p>
 
 </div>

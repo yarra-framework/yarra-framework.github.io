@@ -24,7 +24,7 @@
 
 <link rel="canonical" href="http://yarra-framework.org/logserver/" />
 
-<meta name="generator" content="Hugo 0.59.1" />
+<meta name="generator" content="Hugo 0.96.0" />
 
 
   <link rel="stylesheet" href="/assets/css/bootstrap.min.css" />
@@ -56,7 +56,7 @@
                
         
         <li class="nav-item">
-          <a class="nav-link menu-item " href="/overview">
+          <a class="nav-link menu-item " href="/overview/">
             
             <span class="text-capitalize no-decoration text-white">Overview</span>
           </a>
@@ -65,7 +65,7 @@
               
         
         <li class="nav-item">
-          <a class="nav-link menu-item " href="/clients">
+          <a class="nav-link menu-item " href="/clients/">
             
             <span class="text-capitalize no-decoration text-white">Clients</span>
           </a>
@@ -74,7 +74,7 @@
               
         
         <li class="nav-item">
-          <a class="nav-link menu-item " href="/server">
+          <a class="nav-link menu-item " href="/server/">
             
             <span class="text-capitalize no-decoration text-white">Server</span>
           </a>
@@ -83,7 +83,7 @@
               
         
         <li class="nav-item">
-          <a class="nav-link menu-item " href="/modules">
+          <a class="nav-link menu-item " href="/modules/">
             
             <span class="text-capitalize no-decoration text-white">Modules</span>
           </a>
@@ -92,7 +92,7 @@
               
         
         <li class="nav-item">
-          <a class="nav-link menu-item active" href="/logserver">
+          <a class="nav-link menu-item active" href="/logserver/">
             
             <span class="text-capitalize no-decoration text-white">LogServer</span>
           </a>
@@ -101,7 +101,7 @@
               
         
         <li class="nav-item">
-          <a class="nav-link menu-item " href="/addons">
+          <a class="nav-link menu-item " href="/addons/">
             
             <span class="text-capitalize no-decoration text-white">Addons</span>
           </a>
@@ -110,7 +110,7 @@
               
         
         <li class="nav-item">
-          <a class="nav-link menu-item " href="/download">
+          <a class="nav-link menu-item " href="/download/">
             
             <span class="text-capitalize no-decoration text-white">Download</span>
           </a>
@@ -119,7 +119,7 @@
               
         
         <li class="nav-item">
-          <a class="nav-link menu-item " href="/blog">
+          <a class="nav-link menu-item " href="/blog/">
             
             <span class="text-capitalize no-decoration text-white">Blog</span>
           </a>
@@ -162,23 +162,15 @@
       </div>
       <div class="col-xs-12 col-lg-9 post-container">
         <div class="content pt-2">
-          
-
-<h3 id="hahahugoshortcode-s0-hbhb">
+          <h3 id="hahahugoshortcode-s0-hbhb">
 <i class="fas fa-angle-double-right" style="color: #580F8B; font-size: 24px;">&nbsp;</i>Overview
 
 </h3>
-
 <p>Yarra LogServer is a central monitoring hub for enterprise Yarra installations. It is typically installed on a separate intranet server (usually on a small VM server) and allows monitoring all activities of YarraServers as well as of the RDS and ORT clients running on the different MR scanners. This enables timely detection of problems (e.g., network connectivity problems) and generation of statistics on the processing performance (e.g., it allows measuring the total wait time from task submission to PACS transfer).</p>
-
 <p>Moreover, RDS clients can be configured to continuously send clinical workflow information from the scanners to Yarra LogServer, where the workflow information is concatenated into examinations and stored in an SQL database. The collected workflow data can be analyzed retrospectively to generate various statistics on the examination efficiency, to detect acquisition problems, or to answer specific research questions regarding the examination procedure. It also makes it very easy to monitor progress in research studies and allows identifying patient exams during which specific research sequences have been acquired.</p>
-
 <p>Collected data can be analyzed either using the provided Yarra LogViewer web application, using the Redash web application for rapid dashboard generation, or using other business-intelligence (BI) software tools.</p>
-
 <div style="margin-bottom: 40px; font-size: 0px;">&nbsp;</div>
-
 <h4 id="capabilities">Capabilities</h4>
-
 <ul>
 <li>Monitor Yarra clients and other Yarra components</li>
 <li>Catalogue scanners and monitor scanner health</li>
@@ -188,14 +180,11 @@
 <li>Tag exams with procedure information (e.g., body region or exam protocol)</li>
 <li>Combine collected data with additional data sources</li>
 </ul>
-
 <div style="margin-bottom: 40px; font-size: 0px;">&nbsp;</div>
-
 <h4 id="limitations">Limitations</h4>
-
 <ul>
 <li>Workflow information includes patient name, sequence name, begin / end time of sequences, and scan size</li>
-<li>Additinonal sequence parameters (e.g., TE, TR, BW, etc.) are currently not captured</li>
+<li>Additional sequence parameters (e.g., TE, TR, BW, etc.) are currently not captured</li>
 <li>Procedure information captured by &ldquo;tagging&rdquo; exam with a dummy sequence (typically performed after scout)</li>
 <li>Only provides basic data analysis out-of-the-box (comprehensive analyses require <a href="/logserver/redash">Redash</a> or other BI software)</li>
 <li>LogServer works only for MR scanners with software  <span class="badge badge-info">VB17A</span> or newer</li>
