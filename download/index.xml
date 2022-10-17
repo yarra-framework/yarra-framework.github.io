@@ -13,7 +13,7 @@
       <pubDate>Fri, 15 Jun 2018 00:00:00 +0000</pubDate>
       
       <guid>http://yarra-framework.org/download/archive/</guid>
-      <description>&amp;nbsp;Release History &amp;nbsp; Yarra Client Package &amp;nbsp; &amp;nbsp;&amp;nbsp;Version 0.60 &amp;ndash; Release Date: 2022-01-25ORT: Increased possible length of ACCRDS: Excluding invalid characters from sequence names&amp;nbsp;Download Version &amp;nbsp;&amp;nbsp;Version 0.59 &amp;ndash; Release Date: 2021-12-17Support for XA30A and XA31AIntroduced disconnect command for RDSAdded RDS option for remote LPFI file&amp;nbsp;Download Version &amp;nbsp;&amp;nbsp;Version 0.58 &amp;ndash; Release Date: 2020-07-26Support for XA20A and XA20BVarious bugfixes&amp;nbsp;Download Version &amp;nbsp;&amp;nbsp;Version 0.</description>
+      <description>&amp;nbsp;Release History&amp;nbsp; Yarra Client Package &amp;nbsp; &amp;nbsp;&amp;nbsp;Version 0.62 &amp;ndash; Release Date: 2022-10-17Introduced Yarra Diagnostics toolAdded support for XA40 and XA50Updated UI designRDS: Option for alternative local buffer location&amp;nbsp;Download Version&amp;nbsp;&amp;nbsp;Version 0.60 &amp;ndash; Release Date: 2022-01-25ORT: Increased possible length of ACCRDS: Excluding invalid characters from sequence names&amp;nbsp;Download Version&amp;nbsp;&amp;nbsp;Version 0.59 &amp;ndash; Release Date: 2021-12-17Support for XA30A and XA31AIntroduced disconnect command for RDSAdded RDS option for remote LPFI file&amp;nbsp;Download Version&amp;nbsp;&amp;nbsp;Version 0.</description>
     </item>
     
     <item>
@@ -22,9 +22,9 @@
       <pubDate>Fri, 15 Jun 2018 00:00:00 +0000</pubDate>
       
       <guid>http://yarra-framework.org/download/sourcecode/</guid>
-      <description>&amp;nbsp;Open Source Access The Yarra Framework is an open-source project. The code for all components of Yarra is publicly hosted on bitbucket.org. Click the buttons below to get to the repositories of the individual components. The source code is provided under the GNU General Public License (GPL).
+      <description>&amp;nbsp;Open Source AccessThe Yarra Framework is an open-source project. The code for all components of Yarra is publicly hosted on bitbucket.org. Click the buttons below to get to the repositories of the individual components. The source code is provided under the GNU General Public License (GPL).
 If you want to build Yarra binaries yourself, you can find setup instructions for the build environmnet here.
-&amp;nbsp; &amp;nbsp;Yarra Client Page on Bitbucket&amp;nbsp;Yarra Server Page on Bitbucket&amp;nbsp;Yarra WebGUI Page on Bitbucket&amp;nbsp;Yarra LogServer Page on Bitbucket&amp;nbsp;Yarra Archive Search Page on Bitbucket&amp;nbsp;Yarra FileMover Page on Bitbucket&amp;nbsp;Yarra Link Page on Bitbucket</description>
+&amp;nbsp; &amp;nbsp;Yarra Client Page on Bitbucket&amp;nbsp;Yarra Server Page on Bitbucket&amp;nbsp;Yarra WebGUI Page on Bitbucket&amp;nbsp;Yarra LogServer Page on Bitbucket&amp;nbsp;Yarra Archive Search Page on Bitbucket&amp;nbsp;Yarra FileMover Page on Bitbucket&amp;nbsp;Yarra Link Page on Bitbucket</description>
     </item>
     
     <item>
@@ -33,8 +33,7 @@ If you want to build Yarra binaries yourself, you can find setup instructions fo
       <pubDate>Fri, 15 Jun 2018 00:00:00 +0000</pubDate>
       
       <guid>http://yarra-framework.org/download/resources/</guid>
-      <description>&amp;nbsp;Additional Material &amp;nbsp; ISMRM 2019 Educational Session on Open-Source Software Tools &amp;nbsp; &amp;nbsp;Whitepaper on Concept &amp;nbsp;Overview Slides &amp;nbsp;Tutorial Slides on Offline Reconstruction
-&amp;nbsp; </description>
+      <description>&amp;nbsp;Additional Material&amp;nbsp; ISMRM 2019 Educational Session on Open-Source Software Tools &amp;nbsp; &amp;nbsp;Whitepaper on Concept&amp;nbsp;Overview Slides&amp;nbsp;Tutorial Slides on Offline Reconstruction&amp;nbsp; </description>
     </item>
     
   </channel>

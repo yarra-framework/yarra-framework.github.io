@@ -13,9 +13,9 @@
       <pubDate>Fri, 15 Jun 2018 00:00:00 +0000</pubDate>
       
       <guid>http://yarra-framework.org/logserver/installation/</guid>
-      <description>&amp;nbsp;Installing LogServer Yarra LogServer (YLS) is currently built and packaged for Ubuntu 18.04 and 20.04.
+      <description>&amp;nbsp;Installing LogServerYarra LogServer (YLS) is currently built and packaged for Ubuntu 18.04 and 20.04.
 YLS is not designed to be made available to the internet. It should never be made available outside your internal network. The system uses common-sense security measures to protect patient data, but it was not designed to withstand a determined attack across the public internet.
-Installation is simple. First, download the most recent yarralogserver package for your Ubuntu version here.</description>
+Installation is simple. First, download the most recent yarralogserver package for your Ubuntu version here.</description>
     </item>
     
     <item>
@@ -24,7 +24,7 @@ YLS is not designed to be made available to the internet. It should never be mad
       <pubDate>Fri, 15 Jun 2018 00:00:00 +0000</pubDate>
       
       <guid>http://yarra-framework.org/logserver/configuration/</guid>
-      <description>&amp;nbsp;LogServer Configuration &amp;nbsp; Initial User for Admin Interface After the installation, there won’t be any users set up in the web interface. Click the “Register” link and provide your email and set a password. LogServer will send an email with a link to verify the email address. It is recommended to only use institutional email addresses. You can skip verifying your own email address by running this command:
+      <description>&amp;nbsp;LogServer Configuration&amp;nbsp; Initial User for Admin Interface After the installation, there won’t be any users set up in the web interface. Click the “Register” link and provide your email and set a password. LogServer will send an email with a link to verify the email address. It is recommended to only use institutional email addresses. You can skip verifying your own email address by running this command:
 sudo su postgres -c &amp;#34;psql -d yarralog -c &amp;#39;update auth_info set email=unverified_email where id=1;&amp;#39;&amp;#34; After verifying your email address, you need to activate the account (this is normally done in the web interface by one of the admin accounts, but not possible for the initial user).</description>
     </item>
     
@@ -34,7 +34,7 @@ sudo su postgres -c &amp;#34;psql -d yarralog -c &amp;#39;update auth_info set e
       <pubDate>Fri, 15 Jun 2018 00:00:00 +0000</pubDate>
       
       <guid>http://yarra-framework.org/logserver/administration/</guid>
-      <description>&amp;nbsp;Administration &amp;nbsp; Administration of Yarra LogServer is done with a web-based interface (&amp;ldquo;LogViewer&amp;rdquo;), which normally runs on port 4444 (e.g., https://localhost:4444 when opening the browser directly on the server). It is recommended to use a modern web browser (e.g., Chrome) when working with LogViewer.
+      <description>&amp;nbsp;Administration&amp;nbsp; Administration of Yarra LogServer is done with a web-based interface (&amp;ldquo;LogViewer&amp;rdquo;), which normally runs on port 4444 (e.g., https://localhost:4444 when opening the browser directly on the server). It is recommended to use a modern web browser (e.g., Chrome) when working with LogViewer.
 &amp;nbsp; Accounts New user accounts can be created on the login page by going through the Registration procedure. However, new accounts are disabled by default and need to authorized by an administrator.</description>
     </item>
     
@@ -44,7 +44,7 @@ sudo su postgres -c &amp;#34;psql -d yarralog -c &amp;#39;update auth_info set e
       <pubDate>Fri, 15 Jun 2018 00:00:00 +0000</pubDate>
       
       <guid>http://yarra-framework.org/logserver/redash/</guid>
-      <description>&amp;nbsp;Data Visualization with Redash While the included Yarra LogViewer provides access to all collected data in tabular form, it is often desired to visualize data or to perform advanced queries. This can be done with Redash, which is a web-based open-source tool for creating SQL-driven dashboards.
+      <description>&amp;nbsp;Data Visualization with RedashWhile the included Yarra LogViewer provides access to all collected data in tabular form, it is often desired to visualize data or to perform advanced queries. This can be done with Redash, which is a web-based open-source tool for creating SQL-driven dashboards.
 More information on Redash
 Please use only the Self Hosted Open Source version of Redash. Do not use the hosted cloud version, as this would transfer sensitive data to external cloud servers.</description>
     </item>
@@ -55,8 +55,7 @@ Please use only the Self Hosted Open Source version of Redash. Do not use the ho
       <pubDate>Fri, 15 Jun 2018 00:00:00 +0000</pubDate>
       
       <guid>http://yarra-framework.org/logserver/queries/</guid>
-      <description>&amp;nbsp;Sample LogServer Queries &amp;nbsp;Under ConstructionSorry, this section is still missing. Please check again soon.
-</description>
+      <description>&amp;nbsp;Sample LogServer Queries&amp;nbsp;Under ConstructionSorry, this section is still missing. Please check again soon.</description>
     </item>
     
   </channel>

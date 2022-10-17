@@ -38,7 +38,7 @@ Usage IniPatch [mode file] [source ini file] [target (in work dir)] [param value
       <guid>http://yarra-framework.org/modules_core/setdcmtags/</guid>
       <description>Purpose Populates the DICOM tags of reconstructed images based on patient and scan information read from the Twix file. It also combines DICOM files into series based on the file name and sets the needed DICOM UUIDs.
 Usage SetDCMTags [options] input output rawfile Parameters:
- input -- Folder with DICOM files to processoutput -- Folder where modified DICOM files will be writtenrawfile -- Path and name of raw-data file Options:</description>
+input -- Folder with DICOM files to processoutput -- Folder where modified DICOM files will be writtenrawfile -- Path and name of raw-data file Options:</description>
     </item>
     
     <item>

@@ -6,17 +6,15 @@
     <description>Recent content in Blogs on Yarra Framework</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 23 Mar 2022 00:00:00 +0000</lastBuildDate><atom:link href="http://yarra-framework.org/blog/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 17 Oct 2022 00:00:00 +0000</lastBuildDate><atom:link href="http://yarra-framework.org/blog/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Join Our Development Team</title>
-      <link>http://yarra-framework.org/blog/join_us/</link>
-      <pubDate>Wed, 23 Mar 2022 00:00:00 +0000</pubDate>
+      <title>Client Package 0.62</title>
+      <link>http://yarra-framework.org/blog/client_062/</link>
+      <pubDate>Mon, 17 Oct 2022 00:00:00 +0000</pubDate>
       
-      <guid>http://yarra-framework.org/blog/join_us/</guid>
-      <description>We are currently looking for software engineers to join our NYU open-source development team, which creates various tools and platforms to simplify clinical translational research, including the Yarra Framework and its sister projects mercure and mtrk.
-All positions are based in NYC, full-time roles, and come with competitive compensation and benefits packages.
-Specifically, we are looking for open-source enthusiasts interested in one of the following roles:
- Software Engineer – Imaging Platforms DevOps Engineer – Imaging Tools Web and Frontend Designer  If this sounds exciting to you, please follow the links above and submit your application!</description>
+      <guid>http://yarra-framework.org/blog/client_062/</guid>
+      <description>A new version of the Yarra Client package has been released (version 0.62), which provides multiple improvements and new features:
+Added support for scanner software versions XA40A and XA50A New Yarra Diagnostics tool, which analysis various configuration issues on scanners that may impact the different Yarra components (network connectivity, DNS configuration, etc) RDS: New option to buffer exported raw data on a different drive than the C:\ drive, which may be needed when exporting large files on scanners with a small hard drive Updated dark-mode UI design, which better blends into the scanner UI The version is now available in the Download section.</description>
     </item>
     
     <item>
@@ -36,7 +34,7 @@ This version adds support for anonymizing Twix files from XA30 and XA31. Moreove
       
       <guid>http://yarra-framework.org/blog/mercure/</guid>
       <description>If you are looking for an open-source solution to automate tasks when working with DICOM images, such as running image-processing algorithms or routing studies, please check out Yarra&amp;rsquo;s sister project &amp;ldquo;mercure&amp;rdquo; (think of it as &amp;ldquo;Yarra for DICOMs&amp;rdquo;). You can learn more about mercure in the video embedded below or by visiting the mercure homepage at: http://mercure-imaging.org/docs
-&amp;nbsp; &amp;nbsp;</description>
+&amp;nbsp; &amp;nbsp;</description>
     </item>
     
     <item>
@@ -56,7 +54,7 @@ The version is now available in the Download section.</description>
       
       <guid>http://yarra-framework.org/blog/esmrmb/</guid>
       <description>The Yarra Framework has recently been presented at the ESMRMB Workshop &amp;ldquo;MRI Together&amp;rdquo;. If you are interested to learn about the background why we developed Yarra and how we are using it in our clinical practice, take a look at the talk &amp;ldquo;Distributed Image Reconstruction in Academia&amp;rdquo;
-&amp;nbsp; </description>
+&amp;nbsp; </description>
     </item>
     
     <item>

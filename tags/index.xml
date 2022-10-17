@@ -6,20 +6,20 @@
     <description>Recent content in Tags on Yarra Framework</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 23 Mar 2022 00:00:00 +0000</lastBuildDate><atom:link href="http://yarra-framework.org/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 17 Oct 2022 00:00:00 +0000</lastBuildDate><atom:link href="http://yarra-framework.org/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Jobs</title>
-      <link>http://yarra-framework.org/tags/jobs/</link>
-      <pubDate>Wed, 23 Mar 2022 00:00:00 +0000</pubDate>
+      <title>Client</title>
+      <link>http://yarra-framework.org/tags/client/</link>
+      <pubDate>Mon, 17 Oct 2022 00:00:00 +0000</pubDate>
       
-      <guid>http://yarra-framework.org/tags/jobs/</guid>
+      <guid>http://yarra-framework.org/tags/client/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Release</title>
       <link>http://yarra-framework.org/tags/release/</link>
-      <pubDate>Tue, 22 Mar 2022 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 17 Oct 2022 00:00:00 +0000</pubDate>
       
       <guid>http://yarra-framework.org/tags/release/</guid>
       <description></description>
@@ -67,15 +67,6 @@
       <pubDate>Sun, 20 Feb 2022 00:00:00 +0000</pubDate>
       
       <guid>http://yarra-framework.org/tags/tools/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Client</title>
-      <link>http://yarra-framework.org/tags/client/</link>
-      <pubDate>Sat, 25 Dec 2021 00:00:00 +0000</pubDate>
-      
-      <guid>http://yarra-framework.org/tags/client/</guid>
       <description></description>
     </item>
     

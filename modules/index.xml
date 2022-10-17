@@ -13,7 +13,7 @@
       <pubDate>Fri, 15 Jun 2018 00:00:00 +0000</pubDate>
       
       <guid>http://yarra-framework.org/modules/core/</guid>
-      <description>&amp;nbsp;Included Core Modules The following &amp;ldquo;core&amp;rdquo; modules are included in the YarraServer installation package. The binaries are located in the folder yarra/modules. They can be referenced using the helper macro %bd. Sometimes, beta versions of updated core modules are released. It is possible to install these versions as user modules in parallel to the version that comes with the YarraServer release (in this case, the macro for calling the modules has to be replaced by %bu).</description>
+      <description>&amp;nbsp;Included Core ModulesThe following &amp;ldquo;core&amp;rdquo; modules are included in the YarraServer installation package. The binaries are located in the folder yarra/modules. They can be referenced using the helper macro %bd. Sometimes, beta versions of updated core modules are released. It is possible to install these versions as user modules in parallel to the version that comes with the YarraServer release (in this case, the macro for calling the modules has to be replaced by %bu).</description>
     </item>
     
     <item>
@@ -22,7 +22,7 @@
       <pubDate>Fri, 15 Jun 2018 00:00:00 +0000</pubDate>
       
       <guid>http://yarra-framework.org/modules/user/</guid>
-      <description>&amp;nbsp;Additional Installable Modules Additional modules can be installed via the module installer of the WebGUI (on the Configuration page). User modules are extracted into separate folders under the directory yarra/modules_user. The helper macro for referencing this folder is %bu. For example, when installing the Subtraction module, this binary can be called via %bu/Subtraction/Subtraction (the latter Subtraction refers to the executable name, while the former corresponds to the installation folder name).</description>
+      <description>&amp;nbsp;Additional Installable ModulesAdditional modules can be installed via the module installer of the WebGUI (on the Configuration page). User modules are extracted into separate folders under the directory yarra/modules_user. The helper macro for referencing this folder is %bu. For example, when installing the Subtraction module, this binary can be called via %bu/Subtraction/Subtraction (the latter Subtraction refers to the executable name, while the former corresponds to the installation folder name).</description>
     </item>
     
     <item>
@@ -31,7 +31,7 @@
       <pubDate>Fri, 15 Jun 2018 00:00:00 +0000</pubDate>
       
       <guid>http://yarra-framework.org/modules/development/</guid>
-      <description>&amp;nbsp;Implementing Custom Modules Implementing new reconstruction modules in Yarra is easy. Yarra modules are essentially just Linux command-line calls with a defined set of arguments. In addition, a number of processing conventions exist. The modules can be implemented in any language running on the Ubuntu 16.04/18.04 operation system (compiled or scripted). The spectrum ranges from simple Matlab, Bash, or Python scripts – typically used for clinical evaluation of early prototypes – to performance optimized C++ or GPU-supported implementations.</description>
+      <description>&amp;nbsp;Implementing Custom ModulesImplementing new reconstruction modules in Yarra is easy. Yarra modules are essentially just Linux command-line calls with a defined set of arguments. In addition, a number of processing conventions exist. The modules can be implemented in any language running on the Ubuntu 16.04/18.04 operation system (compiled or scripted). The spectrum ranges from simple Matlab, Bash, or Python scripts – typically used for clinical evaluation of early prototypes – to performance optimized C++ or GPU-supported implementations.</description>
     </item>
     
     <item>
@@ -40,7 +40,7 @@
       <pubDate>Fri, 15 Jun 2018 00:00:00 +0000</pubDate>
       
       <guid>http://yarra-framework.org/modules/packaging/</guid>
-      <description>&amp;nbsp;Module Packaging Modules can be packaged by creating a ZIP archive of all files. In addition, a manifest file has to be placed inside the ZIP file.
+      <description>&amp;nbsp;Module PackagingModules can be packaged by creating a ZIP archive of all files. In addition, a manifest file has to be placed inside the ZIP file.
 When installing a module through the WebGUI, the ZIP file will be extracted into a subfolder under /yarra/modules_user. The installation folder is named according to the filename of the manifest file that is contained in the ZIP archive. Thus, it is possible to append a version number to the ZIP file (e.</description>
     </item>
     
