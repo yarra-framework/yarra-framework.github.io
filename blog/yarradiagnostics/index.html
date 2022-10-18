@@ -2,7 +2,7 @@
 <html class="no-js">
 <head>
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
-  <title>mercure DICOM Orchestrator  &middot; Yarra Framework</title>
+  <title>Introducing Yarra Diagnostics  &middot; Yarra Framework</title>
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="HandheldFriendly" content="True">
 <meta name="MobileOptimized" content="320">
@@ -11,28 +11,24 @@
 
 <meta name="description" content="" />
 
-<meta name="keywords" content="DICOM, Tools, Addons, Routing, ">
+<meta name="keywords" content="Client, Diagnostics, ">
 
-<meta property="og:title" content="mercure DICOM Orchestrator  &middot; Yarra Framework ">
+<meta property="og:title" content="Introducing Yarra Diagnostics  &middot; Yarra Framework ">
 <meta property="og:site_name" content="Yarra Framework"/>
-<meta property="og:url" content="http://yarra-framework.org/blog/mercure/" />
+<meta property="og:url" content="http://yarra-framework.org/blog/yarradiagnostics/" />
 <meta property="og:locale" content="en-us">
 
 
 <meta property="og:type" content="article" />
 <meta property="og:description" content=""/>
-<meta property="og:article:published_time" content="2022-02-20T00:00:00Z" />
-<meta property="og:article:modified_time" content="2022-02-20T00:00:00Z" />
+<meta property="og:article:published_time" content="2022-10-18T00:00:00Z" />
+<meta property="og:article:modified_time" content="2022-10-18T00:00:00Z" />
 
   
     
-<meta property="og:article:tag" content="DICOM">
+<meta property="og:article:tag" content="Client">
     
-<meta property="og:article:tag" content="Tools">
-    
-<meta property="og:article:tag" content="Addons">
-    
-<meta property="og:article:tag" content="Routing">
+<meta property="og:article:tag" content="Diagnostics">
     
   
 
@@ -40,19 +36,19 @@
   {
     "@context": "http://schema.org",
     "@type": "Article",
-    "headline": "mercure DICOM Orchestrator",
+    "headline": "Introducing Yarra Diagnostics",
     "author": {
       "@type": "Person",
       "name": "http://profiles.google.com/+?rel=author"
     },
-    "datePublished": "2022-02-20",
+    "datePublished": "2022-10-18",
     "description": "",
-    "wordCount":  59 
+    "wordCount":  306 
   }
 </script>
 
 
-<link rel="canonical" href="http://yarra-framework.org/blog/mercure/" />
+<link rel="canonical" href="http://yarra-framework.org/blog/yarradiagnostics/" />
 
 <meta name="generator" content="Hugo 0.104.3" />
 
@@ -173,13 +169,13 @@
       <div>
   
 
-  <h1 class="post-title mb-3">mercure DICOM Orchestrator
+  <h1 class="post-title mb-3">Introducing Yarra Diagnostics
 </h1>
 
   <div class="post-meta">
   <div class="post-meta-item">
     <i class="fa fa-calendar"></i>
-    <time datetime="2022-02-20">20 Feb, 2022</time>
+    <time datetime="2022-10-18">18 Oct, 2022</time>
 
     
   </div>
@@ -192,16 +188,10 @@
         <div class="post-meta-item ml-2">
           <i class="fa fa-tags"></i>
           
-          <a href="/tags/dicom/">DICOM</a>
+          <a href="/tags/client/">Client</a>
           &middot;
           
-          <a href="/tags/tools/">Tools</a>
-          &middot;
-          
-          <a href="/tags/addons/">Addons</a>
-          &middot;
-          
-          <a href="/tags/routing/">Routing</a>
+          <a href="/tags/diagnostics/">Diagnostics</a>
           
           
         </div>
@@ -213,23 +203,28 @@
 </div>
 
       <div class="content pt-2">
-  <p>If you are looking for an open-source solution to automate tasks when working with DICOM images, such as running image-processing algorithms or routing studies, please check out Yarra&rsquo;s sister project &ldquo;mercure&rdquo; (think of it as &ldquo;Yarra for DICOMs&rdquo;). You can learn more about mercure in the video embedded below or by visiting the mercure homepage at:
-<a href="http://mercure-imaging.org/docs">http://mercure-imaging.org/docs</a></p>
-<p><div style="margin-bottom: 40px; font-size: 0px;">&nbsp;</div>
+  <p>The Yarra Client package now comes with a new tool called Yarra Diagnostics, which helps identifying various problems that can occur on the scanner side. The tool can either be started using the Windows Explorer (by clicking the icon Diagnostics.exe) or from the ORT Client (by right-clicking on the orange Yarra logo and selecting &ldquo;Diagnostics&hellip;&rdquo;).</p>
+<img style="margin-left: auto; margin-right: auto; display: block;  margin-top: 30px; margin-bottom: 30px; " width="600px" class="img-fluid" src="/yarradiagnostics.png" />
 
-    <p align="center">
-    <div class="video d-none d-md-block">
-        <div class="video-box">
-            <iframe class="video-frame" width="100%" height="100%" src="//www.youtube.com/embed/LyJ4iQE1yLk?modestbranding=1&amp;rel=0&amp;iv_load_policy=3" frameborder="0" allowfullscreen ></iframe>
-        </div>
-    </div>
-    <div class="d-block d-md-none">
-            <iframe  width="560" height="315" src="//www.youtube.com/embed/LyJ4iQE1yLk?modestbranding=1&amp;rel=0&amp;iv_load_policy=3" frameborder="0" allowfullscreen ></iframe>
-    </div>
-    </p>
+<p>When clicking the &ldquo;Run Diagnostics&rdquo; button, the tool conducts a series of tests to identify installation and configuration issues as well as collects system information that may be helpful for resolving Yarra-related problems. Identified issues are displayed in the tab &ldquo;Detected Issues&rdquo;, while all other diagnostic information can be seen in the &ldquo;All Results&rdquo; tab. The findings can be saved into a report in HTML format by clicking the button &ldquo;Export Report&rdquo;, which can then be send to the local Yarra administration team.</p>
+
+<div class="bs-callout bs-callout-danger"  >
+    
+<p>Do not publicly share or post the generated report as it contains sensitive information such as the scanner&rsquo;s serial number and network configuration.</p>
+</div>
 
 
-<div style="margin-bottom: 40px; font-size: 0px;">&nbsp;</div></p>
+<p>The following tests are performed by the tool:</p>
+<ul>
+<li>Identification of scanner (Syngo version, serial number, product type)</li>
+<li>Identification of installed Yarra components, check for missing files</li>
+<li>Check for ORT configuration errors, connectivity check to all listed ORT servers, check of write permissions and available server space</li>
+<li>Check for RDS configuration errors, connectivity check to the RDS storage path, check of write permissions and available storage space</li>
+<li>Check for LogServer connectivity - if configured -, check of DNS configuration, test if local scanner is known to DNS server, check server response</li>
+<li>Collection of general system information (OS, hardware configuration, &hellip;), collection of environment variables, collection of all network settings</li>
+<li>Analysis of ORT and RDS log files for recent error messages, capture of recent log entries</li>
+</ul>
+<p>Yarra Diagnostics is available starting with version 0.62 of the Yarra Client package, which can be downloaded in the <a href="/download">Download</a> section.</p>
 
 </div>
 
@@ -241,18 +236,11 @@
     <ul class="pagination">
       
       <li class="page-item">
-        <a href="http://yarra-framework.org/blog/client_060/" title="Client Package 0.60 " class="page-link">
+        <a href="http://yarra-framework.org/blog/client_062/" title="Client Package 0.62 " class="page-link">
           <span aria-hidden="true">&larr;</span>Previous
         </a>
       </li>
        
-      
-      <li class="page-item">
-        <a href="http://yarra-framework.org/blog/clienttools_v5/" title="Client Tools 0.5" class="page-link">
-          Next
-          <span aria-hidden="true">&rarr;</span>
-        </a>
-      </li>
       
     </ul>
   </nav>

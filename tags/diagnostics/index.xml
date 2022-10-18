@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Diagnostics on Yarra Framework</title>
+    <link>http://yarra-framework.org/tags/diagnostics/</link>
+    <description>Recent content in Diagnostics on Yarra Framework</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 18 Oct 2022 00:00:00 +0000</lastBuildDate><atom:link href="http://yarra-framework.org/tags/diagnostics/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Introducing Yarra Diagnostics</title>
+      <link>http://yarra-framework.org/blog/yarradiagnostics/</link>
+      <pubDate>Tue, 18 Oct 2022 00:00:00 +0000</pubDate>
+      
+      <guid>http://yarra-framework.org/blog/yarradiagnostics/</guid>
+      <description>The Yarra Client package now comes with a new tool called Yarra Diagnostics, which helps identifying various problems that can occur on the scanner side. The tool can either be started using the Windows Explorer (by clicking the icon Diagnostics.exe) or from the ORT Client (by right-clicking on the orange Yarra logo and selecting &amp;ldquo;Diagnostics&amp;hellip;&amp;rdquo;).
+When clicking the &amp;ldquo;Run Diagnostics&amp;rdquo; button, the tool conducts a series of tests to identify installation and configuration issues as well as collects system information that may be helpful for resolving Yarra-related problems.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -14,7 +14,7 @@
       
       <guid>http://yarra-framework.org/blog/client_062/</guid>
       <description>A new version of the Yarra Client package has been released (version 0.62), which provides multiple improvements and new features:
-Added support for scanner software versions XA40A and XA50A New Yarra Diagnostics tool, which analysis various configuration issues on scanners that may impact the different Yarra components (network connectivity, DNS configuration, etc) RDS: New option to buffer exported raw data on a different drive than the C:\ drive, which may be needed when exporting large files on scanners with a small hard drive Updated dark-mode UI design, which better blends into the scanner UI The version is now available in the Download section.</description>
+Added support for scanner software versions XA40A and XA50A New Yarra Diagnostics tool, which analyzes various configuration issues on scanners that may impact different Yarra components (network connectivity, DNS configuration, etc) RDS: New option to buffer exported raw data on a different location than the C:\ drive, which may be needed when exporting large scans on scanners with a small hard drive Updated UI with dark-mode design, which blends better into the user interface of XA-line scanners The version is now available in the Download section.</description>
     </item>
     
     <item>
