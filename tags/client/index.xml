@@ -8,6 +8,15 @@
     <language>en-us</language>
     <lastBuildDate>Tue, 18 Oct 2022 00:00:00 +0000</lastBuildDate><atom:link href="http://yarra-framework.org/tags/client/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Yarra on XA Scanners</title>
+      <link>http://yarra-framework.org/blog/running_on_xa/</link>
+      <pubDate>Tue, 18 Oct 2022 00:00:00 +0000</pubDate>
+      
+      <guid>http://yarra-framework.org/blog/running_on_xa/</guid>
+      <description>Background The &amp;ldquo;Numaris X&amp;rdquo; or &amp;ldquo;XA&amp;rdquo; software, which is running on the newest MAGNETOM scanners (Vida, Sola) and on upgraded scanners (Prisma, Skyra, Aera, &amp;hellip;), introduced several security or &amp;ldquo;system hardening&amp;rdquo; mechanisms, including the Windows Kiosk mode and the requirement to enter the admin password whenever starting an application outside of SyngoMR. While it is generally good news that the security has been improved, these new protections make it difficult to use Yarra routinely because they require leaving the Kiosk mode after each system reboot and require entering the admin password repeatedly when launching the Yarra RDS or ORT client.</description>
+    </item>
+    
+    <item>
       <title>Introducing Yarra Diagnostics</title>
       <link>http://yarra-framework.org/blog/yarradiagnostics/</link>
       <pubDate>Tue, 18 Oct 2022 00:00:00 +0000</pubDate>
