@@ -2,11 +2,7 @@
 <html class="no-js">
 <head>
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
-<<<<<<< HEAD
   <title>Yarra on XA Scanners  &middot; Yarra Framework</title>
-=======
-  <title>Running Yarra on XA Scanners  &middot; Yarra Framework</title>
->>>>>>> 663b3149bc2ec090df6e557887c29dc0f6b6a4b0
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="HandheldFriendly" content="True">
 <meta name="MobileOptimized" content="320">
@@ -17,11 +13,7 @@
 
 <meta name="keywords" content="Client, XA, ">
 
-<<<<<<< HEAD
 <meta property="og:title" content="Yarra on XA Scanners  &middot; Yarra Framework ">
-=======
-<meta property="og:title" content="Running Yarra on XA Scanners  &middot; Yarra Framework ">
->>>>>>> 663b3149bc2ec090df6e557887c29dc0f6b6a4b0
 <meta property="og:site_name" content="Yarra Framework"/>
 <meta property="og:url" content="http://yarra-framework.org/blog/running_on_xa/" />
 <meta property="og:locale" content="en-us">
@@ -44,22 +36,14 @@
   {
     "@context": "http://schema.org",
     "@type": "Article",
-<<<<<<< HEAD
     "headline": "Yarra on XA Scanners",
-=======
-    "headline": "Running Yarra on XA Scanners",
->>>>>>> 663b3149bc2ec090df6e557887c29dc0f6b6a4b0
     "author": {
       "@type": "Person",
       "name": "http://profiles.google.com/+?rel=author"
     },
     "datePublished": "2022-10-18",
     "description": "",
-<<<<<<< HEAD
     "wordCount":  878 
-=======
-    "wordCount":  884 
->>>>>>> 663b3149bc2ec090df6e557887c29dc0f6b6a4b0
   }
 </script>
 
@@ -185,11 +169,7 @@
       <div>
   
 
-<<<<<<< HEAD
   <h1 class="post-title mb-3">Yarra on XA Scanners
-=======
-  <h1 class="post-title mb-3">Running Yarra on XA Scanners
->>>>>>> 663b3149bc2ec090df6e557887c29dc0f6b6a4b0
 </h1>
 
   <div class="post-meta">
@@ -224,20 +204,12 @@
 
       <div class="content pt-2">
   <h3 id="background">Background</h3>
-<<<<<<< HEAD
 <p>The &ldquo;Numaris X&rdquo; or &ldquo;XA&rdquo; software, which is running on the newest MAGNETOM scanners (Vida, Sola) and on upgraded scanners (Prisma, Skyra, Aera, &hellip;), introduced several security or &ldquo;system hardening&rdquo; mechanisms, including the Windows Kiosk mode and the requirement to enter the admin password whenever starting an application outside of SyngoMR. While it is generally good news that the security has been improved, these new protections make it difficult to use Yarra routinely because they require leaving the Kiosk mode after each system reboot and require entering the admin password repeatedly when launching the Yarra RDS or ORT client.</p>
-=======
-<p>The &ldquo;Numaris X&rdquo; or &ldquo;XA&rdquo; software, which is running on the newest MAGNETOM scanners (Vida, Sola) and on upgraded scanners (Prisma, Skyra, Aera, &hellip;), introduced several security or &ldquo;system hardening&rdquo; mechanisms, including the Windows Kiosk mode and the requirement to enter the admin password whenever starting an application outside of SyngoMR. While it is generally good news that the security has been improved, these new protections make it difficult to use Yarra in routine practice because they require leaving the Kiosk mode after each system reboot and require entering the admin password repeatedly when launching the Yarra RDS or ORT client.</p>
->>>>>>> 663b3149bc2ec090df6e557887c29dc0f6b6a4b0
 <p>Here, we describe an alternative way of starting the Yarra RDS client through a custom-developed &ldquo;dummy&rdquo; sequence, which we refer to as YarraLink sequence. In this way, the RDS client can be launched in Kiosk mode without entering any password. Once the RDS client is running, as indicated by the Yarra icon shown in the status bar on XA systems, the context menu that opens when right-clicking on the Yarra icon can be used for starting the ORT client &ndash; again without having to enter the admin password over and over again.</p>
 
 <div class="bs-callout bs-callout-primary"  >
     
-<<<<<<< HEAD
 <p>For legal reasons, we cannot share the source code of the YarraLink sequence publicly. Therefore, this article instead provides instructions how the sequence can be derived from the well-known MiniFLASH sequence, which comes with the IDEA development kit.</p>
-=======
-<p>For legal reasons, it is no possible to share the source code of the YarraLink sequence publicly. Therefore, this article instead provides instructions how the sequence can be derived from the well-known MiniFLASH sequence, which comes with the IDEA development kit.</p>
->>>>>>> 663b3149bc2ec090df6e557887c29dc0f6b6a4b0
 </div>
 
 
@@ -295,11 +267,7 @@
 </code></pre><p>Finally, in the header file a_MiniFLASH.h, add the following variable to the &ldquo;protected:&rdquo; section of the MiniFlash class definition:</p>
 <pre tabindex="0"><code>    bool clientLaunched;
 </code></pre><p>That&rsquo;s it! This sequence will now launch the Yarra RDS client on the host computer whenever the sequence is opened in the scanner UI or when a scan is started. The Yarra RDS client itself will only start once, so that it won&rsquo;t be an issue if the sequence is opened or started multiple times.</p>
-<<<<<<< HEAD
 <p>To avoid that the dummy sequence creates any images, which could be confusing for clinical staff, configure the sequence to use the EmptyIceProgram by adding the following line to the prepare function of the sequence MiniFlash::prepare(&hellip;) (and create a corresponding .ipr file, named EmptyIceProgram.ipr, with an empty IceConfigurator section):</p>
-=======
-<p>To avoid that the dummy sequence creates any images, which could be confusing for clinical staff, set the sequence to use the the EmptyIceProgram by adding the following line to the prepare function of the sequence MiniFlash::prepare(&hellip;) (and create a corresponding .ipr file, named EmptyIceProgram.ipr, with an empty IceConfigurator section):</p>
->>>>>>> 663b3149bc2ec090df6e557887c29dc0f6b6a4b0
 <pre tabindex="0"><code>    rSeqExpo.setICEProgramFilename(&#34;%CustomerIceProgs%\\EmptyIceProgram&#34;);          
 </code></pre><div style="margin-bottom: 30px; font-size: 0px;">&nbsp;</div>
 <h3 id="scanner-installation--protocol-setup">Scanner Installation &amp; Protocol Setup</h3>
@@ -342,11 +310,7 @@
         <li>
           <div class="item-inner mb-2">
             <p class="item-title">
-<<<<<<< HEAD
                 <a href="/blog/running_on_xa/" class="title"><i class="fas fa-angle-double-right">&nbsp;</i>Yarra on XA Scanners</a>
-=======
-                <a href="/blog/running_on_xa/" class="title"><i class="fas fa-angle-double-right">&nbsp;</i>Running Yarra on XA Scanners</a>
->>>>>>> 663b3149bc2ec090df6e557887c29dc0f6b6a4b0
             </p>
           </div>
         </li>
