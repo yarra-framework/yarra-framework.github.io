@@ -413,7 +413,8 @@ A new .mode file needs to be created in the yarra/modes directory and named acco
       <pubDate>Fri, 15 Jun 2018 00:00:00 +0000</pubDate>
       
       <guid>http://yarra-framework.org/addons/yarralink/</guid>
-      <description>&amp;nbsp;IntroductionInstalling or copying executables on the host computer of Siemens MR systems is officially not permitted by Siemens Healthcare. Therefore, installing the Yarra Client Package on the host computer of a Siemens MR system is at the user’s own risk.
+      <description>&amp;nbsp;IntroductionXA Software Please take a look at this blog post about an updated approach for the YarraLink sequence, intended for newer XA software versions.
+Installing or copying executables on the host computer of Siemens MR systems is officially not permitted by Siemens Healthcare. Therefore, installing the Yarra Client Package on the host computer of a Siemens MR system is at the user’s own risk.
 As a “legally safe” alternative, it is possible to use the YarraLink sequence, which is a pseudo-sequence written in the Siemens IDEA framework that, instead of performing an MRI scan, opens the Yarra ORT client.</description>
     </item>
     

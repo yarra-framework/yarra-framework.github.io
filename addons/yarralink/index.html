@@ -37,7 +37,7 @@
     },
     "datePublished": "2018-06-15",
     "description": "",
-    "wordCount":  699 
+    "wordCount":  723 
   }
 </script>
 
@@ -186,6 +186,13 @@
 <i class="fas fa-angle-double-right" style="color: #580F8B; font-size: 24px;">&nbsp;</i>Introduction
 
 </h3>
+
+<div class="bs-callout bs-callout-warning"  >
+ <h4>XA Software</h4>    
+<p>Please take a look at <a href="/blog/running_on_xa/">this blog post</a> about an updated approach for the YarraLink sequence, intended for newer XA software versions.</p>
+</div>
+
+
 <p>Installing or copying executables on the host computer of Siemens MR systems is officially not permitted by Siemens Healthcare. Therefore, installing the Yarra Client Package on the host computer of a Siemens MR system is at the user’s own risk.</p>
 <p>As a “legally safe” alternative, it is possible to use the YarraLink sequence, which is a pseudo-sequence written in the Siemens IDEA framework that, instead of performing an MRI scan, opens the Yarra ORT client. This circumvents having to install an “application executable” on the system. Using the YarraLink sequence also provides certain workflow advantages. When adding the YarraLink sequence as last step to exam programs containing sequence protocols that require offline reconstruction, the Yarra ORT client will automatically open on the scanner’s user interface once the last scan has been acquired. This eliminates the potential risk that the operator of the MR system forgets to submit a scan for offline reconstruction at the end of an exam.</p>
 <p>
@@ -196,7 +203,7 @@
 
 
 <div style="margin-bottom: 40px; font-size: 0px;">&nbsp;</div></p>
-<h3 id="hahahugoshortcode-s3-hbhb">
+<h3 id="hahahugoshortcode-s4-hbhb">
 <i class="fas fa-angle-double-right" style="color: #580F8B; font-size: 24px;">&nbsp;</i>Usage
 
 </h3>
@@ -221,7 +228,7 @@
 <p>When the exam program is executed during a patient examination, the Yarra ORT client will automatically open in the moment when the YarraLink sequence step is reached. Usage of the client is identical to the description provided in the <a href="/clients/ort">ORT documentation</a>. During the first start of the client, the configuration dialog will appear.</p>
 <p>As for any Siemens IDEA sequence, the MR system will run a number of adjustment steps prior to execution of the sequence (frequency adjustment, etc). If no patient or water phantom is positioned in the magnet, the adjustment procedure will fail and the YarraLink sequence will not be executed. In this case, it is possible to manually open the Yarra ORT client by opening the sequence parameter UI, selecting the Sequence/Special card and clicking on the checkbox labeled “Click to open &raquo;&gt;”.
 <div style="margin-bottom: 40px; font-size: 0px;">&nbsp;</div></p>
-<h3 id="hahahugoshortcode-s5-hbhb">
+<h3 id="hahahugoshortcode-s6-hbhb">
 <i class="fas fa-angle-double-right" style="color: #580F8B; font-size: 24px;">&nbsp;</i>Compilation
 
 </h3>
