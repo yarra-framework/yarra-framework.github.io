@@ -24,7 +24,8 @@ Feng L, Grimm R, Block KT, Chandarana H, Kim S, Xu J, Axel L, Sodickson DK, Otaz
       <pubDate>Wed, 03 Jul 2019 00:00:00 +0000</pubDate>
       
       <guid>http://yarra-framework.org/addons/clienttools/</guid>
-      <description>&amp;nbsp;IntroductionThe Yarra Client Tools (YCT) are several small command-line tools for Windows that can be helpful when working with Siemens raw-data files (aka Twix files). They are distributed in a separate package because they are targeted at advanced users. It is recommended to extract the package into the installation folder of the Yarra Client package because the tools require runtime libraries that are contained in the Yarra Client package.</description>
+      <description>&amp;nbsp;Introduction
+The Yarra Client Tools (YCT) are several small command-line tools for Windows that can be helpful when working with Siemens raw-data files (aka Twix files). They are distributed in a separate package because they are targeted at advanced users. It is recommended to extract the package into the installation folder of the Yarra Client package because the tools require runtime libraries that are contained in the Yarra Client package.</description>
     </item>
     
     <item>
@@ -33,7 +34,8 @@ Feng L, Grimm R, Block KT, Chandarana H, Kim S, Xu J, Axel L, Sodickson DK, Otaz
       <pubDate>Fri, 15 Jun 2018 00:00:00 +0000</pubDate>
       
       <guid>http://yarra-framework.org/modules/core/</guid>
-      <description>&amp;nbsp;Included Core ModulesThe following &amp;ldquo;core&amp;rdquo; modules are included in the YarraServer installation package. The binaries are located in the folder yarra/modules. They can be referenced using the helper macro %bd. Sometimes, beta versions of updated core modules are released. It is possible to install these versions as user modules in parallel to the version that comes with the YarraServer release (in this case, the macro for calling the modules has to be replaced by %bu).</description>
+      <description>&amp;nbsp;Included Core Modules
+The following &amp;ldquo;core&amp;rdquo; modules are included in the YarraServer installation package. The binaries are located in the folder yarra/modules. They can be referenced using the helper macro %bd. Sometimes, beta versions of updated core modules are released. It is possible to install these versions as user modules in parallel to the version that comes with the YarraServer release (in this case, the macro for calling the modules has to be replaced by %bu).</description>
     </item>
     
     <item>
@@ -42,7 +44,8 @@ Feng L, Grimm R, Block KT, Chandarana H, Kim S, Xu J, Axel L, Sodickson DK, Otaz
       <pubDate>Fri, 15 Jun 2018 00:00:00 +0000</pubDate>
       
       <guid>http://yarra-framework.org/clients/installation/</guid>
-      <description>&amp;nbsp;Package InstallationTo install Yarra clients, download the Yarra client package form the Download Page.
+      <description>&amp;nbsp;Package Installation
+To install Yarra clients, download the Yarra client package form the Download Page.
 Extract the archive into a folder on the host computer of the MRI system (or workstation PC for the SAC). The package can be unzipped into any directory. We recommend installing it into the folder C:\yarra.
 &amp;nbsp; Advanced User To perform this procedure on a Siemens MRI system, it is necessary to first switch to “Advanced User Mode” by selecting the item in the Start menu and entering the password.</description>
     </item>
@@ -53,7 +56,8 @@ Extract the archive into a folder on the host computer of the MRI system (or wor
       <pubDate>Fri, 15 Jun 2018 00:00:00 +0000</pubDate>
       
       <guid>http://yarra-framework.org/logserver/installation/</guid>
-      <description>&amp;nbsp;Installing LogServerYarra LogServer (YLS) is currently built and packaged for Ubuntu 18.04 and 20.04.
+      <description>&amp;nbsp;Installing LogServer
+Yarra LogServer (YLS) is currently built and packaged for Ubuntu 18.04 and 20.04.
 YLS is not designed to be made available to the internet. It should never be made available outside your internal network. The system uses common-sense security measures to protect patient data, but it was not designed to withstand a determined attack across the public internet.
 Installation is simple. First, download the most recent yarralogserver package for your Ubuntu version here.</description>
     </item>
@@ -75,8 +79,12 @@ Usage GraspR [input Twix file] [ini file] [output folder] [tmp folder] [acc #] T
       <pubDate>Fri, 15 Jun 2018 00:00:00 +0000</pubDate>
       
       <guid>http://yarra-framework.org/overview/team/</guid>
-      <description>&amp;nbsp;Yarra Development TeamYarra has been developed by members of the Center for Advanced Imaging Innovation and Research (CAI2R) at New York University Langone Health.
-&amp;nbsp; Kai Tobias BlockTobias has been developing Yarra since 2012 after leaving his former position at Siemens Healthcare MR. He is an Associate Professor at NYU Langone Health.&amp;nbsp; Roy WigginsRoy started working on Yarra in 2016 when he joined NYU Langone Health as Research Software Engineer.</description>
+      <description>&amp;nbsp;Yarra Development Team
+Yarra has been developed by members of the Center for Advanced Imaging Innovation and Research (CAI2R) at New York University Langone Health.
+&amp;nbsp; Kai Tobias Block
+Tobias has been developing Yarra since 2012 after leaving his former position at Siemens Healthcare MR. He is an Associate Professor at NYU Langone Health.
+&amp;nbsp; Roy Wiggins
+Roy started working on Yarra in 2016 when he joined NYU Langone Health as Research Software Engineer.</description>
     </item>
     
     <item>
@@ -85,7 +93,9 @@ Usage GraspR [input Twix file] [ini file] [output folder] [tmp folder] [acc #] T
       <pubDate>Mon, 03 Jun 2019 00:00:00 +0000</pubDate>
       
       <guid>http://yarra-framework.org/developer/build-server/</guid>
-      <description>&amp;nbsp;Build-Instructions for YarraServer&amp;nbsp; Setting up the Build Environment &amp;nbsp; Download Xubuntu 16.04.06 LTS Desktop Edition and install (preferably in VM). The Desktop Edition is preferred because the Qt installation requires X11. When using VirtualBox, install the VirtualBox Guest Additions CD. Update the apt-get chache: sudo apt-get update Install build system, required tools, and required libraries: sudo apt install build-essential mercurial tortoisehg git cmakesudo apt install libboost-all-dev libssl-dev libpq-dev libssl-dev libfcgi-dev &amp;nbsp; Installing Qt and Qt Creator &amp;nbsp; Download the Qt offline installer and run the setup.</description>
+      <description>&amp;nbsp;Build-Instructions for YarraServer
+&amp;nbsp; Setting up the Build Environment &amp;nbsp; Download Xubuntu 16.04.06 LTS Desktop Edition and install (preferably in VM). The Desktop Edition is preferred because the Qt installation requires X11. When using VirtualBox, install the VirtualBox Guest Additions CD. Update the apt-get chache: sudo apt-get update Install build system, required tools, and required libraries: sudo apt install build-essential mercurial tortoisehg git cmake
+sudo apt install libboost-all-dev libssl-dev libpq-dev libssl-dev libfcgi-dev &amp;nbsp; Installing Qt and Qt Creator &amp;nbsp; Download the Qt offline installer and run the setup.</description>
     </item>
     
     <item>
@@ -94,7 +104,8 @@ Usage GraspR [input Twix file] [ini file] [output folder] [tmp folder] [acc #] T
       <pubDate>Fri, 15 Jun 2018 00:00:00 +0000</pubDate>
       
       <guid>http://yarra-framework.org/addons/yas/</guid>
-      <description>&amp;nbsp;IntroductionWhen collecting raw-data files from a large number of patients (e.g., through Yarra offline reconstructions or using the Yarra RDS client), it can quickly become difficult to find the data file from a certain patient or exam (as needed for performing retrospective studies). This problem is solved by Yarra Archive Search (YAS), which can be used as add-on for a YarraServer installation or completely independently from other Yarra components.</description>
+      <description>&amp;nbsp;Introduction
+When collecting raw-data files from a large number of patients (e.g., through Yarra offline reconstructions or using the Yarra RDS client), it can quickly become difficult to find the data file from a certain patient or exam (as needed for performing retrospective studies). This problem is solved by Yarra Archive Search (YAS), which can be used as add-on for a YarraServer installation or completely independently from other Yarra components.</description>
     </item>
     
     <item>
@@ -103,7 +114,8 @@ Usage GraspR [input Twix file] [ini file] [output folder] [tmp folder] [acc #] T
       <pubDate>Fri, 15 Jun 2018 00:00:00 +0000</pubDate>
       
       <guid>http://yarra-framework.org/logserver/configuration/</guid>
-      <description>&amp;nbsp;LogServer Configuration&amp;nbsp; Initial User for Admin Interface After the installation, there won’t be any users set up in the web interface. Click the “Register” link and provide your email and set a password. LogServer will send an email with a link to verify the email address. It is recommended to only use institutional email addresses. You can skip verifying your own email address by running this command:
+      <description>&amp;nbsp;LogServer Configuration
+&amp;nbsp; Initial User for Admin Interface After the installation, there won’t be any users set up in the web interface. Click the “Register” link and provide your email and set a password. LogServer will send an email with a link to verify the email address. It is recommended to only use institutional email addresses. You can skip verifying your own email address by running this command:
 sudo su postgres -c &amp;#34;psql -d yarralog -c &amp;#39;update auth_info set email=unverified_email where id=1;&amp;#39;&amp;#34; After verifying your email address, you need to activate the account (this is normally done in the web interface by one of the admin accounts, but not possible for the initial user).</description>
     </item>
     
@@ -115,8 +127,11 @@ sudo su postgres -c &amp;#34;psql -d yarralog -c &amp;#39;update auth_info set e
       <guid>http://yarra-framework.org/modules_core/drivetransfer/</guid>
       <description>Purpose Transfers reconstructed DICOM images onto a network share (or mounted disk drive).
 Usage DriveTransfer [mode file] [directory with DICOMs] [unique task name] Typical call:
-[Transfer]Bin=%bd/DriveTransferArgs=%mc %td %vuid Configuration In .mode file:
-[DriveTransfer]TargetPath=#Path to target location, e.g. /media/yarra_out </description>
+[Transfer]
+Bin=%bd/DriveTransfer
+Args=%mc %td %vuid Configuration In .mode file:
+[DriveTransfer]
+TargetPath=#Path to target location, e.g. /media/yarra_out </description>
     </item>
     
     <item>
@@ -125,7 +140,8 @@ Usage DriveTransfer [mode file] [directory with DICOMs] [unique task name] Typic
       <pubDate>Fri, 15 Jun 2018 00:00:00 +0000</pubDate>
       
       <guid>http://yarra-framework.org/addons/filemover/</guid>
-      <description>&amp;nbsp;IntroductionYarra FileMover is a small helper tool that moves files regularly from a source location to an archive destination. If the file transfer fails, it sends out email notifications to specified recipients.
+      <description>&amp;nbsp;Introduction
+Yarra FileMover is a small helper tool that moves files regularly from a source location to an archive destination. If the file transfer fails, it sends out email notifications to specified recipients.
 We are using it to move processed raw-data files from our YarraServers to a central archive location on a network share. Because the network transfer takes time, we decided to decouple the file transfer from the YarraServer process, so that the server process doesn&amp;rsquo;t get blocked due to the transfer operation.</description>
     </item>
     
@@ -137,7 +153,9 @@ We are using it to move processed raw-data files from our YarraServers to a cent
       <guid>http://yarra-framework.org/modules_core/inipatch/</guid>
       <description>Purpose Creates a “patched” copy of a source ini file in the work directory with the given name. All keys specified in the mode file will be replaced by the param value passed as 4th argument, or by statically defined values written into the mode file.
 Usage IniPatch [mode file] [source ini file] [target (in work dir)] [param value] Typical call:
-[PreProcessing]Bin=%bd/IniPatchArgs=%mc %md/template.ini %rid/settings.ini %vparam Configuration In .mode file:</description>
+[PreProcessing]
+Bin=%bd/IniPatch
+Args=%mc %md/template.ini %rid/settings.ini %vparam Configuration In .mode file:</description>
     </item>
     
     <item>
@@ -146,7 +164,8 @@ Usage IniPatch [mode file] [source ini file] [target (in work dir)] [param value
       <pubDate>Fri, 15 Jun 2018 00:00:00 +0000</pubDate>
       
       <guid>http://yarra-framework.org/server/installation/</guid>
-      <description>&amp;nbsp;Operating SystemThe currently supported operating systems for YarraServer are Ubuntu 16.04 LTS 64bit and Ubuntu 18.04 LTS 64bit, which can be downloaded here (using older Ubuntu versions is not recommended). It is possible to use both, the Server Edition as well as the Desktop Edition. It might be easier for users less familiar with Linux to use the Desktop edition because it comes with many helpful tools such as graphical editors.</description>
+      <description>&amp;nbsp;Operating System
+The currently supported operating systems for YarraServer are Ubuntu 16.04 LTS 64bit and Ubuntu 18.04 LTS 64bit, which can be downloaded here (using older Ubuntu versions is not recommended). It is possible to use both, the Server Edition as well as the Desktop Edition. It might be easier for users less familiar with Linux to use the Desktop edition because it comes with many helpful tools such as graphical editors.</description>
     </item>
     
     <item>
@@ -157,7 +176,9 @@ Usage IniPatch [mode file] [source ini file] [target (in work dir)] [param value
       <guid>http://yarra-framework.org/modules_user/patchcharacterset/</guid>
       <description>Purpose Patches the character set of the reconstructed DICOMs and encodes the patient name in the local patient name. Necessary when using the GRASP module with certain PACS systems.
 Usage PatchPatientName [input folder] [output folder] [TWIX file] Typical call:
-[PostProcessing]Bin1=%bu/PatchCharacterSet/PatchPatientName.shArgs1=%pid %pod %rid/%rif Configuration The character set can be changed directly in the script PatchPatientName.sh.</description>
+[PostProcessing]
+Bin1=%bu/PatchCharacterSet/PatchPatientName.sh
+Args1=%pid %pod %rid/%rif Configuration The character set can be changed directly in the script PatchPatientName.sh.</description>
     </item>
     
     <item>
@@ -166,7 +187,23 @@ Usage PatchPatientName [input folder] [output folder] [TWIX file] Typical call:
       <pubDate>Fri, 15 Jun 2018 00:00:00 +0000</pubDate>
       
       <guid>http://yarra-framework.org/download/archive/</guid>
-      <description>&amp;nbsp;Release History&amp;nbsp; Yarra Client Package &amp;nbsp; &amp;nbsp;&amp;nbsp;Version 0.62 &amp;ndash; Release Date: 2022-10-17Introduced Yarra Diagnostics toolAdded support for XA40 and XA50Updated UI designRDS: Option for alternative local buffer location&amp;nbsp;Download Version&amp;nbsp;&amp;nbsp;Version 0.60 &amp;ndash; Release Date: 2022-01-25ORT: Increased possible length of ACCRDS: Excluding invalid characters from sequence names&amp;nbsp;Download Version&amp;nbsp;&amp;nbsp;Version 0.59 &amp;ndash; Release Date: 2021-12-17Support for XA30A and XA31AIntroduced disconnect command for RDSAdded RDS option for remote LPFI file&amp;nbsp;Download Version&amp;nbsp;&amp;nbsp;Version 0.</description>
+      <description>&amp;nbsp;Release History
+&amp;nbsp; Yarra Client Package &amp;nbsp; &amp;nbsp;&amp;nbsp;Version 0.62 &amp;ndash; Release Date: 2022-10-17
+Introduced Yarra Diagnostics tool
+Added support for XA40 and XA50
+Updated UI design
+RDS: Option for alternative local buffer location
+&amp;nbsp;Download Version
+&amp;nbsp;&amp;nbsp;Version 0.60 &amp;ndash; Release Date: 2022-01-25
+ORT: Increased possible length of ACC
+RDS: Excluding invalid characters from sequence names
+&amp;nbsp;Download Version
+&amp;nbsp;&amp;nbsp;Version 0.59 &amp;ndash; Release Date: 2021-12-17
+Support for XA30A and XA31A
+Introduced disconnect command for RDS
+Added RDS option for remote LPFI file
+&amp;nbsp;Download Version
+&amp;nbsp;&amp;nbsp;Version 0.</description>
     </item>
     
     <item>
@@ -177,7 +214,9 @@ Usage PatchPatientName [input folder] [output folder] [TWIX file] Typical call:
       <guid>http://yarra-framework.org/modules_core/setdcmtags/</guid>
       <description>Purpose Populates the DICOM tags of reconstructed images based on patient and scan information read from the Twix file. It also combines DICOM files into series based on the file name and sets the needed DICOM UUIDs.
 Usage SetDCMTags [options] input output rawfile Parameters:
-input -- Folder with DICOM files to processoutput -- Folder where modified DICOM files will be writtenrawfile -- Path and name of raw-data file Options:</description>
+input -- Folder with DICOM files to process
+output -- Folder where modified DICOM files will be written
+rawfile -- Path and name of raw-data file Options:</description>
     </item>
     
     <item>
@@ -188,8 +227,15 @@ input -- Folder with DICOM files to processoutput -- Folder where modified DICO
       <guid>http://yarra-framework.org/modules_user/subtraction/</guid>
       <description>Purpose Calculates subtraction images from reconstructed image series.
 Usage Subtraction [input folder] [output folder] [mode file] Typical call:
-[PostProcessing]Bin=%bu/Subtraction/SubtractionArgs=%pid %pod %mc Configuration In .mode file:
-[Subtraction]BaselineSeries=2KeepSourceImages=trueSubtractionMode=0IncludeSeries=3:end#4ExcludeSeries= Keep source images If KeepSourceImages=false, then only the subtraction images will be sent. If KeepSourceImages=true, both the original images and subtraction images will be sent.
+[PostProcessing]
+Bin=%bu/Subtraction/Subtraction
+Args=%pid %pod %mc Configuration In .mode file:
+[Subtraction]
+BaselineSeries=2
+KeepSourceImages=true
+SubtractionMode=0
+IncludeSeries=3:end#4
+ExcludeSeries= Keep source images If KeepSourceImages=false, then only the subtraction images will be sent. If KeepSourceImages=true, both the original images and subtraction images will be sent.
 Subtraction mode If SubtractionMode=0, then negative values will be discarded. If SubtractionMode=1, then the absolute value of the difference is calculated.</description>
     </item>
     
@@ -199,7 +245,8 @@ Subtraction mode If SubtractionMode=0, then negative values will be discarded. I
       <pubDate>Fri, 15 Jun 2018 00:00:00 +0000</pubDate>
       
       <guid>http://yarra-framework.org/overview/support/</guid>
-      <description>&amp;nbsp;User SupportWe are trying our best to support users of the Yarra Framework, but unfortunately our time is limited since we are a very small group. Please use our GitHub Discussions forum to send us your questions and requests. This is the most effective way for getting in touch with us and ensures that everyone from the Yarra team can answer your post. We also would like to encourage other members from the community to support users with questions on Yarra through the discussion forum.</description>
+      <description>&amp;nbsp;User Support
+We are trying our best to support users of the Yarra Framework, but unfortunately our time is limited since we are a very small group. Please use our GitHub Discussions forum to send us your questions and requests. This is the most effective way for getting in touch with us and ensures that everyone from the Yarra team can answer your post. We also would like to encourage other members from the community to support users with questions on Yarra through the discussion forum.</description>
     </item>
     
     <item>
@@ -208,7 +255,8 @@ Subtraction mode If SubtractionMode=0, then negative values will be discarded. I
       <pubDate>Fri, 15 Jun 2018 00:00:00 +0000</pubDate>
       
       <guid>http://yarra-framework.org/modules/user/</guid>
-      <description>&amp;nbsp;Additional Installable ModulesAdditional modules can be installed via the module installer of the WebGUI (on the Configuration page). User modules are extracted into separate folders under the directory yarra/modules_user. The helper macro for referencing this folder is %bu. For example, when installing the Subtraction module, this binary can be called via %bu/Subtraction/Subtraction (the latter Subtraction refers to the executable name, while the former corresponds to the installation folder name).</description>
+      <description>&amp;nbsp;Additional Installable Modules
+Additional modules can be installed via the module installer of the WebGUI (on the Configuration page). User modules are extracted into separate folders under the directory yarra/modules_user. The helper macro for referencing this folder is %bu. For example, when installing the Subtraction module, this binary can be called via %bu/Subtraction/Subtraction (the latter Subtraction refers to the executable name, while the former corresponds to the installation folder name).</description>
     </item>
     
     <item>
@@ -217,7 +265,9 @@ Subtraction mode If SubtractionMode=0, then negative values will be discarded. I
       <pubDate>Mon, 03 Jun 2019 00:00:00 +0000</pubDate>
       
       <guid>http://yarra-framework.org/developer/build-client/</guid>
-      <description>&amp;nbsp;Build-Instructions for Yarra Clients&amp;nbsp;Under ConstructionSorry, this section is still missing. Please check again soon.</description>
+      <description>&amp;nbsp;Build-Instructions for Yarra Clients
+&amp;nbsp;Under Construction
+Sorry, this section is still missing. Please check again soon.</description>
     </item>
     
     <item>
@@ -226,7 +276,8 @@ Subtraction mode If SubtractionMode=0, then negative values will be discarded. I
       <pubDate>Fri, 15 Jun 2018 00:00:00 +0000</pubDate>
       
       <guid>http://yarra-framework.org/logserver/administration/</guid>
-      <description>&amp;nbsp;Administration&amp;nbsp; Administration of Yarra LogServer is done with a web-based interface (&amp;ldquo;LogViewer&amp;rdquo;), which normally runs on port 4444 (e.g., https://localhost:4444 when opening the browser directly on the server). It is recommended to use a modern web browser (e.g., Chrome) when working with LogViewer.
+      <description>&amp;nbsp;Administration
+&amp;nbsp; Administration of Yarra LogServer is done with a web-based interface (&amp;ldquo;LogViewer&amp;rdquo;), which normally runs on port 4444 (e.g., https://localhost:4444 when opening the browser directly on the server). It is recommended to use a modern web browser (e.g., Chrome) when working with LogViewer.
 &amp;nbsp; Accounts New user accounts can be created on the login page by going through the Registration procedure. However, new accounts are disabled by default and need to authorized by an administrator.</description>
     </item>
     
@@ -236,7 +287,8 @@ Subtraction mode If SubtractionMode=0, then negative values will be discarded. I
       <pubDate>Fri, 15 Jun 2018 00:00:00 +0000</pubDate>
       
       <guid>http://yarra-framework.org/server/configuration/</guid>
-      <description>&amp;nbsp;Directory StructureAfter the initial installation, the YarraServer folder has the following directory structure:
+      <description>&amp;nbsp;Directory Structure
+After the initial installation, the YarraServer folder has the following directory structure:
 Path Purpose fail/ Target folder for failed reconstruction tasks finished/ Target folder for completed tasks (if data should be kept) install/ Folder with supplementary files for the installation log/ Folder for log files modes/ Folder with definitions of reconstruction modes modules/ Folder with binaries of core processing modules (shipped with Yarra) modules_user/ Folder with binaries of custom-developed modules queue/ Queue directory with incoming reconstruction tasks webgui/ Folder for the web-based user interface work/ Working directory for temporary files during processing By default, these folders are local subfolders in the ~/yarra installation directory.</description>
     </item>
     
@@ -246,7 +298,8 @@ Path Purpose fail/ Target folder for failed reconstruction tasks finished/ Targe
       <pubDate>Fri, 15 Jun 2018 00:00:00 +0000</pubDate>
       
       <guid>http://yarra-framework.org/modules/development/</guid>
-      <description>&amp;nbsp;Implementing Custom ModulesImplementing new reconstruction modules in Yarra is easy. Yarra modules are essentially just Linux command-line calls with a defined set of arguments. In addition, a number of processing conventions exist. The modules can be implemented in any language running on the Ubuntu 16.04/18.04 operation system (compiled or scripted). The spectrum ranges from simple Matlab, Bash, or Python scripts – typically used for clinical evaluation of early prototypes – to performance optimized C++ or GPU-supported implementations.</description>
+      <description>&amp;nbsp;Implementing Custom Modules
+Implementing new reconstruction modules in Yarra is easy. Yarra modules are essentially just Linux command-line calls with a defined set of arguments. In addition, a number of processing conventions exist. The modules can be implemented in any language running on the Ubuntu 16.04/18.04 operation system (compiled or scripted). The spectrum ranges from simple Matlab, Bash, or Python scripts – typically used for clinical evaluation of early prototypes – to performance optimized C++ or GPU-supported implementations.</description>
     </item>
     
     <item>
@@ -255,7 +308,9 @@ Path Purpose fail/ Target folder for failed reconstruction tasks finished/ Targe
       <pubDate>Fri, 15 Jun 2018 00:00:00 +0000</pubDate>
       
       <guid>http://yarra-framework.org/overview/faq/</guid>
-      <description>&amp;nbsp;Frequently Asked Questions&amp;nbsp; General &amp;nbsp; If I only want to collect raw-data from clinical scans, do I need to install a Linux server?No. If you only want to collect raw-data without automatic offline reconstruction, then you can simply use the Yarra RDS client on your MR systems without need to install a Linux server. The data can be stored on any network share or USB drive. Are you planning to support other MRI vendors besides Siemens?</description>
+      <description>&amp;nbsp;Frequently Asked Questions
+&amp;nbsp; General &amp;nbsp; If I only want to collect raw-data from clinical scans, do I need to install a Linux server?
+No. If you only want to collect raw-data without automatic offline reconstruction, then you can simply use the Yarra RDS client on your MR systems without need to install a Linux server. The data can be stored on any network share or USB drive. Are you planning to support other MRI vendors besides Siemens?</description>
     </item>
     
     <item>
@@ -264,7 +319,8 @@ Path Purpose fail/ Target folder for failed reconstruction tasks finished/ Targe
       <pubDate>Fri, 15 Jun 2018 00:00:00 +0000</pubDate>
       
       <guid>http://yarra-framework.org/clients/ort/</guid>
-      <description>&amp;nbsp;UsageThe ORT client is the Yarra client for submitting reconstructions tasks from the consoles (host computer) of Siemens MRI systems. When started, the client will automatically connect to the Yarra server and read the list of configured reconstruction modes (see this page on how to configure of reconstruction modes).
+      <description>&amp;nbsp;Usage
+The ORT client is the Yarra client for submitting reconstructions tasks from the consoles (host computer) of Siemens MRI systems. When started, the client will automatically connect to the Yarra server and read the list of configured reconstruction modes (see this page on how to configure of reconstruction modes).
 Afterwards, it will show the main application window where all recent patient exams are listed that match to the defined reconstruction modes (i.</description>
     </item>
     
@@ -276,8 +332,14 @@ Afterwards, it will show the main application window where all recent patient ex
       <guid>http://yarra-framework.org/modules_core/pacstransfer/</guid>
       <description>Purpose Sends all reconstructed DICOM images to one or multiple DICOM nodes (PACS or DICOM workstation). Requires installation of the OFFIS dcmtk package on the server.
 Usage PACSTransfer [mode file] [directory with DICOMs] Typical call:
-[Transfer]Bin=%bd/PACSTransferArgs=%mc %td Configuration In .mode file:
-[PACSTransfer]AEC=#AEC of PACSIP=#IP of PACS, e.g. 10.142.23.54Port=#Port of PACS, e.g. 104AET=#AET to be used, e.g. YARRA If the images should be sent to multiple DICOM nodes (up to 20), add to .</description>
+[Transfer]
+Bin=%bd/PACSTransfer
+Args=%mc %td Configuration In .mode file:
+[PACSTransfer]
+AEC=#AEC of PACS
+IP=#IP of PACS, e.g. 10.142.23.54
+Port=#Port of PACS, e.g. 104
+AET=#AET to be used, e.g. YARRA If the images should be sent to multiple DICOM nodes (up to 20), add to .</description>
     </item>
     
     <item>
@@ -286,7 +348,8 @@ Usage PACSTransfer [mode file] [directory with DICOMs] Typical call:
       <pubDate>Fri, 15 Jun 2018 00:00:00 +0000</pubDate>
       
       <guid>http://yarra-framework.org/server/webgui/</guid>
-      <description>&amp;nbsp;IntroductionYarra provides a convenient web-based user interface for YarraServer (WebGUI), which can be used to monitor, control, and configure the server. The WebGUI is accessible from every web browser, including smartphones, by using the server address as URL with extension :8080, e.g. 192.168.56.101:8080. The port can also be changed to a different number. The WebGUI offers a user authentication system with different access levels, ranging from view-only monitoring of the reconstruction queue to full configuration rights for the YarraServer.</description>
+      <description>&amp;nbsp;Introduction
+Yarra provides a convenient web-based user interface for YarraServer (WebGUI), which can be used to monitor, control, and configure the server. The WebGUI is accessible from every web browser, including smartphones, by using the server address as URL with extension :8080, e.g. 192.168.56.101:8080. The port can also be changed to a different number. The WebGUI offers a user authentication system with different access levels, ranging from view-only monitoring of the reconstruction queue to full configuration rights for the YarraServer.</description>
     </item>
     
     <item>
@@ -295,7 +358,8 @@ Usage PACSTransfer [mode file] [directory with DICOMs] Typical call:
       <pubDate>Mon, 03 Jun 2019 00:00:00 +0000</pubDate>
       
       <guid>http://yarra-framework.org/developer/idea/</guid>
-      <description>&amp;nbsp;IDEA Developer Notes&amp;nbsp; Installing VE11D Make sure to update MARS to the version supplied with VE11D. Otherwise, the linker will have unresolved functions. The regtarg tool seems broken. Targets have to be manually added to the Windows and Linux target lists in (C:\MIDEA\N4_VE11D_LATEST_20180608\MedMake\cfg\n4 and \n4linux). When running the MARS VM as &amp;ldquo;external VM&amp;rdquo; (i.e. managed manually via a separate VirtualBox installation):
+      <description>&amp;nbsp;IDEA Developer Notes
+&amp;nbsp; Installing VE11D Make sure to update MARS to the version supplied with VE11D. Otherwise, the linker will have unresolved functions. The regtarg tool seems broken. Targets have to be manually added to the Windows and Linux target lists in (C:\MIDEA\N4_VE11D_LATEST_20180608\MedMake\cfg\n4 and \n4linux). When running the MARS VM as &amp;ldquo;external VM&amp;rdquo; (i.e. managed manually via a separate VirtualBox installation):
 Recreate the VM from scratch and import the 2 VDI disks (don&amp;rsquo;t just use the existing vbox files - will result in kernal panic and and endless boot loop).</description>
     </item>
     
@@ -305,7 +369,8 @@ Recreate the VM from scratch and import the 2 VDI disks (don&amp;rsquo;t just us
       <pubDate>Fri, 15 Jun 2018 00:00:00 +0000</pubDate>
       
       <guid>http://yarra-framework.org/logserver/redash/</guid>
-      <description>&amp;nbsp;Data Visualization with RedashWhile the included Yarra LogViewer provides access to all collected data in tabular form, it is often desired to visualize data or to perform advanced queries. This can be done with Redash, which is a web-based open-source tool for creating SQL-driven dashboards.
+      <description>&amp;nbsp;Data Visualization with Redash
+While the included Yarra LogViewer provides access to all collected data in tabular form, it is often desired to visualize data or to perform advanced queries. This can be done with Redash, which is a web-based open-source tool for creating SQL-driven dashboards.
 More information on Redash
 Please use only the Self Hosted Open Source version of Redash. Do not use the hosted cloud version, as this would transfer sensitive data to external cloud servers.</description>
     </item>
@@ -316,7 +381,8 @@ Please use only the Self Hosted Open Source version of Redash. Do not use the ho
       <pubDate>Fri, 15 Jun 2018 00:00:00 +0000</pubDate>
       
       <guid>http://yarra-framework.org/server/usage/</guid>
-      <description>&amp;nbsp;Starting and Stopping the Server&amp;nbsp; In most use cases, the YarraServer process is controlled via the WebGUI. However, it is also possible to control the server using command-line tools. &amp;nbsp;
+      <description>&amp;nbsp;Starting and Stopping the Server
+&amp;nbsp; In most use cases, the YarraServer process is controlled via the WebGUI. However, it is also possible to control the server using command-line tools. &amp;nbsp;
 If Running as Linux Daemon When the YarraServer has been installed as daemon (recommended and described here), the YarraServer can be started using a terminal shell (as user yarraserver) and typing:
 sudo systemctl start yarra The server is now running in the background.</description>
     </item>
@@ -327,7 +393,8 @@ sudo systemctl start yarra The server is now running in the background.</descrip
       <pubDate>Fri, 15 Jun 2018 00:00:00 +0000</pubDate>
       
       <guid>http://yarra-framework.org/modules/packaging/</guid>
-      <description>&amp;nbsp;Module PackagingModules can be packaged by creating a ZIP archive of all files. In addition, a manifest file has to be placed inside the ZIP file.
+      <description>&amp;nbsp;Module Packaging
+Modules can be packaged by creating a ZIP archive of all files. In addition, a manifest file has to be placed inside the ZIP file.
 When installing a module through the WebGUI, the ZIP file will be extracted into a subfolder under /yarra/modules_user. The installation folder is named according to the filename of the manifest file that is contained in the ZIP archive. Thus, it is possible to append a version number to the ZIP file (e.</description>
     </item>
     
@@ -337,7 +404,8 @@ When installing a module through the WebGUI, the ZIP file will be extracted into
       <pubDate>Fri, 15 Jun 2018 00:00:00 +0000</pubDate>
       
       <guid>http://yarra-framework.org/clients/sac/</guid>
-      <description>&amp;nbsp;UsageThe SAC client is intended for installation on stand-alone Windows workstations and can be used to submit measurement files for reconstruction that have been previously saved either manually using the Siemens TWIX tool or automatically using the Yarra RDS client.
+      <description>&amp;nbsp;Usage
+The SAC client is intended for installation on stand-alone Windows workstations and can be used to submit measurement files for reconstruction that have been previously saved either manually using the Siemens TWIX tool or automatically using the Yarra RDS client.
 To send a task, click on the “Select…” button and choose the .dat (TWIX) file that you want to reconstruct. The client will show the patient name and pre-select the reconstruction mode according to the protocol tags contained in the protocol name.</description>
     </item>
     
@@ -347,9 +415,18 @@ To send a task, click on the “Select…” button and choose the .dat (TWIX) f
       <pubDate>Fri, 15 Jun 2018 00:00:00 +0000</pubDate>
       
       <guid>http://yarra-framework.org/download/sourcecode/</guid>
-      <description>&amp;nbsp;Open Source AccessThe Yarra Framework is an open-source project. The code for all components of Yarra is publicly hosted on bitbucket.org. Click the buttons below to get to the repositories of the individual components. The source code is provided under the GNU General Public License (GPL).
+      <description>
+&amp;nbsp;Open Source Access
+The Yarra Framework is an open-source project. The code for all components of Yarra is publicly hosted on bitbucket.org. Click the buttons below to get to the repositories of the individual components. The source code is provided under the GNU General Public License (GPL).
 If you want to build Yarra binaries yourself, you can find setup instructions for the build environmnet here.
-&amp;nbsp; &amp;nbsp;Yarra Client Page on Bitbucket&amp;nbsp;Yarra Server Page on Bitbucket&amp;nbsp;Yarra WebGUI Page on Bitbucket&amp;nbsp;Yarra LogServer Page on Bitbucket&amp;nbsp;Yarra Archive Search Page on Bitbucket&amp;nbsp;Yarra FileMover Page on Bitbucket&amp;nbsp;Yarra Link Page on Bitbucket</description>
+&amp;nbsp; &amp;nbsp;Yarra Client Page on Bitbucket
+&amp;nbsp;Yarra Server Page on Bitbucket
+&amp;nbsp;Yarra WebGUI Page on Bitbucket
+&amp;nbsp;Yarra LogServer Page on Bitbucket
+&amp;nbsp;Yarra Archive Search Page on Bitbucket
+&amp;nbsp;Yarra FileMover Page on Bitbucket
+&amp;nbsp;Yarra Link Page on Bitbucket
+</description>
     </item>
     
     <item>
@@ -358,7 +435,9 @@ If you want to build Yarra binaries yourself, you can find setup instructions fo
       <pubDate>Fri, 15 Jun 2018 00:00:00 +0000</pubDate>
       
       <guid>http://yarra-framework.org/logserver/queries/</guid>
-      <description>&amp;nbsp;Sample LogServer Queries&amp;nbsp;Under ConstructionSorry, this section is still missing. Please check again soon.</description>
+      <description>&amp;nbsp;Sample LogServer Queries
+&amp;nbsp;Under Construction
+Sorry, this section is still missing. Please check again soon.</description>
     </item>
     
     <item>
@@ -367,7 +446,12 @@ If you want to build Yarra binaries yourself, you can find setup instructions fo
       <pubDate>Fri, 15 Jun 2018 00:00:00 +0000</pubDate>
       
       <guid>http://yarra-framework.org/download/resources/</guid>
-      <description>&amp;nbsp;Additional Material&amp;nbsp; ISMRM 2019 Educational Session on Open-Source Software Tools &amp;nbsp; &amp;nbsp;Whitepaper on Concept&amp;nbsp;Overview Slides&amp;nbsp;Tutorial Slides on Offline Reconstruction&amp;nbsp; </description>
+      <description>
+&amp;nbsp;Additional Material
+&amp;nbsp; ISMRM 2019 Educational Session on Open-Source Software Tools &amp;nbsp; &amp;nbsp;Whitepaper on Concept
+&amp;nbsp;Overview Slides
+&amp;nbsp;Tutorial Slides on Offline Reconstruction
+&amp;nbsp; </description>
     </item>
     
     <item>
@@ -376,7 +460,8 @@ If you want to build Yarra binaries yourself, you can find setup instructions fo
       <pubDate>Fri, 15 Jun 2018 00:00:00 +0000</pubDate>
       
       <guid>http://yarra-framework.org/clients/rds/</guid>
-      <description>&amp;nbsp;IntroductionThe Yarra RDS client is a service that runs in the background on the host computer of Siemens MRI systems and can be used to automatically collect the raw data (Twix data) of certain scans and to transfer the data to a network location (or disk drive). RDS is part of the Yarra package for historical reasons and does not directly interact with the Yarra server. However, the data collected with RDS can later be submitted to a Yarra server using the SAC client.</description>
+      <description>&amp;nbsp;Introduction
+The Yarra RDS client is a service that runs in the background on the host computer of Siemens MRI systems and can be used to automatically collect the raw data (Twix data) of certain scans and to transfer the data to a network location (or disk drive). RDS is part of the Yarra package for historical reasons and does not directly interact with the Yarra server. However, the data collected with RDS can later be submitted to a Yarra server using the SAC client.</description>
     </item>
     
     <item>
@@ -385,7 +470,8 @@ If you want to build Yarra binaries yourself, you can find setup instructions fo
       <pubDate>Fri, 15 Jun 2018 00:00:00 +0000</pubDate>
       
       <guid>http://yarra-framework.org/server/modes/</guid>
-      <description>&amp;nbsp;Defining Reconstruction ModesAdding a new reconstruction mode to YarraServer involves two steps:
+      <description>&amp;nbsp;Defining Reconstruction Modes
+Adding a new reconstruction mode to YarraServer involves two steps:
 A new .mode file needs to be created in the yarra/modes directory and named according to the internal ID of the reconstruction mode. The mode needs to be added to the list of available modes, read by the Yarra clients from the file yarra/queue/YarraModes.cfg. With recent versions of Yarra, this step is normally done via the Yarra WebGUI.</description>
     </item>
     
@@ -395,7 +481,8 @@ A new .mode file needs to be created in the yarra/modes directory and named acco
       <pubDate>Fri, 15 Jun 2018 00:00:00 +0000</pubDate>
       
       <guid>http://yarra-framework.org/overview/yarracloud/</guid>
-      <description>&amp;nbsp;Cloud-Driven Reconstruction ServiceYarraCloud is a cloud-based service that allows performing offline reconstructions without the need to install local Yarra servers. YarraCloud has been built on a containerized version of the YarraServer binary and integrates seamlessly into the Yarra ORT and SAC clients. It enables centers that don&amp;rsquo;t have the funds available for purchasing an on-premise server or that don&amp;rsquo;t have the technical expertize to operate a Linux server to perform offline-reconstructions through a pay-per-use model.</description>
+      <description>&amp;nbsp;Cloud-Driven Reconstruction Service
+YarraCloud is a cloud-based service that allows performing offline reconstructions without the need to install local Yarra servers. YarraCloud has been built on a containerized version of the YarraServer binary and integrates seamlessly into the Yarra ORT and SAC clients. It enables centers that don&amp;rsquo;t have the funds available for purchasing an on-premise server or that don&amp;rsquo;t have the technical expertize to operate a Linux server to perform offline-reconstructions through a pay-per-use model.</description>
     </item>
     
     <item>
@@ -404,7 +491,8 @@ A new .mode file needs to be created in the yarra/modes directory and named acco
       <pubDate>Fri, 15 Jun 2018 00:00:00 +0000</pubDate>
       
       <guid>http://yarra-framework.org/addons/yarralink/</guid>
-      <description>&amp;nbsp;IntroductionXA Software Please take a look at this blog post about an updated approach for the YarraLink sequence, intended for newer XA software versions.
+      <description>&amp;nbsp;Introduction
+XA Software Please take a look at this blog post about an updated approach for the YarraLink sequence, intended for newer XA software versions.
 Installing or copying executables on the host computer of Siemens MR systems is officially not permitted by Siemens Healthcare. Therefore, installing the Yarra Client Package on the host computer of a Siemens MR system is at the user’s own risk.
 As a “legally safe” alternative, it is possible to use the YarraLink sequence, which is a pseudo-sequence written in the Siemens IDEA framework that, instead of performing an MRI scan, opens the Yarra ORT client.</description>
     </item>
@@ -415,7 +503,8 @@ As a “legally safe” alternative, it is possible to use the YarraLink sequenc
       <pubDate>Fri, 15 Jun 2018 00:00:00 +0000</pubDate>
       
       <guid>http://yarra-framework.org/server/notifications/</guid>
-      <description>&amp;nbsp;Notification EmailsThe YarraServer will send notification emails on completion or failure of tasks (prerequisites are that the sendmail package is installed and that notifications are enabled in the server configuration). Completion notifications will be sent to a) receivers listed in the Yarra client during submission and b) receivers listed in the reconstruction-mode file. Failure notifications will be, in addition, also sent to those receivers listed in the server configuration file under Options/ErrorMail.</description>
+      <description>&amp;nbsp;Notification Emails
+The YarraServer will send notification emails on completion or failure of tasks (prerequisites are that the sendmail package is installed and that notifications are enabled in the server configuration). Completion notifications will be sent to a) receivers listed in the Yarra client during submission and b) receivers listed in the reconstruction-mode file. Failure notifications will be, in addition, also sent to those receivers listed in the server configuration file under Options/ErrorMail.</description>
     </item>
     
     <item>
@@ -424,8 +513,10 @@ As a “legally safe” alternative, it is possible to use the YarraLink sequenc
       <pubDate>Fri, 15 Jun 2018 00:00:00 +0000</pubDate>
       
       <guid>http://yarra-framework.org/server/loadbalancing/</guid>
-      <description>&amp;nbsp;Routing and Load BalancingIf multiple Yarra servers have been installed in a network, it is possible to route certain reconstruction tasks to dedicated servers as well as to distribute the task load across multiple servers. &amp;nbsp;
-&amp;nbsp;Server List FileTo use multiple servers with the Yarra ORT client, it is necessary to create a server-list file named “YarraServerList.cfg” in the queue directory of the Yarra server that has been entered in the ORT configuration (preferably, the file should be placed in the queue directory of all Yarra servers and kept consistent).</description>
+      <description>&amp;nbsp;Routing and Load Balancing
+If multiple Yarra servers have been installed in a network, it is possible to route certain reconstruction tasks to dedicated servers as well as to distribute the task load across multiple servers. &amp;nbsp;
+&amp;nbsp;Server List File
+To use multiple servers with the Yarra ORT client, it is necessary to create a server-list file named “YarraServerList.cfg” in the queue directory of the Yarra server that has been entered in the ORT configuration (preferably, the file should be placed in the queue directory of all Yarra servers and kept consistent).</description>
     </item>
     
     <item>
@@ -671,7 +762,9 @@ For reference, the old website is still available under this link. Note, however
       <pubDate>Thu, 01 Oct 2015 00:00:00 +0000</pubDate>
       
       <guid>http://yarra-framework.org/disclaimer/</guid>
-      <description>DisclaimerThe Yarra framework is provided free of charge for use in research applications. It must not be used for diagnostic applications. The authors take no responsibility of any kind for the accuracy or integrity of the created data sets. No data created using the framework should be used to make diagnostic decisions.The Yarra framework provided through this website, including all of its software components, comes without any warranties.</description>
+      <description>Disclaimer
+The Yarra framework is provided free of charge for use in research applications. It must not be used for diagnostic applications. The authors take no responsibility of any kind for the accuracy or integrity of the created data sets. No data created using the framework should be used to make diagnostic decisions.
+The Yarra framework provided through this website, including all of its software components, comes without any warranties.</description>
     </item>
     
     <item>
@@ -680,7 +773,9 @@ For reference, the old website is still available under this link. Note, however
       <pubDate>Thu, 01 Oct 2015 00:00:00 +0000</pubDate>
       
       <guid>http://yarra-framework.org/license/</guid>
-      <description>License InformationThe Yarra framework is provided free of charge for use in research applications. It must not be used for diagnostic applications. The author takes no responsibility of any kind for the accuracy or integrity of the created data sets. No data created using the framework should be used to make diagnostic decisions.The Yarra framework, including all of its software components, comes without any warranties. Operation of the software is solely on the user’s own risk.</description>
+      <description>License Information
+The Yarra framework is provided free of charge for use in research applications. It must not be used for diagnostic applications. The author takes no responsibility of any kind for the accuracy or integrity of the created data sets. No data created using the framework should be used to make diagnostic decisions.
+The Yarra framework, including all of its software components, comes without any warranties. Operation of the software is solely on the user’s own risk.</description>
     </item>
     
     <item>
