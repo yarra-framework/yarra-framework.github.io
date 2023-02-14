@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Support on Yarra Framework</title>
+    <link>http://yarra-framework.org/tags/support/</link>
+    <description>Recent content in Support on Yarra Framework</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 14 Feb 2023 00:00:00 +0000</lastBuildDate><atom:link href="http://yarra-framework.org/tags/support/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>New Support Forum</title>
+      <link>http://yarra-framework.org/blog/new_forum/</link>
+      <pubDate>Tue, 14 Feb 2023 00:00:00 +0000</pubDate>
+      
+      <guid>http://yarra-framework.org/blog/new_forum/</guid>
+      <description>Due to recent changes to the Gitter messaging service, we have migrated the Yarra Support Forum to GitHub Discussions. You can access the new forum using this link. You just need a GitHub account to participate in the discussions. Questions in the former Gitter forum will not be answered anymore.</description>
+    </item>
+    
+  </channel>
+</rss>

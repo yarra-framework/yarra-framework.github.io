@@ -2,7 +2,7 @@
 <html class="no-js">
 <head>
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
-  <title>Subtraction  &middot; Yarra Framework</title>
+  <title>New Support Forum  &middot; Yarra Framework</title>
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="HandheldFriendly" content="True">
 <meta name="MobileOptimized" content="320">
@@ -11,38 +11,42 @@
 
 <meta name="description" content="" />
 
-<meta name="keywords" content="">
+<meta name="keywords" content="Support, ">
 
-<meta property="og:title" content="Subtraction  &middot; Yarra Framework ">
+<meta property="og:title" content="New Support Forum  &middot; Yarra Framework ">
 <meta property="og:site_name" content="Yarra Framework"/>
-<meta property="og:url" content="http://yarra-framework.org/modules_user/subtraction/" />
+<meta property="og:url" content="http://yarra-framework.org/blog/new_forum/" />
 <meta property="og:locale" content="en-us">
 
 
 <meta property="og:type" content="article" />
 <meta property="og:description" content=""/>
-<meta property="og:article:published_time" content="2018-06-15T00:00:00Z" />
-<meta property="og:article:modified_time" content="2018-06-15T00:00:00Z" />
+<meta property="og:article:published_time" content="2023-02-14T00:00:00Z" />
+<meta property="og:article:modified_time" content="2023-02-14T00:00:00Z" />
 
+  
+    
+<meta property="og:article:tag" content="Support">
+    
   
 
 <script type="application/ld+json">
   {
     "@context": "http://schema.org",
     "@type": "Article",
-    "headline": "Subtraction",
+    "headline": "New Support Forum",
     "author": {
       "@type": "Person",
       "name": "http://profiles.google.com/+?rel=author"
     },
-    "datePublished": "2018-06-15",
+    "datePublished": "2023-02-14",
     "description": "",
-    "wordCount":  205 
+    "wordCount":  50 
   }
 </script>
 
 
-<link rel="canonical" href="http://yarra-framework.org/modules_user/subtraction/" />
+<link rel="canonical" href="http://yarra-framework.org/blog/new_forum/" />
 
 <meta name="generator" content="Hugo 0.104.3" />
 
@@ -139,7 +143,7 @@
               
         
         <li class="nav-item">
-          <a class="nav-link menu-item " href="/blog/">
+          <a class="nav-link menu-item active" href="/blog/">
             
             <span class="text-capitalize no-decoration text-white">Blog</span>
           </a>
@@ -158,56 +162,147 @@
 
 
 <div class="container p-a-0">
-  <div class="row m-l-0 m-r-0 mb-2">
-    <div class="col">
-      <h1>Modules user&nbsp;-&nbsp;Subtraction</h1>
-    </div>
+  <div class="row m-l-0 m-r-0">
+    <div class="col-xs-12 col-md-9 post-container">
+      <div>
+  
+
+  <h1 class="post-title mb-3">New Support Forum
+</h1>
+
+  <div class="post-meta">
+  <div class="post-meta-item">
+    <i class="fa fa-calendar"></i>
+    <time datetime="2023-02-14">14 Feb, 2023</time>
+
+    
   </div>
-    <div class="row m-l-0 m-r-0">
-      <div class="col-xs-12 col-lg-3">
-      <div class="list-group mr-3 mb-4">
-        <a href="http://yarra-framework.org/modules_user/" class="list-group-item list-group-item-action">Overview</a>
-        
-        
-        
-        <a href="/modules_user/grasp-basic/" class="list-group-item list-group-item-action ">&ndash;&nbsp; Basic GRASP (Matlab)</a>
-        
-        <a href="/modules_user/grasp/" class="list-group-item list-group-item-action ">&ndash;&nbsp; Performance-optimized GRASP (C&#43;&#43;)</a>
-        
-        <a href="/modules_user/patchcharacterset/" class="list-group-item list-group-item-action ">&ndash;&nbsp; PatchCharacterSet</a>
-        
-        <a href="/modules_user/subtraction/" class="list-group-item list-group-item-action active">&ndash;&nbsp; Subtraction</a>
-        
-      </div>
-    </div>
-    <div class="col-xs-12 col-lg-9 post-container">
-      <div class="content pt-2">
-  <h4 id="purpose">Purpose</h4>
-<p>Calculates subtraction images from reconstructed image series.</p>
-<h4 id="usage">Usage</h4>
-<pre tabindex="0"><code>Subtraction [input folder] [output folder] [mode file]
-</code></pre><p>Typical call:</p>
-<pre tabindex="0"><code>[PostProcessing]
-Bin=%bu/Subtraction/Subtraction
-Args=%pid %pod %mc
-</code></pre><h4 id="configuration">Configuration</h4>
-<p>In .mode file:</p>
-<pre tabindex="0"><code>[Subtraction]
-BaselineSeries=2
-KeepSourceImages=true
-SubtractionMode=0
-IncludeSeries=3:end#4
-ExcludeSeries=
-</code></pre><h5 id="keep-source-images">Keep source images</h5>
-<p>If <em>KeepSourceImages=false</em>, then only the subtraction images will be sent. If <em>KeepSourceImages=true</em>, both the original images and subtraction images will be sent.</p>
-<h5 id="subtraction-mode">Subtraction mode</h5>
-<p>If <em>SubtractionMode=0</em>, then negative values will be discarded. If <em>SubtractionMode=1</em>, then the absolute value of the difference is calculated.</p>
-<h5 id="range-specification">Range specification</h5>
-<p>Using the parameter <em>IncludeSeries</em>, it is possible to specify for which time points subtractions should be calculated (by default, subtractions will be calculated for all images). It is possible to append multiple values using the comma separator (e.g., <em>4,7,9</em>), and it is possible to specify ranges (e.g <em>3:7</em>). The keyword <em>end</em> can be used to refer to the last time point, and it is possible to subtract integers (e.g. <em>end-1</em> refers to the second-last time point). When using the syntax <em>start:end#step</em>, it is possible to specify a step width if a subtraction image should not be calculated for every frame (e.g., <em>3:end#4</em>). Using the parameter <em>ExcludeSeries</em>, it is possible to exclude individual time points from the calculation. This setting will be evaluated after <em>IncludeSeries</em>.</p>
+
+  
+
+  
+      
+      
+        <div class="post-meta-item ml-2">
+          <i class="fa fa-tags"></i>
+          
+          <a href="/tags/support/">Support</a>
+          
+          
+        </div>
+      
+  
 
 </div>
 
+</div>
+
+      <div class="content pt-2">
+  <p>Due to recent changes to the Gitter messaging service, we have migrated the Yarra Support Forum to GitHub Discussions. You can access the new forum using this <a href="https://github.com/orgs/yarra-framework/discussions">link</a>. You just need a GitHub account to participate in the discussions. Questions in the former Gitter forum will not be answered anymore.</p>
+
+</div>
+
+      <div class="mt-5">
+  
+   
+  
+  <nav>
+    <ul class="pagination">
       
+      <li class="page-item">
+        <a href="http://yarra-framework.org/blog/running_on_xa/" title="Yarra on XA Scanners " class="page-link">
+          <span aria-hidden="true">&larr;</span>Previous
+        </a>
+      </li>
+       
+      
+    </ul>
+  </nav>
+   
+  
+</div>
+    </div>
+    <div class="col-xs-12 col-md-3">
+      <div class="sidebar">
+  
+<div class="card card-block">
+  <h3 class="card-title">What's New?</h3>
+  <div class="card-text">
+    <div class="widget">
+      <ul id="recent-post">
+        
+        <li>
+          <div class="item-inner mb-2">
+            <p class="item-title">
+                <a href="/blog/new_forum/" class="title"><i class="fas fa-angle-double-right">&nbsp;</i>New Support Forum</a>
+            </p>
+          </div>
+        </li>
+        
+        <li>
+          <div class="item-inner mb-2">
+            <p class="item-title">
+                <a href="/blog/running_on_xa/" class="title"><i class="fas fa-angle-double-right">&nbsp;</i>Yarra on XA Scanners</a>
+            </p>
+          </div>
+        </li>
+        
+        <li>
+          <div class="item-inner mb-2">
+            <p class="item-title">
+                <a href="/blog/yarradiagnostics/" class="title"><i class="fas fa-angle-double-right">&nbsp;</i>Introducing Yarra Diagnostics</a>
+            </p>
+          </div>
+        </li>
+        
+        <li>
+          <div class="item-inner mb-2">
+            <p class="item-title">
+                <a href="/blog/client_062/" class="title"><i class="fas fa-angle-double-right">&nbsp;</i>Client Package 0.62</a>
+            </p>
+          </div>
+        </li>
+        
+        <li>
+          <div class="item-inner mb-2">
+            <p class="item-title">
+                <a href="/blog/clienttools_v5/" class="title"><i class="fas fa-angle-double-right">&nbsp;</i>Client Tools 0.5</a>
+            </p>
+          </div>
+        </li>
+        
+      </ul>
+    </div>
+  </div>
+</div>
+
+
+  <div class="card card-block">
+    <h3 class="card-title">Need Help?</h3>
+    <div class="card-text">
+      <div class="widget">
+        <ul id="recent-post">
+          <li>
+            <div class="item-inner mb-2">
+              <p class="item-title">
+                  <a href="/overview/support/" class="title"><i class="fas fa-angle-double-right">&nbsp;</i>User Support</a>
+              </p>
+            </div>
+          </li>
+          <li>
+            <div class="item-inner mb-2">
+              <p class="item-title">
+                <a href="/download/resources/" class="title"><i class="fas fa-angle-double-right">&nbsp;</i>Tutorials</a>  
+              </p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>  
+</div>
+                
+
     </div>
   </div>
 </div>

@@ -8,15 +8,6 @@
     <language>en-us</language>
     <lastBuildDate>Wed, 30 May 2018 00:00:00 +0000</lastBuildDate><atom:link href="http://yarra-framework.org/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Running Yarra on XA Scanners</title>
-      <link>http://yarra-framework.org/blog/running_on_xa/</link>
-      <pubDate>Tue, 18 Oct 2022 00:00:00 +0000</pubDate>
-      
-      <guid>http://yarra-framework.org/blog/running_on_xa/</guid>
-      <description>Background The &amp;ldquo;Numaris X&amp;rdquo; or &amp;ldquo;XA&amp;rdquo; software, which is running on the newest MAGNETOM scanners (Vida, Sola) and on upgraded scanners (Prisma, Skyra, Aera, &amp;hellip;), introduced several security or &amp;ldquo;system hardening&amp;rdquo; mechanisms, including the Windows Kiosk mode and the requirement to enter the admin password whenever starting an application outside of SyngoMR. While it is generally good news that the security has been improved, these new protections make it difficult to use Yarra in routine practice because they require leaving the Kiosk mode after each system reboot and require entering the admin password repeatedly when launching the Yarra RDS or ORT client.</description>
-    </item>
-    
-    <item>
       <title>Basic GRASP (Matlab)</title>
       <link>http://yarra-framework.org/modules_user/grasp-basic/</link>
       <pubDate>Mon, 15 Jul 2019 00:00:00 +0000</pubDate>
@@ -208,7 +199,7 @@ Subtraction mode If SubtractionMode=0, then negative values will be discarded. I
       <pubDate>Fri, 15 Jun 2018 00:00:00 +0000</pubDate>
       
       <guid>http://yarra-framework.org/overview/support/</guid>
-      <description>&amp;nbsp;User SupportWe are trying our best to support users of the Yarra Framework, but unfortunately our time is limited since we are a very small group. Please use our Gitter channel to send us your questions and requests. This is the most effective way for getting in touch with us and ensures that everyone from the Yarra team can answer your post. We also would like to encourage other members from the community to support users with questions on Yarra through the channel.</description>
+      <description>&amp;nbsp;User SupportWe are trying our best to support users of the Yarra Framework, but unfortunately our time is limited since we are a very small group. Please use our GitHub Discussions forum to send us your questions and requests. This is the most effective way for getting in touch with us and ensures that everyone from the Yarra team can answer your post. We also would like to encourage other members from the community to support users with questions on Yarra through the discussion forum.</description>
     </item>
     
     <item>
@@ -413,7 +404,8 @@ A new .mode file needs to be created in the yarra/modes directory and named acco
       <pubDate>Fri, 15 Jun 2018 00:00:00 +0000</pubDate>
       
       <guid>http://yarra-framework.org/addons/yarralink/</guid>
-      <description>&amp;nbsp;IntroductionInstalling or copying executables on the host computer of Siemens MR systems is officially not permitted by Siemens Healthcare. Therefore, installing the Yarra Client Package on the host computer of a Siemens MR system is at the user’s own risk.
+      <description>&amp;nbsp;IntroductionXA Software Please take a look at this blog post about an updated approach for the YarraLink sequence, intended for newer XA software versions.
+Installing or copying executables on the host computer of Siemens MR systems is officially not permitted by Siemens Healthcare. Therefore, installing the Yarra Client Package on the host computer of a Siemens MR system is at the user’s own risk.
 As a “legally safe” alternative, it is possible to use the YarraLink sequence, which is a pseudo-sequence written in the Siemens IDEA framework that, instead of performing an MRI scan, opens the Yarra ORT client.</description>
     </item>
     
@@ -434,6 +426,24 @@ As a “legally safe” alternative, it is possible to use the YarraLink sequenc
       <guid>http://yarra-framework.org/server/loadbalancing/</guid>
       <description>&amp;nbsp;Routing and Load BalancingIf multiple Yarra servers have been installed in a network, it is possible to route certain reconstruction tasks to dedicated servers as well as to distribute the task load across multiple servers. &amp;nbsp;
 &amp;nbsp;Server List FileTo use multiple servers with the Yarra ORT client, it is necessary to create a server-list file named “YarraServerList.cfg” in the queue directory of the Yarra server that has been entered in the ORT configuration (preferably, the file should be placed in the queue directory of all Yarra servers and kept consistent).</description>
+    </item>
+    
+    <item>
+      <title>New Support Forum</title>
+      <link>http://yarra-framework.org/blog/new_forum/</link>
+      <pubDate>Tue, 14 Feb 2023 00:00:00 +0000</pubDate>
+      
+      <guid>http://yarra-framework.org/blog/new_forum/</guid>
+      <description>Due to recent changes to the Gitter messaging service, we have migrated the Yarra Support Forum to GitHub Discussions. You can access the new forum using this link. You just need a GitHub account to participate in the discussions. Questions in the former Gitter forum will not be answered anymore.</description>
+    </item>
+    
+    <item>
+      <title>Yarra on XA Scanners</title>
+      <link>http://yarra-framework.org/blog/running_on_xa/</link>
+      <pubDate>Wed, 19 Oct 2022 00:00:00 +0000</pubDate>
+      
+      <guid>http://yarra-framework.org/blog/running_on_xa/</guid>
+      <description>Background The &amp;ldquo;Numaris X&amp;rdquo; or &amp;ldquo;XA&amp;rdquo; software, which is running on the newest MAGNETOM scanners (Vida, Sola) and on upgraded scanners (Prisma, Skyra, Aera, &amp;hellip;), introduced several security or &amp;ldquo;system hardening&amp;rdquo; mechanisms, including the Windows Kiosk mode and the requirement to enter the admin password whenever starting an application outside of SyngoMR. While it is generally good news that the security has been improved, these new protections make it difficult to use Yarra routinely because they require leaving the Kiosk mode after each system reboot and require entering the admin password repeatedly when launching the Yarra RDS or ORT client.</description>
     </item>
     
     <item>

@@ -2,7 +2,7 @@
 <html class="no-js">
 <head>
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
-  <title>Running Yarra on XA Scanners  &middot; Yarra Framework</title>
+  <title>Yarra on XA Scanners  &middot; Yarra Framework</title>
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="HandheldFriendly" content="True">
 <meta name="MobileOptimized" content="320">
@@ -13,7 +13,7 @@
 
 <meta name="keywords" content="Client, XA, ">
 
-<meta property="og:title" content="Running Yarra on XA Scanners  &middot; Yarra Framework ">
+<meta property="og:title" content="Yarra on XA Scanners  &middot; Yarra Framework ">
 <meta property="og:site_name" content="Yarra Framework"/>
 <meta property="og:url" content="http://yarra-framework.org/blog/running_on_xa/" />
 <meta property="og:locale" content="en-us">
@@ -21,8 +21,8 @@
 
 <meta property="og:type" content="article" />
 <meta property="og:description" content=""/>
-<meta property="og:article:published_time" content="2022-10-18T00:00:00Z" />
-<meta property="og:article:modified_time" content="2022-10-18T00:00:00Z" />
+<meta property="og:article:published_time" content="2022-10-19T00:00:00Z" />
+<meta property="og:article:modified_time" content="2022-10-19T00:00:00Z" />
 
   
     
@@ -36,14 +36,14 @@
   {
     "@context": "http://schema.org",
     "@type": "Article",
-    "headline": "Running Yarra on XA Scanners",
+    "headline": "Yarra on XA Scanners",
     "author": {
       "@type": "Person",
       "name": "http://profiles.google.com/+?rel=author"
     },
-    "datePublished": "2022-10-18",
+    "datePublished": "2022-10-19",
     "description": "",
-    "wordCount":  884 
+    "wordCount":  912 
   }
 </script>
 
@@ -169,13 +169,13 @@
       <div>
   
 
-  <h1 class="post-title mb-3">Running Yarra on XA Scanners
+  <h1 class="post-title mb-3">Yarra on XA Scanners
 </h1>
 
   <div class="post-meta">
   <div class="post-meta-item">
     <i class="fa fa-calendar"></i>
-    <time datetime="2022-10-18">18 Oct, 2022</time>
+    <time datetime="2022-10-19">19 Oct, 2022</time>
 
     
   </div>
@@ -204,12 +204,12 @@
 
       <div class="content pt-2">
   <h3 id="background">Background</h3>
-<p>The &ldquo;Numaris X&rdquo; or &ldquo;XA&rdquo; software, which is running on the newest MAGNETOM scanners (Vida, Sola) and on upgraded scanners (Prisma, Skyra, Aera, &hellip;), introduced several security or &ldquo;system hardening&rdquo; mechanisms, including the Windows Kiosk mode and the requirement to enter the admin password whenever starting an application outside of SyngoMR. While it is generally good news that the security has been improved, these new protections make it difficult to use Yarra in routine practice because they require leaving the Kiosk mode after each system reboot and require entering the admin password repeatedly when launching the Yarra RDS or ORT client.</p>
+<p>The &ldquo;Numaris X&rdquo; or &ldquo;XA&rdquo; software, which is running on the newest MAGNETOM scanners (Vida, Sola) and on upgraded scanners (Prisma, Skyra, Aera, &hellip;), introduced several security or &ldquo;system hardening&rdquo; mechanisms, including the Windows Kiosk mode and the requirement to enter the admin password whenever starting an application outside of SyngoMR. While it is generally good news that the security has been improved, these new protections make it difficult to use Yarra routinely because they require leaving the Kiosk mode after each system reboot and require entering the admin password repeatedly when launching the Yarra RDS or ORT client.</p>
 <p>Here, we describe an alternative way of starting the Yarra RDS client through a custom-developed &ldquo;dummy&rdquo; sequence, which we refer to as YarraLink sequence. In this way, the RDS client can be launched in Kiosk mode without entering any password. Once the RDS client is running, as indicated by the Yarra icon shown in the status bar on XA systems, the context menu that opens when right-clicking on the Yarra icon can be used for starting the ORT client &ndash; again without having to enter the admin password over and over again.</p>
 
 <div class="bs-callout bs-callout-primary"  >
     
-<p>For legal reasons, it is no possible to share the source code of the YarraLink sequence publicly. Therefore, this article instead provides instructions how the sequence can be derived from the well-known MiniFLASH sequence, which comes with the IDEA development kit.</p>
+<p>For legal reasons, we cannot share the source code of the YarraLink sequence publicly. Therefore, this article instead provides instructions how the sequence can be derived from the well-known MiniFLASH sequence, which comes with the IDEA development kit.</p>
 </div>
 
 
@@ -218,7 +218,15 @@
 <p>The YarraLink sequence needs to be built using the Siemens IDEA software development kit. Make sure to install the IDEA DVD for the exact software baseline that is also running on the scanner. Unfortunately, this means: If you have multiple scanners with different software versions, different versions of the YarraLink sequence need to be compiled. Moreover, all of the scanners need an IDEA license (this can be checked in the system-information dialog).</p>
 <p>The easiest and fastest way to generate the YarraLink sequence is to use the MiniFLASH sequence as template. To this end, open the IDEA shell, navigate to the sequence folder (e.g., using the cs command), make a copy of the MiniFLASH folder (which exists in every IDEA version), and edit the copied sequence code.</p>
 <p>In the file a_MiniFLASH.cpp, insert the following function right before the constructor of the sequence class MiniFlash::MiniFlash():</p>
-<pre tabindex="0"><code>void launchClient()
+<pre tabindex="0"><code>#ifdef WIN32  
+    #include &lt;vector&gt;
+    #include &lt;windows.h&gt;
+    #include &lt;stdio.h&gt;
+    #include &lt;tchar.h&gt;	
+    #include &lt;iostream&gt;
+#endif
+
+void launchClient()
 {
 #ifdef WIN32  
     printf(&#34;Launching the Yarra RDS Client...\n&#34;);
@@ -267,12 +275,12 @@
 </code></pre><p>Finally, in the header file a_MiniFLASH.h, add the following variable to the &ldquo;protected:&rdquo; section of the MiniFlash class definition:</p>
 <pre tabindex="0"><code>    bool clientLaunched;
 </code></pre><p>That&rsquo;s it! This sequence will now launch the Yarra RDS client on the host computer whenever the sequence is opened in the scanner UI or when a scan is started. The Yarra RDS client itself will only start once, so that it won&rsquo;t be an issue if the sequence is opened or started multiple times.</p>
-<p>To avoid that the dummy sequence creates any images, which could be confusing for clinical staff, set the sequence to use the the EmptyIceProgram by adding the following line to the prepare function of the sequence MiniFlash::prepare(&hellip;) (and create a corresponding .ipr file, named EmptyIceProgram.ipr, with an empty IceConfigurator section):</p>
+<p>To avoid that the dummy sequence creates any images, which could be confusing for clinical staff, configure the sequence to use the EmptyIceProgram by adding the following line to the prepare function of the sequence MiniFlash::prepare(&hellip;) (and create a corresponding .ipr file, named EmptyIceProgram.ipr, with an empty IceConfigurator section):</p>
 <pre tabindex="0"><code>    rSeqExpo.setICEProgramFilename(&#34;%CustomerIceProgs%\\EmptyIceProgram&#34;);          
 </code></pre><div style="margin-bottom: 30px; font-size: 0px;">&nbsp;</div>
 <h3 id="scanner-installation--protocol-setup">Scanner Installation &amp; Protocol Setup</h3>
 <p>Install the Yarra Client into the folder C:\yarra (because the path is hard-coded in the function above). Moreover, install the code certificates for both the dummy sequence (generated by IDEA) and for the Yarra Client (provided by us on request). Copy the sequence files into the regular MRICustomer folder and insert the default protocol into the Dot Cockpit, as described in the IDEA user manual.</p>
-<p>To minimize the time spent on running the dummy sequence, configure a scan protocol with a small base resolution (e.g., 64 pixels), set the flip angle to 0 deg, and configure other parameters to reduce the scan duration (e.g., use of partial Fourier, reduced phase resolution, &hellip;) The total scan duration should be less than 1 second.</p>
+<p>To minimize the time spent on running the dummy sequence, configure a scan protocol with a small base resolution (e.g., 64 pixels), set the flip angle to 0 deg, and configure other parameters to reduce the scan duration (e.g., use of partial Fourier, reduced phase resolution, &hellip;) The total scan duration should be less than 1 second (note that it&rsquo;s not even necessary to actually run the sequence, the client will already start when opening the sequence card).</p>
 <p>It can be helpful to add the dummy sequence to various routine imaging protocols that are used frequently in your clinical practice. This will ensure that the Yarra RDS client gets started automatically within short time after each reboot. Moreover, it might make sense to add a protocol for the dummy sequence to an easily visible location in the sequence tree of the Dot Cockpit, which technicians can use to manually launch the RDS client.</p>
 <div style="margin-bottom: 30px; font-size: 0px;">&nbsp;</div>
 
@@ -292,6 +300,13 @@
       </li>
        
       
+      <li class="page-item">
+        <a href="http://yarra-framework.org/blog/new_forum/" title="New Support Forum" class="page-link">
+          Next
+          <span aria-hidden="true">&rarr;</span>
+        </a>
+      </li>
+      
     </ul>
   </nav>
    
@@ -310,7 +325,15 @@
         <li>
           <div class="item-inner mb-2">
             <p class="item-title">
-                <a href="/blog/running_on_xa/" class="title"><i class="fas fa-angle-double-right">&nbsp;</i>Running Yarra on XA Scanners</a>
+                <a href="/blog/new_forum/" class="title"><i class="fas fa-angle-double-right">&nbsp;</i>New Support Forum</a>
+            </p>
+          </div>
+        </li>
+        
+        <li>
+          <div class="item-inner mb-2">
+            <p class="item-title">
+                <a href="/blog/running_on_xa/" class="title"><i class="fas fa-angle-double-right">&nbsp;</i>Yarra on XA Scanners</a>
             </p>
           </div>
         </li>
@@ -335,14 +358,6 @@
           <div class="item-inner mb-2">
             <p class="item-title">
                 <a href="/blog/clienttools_v5/" class="title"><i class="fas fa-angle-double-right">&nbsp;</i>Client Tools 0.5</a>
-            </p>
-          </div>
-        </li>
-        
-        <li>
-          <div class="item-inner mb-2">
-            <p class="item-title">
-                <a href="/blog/mercure/" class="title"><i class="fas fa-angle-double-right">&nbsp;</i>mercure DICOM Orchestrator</a>
             </p>
           </div>
         </li>
@@ -382,7 +397,8 @@
     </div>
   </div>
 </div>
-      <footer style="margin-top: 100px;">
+      <a href="https://github.com/orgs/yarra-framework/discussions" target="_none" class="chat-button">Open Chat</a>
+<footer style="margin-top: 100px;">
     <div class="container">
         <div class="row">
             <div class="col-md-8">
@@ -428,12 +444,6 @@ hljs.initHighlightingOnLoad();
 
 <script src="/assets/js/script.js"></script>
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-<script>
-  ((window.gitter = {}).chat = {}).options = {
-    room: 'yarra-dev/Support'
-  };
-</script>
-<script src="https://sidecar.gitter.im/dist/sidecar.v1.js" async defer></script>
 
 
   </body>

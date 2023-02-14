@@ -2,7 +2,7 @@
 <html class="no-js">
 <head>
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
-  <title>Subtraction  &middot; Yarra Framework</title>
+  <title>Support  &middot; Yarra Framework</title>
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="HandheldFriendly" content="True">
 <meta name="MobileOptimized" content="320">
@@ -13,36 +13,16 @@
 
 <meta name="keywords" content="">
 
-<meta property="og:title" content="Subtraction  &middot; Yarra Framework ">
+<meta property="og:title" content="Support  &middot; Yarra Framework ">
 <meta property="og:site_name" content="Yarra Framework"/>
-<meta property="og:url" content="http://yarra-framework.org/modules_user/subtraction/" />
+<meta property="og:url" content="http://yarra-framework.org/tags/support/" />
 <meta property="og:locale" content="en-us">
 
 
-<meta property="og:type" content="article" />
-<meta property="og:description" content=""/>
-<meta property="og:article:published_time" content="2018-06-15T00:00:00Z" />
-<meta property="og:article:modified_time" content="2018-06-15T00:00:00Z" />
-
-  
-
-<script type="application/ld+json">
-  {
-    "@context": "http://schema.org",
-    "@type": "Article",
-    "headline": "Subtraction",
-    "author": {
-      "@type": "Person",
-      "name": "http://profiles.google.com/+?rel=author"
-    },
-    "datePublished": "2018-06-15",
-    "description": "",
-    "wordCount":  205 
-  }
-</script>
+<meta property="og:type" content="website" />
 
 
-<link rel="canonical" href="http://yarra-framework.org/modules_user/subtraction/" />
+<link rel="canonical" href="http://yarra-framework.org/tags/support/" />
 
 <meta name="generator" content="Hugo 0.104.3" />
 
@@ -157,59 +137,23 @@
 </nav>
 
 
-<div class="container p-a-0">
-  <div class="row m-l-0 m-r-0 mb-2">
-    <div class="col">
-      <h1>Modules user&nbsp;-&nbsp;Subtraction</h1>
-    </div>
-  </div>
-    <div class="row m-l-0 m-r-0">
-      <div class="col-xs-12 col-lg-3">
-      <div class="list-group mr-3 mb-4">
-        <a href="http://yarra-framework.org/modules_user/" class="list-group-item list-group-item-action">Overview</a>
-        
-        
-        
-        <a href="/modules_user/grasp-basic/" class="list-group-item list-group-item-action ">&ndash;&nbsp; Basic GRASP (Matlab)</a>
-        
-        <a href="/modules_user/grasp/" class="list-group-item list-group-item-action ">&ndash;&nbsp; Performance-optimized GRASP (C&#43;&#43;)</a>
-        
-        <a href="/modules_user/patchcharacterset/" class="list-group-item list-group-item-action ">&ndash;&nbsp; PatchCharacterSet</a>
-        
-        <a href="/modules_user/subtraction/" class="list-group-item list-group-item-action active">&ndash;&nbsp; Subtraction</a>
-        
-      </div>
-    </div>
-    <div class="col-xs-12 col-lg-9 post-container">
-      <div class="content pt-2">
-  <h4 id="purpose">Purpose</h4>
-<p>Calculates subtraction images from reconstructed image series.</p>
-<h4 id="usage">Usage</h4>
-<pre tabindex="0"><code>Subtraction [input folder] [output folder] [mode file]
-</code></pre><p>Typical call:</p>
-<pre tabindex="0"><code>[PostProcessing]
-Bin=%bu/Subtraction/Subtraction
-Args=%pid %pod %mc
-</code></pre><h4 id="configuration">Configuration</h4>
-<p>In .mode file:</p>
-<pre tabindex="0"><code>[Subtraction]
-BaselineSeries=2
-KeepSourceImages=true
-SubtractionMode=0
-IncludeSeries=3:end#4
-ExcludeSeries=
-</code></pre><h5 id="keep-source-images">Keep source images</h5>
-<p>If <em>KeepSourceImages=false</em>, then only the subtraction images will be sent. If <em>KeepSourceImages=true</em>, both the original images and subtraction images will be sent.</p>
-<h5 id="subtraction-mode">Subtraction mode</h5>
-<p>If <em>SubtractionMode=0</em>, then negative values will be discarded. If <em>SubtractionMode=1</em>, then the absolute value of the difference is calculated.</p>
-<h5 id="range-specification">Range specification</h5>
-<p>Using the parameter <em>IncludeSeries</em>, it is possible to specify for which time points subtractions should be calculated (by default, subtractions will be calculated for all images). It is possible to append multiple values using the comma separator (e.g., <em>4,7,9</em>), and it is possible to specify ranges (e.g <em>3:7</em>). The keyword <em>end</em> can be used to refer to the last time point, and it is possible to subtract integers (e.g. <em>end-1</em> refers to the second-last time point). When using the syntax <em>start:end#step</em>, it is possible to specify a step width if a subtraction image should not be calculated for every frame (e.g., <em>3:end#4</em>). Using the parameter <em>ExcludeSeries</em>, it is possible to exclude individual time points from the calculation. This setting will be evaluated after <em>IncludeSeries</em>.</p>
+<div class="container post-container">
+  <header>
+    <h1 class="post-title mb-3">Support
+</h1>
 
-</div>
+  </header>
+  <ul class="container">
+    
+      <li><a href="http://yarra-framework.org/blog/new_forum/">
+  New Support Forum
 
-      
-    </div>
-  </div>
+</a>
+</li>
+    
+  </ul>
+  
+
 </div>
       <a href="https://github.com/orgs/yarra-framework/discussions" target="_none" class="chat-button">Open Chat</a>
 <footer style="margin-top: 100px;">
