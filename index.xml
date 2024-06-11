@@ -166,7 +166,7 @@ Usage PatchPatientName [input folder] [output folder] [TWIX file] Typical call:
       <pubDate>Fri, 15 Jun 2018 00:00:00 +0000</pubDate>
       
       <guid>http://yarra-framework.org/download/archive/</guid>
-      <description>&amp;nbsp;Release History&amp;nbsp; Yarra Client Package &amp;nbsp; &amp;nbsp;&amp;nbsp;Version 0.62 &amp;ndash; Release Date: 2022-10-17Introduced Yarra Diagnostics toolAdded support for XA40 and XA50Updated UI designRDS: Option for alternative local buffer location&amp;nbsp;Download Version&amp;nbsp;&amp;nbsp;Version 0.60 &amp;ndash; Release Date: 2022-01-25ORT: Increased possible length of ACCRDS: Excluding invalid characters from sequence names&amp;nbsp;Download Version&amp;nbsp;&amp;nbsp;Version 0.59 &amp;ndash; Release Date: 2021-12-17Support for XA30A and XA31AIntroduced disconnect command for RDSAdded RDS option for remote LPFI file&amp;nbsp;Download Version&amp;nbsp;&amp;nbsp;Version 0.</description>
+      <description>&amp;nbsp;Release History&amp;nbsp; Yarra Client Package &amp;nbsp; &amp;nbsp;&amp;nbsp;Version 0.65b1 &amp;ndash; Release Date: 2024-06-11Added support for XA51, XA60, and XA61ORT: Added mechanism for tracking which cases have been submittedRDS: Added mechanism for showing notifications on scanner host&amp;nbsp;Download Version&amp;nbsp;&amp;nbsp;Version 0.62 &amp;ndash; Release Date: 2022-10-17Introduced Yarra Diagnostics toolAdded support for XA40 and XA50Updated UI designRDS: Option for alternative local buffer location&amp;nbsp;Download Version&amp;nbsp;&amp;nbsp;Version 0.</description>
     </item>
     
     <item>
@@ -426,6 +426,16 @@ As a “legally safe” alternative, it is possible to use the YarraLink sequenc
       <guid>http://yarra-framework.org/server/loadbalancing/</guid>
       <description>&amp;nbsp;Routing and Load BalancingIf multiple Yarra servers have been installed in a network, it is possible to route certain reconstruction tasks to dedicated servers as well as to distribute the task load across multiple servers. &amp;nbsp;
 &amp;nbsp;Server List FileTo use multiple servers with the Yarra ORT client, it is necessary to create a server-list file named “YarraServerList.cfg” in the queue directory of the Yarra server that has been entered in the ORT configuration (preferably, the file should be placed in the queue directory of all Yarra servers and kept consistent).</description>
+    </item>
+    
+    <item>
+      <title>Client Package 0.65</title>
+      <link>http://yarra-framework.org/blog/client_065/</link>
+      <pubDate>Tue, 11 Jun 2024 00:00:00 +0000</pubDate>
+      
+      <guid>http://yarra-framework.org/blog/client_065/</guid>
+      <description>A new version of the Yarra Client package has been released (version 0.65b1), which adds support for the scanner software versions XA51, XA60, and XA61. Moreover, the ORT client now keeps track of which cases have been sent to the Yarra server. This information is shown as additional column in the UI.
+The version is now available in the Download section.</description>
     </item>
     
     <item>

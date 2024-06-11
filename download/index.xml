@@ -13,7 +13,7 @@
       <pubDate>Fri, 15 Jun 2018 00:00:00 +0000</pubDate>
       
       <guid>http://yarra-framework.org/download/archive/</guid>
-      <description>&amp;nbsp;Release History&amp;nbsp; Yarra Client Package &amp;nbsp; &amp;nbsp;&amp;nbsp;Version 0.62 &amp;ndash; Release Date: 2022-10-17Introduced Yarra Diagnostics toolAdded support for XA40 and XA50Updated UI designRDS: Option for alternative local buffer location&amp;nbsp;Download Version&amp;nbsp;&amp;nbsp;Version 0.60 &amp;ndash; Release Date: 2022-01-25ORT: Increased possible length of ACCRDS: Excluding invalid characters from sequence names&amp;nbsp;Download Version&amp;nbsp;&amp;nbsp;Version 0.59 &amp;ndash; Release Date: 2021-12-17Support for XA30A and XA31AIntroduced disconnect command for RDSAdded RDS option for remote LPFI file&amp;nbsp;Download Version&amp;nbsp;&amp;nbsp;Version 0.</description>
+      <description>&amp;nbsp;Release History&amp;nbsp; Yarra Client Package &amp;nbsp; &amp;nbsp;&amp;nbsp;Version 0.65b1 &amp;ndash; Release Date: 2024-06-11Added support for XA51, XA60, and XA61ORT: Added mechanism for tracking which cases have been submittedRDS: Added mechanism for showing notifications on scanner host&amp;nbsp;Download Version&amp;nbsp;&amp;nbsp;Version 0.62 &amp;ndash; Release Date: 2022-10-17Introduced Yarra Diagnostics toolAdded support for XA40 and XA50Updated UI designRDS: Option for alternative local buffer location&amp;nbsp;Download Version&amp;nbsp;&amp;nbsp;Version 0.</description>
     </item>
     
     <item>
