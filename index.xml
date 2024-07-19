@@ -347,9 +347,9 @@ To send a task, click on the “Select…” button and choose the .dat (TWIX) f
       <pubDate>Fri, 15 Jun 2018 00:00:00 +0000</pubDate>
       
       <guid>http://yarra-framework.org/download/sourcecode/</guid>
-      <description>&amp;nbsp;Open Source AccessThe Yarra Framework is an open-source project. The code for all components of Yarra is publicly hosted on bitbucket.org. Click the buttons below to get to the repositories of the individual components. The source code is provided under the GNU General Public License (GPL).
+      <description>&amp;nbsp;Open Source AccessThe Yarra Framework is an open-source project. The code for all components of Yarra is publicly hosted on GitHub. Click the buttons below to get to the repositories of the individual components. The source code is provided under the GNU General Public License (GPL).
 If you want to build Yarra binaries yourself, you can find setup instructions for the build environmnet here.
-&amp;nbsp; &amp;nbsp;Yarra Client Page on Bitbucket&amp;nbsp;Yarra Server Page on Bitbucket&amp;nbsp;Yarra WebGUI Page on Bitbucket&amp;nbsp;Yarra LogServer Page on Bitbucket&amp;nbsp;Yarra Archive Search Page on Bitbucket&amp;nbsp;Yarra FileMover Page on Bitbucket&amp;nbsp;Yarra Link Page on Bitbucket</description>
+&amp;nbsp; &amp;nbsp;Yarra Client Page on GitHub&amp;nbsp;Yarra Server Page on GitHub&amp;nbsp;Yarra WebGUI Page on GitHub&amp;nbsp;Yarra LogServer Page on GitHub&amp;nbsp;Yarra Archive Search Page on GitHub&amp;nbsp;Yarra FileMover Page on GitHub&amp;nbsp;Yarra Link Page on GitHub</description>
     </item>
     
     <item>
@@ -426,6 +426,16 @@ As a “legally safe” alternative, it is possible to use the YarraLink sequenc
       <guid>http://yarra-framework.org/server/loadbalancing/</guid>
       <description>&amp;nbsp;Routing and Load BalancingIf multiple Yarra servers have been installed in a network, it is possible to route certain reconstruction tasks to dedicated servers as well as to distribute the task load across multiple servers. &amp;nbsp;
 &amp;nbsp;Server List FileTo use multiple servers with the Yarra ORT client, it is necessary to create a server-list file named “YarraServerList.cfg” in the queue directory of the Yarra server that has been entered in the ORT configuration (preferably, the file should be placed in the queue directory of all Yarra servers and kept consistent).</description>
+    </item>
+    
+    <item>
+      <title>Migration to GitHub</title>
+      <link>http://yarra-framework.org/blog/github_migration/</link>
+      <pubDate>Fri, 19 Jul 2024 00:00:00 +0000</pubDate>
+      
+      <guid>http://yarra-framework.org/blog/github_migration/</guid>
+      <description>This week, we migrated Git all source code from Bitbucket to GitHub. The Yarra source code can now be found under the Yarra Organization page https://github.com/yarra-framework. The repositories on Bitbucket will continue to exist as backup, but will not be updated anymore. If you are actively working with the Yarra source code, make sure to change the remote location of the repository to GitHub.
+This can be done with the following commands:</description>
     </item>
     
     <item>

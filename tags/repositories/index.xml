@@ -6,7 +6,17 @@
     <description>Recent content in Repositories on Yarra Framework</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 12 Feb 2020 00:00:00 +0000</lastBuildDate><atom:link href="http://yarra-framework.org/tags/repositories/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 19 Jul 2024 00:00:00 +0000</lastBuildDate><atom:link href="http://yarra-framework.org/tags/repositories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Migration to GitHub</title>
+      <link>http://yarra-framework.org/blog/github_migration/</link>
+      <pubDate>Fri, 19 Jul 2024 00:00:00 +0000</pubDate>
+      
+      <guid>http://yarra-framework.org/blog/github_migration/</guid>
+      <description>This week, we migrated Git all source code from Bitbucket to GitHub. The Yarra source code can now be found under the Yarra Organization page https://github.com/yarra-framework. The repositories on Bitbucket will continue to exist as backup, but will not be updated anymore. If you are actively working with the Yarra source code, make sure to change the remote location of the repository to GitHub.
+This can be done with the following commands:</description>
+    </item>
+    
     <item>
       <title>Migration to Git</title>
       <link>http://yarra-framework.org/blog/gitmigration/</link>

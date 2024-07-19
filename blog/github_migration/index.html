@@ -2,7 +2,7 @@
 <html class="no-js">
 <head>
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
-  <title>Hermes DICOM Router  &middot; Yarra Framework</title>
+  <title>Migration to GitHub  &middot; Yarra Framework</title>
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="HandheldFriendly" content="True">
 <meta name="MobileOptimized" content="320">
@@ -11,28 +11,24 @@
 
 <meta name="description" content="" />
 
-<meta name="keywords" content="DICOM, Tools, Addons, Routing, ">
+<meta name="keywords" content="Source code, Repositories, ">
 
-<meta property="og:title" content="Hermes DICOM Router  &middot; Yarra Framework ">
+<meta property="og:title" content="Migration to GitHub  &middot; Yarra Framework ">
 <meta property="og:site_name" content="Yarra Framework"/>
-<meta property="og:url" content="http://yarra-framework.org/blog/hermes/" />
+<meta property="og:url" content="http://yarra-framework.org/blog/github_migration/" />
 <meta property="og:locale" content="en-us">
 
 
 <meta property="og:type" content="article" />
 <meta property="og:description" content=""/>
-<meta property="og:article:published_time" content="2019-09-02T00:00:00Z" />
-<meta property="og:article:modified_time" content="2019-09-02T00:00:00Z" />
+<meta property="og:article:published_time" content="2024-07-19T00:00:00Z" />
+<meta property="og:article:modified_time" content="2024-07-19T00:00:00Z" />
 
   
     
-<meta property="og:article:tag" content="DICOM">
+<meta property="og:article:tag" content="Source code">
     
-<meta property="og:article:tag" content="Tools">
-    
-<meta property="og:article:tag" content="Addons">
-    
-<meta property="og:article:tag" content="Routing">
+<meta property="og:article:tag" content="Repositories">
     
   
 
@@ -40,19 +36,19 @@
   {
     "@context": "http://schema.org",
     "@type": "Article",
-    "headline": "Hermes DICOM Router",
+    "headline": "Migration to GitHub",
     "author": {
       "@type": "Person",
       "name": "http://profiles.google.com/+?rel=author"
     },
-    "datePublished": "2019-09-02",
+    "datePublished": "2024-07-19",
     "description": "",
-    "wordCount":  34 
+    "wordCount":  114 
   }
 </script>
 
 
-<link rel="canonical" href="http://yarra-framework.org/blog/hermes/" />
+<link rel="canonical" href="http://yarra-framework.org/blog/github_migration/" />
 
 <meta name="generator" content="Hugo 0.104.3" />
 
@@ -173,13 +169,13 @@
       <div>
   
 
-  <h1 class="post-title mb-3">Hermes DICOM Router
+  <h1 class="post-title mb-3">Migration to GitHub
 </h1>
 
   <div class="post-meta">
   <div class="post-meta-item">
     <i class="fa fa-calendar"></i>
-    <time datetime="2019-09-02">2 Sep, 2019</time>
+    <time datetime="2024-07-19">19 Jul, 2024</time>
 
     
   </div>
@@ -192,16 +188,10 @@
         <div class="post-meta-item ml-2">
           <i class="fa fa-tags"></i>
           
-          <a href="/tags/dicom/">DICOM</a>
+          <a href="/tags/source-code/">Source code</a>
           &middot;
           
-          <a href="/tags/tools/">Tools</a>
-          &middot;
-          
-          <a href="/tags/addons/">Addons</a>
-          &middot;
-          
-          <a href="/tags/routing/">Routing</a>
+          <a href="/tags/repositories/">Repositories</a>
           
           
         </div>
@@ -213,11 +203,17 @@
 </div>
 
       <div class="content pt-2">
-  <img style="margin-left: auto; margin-right: auto; display: block;  margin-top: 30px; margin-bottom: 30px; " width="500px" class="img-fluid" src="/hermes.png" />
+  <p>This week, we migrated Git all source code from Bitbucket to GitHub. The Yarra source code can now be found under the Yarra Organization page <a href="https://github.com/yarra-framework">https://github.com/yarra-framework</a>. The repositories on Bitbucket will continue to exist as backup, but will not be updated anymore. If you are actively working with the Yarra source code, make sure to change the remote location of the repository to GitHub.</p>
+<p>This can be done with the following commands:</p>
+<pre tabindex="0"><code># Check existing remotes location (should show Bitbucket)
+git remote -v
 
-<p>Looking for a flexible and powerful DICOM Router to integrate your image-analysis prototypes or AI solutions into your clinical workflow? Check out Yarra&rsquo;s sister open-source project &ldquo;Hermes Router&rdquo;, which is now publicly available:</p>
-<p><a href="http://hermes-router.github.io">http://hermes-router.github.io</a></p>
+# Change location to GitHub (replace REPO with the actual repository name)
+git remote set-url origin https://github.com/yarra-framework/REPO.git
 
+# Validate that the change was successful (should now show GitHub)
+git remote -v
+</code></pre>
 </div>
 
       <div class="mt-5">
@@ -228,18 +224,11 @@
     <ul class="pagination">
       
       <li class="page-item">
-        <a href="http://yarra-framework.org/blog/matlab_grasp/" title="Matlab GRASP Module " class="page-link">
+        <a href="http://yarra-framework.org/blog/client_065/" title="Client Package 0.65 " class="page-link">
           <span aria-hidden="true">&larr;</span>Previous
         </a>
       </li>
        
-      
-      <li class="page-item">
-        <a href="http://yarra-framework.org/blog/client_055/" title="Client Package 0.55" class="page-link">
-          Next
-          <span aria-hidden="true">&rarr;</span>
-        </a>
-      </li>
       
     </ul>
   </nav>

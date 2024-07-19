@@ -129,7 +129,19 @@
     <lastmod>2018-06-15T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://yarra-framework.org/blog/</loc>
-    <lastmod>2024-06-11T00:00:00+00:00</lastmod>
+    <lastmod>2024-07-19T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://yarra-framework.org/blog/github_migration/</loc>
+    <lastmod>2024-07-19T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://yarra-framework.org/tags/repositories/</loc>
+    <lastmod>2024-07-19T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://yarra-framework.org/tags/source-code/</loc>
+    <lastmod>2024-07-19T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://yarra-framework.org/tags/</loc>
+    <lastmod>2024-07-19T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://yarra-framework.org/tags/client/</loc>
     <lastmod>2024-06-11T00:00:00+00:00</lastmod>
@@ -138,9 +150,6 @@
     <lastmod>2024-06-11T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://yarra-framework.org/tags/release/</loc>
-    <lastmod>2024-06-11T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://yarra-framework.org/tags/</loc>
     <lastmod>2024-06-11T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://yarra-framework.org/blog/new_forum/</loc>
@@ -207,12 +216,6 @@
     <lastmod>2020-07-26T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://yarra-framework.org/blog/gitmigration/</loc>
-    <lastmod>2020-02-12T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://yarra-framework.org/tags/repositories/</loc>
-    <lastmod>2020-02-12T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://yarra-framework.org/tags/source-code/</loc>
     <lastmod>2020-02-12T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://yarra-framework.org/tags/server/</loc>
